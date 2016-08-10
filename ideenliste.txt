@@ -1,1 +1,15 @@
+generell:
+	min 2h spielspaß
+	educational game:
+		beispiele der dozentin:
+			angry birds - physik
+			linsen/spiegel spiel - lichtbrechung
+	programmieraufwand:
+		max 3monate entwicklung (allinclusive)
+	casual game
+
+
+chemie simulation:
+	abgelehnt
+rätsel spiel:
 
