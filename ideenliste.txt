@@ -1,15 +1,32 @@
 generell:
 	min 2h spielspaß
+	alter zwischen 6 und 12
 	educational game:
+		nicht offensichtlich ein lernspiel
 		beispiele der dozentin:
 			angry birds - physik
 			linsen/spiegel spiel - lichtbrechung
 	programmieraufwand:
 		max 3monate entwicklung (allinclusive)
 	casual game
+	originelle idee:kein klon
+	offline spielbar
+	kein rpg im engerem sinne
+
+
 
 
 chemie simulation:
 	abgelehnt
 rätsel spiel:
 
+Rennfahrspiel mit verkehrsregelaufgaben und mathe/deutsch/beliebigen mini aufgaben
+	eine wilde renntour durch die stadt mit polizeiverfolgung und verschiedenen animationen des scheiterns
+	bei jedem scheitern wird eine aufgabe aus dem reportarit gestellt (schwierigkeit einstellbar (schwer bringt mehr punkte))
+	so eine art mini game ums fahren mit reaktionszeit aufgaben
+	beispiele
+		ampel: es muss gebremst werden (mögliche fail animationen, fährt in ein auto rein, bleibt stehen aber explodiert, fährt die ampel um)
+		polizei: es muss rechts rangefahren werden
+		sprungschantze: gasgeben statt bremsen
+		kurve links/rechts
+		usw usw
