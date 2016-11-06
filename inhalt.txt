@@ -1,5 +1,7 @@
 einleitung
+	anforderung
 	spielidee
+	abgrenzung
 grundlagen
 	psychologische grundlagen für spiele?
 	gamification, nach gewissen modell

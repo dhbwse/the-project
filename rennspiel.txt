@@ -18,6 +18,14 @@ strecken
     2 übung dann ein finale
     finale strecken brauchen einen einsatz (aufgaben)
 aufgaben für coins
+    toore auf der map
+        frage erscheint rechtzeitig auf dem bildschrim
+        2 tore: eins falsch, eins richtig
+            beim falschem passiert etwas was rennzeit kostet (exposion & zurücksetzen, längere route)
+    Aufgabe zum Motorstarten
+        der der die aufgabe schafft kann losfahren
+        nach einer gewissen zeit darf auch so gestartet werden
+        nach 3 verschiedenen aufgaben (durch falscheingabe kommt eine neue) muss gewartet werden
     aufgabe + lösung
     user bekommt dann ein
 coins für:
