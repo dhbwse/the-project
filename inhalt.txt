@@ -1,0 +1,34 @@
+einleitung
+	spielidee
+grundlagen
+	psychologische grundlagen für spiele?
+	gamification, nach gewissen modell
+	Android als zielplattform erklären
+	gameengines
+		vorstellung und generelles pro contra
+spiel entwicklung?
+	functional and non-functional requirement specification
+	alternativ ideen bzw unser weg zur idee
+	Use Case Diagramm
+	gameengines
+		pro contra bezogen auf unsere idee
+	kamaraeinstellungen
+		pro contra bezogen auf unsere idee
+	prototypeing
+		unreal blueprints / zeichnungen
+	gameplay
+	lernziele / lern umsetzung !!!!!!
+		pay to win  wird zu  learn to win
+Implementierung
+	architecture, class diagram, DB
+	zusammenfassend entwicklung
+	was lief nicht
+	was lief anders
+	wie wurden gewisse dinge umgesetzt
+	integration in lernplattform
+Analyse
+	testversuch mit kind?
+		matheaufgabe - 1 woche spielen - noch ne mathe aufgabe
+		spaßfaktor?
+	feedback durch eltern
+Zusammenfassung

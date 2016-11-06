@@ -1,0 +1,27 @@
+topdown (leicht schräg)
+controlls
+    steuerkreutz + gas/bremse
+rennen mit zeug
+    bälle
+    jogger
+    auto
+    flugzeug
+    würfel (rollend)
+    opt: konfettiauto
+    opt: opt: schwarzes loch
+spielmodi
+    muliplayer
+    zeitrennen
+    opt: botrennen
+strecken
+    2+1 x3
+    2 übung dann ein finale
+    finale strecken brauchen einen einsatz (aufgaben)
+aufgaben für coins
+    aufgabe + lösung
+    user bekommt dann ein
+coins für:
+    Startpossition (normal immer letzter abgesehen von finalrunde)
+    Teilnahmegebür für finalrunde
+    Zeitbonuns
+    autos?
