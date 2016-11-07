@@ -1,0 +1,59 @@
+% !TEX root = dokumentation.tex
+\documentclass[fontsize=12,fleqn,bibliography=totoc]{scrartcl}
+
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=german,spelling=new]{german}
+
+\usepackage[hyphens]{url}
+\usepackage[hyperfootnotes=false]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	allcolors=black,
+	linktoc=all,
+	pdfauthor=Marc Mahler \& Marvin Zerulla,
+	pdfencoding=auto
+}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+% \setmainfont{DejaVu Serif}
+% \setsansfont{DejaVu Serif}
+% \setmonofont{DejaVu Sans Mono}
+
+\usepackage{booktabs}	% better tables with \toprule \midrule and \bottomrule
+
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{.}
+
+\usepackage[
+	backend=biber,
+	%maxnames=7,  % hack for many names
+	date=year,
+	bibstyle=alphabetic
+]{biblatex}
+\addbibresource{quellen.bib}
+%\appto{\bibsetup}{\raggedright}	% when biblography makes problems
+\renewcommand{\subtitlepunct}{: }
+
+\usepackage{scrpage2}
+\automark{section}
+\clearscrheadings
+%\ihead{TITLE?}
+\ohead{\rightmark}
+\cfoot{\pagemark}
+
+\usepackage[xindy,acronym,nopostdot]{glossaries}
+
+
+\setlength{\parindent}{0pt}			% kein einzug
+\setlength{\parskip}{2.5pt}			% sanfter vertical space zwischen pars
+\setlength{\mathindent}{0pt}		% kein mathe einzug
+
+
+\newcommand{\tabelle}[1]{\textit{#1}}
+\newcommand{\entity}[1]{\textit{#1}}
+
+\hyphenation{cal-cu-la-ted} % sammlung von hypenation patterns
+
+\newif\ifpaper % switch for paper mode
+\paperfalse
