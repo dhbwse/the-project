@@ -1,5 +1,12 @@
 % !TEX root = dokumentation.tex
-\documentclass[fontsize=12,fleqn,bibliography=totoc]{scrartcl}
+\documentclass[	fontsize=12,
+				fleqn,
+				bibliography=totoc,
+				DIV10,
+				ngerman
+				paper=a4
+				titlepage,
+				headings=normal]{scrartcl}
 
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=german,spelling=new]{german}
@@ -10,20 +17,37 @@
 	colorlinks=true,
 	allcolors=black,
 	linktoc=all,
-	pdfauthor=Marc Mahler \& Marvin Zerulla,
+	pdfauthor=Marc Mahler \& Marvin Zerulla%,
 	pdfencoding=auto
 }
 
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[ngerman]{babel}
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage{eurosym}
+
+
 %\usepackage{fontspec}
 \usepackage{microtype}
-% \setmainfont{comicsansms}
-% \setsansfont{comicsansms}
-% \setmonofont{comicsansms}
+ %\setmainfont{ubuntu}
+ %\setsansfont{ubuntu}
+ %\setmonofont{ubuntu}{}
 
-\usepackage{booktabs}	% better tables with \toprule \midrule and \bottomrule
+
+\usepackage[onehalfspacing]{setspace}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+\usepackage{booktabs}	% better tables with \%toprule \%midrule a%nd \bottomrule%%
 
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{.}
+
+%\usepackage{listings}
+\usepackage{chngcntr}
+\counterwithout{figure}{section}
+\counterwithout{table}{section}
+\counterwithout{footnote}{section}
 
 \usepackage[
 	backend=biber,
@@ -43,6 +67,9 @@
 \cfoot{\pagemark}
 
 \usepackage[xindy,acronym,nopostdot]{glossaries}
+\usepackage[printonlyused]{acronym}
+\usepackage[all]{hypcap}
+\usepackage[hang, multiple, stable]{footmisc}
 
 
 \setlength{\parindent}{0pt}			% kein einzug
@@ -52,3 +79,12 @@
 
 \hyphenation{} % sammlung von hypenation patterns
 
+\pagestyle{scrheadings}
+%\renewcommand*{\sectionpagestyle}{scrheadings}
+\renewcommand*{\headfont}{\normalfont}
+\ihead{\headmark}
+\chead{\hspace{1mm}}
+\ohead{Seite \thepage}
+\setlength{\headheight}{21mm}
+\setheadsepline[text]{0.4pt}
+\cfoot{\hspace{1mm}}
