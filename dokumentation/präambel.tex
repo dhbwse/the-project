@@ -1,8 +1,8 @@
 % !TEX root = dokumentation.tex
 \documentclass[fontsize=12,fleqn,bibliography=totoc]{scrartcl}
 
-\usepackage{polyglossia}
-\setdefaultlanguage[variant=german,spelling=new]{german}
+%\usepackage{polyglossia}
+%\setdefaultlanguage[variant=german,spelling=new]{german}
 
 \usepackage[hyphens]{url}
 \usepackage[hyperfootnotes=false]{hyperref}
@@ -14,11 +14,11 @@
 	pdfencoding=auto
 }
 
-\usepackage{fontspec}
+%\usepackage{fontspec}
 \usepackage{microtype}
-% \setmainfont{DejaVu Serif}
-% \setsansfont{DejaVu Serif}
-% \setmonofont{DejaVu Sans Mono}
+% \setmainfont{comicsansms}
+% \setsansfont{comicsansms}
+% \setmonofont{comicsansms}
 
 \usepackage{booktabs}	% better tables with \toprule \midrule and \bottomrule
 
@@ -50,10 +50,5 @@
 \setlength{\mathindent}{0pt}		% kein mathe einzug
 
 
-\newcommand{\tabelle}[1]{\textit{#1}}
-\newcommand{\entity}[1]{\textit{#1}}
+\hyphenation{} % sammlung von hypenation patterns
 
-\hyphenation{cal-cu-la-ted} % sammlung von hypenation patterns
-
-\newif\ifpaper % switch for paper mode
-\paperfalse
