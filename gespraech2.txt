@@ -1,8 +1,0 @@
-gamifaction kein modell raussuchen,
-	persona definieren, gamification faktoren extrahieren
-jira => youtrack
-grundlagen neusortiert
-Gameengines
-spieleidee abesprochen - gut
-um models kümmern (kassenschluss ende november)
-inhaltsverzeichnis abgesprochen - gut
