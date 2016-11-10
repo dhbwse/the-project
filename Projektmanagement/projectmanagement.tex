@@ -1,0 +1,30 @@
+\input{../dokumentation/präambel.tex}	% all latex init code here!
+
+\begin{document}
+\input{deckblatt.tex}
+%\input{ehrenwörtlicheerklärung.tex}
+%\input{abstract.tex}
+
+\begin{singlespace}
+	\microtypesetup{protrusion=false}
+	\tableofcontents{}	\addtocontents{toc}{~\hfill\textbf{Seite}\par}\pagebreak
+	\listoffigures{}	\addtocontents{lof}{~\hfill\textbf{Seite}\par}
+	\listoftables{}		\addtocontents{lot}{~\hfill\textbf{Seite}\par}
+	\pagebreak
+	\microtypesetup{protrusion=true}
+	\printglossary[type=acronym]
+	\pagebreak
+\end{singlespace}
+
+\pagestyle{scrheadings} 	%starting from here cool headings
+\section{Gesprächsprotokolle}
+\input{../gespraech1.tex}
+\input{../gespraech2.tex}
+\section{Terminplan}
+\input{../termine.tex}
+\pagebreak
+\printbibliography
+\pagebreak
+%\input{anhang.tex}
+
+\end{document}
