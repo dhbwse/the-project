@@ -71,3 +71,17 @@
 
 
 \hyphenation{} % sammlung von hypenation patterns
+
+% commands
+\newenvironment{tabl}[2]{%
+	\penalty-200%  % breakings!
+	\vspace{1.5ex plus 3ex minus 0.5ex}%
+	\hfil%
+	\xdef\tablcaption{#2}%
+	\tabular{#1}%
+	%\rowstyle{\bfseries}%  % make first table line bold
+	}{%
+	\endtabular{}%
+	\captionof{table}{\tablcaption}%
+	\vspace{1ex plus 2ex minus 0.3ex}%
+}
