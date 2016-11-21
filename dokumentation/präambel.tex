@@ -44,7 +44,8 @@
 	backend=biber,
 	%maxnames=7,  % hack for many names
 	date=year,
-	bibstyle=alphabetic
+	bibstyle=alphabetic,
+	citestyle=authortitle-alphicomp
 ]{biblatex}
 \addbibresource{quellen.bib}
 %\appto{\bibsetup}{\raggedright}	% when biblography makes problems
@@ -68,6 +69,7 @@
 \setlength{\parindent}{0pt}			% kein einzug
 \setlength{\parskip}{2.5pt}			% sanfter vertical space zwischen pars
 \setlength{\mathindent}{0pt}		% kein mathe einzug
+\setlength{\alphaboxlength}{6ex}	% für authortitle-alphicomp
 
 
 \hyphenation{} % sammlung von hypenation patterns
