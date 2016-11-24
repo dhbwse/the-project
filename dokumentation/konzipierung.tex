@@ -1,9 +1,116 @@
 % !TEX root = dokumentation.tex
 \section{Konzipierung}
+Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und non-functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel Implementierung <TODO: Verlinkung> das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder computergesteuerte Gegner (e.g. Bots) betrachtet. Abschließend soll betrachtet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
 \subsection{Kriterien für die Spielidee}\label{ssec:kriterien}
-	auflistung \& änderung zu bestimmten terminen (z.b. nach berkling sollte das lernen selbst spaß machen)
+	Auf Basis der in der Aufgabenstellung genannten Kriterien und mit Erweiterung durch eigens erarbeitete Kriterien konnte ein Kriterienkatalog entwickelt werden. Damit eine vollständige Zusammenfassung aller Kriterien möglich ist, werden die Kriterien aus der Aufgabenstellung erneut aufgegriffen.
+\begin{enumerate}
+	\item{Das Spiel soll levelbasiert sein, d.h. dass voneinander unabhängige Spielabschnitte vorhanden sind.}
+	\item{Der Umfang des Spiels ist auf zwei bis drei Stunden Spielspaß ausgelegt. Durch modulare Gestaltung können im Nachhinein weitere Level hinzugefügt werden.}
+	\item{Das Spiel ist ein \enquote{educational game}, der Spielspaß steht im Vordergrund, das lernen geschieht im Hintergrund}
+	\item{Aus Punkt 3 folgt, dass das Lernen selbst Spaß machen soll, indem es fester Bestandteil des Spiels ist (und nicht als Aufgabe, die eben gemacht werden muss)}
+	\item{Das Spiel soll \enquote{casual} sein, d.h. ein Spiel \enquote{für zwischendurch} sein.}
+	\item{Der vollständige Programmieraufwand für das Spiel ist auf 3 Monate Arbeit ausgelegt. Somit bleiben weitere volle drei Monate für das Verfassen der Arbeit}
+	\item{Ziel ist, eine originelle Spielidee zu entwickeln, sodass das Spiel kein Klon eines bereits existierenden Spiels ist.}
+	\item{Als Beispiele zur Orientierung wurde \enquote{arcademics.com} genannt, welche Spiele der gewünschten Art beinhaltet, jedoch eine Internetverbindung benötigt. Daraus ergibt sich, dass das Spiel auch offline spielbar sein soll.}
+	\item{Bei frühen Brainstorming-Sessions konnte sich darauf geeinigt werden, dass das Spiel in keinem Fall ein RPG<TODO:acro> sein soll.}
+	\item{Es besteht keine Notwendigkeit der Einhaltung der Lernstandards. Die Spieler sollen mit dem Spiel Spaß haben und das Spiel auch spielen \enquote{wollen}.}
+	\item{Die Zielgruppe für das Spiel ist durch die Persona aus Kapitel 2<TODO: richtige Verlinkung> gegeben. Nach Möglichkeit soll dieses Spiel und die zugehörige Lernplattform auch Flüchtlingskindern zur Verfügung gestellt werden.}
+\end{enumerate}
+
+Die Entstehung dieser Kriterien ist teilweise auf die Ergebnisse aus dem Brainstorming zurückzuführen. Durch das Brainstorming konnten die Erwartungen der Projektteilnehmer an das Spiel weiter spezifiziert werden. Somit ist eine genaue Trennung der Kriterien vom Brainstorming nur schwer möglich und dient lediglich der Übersichtlichkeit.
+
 \subsection{Brainstorming \& Game Design}\label{ssec:idee}
-	Alternativ Ideen bzw unser weg zur idee
+	Folgende Ideen zu Spielen wurden in Brainstorming-Sessions erarbeitet:
+\begin{enumerate}
+	\item Chemie / Physik Simulation:
+	\begin{itemize}
+		\item Laborumgebung
+		\item Einfache Experimente durchführbar
+		\item Fehler in Experimenten führt zu scheitern
+		\item Steuerung der Hände des Laborarbeiters
+		\item Idee wegen schwerer Durchführbarkeit (Partikelsystem etc) sowie geringem Lernerfolg verworfen
+	\end{itemize}
+	\item Rätselspiel:
+	\begin{itemize}
+		\item Aufgrund fehlernder weiterer Eingebung verworfen
+	\end{itemize}
+	\item Simulation von Motoren und Getrieben
+	\begin{itemize}
+		\item Spieler bekommt zu fahrende Strecke gezeigt (2D Ansicht)
+		\item Auswahl verschiedener Motoren möglich
+		\item Auswahl des Treibstoffes möglich
+		\item Gangschaltung während der Fahrt möglich
+		\item Informationstexte über Motoren sowie Treibstoffe und Übersetzungen der Zahnräder
+		\item Zeitrennen / Erreichen des Ziels als Spielziel
+		\item Idee nach dem Kickoff-Meeting vollständig verworfen aufgrund unpassender Lernumsetzung
+	\end{itemize}
+	\item Rennfahrspiel mit Verkehrsregelaufgaben und Mini Aufgaben:
+	\begin{itemize}
+		\item wilde renntour durch die stadt
+		\item Polizeiverfolgung und verschiedenen Animationen des Scheiterns (Death Sells)
+		\item zu lösende Aufgabe bei jedem Scheitern
+		\item Minigame mit verschiedenen aufgaben wie:
+		\begin{itemize}
+			\item ampel: es muss gebremst werden (mögliche Fail Animationen, fährt in ein Auto rein, bleibt stehen aber explodiert, fährt die Ampel um)
+			\item Polizei: es muss rechts rangefahren werden
+			\item Sprungschantze: Gas geben statt bremsen
+			\item Kurven links / rechts
+		\end{itemize}
+		\item Nach dem Kickoff-Meeting verworfen
+	\end{itemize}
+\end{enumerate}
+Daraus ergibt sich folgende finale Idee:
+\begin{enumerate}
+	\item{Rennspiel}
+	\item{topdown (leicht schräg)}
+	\item{controlls}
+	\begin{itemize}
+    	\item{steuerkreutz + gas/bremse}
+    \end{itemize}
+	\item{rennen mit zeug}
+	\begin{itemize}
+    	\item bälle
+    	\item jogger
+    	\item auto
+    	\item flugzeug
+    	\item würfel (rollend)
+    	\item opt: konfettiauto
+    	\item opt: opt: schwarzes loch
+    \end{itemize}
+	\item spielmodi
+	\begin{itemize}
+    	\item muliplayer
+    	\item zeitrennen
+    	\item opt: botrennen
+    \end{itemize}
+	\item strecken
+   	\begin{itemize}
+   		\item{2+1 x3}
+    	\item{2 übung dann ein finale}
+    	\item{finale strecken brauchen einen einsatz (aufgaben)}
+    \end{itemize}
+	\item{aufgaben für coins}
+    \item{tore auf der map}
+    \begin{itemize}
+        \item{frage erscheint rechtzeitig auf dem bildschrim}
+        \item{2 tore: eins falsch, eins richtig}
+            beim falschem passiert etwas was rennzeit kostet (exposion \& zurücksetzen, längere route)
+    \end{itemize}
+    \item{Aufgabe zum Motorstarten}
+        \begin{itemize}
+        	\item{der der die aufgabe schafft kann losfahren}
+        	\item{nach einer gewissen zeit darf auch so gestartet werden}
+        	\item{nach 3 verschiedenen aufgaben (durch falscheingabe kommt eine neue) muss gewartet werden}
+        \end{itemize}
+	\item coins für:
+	\begin{itemize}
+    	\item{Startpossition (normal immer letzter abgesehen von finalrunde)}
+    	\item{Teilnahmegebür für finalrunde}
+    	\item{Zeitbonuns}
+    	\item{autos?}
+    \end{itemize}
+\end{enumerate}
+
 \subsection{Functional and non-functional requirements}
 	pro contra bezogen auf unsere idee
 \subsection{Use Case Diagramm}
