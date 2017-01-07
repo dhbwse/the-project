@@ -1,5 +1,7 @@
 \input{präambel.tex}	% all latex init code here!
 
+\input{glossar.tex}		% abkürzungen hier rein
+
 \begin{document}
 \input{deckblatt.tex}
 %\input{ehrenwörtlicheerklärung.tex}
@@ -13,7 +15,7 @@
 	\listoftables{}		\addtocontents{lot}{~\hfill\textbf{Seite}\par}
 	\pagebreak
 	\microtypesetup{protrusion=true}
-	\printglossary[type=acronym]
+	\printglossary[type=acronym,title={Abkürtzungen}]
 	\pagebreak
 \end{singlespace}
 
