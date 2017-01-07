@@ -131,13 +131,17 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	Eine weitere Möglichkeit wäre es, das Rennen an einem bestimmten Punkt zu pausieren und eine Aufgabe anzuzeigen. Die gemessene Zeit des Zeitrennens läuft dabei weiter. Erst mit Eingabe der korrekten Lösung wird das Rennen fortgesetzt und der Spieler darf weiterfahren. Dies würde jedoch den Spielfluss maßgeblich unterbrechen und somit zu einem Verlust an Spielspaß führen. Somit fällt die Wahl für die Zusatzaufgaben auf die Weggabelungen im Rennen.
 
 	\subsubsection{Belohnungen / Strafen bei Zusatzaufgaben}
+	Da die Zusatzaufgaben fester Bestandteil des Spiels und zur Übermittlung des Lernerfolgs nötig sind, muss ein Absolvieren bzw. Nichtabsolvieren der Aufgaben auch Auswirkungen auf das Spiel haben. Für die Zusatzaufgaben innerhalb der Rennen ergeben sich zwei mögliche Lösungen.
+	Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methodik würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
+	Bei der belohnenden Methodik würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
+	Die zweite Möglichkeit besteht darin, an den Weggabelungen untschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
+	<TODO: Methode wählen und Abschluss formulieren>
 
+	\subsubsection{Zusatzaufgaben im Multiplayer}
+	Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunterzählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
+	Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen können.
 
-
-
-
-
-
+	\subsubsection{}
 
 	\subsubsection{Steuerung}
 	\subsubsection{Bots}
