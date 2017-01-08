@@ -139,10 +139,25 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
 	Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
-	\subsubsection{}
+	\subsubsection{Umsetzung einer Ingame-Währung}
+	Um dem Spieler die Möglichkeit zu geben, Boni und visuelle Veränderungen zu erwerben, soll dem Spiel eine Ingame-Währung beigefügt werden. Potentiell sind drei Möglichkeiten für den Erwerb dieser Währung denkbar. So wäre es möglich, einen Erwerb der Währung über reale Zahlungen zu regeln. Für eine Zahlung von 0.99€ könnten so beispielsweise 100 Einheiten der Ingame-Währung erworben werden. Die zweite Möglichkeit ist ein Verdienen der Währung über das Gewinnen von Rennen. Diese Siegerprämie kann als zusätzliche Motivation für den Spieler dienen, Level-Pakete zu Wiederholen um zusätzliche Währung zu verdienen. Die dritte Möglichkeit für das Verdienen der Währung kann das Lösen von zusätzlichen Aufgaben sein. Diese Aufgaben können den Lernerfolg durch das Spiel steigern. So kann beispielsweise das Lösen von drei Matheaufgaben zu einem Verdienst von 100 Einheiten der Währung führen.
+	Die erste genannte Möglichkeit der Bezahlung mit realen Transaktionen wird an dieser Stelle verworfen, da das Spiel nicht gewinnorientiert ist. Außerdem kann somit das Risiko von versehentlichen Belastungen der elterlichen Kreditkarten verhindert werden.
+	Die beiden übrigen Möglichkeiten bieten dem Spieler Motivation und vergrößern den potentiellen Lernerfolg. Somit wird für die Umsetzung des Spiels eine Kombination aus Siegerprämie und (täglich beschränkten) Zusatzaufgaben implementiert.
+
+	\subsubsection{Kaufbares für Ingame-Währung}
+	Für die Spezifizierung der kaufbaren Dinge im Spiel, können zwei Kategorien festgelegt werden. Die erste Kategorie sind visuelle Veränderungen. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Finalrennen und ist im Multiplayer nicht verfügbar.
+
+	\subsubsection{Verlassen des vorgegebenen Wegs}
+
+	\subsubsection{Hindernisse auf der Strecke}
+
+	\subsubsection{Heads-Up Display}
+
+	\subsubsection{Optionen? Musik?}
+
 
 	\subsubsection{Steuerung}
-	\subsubsection{Bots}
+
 
 \subsection{Entwicklung Play-Persona}
 	Nach Kapitel \ref{ssec:persona} modelliert gibt es für das Spiel zwei Spielmechaniken:
