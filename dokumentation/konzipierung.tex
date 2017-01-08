@@ -29,7 +29,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 			\item{Fehler, welche dem Spieler in den Experimenten passieren, führen zum Scheitern des Versuchs.}
 			\item{Der Spieler hat die Möglichkeit, die Hände des Laborarbeiters zu steuern.}
 			\item{Alternativ kann der Spieler über den Touchscreen mit den Utensilien im Labor interagieren.}
-			\item{Die Idee wurde verworfen, da viele Experimente aus Chemie und Physik nur schwer über einen Touchscreen durchzuführen sind. Weiterhin ist die für diese art von Spiel benötigte Physiksimulation ungeeignet für die Zielplattform. Außerdem stellt diese Idee nicht den gewünschten Lernerfolg für die gewünschte Zielgruppe zur verfügung. }
+			\item{Die Idee wurde verworfen, da eine realistische Steuerung von Experimenten aus Chemie und Physik nur schwer über einen Touchscreen umzusetzen ist. Weiterhin ist die für diese art von Spiel benötigte Physiksimulation ungeeignet für die Zielplattform. Außerdem stellt diese Idee nicht den gewünschten Lernerfolg für die gewünschte Zielgruppe zur verfügung. }
 		\end{itemize}
 		\item{Rätselspiel:}
 		\begin{itemize}
@@ -104,21 +104,19 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	\end{enumerate}
 
 \subsection{Functional and non-functional requirements}
-	pro contra bezogen auf unsere idee
 \subsection{Use Case Diagramm}
-	pro contra bezogen auf unsere idee
 
 \subsection{Spielmechanik}
 	Im folgenden Kapitel sollen die Grundlagen des Spiels erarbeitet und abgewogen werden, sodass ein breites Spektrum an Regeln und Eigenschaften des Spiel erarbeitet werden kann. Diese Sammlung von Eigenschaften und Regeln kann im späteren Verlauf der Arbeit als Kriterienkatalog zur Auswahl einer Game-Engine verwendet werden. Dabei sollen zunächst für jede Kategorie verschiedene Möglichkeiten erklärt werden, um im Anschluss die für die Spielidee beste Möglichkeit auszuwählen.
 
 	\subsubsection{Regeln für den Spielfortschritt}
-	Zum Durchspielen des Spiels muss der Spieler eine Reihe von Level-Paketen abschließen. Die genaue Anzahl an zu spielenden Paketen ist variabel und kann jederzeit um ein zusätzliches Paket erweitert oder gekürzt werden. Die zu treffende Entscheidung an dieser Stelle ist, ob der Spieler die einzelnen Level-Pakete bereits von Beginn an auswählen kann oder sich diese im Laufe des Spiels freispielen muss. Ein freispielen der einzelnen Level-Pakete gibt die Möglichkeit, einen Schwierigkeitsgrad einzuführen. Somit können zum Beispiel zuerst alle Pakete mit Schwierigkeitsgrad \enquote{Einfach} verfügbar sein. Mit erfolgreichem Abschluss aller einfachen Pakete würden dann die Paktete mit Schwierigkeit \enquote{Mittel} freigeschaltet.
+	Zum Durchspielen des Spiels muss der Spieler eine Reihe von Level-Paketen abschließen. Die genaue Anzahl an zu spielenden Paketen ist variabel und kann jederzeit um ein zusätzliches Paket erweitert oder gekürzt werden. Die zu treffende Entscheidung an dieser Stelle ist, ob der Spieler die einzelnen Level-Pakete bereits von Beginn an auswählen kann oder sich diese im Laufe des Spiels freispielen muss. Ein freispielen der einzelnen Level-Pakete gibt die Möglichkeit, einen Schwierigkeitsgrad einzuführen. Somit können zum Beispiel zuerst alle Pakete mit Schwierigkeitsgrad \enquote{Einfach} verfügbar sein. Mit erfolgreichem Abschluss aller einfachen Pakete würden dann die Pakete mit Schwierigkeit \enquote{Mittel} freigeschaltet.
 	Die vollständige Verfügbarkeit aller Level-Pakete von Beginn an, hat für den Spieler den Vorteil der freien Wahl. Allerdings ist eine Umsetzung von unterschiedlichen Schwierigkeitsgraden unter Umständen nicht möglich. Durch sofortige vollständige Verfügbarkeit bleibt eine Lernkurve aus und der Spieler kann schnell die Motivation am Spiel verlieren.
 	Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
 	\subsubsection{Regeln innerhalb der Level-Pakete}
-	Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in ein Finalrennen und zwei Qualifikationsrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Finalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Finalrennen verfügbar zu machen.
-	Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Finalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheistgefühl} auslösen. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
+	Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Finalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Finalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Finalrennen verfügbar zu machen.
+	Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Finalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
 	\subsubsection{Gewinnbedingungen eines Rennens}
 	Zur Durchführung der Einzelspieler Rennen stehen grundsätzlich zwei Möglichkeiten zur Auswahl. Die erste Möglichkeit ist, dass der Spieler gegen computergesteuerte Rennteilnehmer (im Folgenden Bots genannt) antritt. Zur Realisierung dieser Alternative ist die Entwicklung einer sogenannten KI <TODO: Erklärung?> nötig. Weiterhin werden dadurch Punkte, wie beispielsweise die Kollision mit anderen Rennteilnehmern notwendig. Um ein Rennen zu gewinnen, muss der Spieler als erster die Ziellinie überqueren.
@@ -126,7 +124,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	Unter Beachtung der erwähnten Punkte und mit Blick auf den gesetzten Zeitrahmen wird von der Entwicklung einer KI abgesehen. Somit bleibt als für die Realisierung des Rennens das Zeitrennen übrig.
 
 	\subsubsection{Zusatzaufgaben während eines Rennens}
-	Der Spieler soll während eines Rennens Zusatzaufgaben erhalten. Eine Möglichkeit für die Umsetzung dieser Zusatzaufgaben konnte während des Brainstormings erarbeitet werden. Diese hat sich im Laufe der Zeit weiterentwickelt und wurde verveinert. Auf eine ausführliche Erläuterung des exakten Werdegangs wird an dieser Stelle verzichtet.
+	Der Spieler soll während eines Rennens Zusatzaufgaben erhalten. Eine Möglichkeit für die Umsetzung dieser Zusatzaufgaben konnte während des Brainstormings erarbeitet werden. Diese hat sich im Laufe der Zeit weiterentwickelt und wurde verfeinert. Auf eine ausführliche Erläuterung des exakten Werdegangs wird an dieser Stelle verzichtet.
 	Bei der erarbeiteten Umsetzung bekommt der Spieler während des Rennens eine Aufgabe auf einer freien Stelle des Bildschirms angezeigt. Nach einer vorgegebenen Zeit X (diese variiert anhand der Schwierigkeit der Aufgabe oder dem Verlauf der Strecke) verschwindet diese Aufgabe und die Rennstrecke führt zu einer Weggabelung. Beide Wege sind mit Schildern versehen, auf denen jeweils mögliche Lösungen der Aufgabe angezeigt werden. Auf einem der Schilder steht somit die korrekte Lösung, auf dem anderen Schild stehen falsche Lösungen. Der Spieler muss nun sein Auto auf den richtigen Weg lenken.
 	Eine weitere Möglichkeit wäre es, das Rennen an einem bestimmten Punkt zu pausieren und eine Aufgabe anzuzeigen. Die gemessene Zeit des Zeitrennens läuft dabei weiter. Erst mit Eingabe der korrekten Lösung wird das Rennen fortgesetzt und der Spieler darf weiterfahren. Dies würde jedoch den Spielfluss maßgeblich unterbrechen und somit zu einem Verlust an Spielspaß führen. Somit fällt die Wahl für die Zusatzaufgaben auf die Weggabelungen im Rennen.
 
@@ -134,12 +132,12 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	Da die Zusatzaufgaben fester Bestandteil des Spiels und zur Übermittlung des Lernerfolgs nötig sind, muss ein Absolvieren bzw. Nichtabsolvieren der Aufgaben auch Auswirkungen auf das Spiel haben. Für die Zusatzaufgaben innerhalb der Rennen ergeben sich zwei mögliche Lösungen.
 	Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methodik würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
 	Bei der belohnenden Methodik würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
-	Die zweite Möglichkeit besteht darin, an den Weggabelungen untschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
+	Die zweite Möglichkeit besteht darin, an den Weggabelungen unterschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
 	<TODO: Methode wählen und Abschluss formulieren>
 
 	\subsubsection{Zusatzaufgaben im Multiplayer}
-	Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunterzählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
-	Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen können.
+	Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
+	Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
 	\subsubsection{}
 
@@ -147,9 +145,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	\subsubsection{Bots}
 
 \subsection{Entwicklung Play-Persona}
-	Nach Kapitel \ref{ssec:persona} modeliert gibt es für das Spiel zwei Spielmechaniken:
+	Nach Kapitel \ref{ssec:persona} modelliert gibt es für das Spiel zwei Spielmechaniken:
 	\begin{description}
-		\item[Rennen Fahren]{ Sagt aus ob der Spieler gut im rennen fahren ist. Kann über rundenzeiten gemessen werden. }
+		\item[Rennen Fahren]{ Sagt aus ob der Spieler gut im rennen fahren ist. Kann über Rundenzeiten gemessen werden. }
 		\item[Aufgaben Lösen]{ Sagt aus ob der Spieler wenig oder viele Aufgaben korrekt löste. }
 	\end{description}
 	Daraus ergeben sich folgende 4 Personas:
@@ -165,7 +163,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\bottomrule
 	\end{tabl}
 	<TODO:personas ausarbeiten>
-\subsection{Lernziele umsetzung}
+\subsection{Lernziele Umsetzung}
 	\enquote{pay to win} wird zu \enquote{learn to win}
 \subsection{Game-Engine Evaluation}\label{ssec:engineeval}
 	Auflistung und beschreibung der kriterien?
@@ -180,4 +178,4 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 			Networking\footnotemark & ? & ? \\
 		\bottomrule
 	\end{tabl}
-	\footnotetext{Die Game-Engine bietet passende funktionalitäten um den geplanten Mehrspielermodus zu entwicklen.}
+	\footnotetext{Die Game-Engine bietet passende Funktionalitäten um den geplanten Mehrspielermodus zu entwickeln.}
