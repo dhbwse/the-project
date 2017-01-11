@@ -143,7 +143,12 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
 	\subsubsection{Umsetzung einer Ingame-Währung}
-	Um dem Spieler die Möglichkeit zu geben, Boni und optische Upgrades zu erwerben, soll dem Spiel eine Ingame-Währung beigefügt werden. Potentiell sind drei Möglichkeiten für den Erwerb dieser Währung denkbar. So wäre es möglich, einen Erwerb der Währung über reale Zahlungen zu regeln. Für eine Zahlung von 0.99€ könnten so beispielsweise 100 Einheiten der Ingame-Währung erworben werden. Die zweite Möglichkeit ist ein Verdienen der Währung über das Gewinnen von Rennen. Diese Siegerprämie kann als zusätzliche Motivation für den Spieler dienen, Level-Pakete zu Wiederholen um zusätzliche Währung zu verdienen. Die dritte Möglichkeit für das Verdienen der Währung kann das Lösen von zusätzlichen Aufgaben sein. Diese Aufgaben können den Lernerfolg durch das Spiel steigern. So kann beispielsweise das Lösen von drei Matheaufgaben zu einem Verdienst von 100 Einheiten der Währung führen.
+	Um dem Spieler die Möglichkeit zu geben, Boni und optische Upgrades zu erwerben, soll dem Spiel eine Ingame-Währung beigefügt werden. Potentiell sind drei Möglichkeiten für den Erwerb dieser Währung denkbar.
+	\begin{enumerate}
+		\item{ Erwerb der Währung über reale Zahlungen. Dies ist die Einnahmequelle für Spiele nach dem \enquote{freemium} Modell\footcite[Seite 8]{freemium}. }
+		\item{ Verdienen der Währung über das Gewinnen von Rennen. Diese Siegerprämie kann als zusätzliche Motivation für den Spieler dienen, Level-Pakete zu Wiederholen um zusätzliche Währung zu verdienen. }
+		\item{ Lösen von zusätzlichen Aufgaben. }
+	\end{enumerate}
 	Die erste genannte Möglichkeit der Bezahlung mit realen Transaktionen wird an dieser Stelle verworfen, da das Spiel nicht gewinnorientiert ist. Außerdem kann somit das Risiko von versehentlichen Belastungen der elterlichen Kreditkarten verhindert werden.
 	Die beiden übrigen Möglichkeiten bieten dem Spieler Motivation und vergrößern den potentiellen Lernerfolg. Somit wird für die Umsetzung des Spiels eine Kombination aus Siegerprämie und (täglich beschränkten) Zusatzaufgaben implementiert.
 

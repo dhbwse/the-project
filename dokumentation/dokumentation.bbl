@@ -19,6 +19,36 @@
 
 \refsection{0}
   \sortlist[entry]{anyt/global}
+    \entry{freemium}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=42c95a809b99aaa7e167cdd71ed86eb6}{%
+           family={Bercu},
+           family_i={B\bibinitperiod},
+           given={Cristian},
+           given_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{42c95a809b99aaa7e167cdd71ed86eb6}
+      \strng{fullhash}{42c95a809b99aaa7e167cdd71ed86eb6}
+      \field{labelalpha}{Ber16}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{06}
+      \field{title}{Monetization and Engagement in Freemium Games}
+      \field{type}{Research}
+      \field{urlday}{11}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.13140/RG.2.1.2617.8166
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/304451539
+      \endverb
+    \endentry
     \entry{persona}{incollection}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=6236e62a4bc28fe218334e9fa6c944b6}{%
@@ -45,6 +75,9 @@
       \field{booktitle}{Human-Computer Interaction {–} {INTERACT} 2009}
       \field{subtitle}{Behaviours and Belief Systems in User-Centred Game Design}
       \field{title}{Play-Personas}
+      \field{urlday}{11}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
       \field{year}{2009}
       \field{pages}{510\bibrangedash 523}
       \range{pages}{14}
