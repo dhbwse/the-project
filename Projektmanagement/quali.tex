@@ -1,0 +1,42 @@
+% !TEX root = projectmanagement.tex
+Auch im Bereich der Qualitätssicherung gilt die bereits erwähnte Unterscheidung zwischen dem Verfassen der Studienarbeit und der eigentlichen Implementierung des Spiels.
+Da eine Qualitätssicherung für beide Tätigkeiten sinnvoll ist, dies jedoch nicht gleichzeitig erreicht werden kann, wird an dieser Stelle getrennt.
+
+\subsection{Verfassen der Studienarbeit}
+Um eine durchgehend konstante Textqualität zu gewährleisten, wurden mehrere Maßnahmen ergriffen. Zuerst wurden diverse Regeln eingeführt, nach denen ein Latex-Paket das gesamte Dokument durchsucht.
+Diese Regeln beziehen sich beispielsweise auf die Satzlänge, die Verwendung von Füllwörtern oder die Verwendung von Personalpronomen. In einer wissenschatlichen Arbeit sind Personalpronomen, Füllwörter und zu lange Sätze nicht gern gesehen.
+Somit sorgen die Regeln dafür, dass der Textaufbau wissenschatlich bleibt und nicht in \enquote{Prosa} rutscht. Die Anmerkungen, welche beim Bauen des Dokuments in der Konsole erscheinen, und somit auf potentielle Fehler hinweisen, können z.B. so aussehen:
+
+\begin{lstlisting}[
+    basicstyle=\scriptsize, %or \tiny or \footnotesize etc.
+]
+Grundlagen.tex matched in line 13 at 47 'missing dot' (impropper lineending).
+Aufgabenstellung.tex:9 matched '([^. ]++\s*+){25,}\.' (sentence length).
+Konzipierung.tex matched in line 2 at 137 '\b(\w+)(\s+)(\1)\b' (duplications).
+Grundlagen.tex:29 matched 'Spiele?[ -]Engines?' (bad words).
+Einleitung.tex:8 matched 'wahrscheinlich' (weasel words).
+Konzipierung.tex:1 matched 'ich' (personal pronouns).
+\end{lstlisting}
+
+Da diese Regeln jedoch lediglich die Einhaltung von wissenschaftlichen Gepflogenheiten bei der Texterstellung gewährleisten, und den Text inhaltlich nicht untersuchen, reichen diese Regeln nicht aus.
+Es ist sehr schwierig, bzw. bedarf fortgeschrittener Tools, um einen Text inhaltlich zu analysieren. Aus diesem Grund geschieht dies bei unserem Projekt manuell. Jeder neu verfasste Textabschnitt wird von dem jeweils zweiten Projektteilnehmer gegengelesen.
+Erst wenn beide Projektteilnehmer mit einem Text vollständig zufrieden sind, wird dieser in die Studienarbeit übernommen. Dadurch wird gewährleistet, dass jeder Textabschnitt inhaltlich optimal formuliert ist und wissenschaftliche Standards erfüllt.
+Dies geht einher mit einer hohen Textqualität. Außerdem werden vor der Fertigstellung der Studienarbeit unabhängige Drittleser damit beauftragt, die Texte zu lesen und auf eventulle Probleme hinzuweisen.
+
+\subsection{Softwarequalität}
+Zur Umsetzung von hoher Softwarequalität stehen mehrere Möglichkeiten zur Verfügung:
+\begin{itemize}
+	\item{Verwendung von Test-Driven-Development}
+	\item{Einsatz von Code-Metrik-Tools}
+	\item{Schaffen einer guten Testabdeckung}
+	\item{Verwendung von automatischer Buildsoftware, welche Tests ausführt}
+	\item{Einhalten ausgewählter Regeln des Clean-Code-Developers}
+\end{itemize}
+Durch die Verwendung von Test-Driven-Development kann gewährleistet werden, dass alle wichtigen Rechenoperationen innerhalb des Spiels korrekt sind. Zudem werden Änderungen, welche zu Funktionsveränderungen führen durch die Tests bemerkt und können somit behoben werden.
+Dies verhindert das Auftreten von ungewolltem Verhalten innerhalb der Spiele-Logik. Weiterhin wird eine gute Testabdeckung durch Test-Driven-Development unterstützt. Es müssen nurnoch wenige Tests hinzugefügt werden, um die Testabdeckung zu vervollständigen.
+Durch die Verwendung einer automatischen Buildsoftware kann gewährleistet werden, dass die Tests regelmäßig (bei jedem Build) ausgeführt werden. Dies führt dazu, dass Veränderungen und Fehler schnell bemerkt werden können und nicht eine lange Zeit im Code bestehen bleiben.
+Die bereits genannten drei Punkte dienen dazu, die Fehleranfälligkeit der Software zu senken. Im nächsten Schritt ist es nun notwendig, eine gute Code-Wartbarkeit zu schaffe. Da die Qualität von Programmcode sehr eng mit seine Wartbarkeit verknüpft ist, ist dies ein wichtiger Punkt bei der Qualitätssicherung.
+Der Clean-Code-Developer ist eine Sammlung von Regeln für die Softwareentwicklung. Er besteht aus insgesamt fünf Graden, welche verschiedene Schwierigkeiten besitzen und unterschiedliche Ziele verfolgen. Eine Einhaltung der Regeln des Clean-Code-Developers führt zu gut wartbarem und qualitativ hochwertigem Code.
+Da jedoch viele Regeln den Entwickler in seiner Freiheit einschränken, gilt es aus der Gesamtheit der Regeln diejenigen auszuwählen, die bei geringem Aufwand den größten Erfolg liefern. Da dies zum Zeitpunkt der Abgabe dieser Erfassung noch nicht geschehn ist, wird an dieser Stelle nicht auf die gewählten Regeln eingegangen.
+Durch den Einsatz von Code-Metrik-Tools, wie beispielsweise SonarCube, kann die Codequalität automatisiert überwacht werden. Diese Tools bieten die Möglichkeit, Einstellungen zu definieren, nach denen der Programmcode analysiert wird.
+Bricht der Entwickler die so definierten Regeln, sendet SonarCube eine Benachrichtigung um darauf hinzuweisen. So kann gewährleistet werden, dass mangelnde Code-Qualität direkt nach der Entstehung behoben wird und der Code zu jeder Zeit den gewählten Qualitätsstandards entspricht.
