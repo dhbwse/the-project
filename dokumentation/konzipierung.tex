@@ -115,37 +115,37 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	\subsubsection{Spielmechanik}
 	In den Bereich der Spielmechanik fallen all jene Regeln und Eigenschaften, welche das Spielgeschehen (Die Spielerfahrung des Spielers) beeinflussen und diese ausmachen.
 
-		\textbf{Regeln für den Spielfortschritt:}\newline
+		\paragraph{Regeln für den Spielfortschritt:}
 		Zum Durchspielen des Spiels muss der Spieler eine Reihe von Level-Paketen abschließen. Die genaue Anzahl an zu spielenden Paketen ist variabel und kann jederzeit um ein zusätzliches Paket erweitert oder gekürzt werden. Die zu treffende Entscheidung an dieser Stelle ist, ob der Spieler die einzelnen Level-Pakete bereits von Beginn an auswählen kann oder sich diese im Laufe des Spiels freispielen muss. Ein freispielen der einzelnen Level-Pakete gibt die Möglichkeit, einen Schwierigkeitsgrad einzuführen. Somit können zum Beispiel zuerst alle Pakete mit Schwierigkeitsgrad \enquote{Einfach} verfügbar sein. Mit erfolgreichem Abschluss aller einfachen Pakete würden dann die Pakete mit Schwierigkeit \enquote{Mittel} freigeschaltet.
 		Die vollständige Verfügbarkeit aller Level-Pakete von Beginn an, hat für den Spieler den Vorteil der freien Wahl. Allerdings ist eine Umsetzung von unterschiedlichen Schwierigkeitsgraden unter Umständen nicht möglich. Durch sofortige vollständige Verfügbarkeit bleibt eine Lernkurve aus und der Spieler kann schnell die Motivation am Spiel verlieren.
 		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
-		\textbf{Regeln innerhalb der Level-Pakete:}\newline
+		\paragraph{Regeln innerhalb der Level-Pakete:}
 		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Finalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Finalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Finalrennen verfügbar zu machen.
 		Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Finalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
-		\textbf{Gewinnbedingungen eines Rennens:}\newline
+		\paragraph{Gewinnbedingungen eines Rennens:}
 		Zur Durchführung der Einzelspieler Rennen stehen grundsätzlich zwei Möglichkeiten zur Auswahl. Die erste Möglichkeit ist, dass der Spieler gegen computergesteuerte Rennteilnehmer (im Folgenden Bots genannt) antritt. Zur Realisierung dieser Alternative ist die Entwicklung einer sogenannten KI <TODO: Erklärung?> nötig. Weiterhin werden dadurch Punkte, wie beispielsweise die Kollision mit anderen Rennteilnehmern notwendig. Um ein Rennen zu gewinnen, muss der Spieler als erster die Ziellinie überqueren.
 		Die zweite Möglichkeit wäre die Realisierung der Rennen über eine vorgegebene Zeit. Das so entstehende Zeitrennen muss in der vorgegeben Zeit absolviert werden. Überschüssige Zeit verfällt und kann für folgende Rennen nicht verwendet werden.
 		Unter Beachtung der erwähnten Punkte und mit Blick auf den gesetzten Zeitrahmen wird von der Entwicklung einer KI abgesehen. Somit bleibt als für die Realisierung des Rennens das Zeitrennen übrig.
 
-		\textbf{Zusatzaufgaben während eines Rennens:}\newline
+		\paragraph{Zusatzaufgaben während eines Rennens:}
 		Der Spieler soll während eines Rennens Zusatzaufgaben erhalten. Eine Möglichkeit für die Umsetzung dieser Zusatzaufgaben konnte während des Brainstormings erarbeitet werden. Diese hat sich im Laufe der Zeit weiterentwickelt und wurde verfeinert. Auf eine ausführliche Erläuterung des exakten Werdegangs wird an dieser Stelle verzichtet.
 		Bei der erarbeiteten Umsetzung bekommt der Spieler während des Rennens eine Aufgabe auf einer freien Stelle des Bildschirms angezeigt. Nach einer vorgegebenen Zeit X (diese variiert anhand der Schwierigkeit der Aufgabe oder dem Verlauf der Strecke) verschwindet diese Aufgabe und die Rennstrecke führt zu einer Weggabelung. Beide Wege sind mit Schildern versehen, auf denen jeweils mögliche Lösungen der Aufgabe angezeigt werden. Auf einem der Schilder steht somit die korrekte Lösung, auf dem anderen Schild stehen falsche Lösungen. Der Spieler muss nun sein Auto auf den richtigen Weg lenken.
 		Eine weitere Möglichkeit wäre es, das Rennen an einem bestimmten Punkt zu pausieren und eine Aufgabe anzuzeigen. Die gemessene Zeit des Zeitrennens läuft dabei weiter. Erst mit Eingabe der korrekten Lösung wird das Rennen fortgesetzt und der Spieler darf weiterfahren. Dies würde jedoch den Spielfluss maßgeblich unterbrechen und somit zu einem Verlust an Spielspaß führen. Somit fällt die Wahl für die Zusatzaufgaben auf die Weggabelungen im Rennen.
 
-		\textbf{Belohnungen / Strafen bei Zusatzaufgaben:}\newline
+		\paragraph{Belohnungen / Strafen bei Zusatzaufgaben:}
 		Da die Zusatzaufgaben fester Bestandteil des Spiels und zur Übermittlung des Lernerfolgs nötig sind, muss ein Absolvieren bzw. Nichtabsolvieren der Aufgaben auch Auswirkungen auf das Spiel haben. Für die Zusatzaufgaben innerhalb der Rennen ergeben sich zwei mögliche Lösungen.
 		Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methodik würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
 		Bei der belohnenden Methodik würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
 		Die zweite Möglichkeit besteht darin, an den Weggabelungen unterschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
 		<TODO: Methode wählen und Abschluss formulieren>
 
-		\textbf{Zusatzaufgaben im Multiplayer:}\newline
+		\paragraph{Zusatzaufgaben im Multiplayer:}
 		Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
 		Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
-		\textbf{Umsetzung einer Ingame-Währung:}\newline
+		\paragraph{Umsetzung einer Ingame-Währung:}
 		Um dem Spieler die Möglichkeit zu geben, Boni und optische Upgrades zu erwerben, soll dem Spiel eine Ingame-Währung beigefügt werden. Potentiell sind drei Möglichkeiten für den Erwerb dieser Währung denkbar.
 		\begin{enumerate}
 			\item{ Erwerb der Währung über reale Zahlungen. Dies ist die Einnahmequelle für Spiele nach dem \enquote{freemium} Modell\footcite[Seite 8]{freemium}. }
@@ -155,27 +155,27 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		Die erste genannte Möglichkeit der Bezahlung mit realen Transaktionen wird an dieser Stelle verworfen, da das Spiel nicht gewinnorientiert ist. Außerdem kann somit das Risiko von versehentlichen Belastungen der elterlichen Kreditkarten verhindert werden.
 		Die beiden übrigen Möglichkeiten bieten dem Spieler Motivation und vergrößern den potentiellen Lernerfolg. Somit wird für die Umsetzung des Spiels eine Kombination aus Siegerprämie und (täglich beschränkten) Zusatzaufgaben implementiert.
 
-		\textbf{Verlassen des vorgegebenen Wegs:}\newline
+		\paragraph{Verlassen des vorgegebenen Wegs:}
 		Jedes Rennen verfügt über einen vorgegeben Weg, welcher vom Start bis zum Ziel führt. Dieser vorgegebene Weg verbreitert sich um breite Randstreifen\footnote{<Anmerkung:Randstreifen hauptsächlich aus visuellen gründen? ich würde die Strecke so gestalten dass es kein vom weg abkommen gibt ;)>} zur fertigen Strecke. Ein verlassen der Straße muss gewisserweise Auswirkungen auf das Fahrzeug des Spielers haben, um das Fahren auf der Strecke zu begünstigen. Denkbar wäre, das Fahrzeug des Spielers merklich zu verlangsamen, falls dieser die Strecke verlässt. Zusätzlich sollte dem Spieler eine Warnung zum Zurückkehren auf die Strecke angezeigt werden. Weiterhin kann das Fahrzeug des Spielers automatisiert auf die Strecke zurückgesetzt werden, falls es den vorgegebenen Weg für eine gewisse Zeit X verlässt. Gleiches gilt, falls ein Spieler sein Fahrzeug wendet und die Strecke in entgegensetzer Richtung fährt. Dabei soll das Fahrzeug jedoch nicht verlangsamt werden. Für die Implementierung wird eine Kombination aus Anzeigen einer Warnung und Verlangsamung des Fahrzeugs gewählt. Somit hat ein Verlassen der Strecke einen merklichen Nachteil im Zeitrennen, da die Verlangsamung viel Zeit kostet. Auf ein automatisches Zurücksetzen wird verzichtet, damit der Spieler aus seinen Fehlern lernt, da er selbstständig auf die Strecke zurückfahren muss.
 
-		\textbf{Hindernisse auf der Strecke:}\newline
+		\paragraph{Hindernisse auf der Strecke:}
 		Um den Schwierigkeitsgrad der Rennen zusätzlich zu erhöhen, besteht die Möglichkeit auf Hindernisse zurückzugreifen, welche sich auf der Strecke befinden. Für eine Kollision mit einem solchen Hindernis muss geklärt werden, welches Verhalten das Fahrzeug zeigt. Die beiden naheliegendsten Möglichkeiten für eine Kollisionsreaktion sind das vollständige Stoppen (Abprallen) und das Verlangsamen des Fahrzeugs.
 		Ein vollständiges Stoppen des Fahrzeugs würde eine Art Unterbrechung des Spielflusses bedeuten. Da dies, wie bereits erwähnt, nach Möglichkeit vermieden werden soll, scheidet diese Möglichkeit aus. Ein Verlangsamen des Fahrzeugs kann entweder als Verlangsamung um einen Prozentsatz X (basierend auf der aktuellen Geschwindigkeit), oder mittels einer Verlangsamung der Geschwindigkeit auf einen Festen Wert umgesetzt werden. <TODO: Entscheiden und Erklären>
 
 	\subsubsection{Sonstige Eigenschaften des Spiels}
 	Im Bereich der sonstigen Eigenschaften sollen Eigenschaften betrachtet werden, die nicht direkt die Spielmechanik betreffen. Dazu gehören unter Anderem Kameraeinstellungen, das Optionsmenü und ähnliches.
 
-		\textbf{Kaufbares für Ingame-Währung:}\newline
+		\paragraph{Kaufbares für Ingame-Währung:}
 		Für die Spezifizierung der kaufbaren Dinge im Spiel<TODO:grammatik?>, können zwei Kategorien festgelegt werden. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Finalrennen und ist im Multiplayer nicht verfügbar.
 
-		\textbf{Heads-Up Display und Steuerung:}\newline
+		\paragraph{Heads-Up Display und Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
 		Zur Steuerung der Fahrtrichtung des Fahrzeugs kann über zwei Wege realisiert werden. Der erste Weg wäre die Verwendung des Neigungssensors des Nutzergeräts. Dabei müsste der Spieler sein Gerät ähnlich einem Lenkrad in die entsprechende Richtung neigen, um eine Reaktion des Fahrzeugs hervorzurufen. Die zweite Möglichkeit wäre die Verwendung eines \enquote{Lenkrads}, wobei der Spieler mittels Bewegungen auf dem Touchscreen das Fahrzeug steuern kann. Da ein Steuern des Fahrzeugs mittels des Neigungssensors und ein gleichzeitiges Lesen und Lösen der auf dem Bildschirm angezeigten Aufgaben als zu schwierig erachtet wird, soll die Steuerung über Touchscreen-Eingaben realisiert werden. Hierbei eignet sich das für Mobile-Spiele übliche stufenlose Steuerkreuz am Besten. Somit ist dieses Steuerkreuz eine nötige Komponente auf dem Bildschirm.
 		Für die Steuerung der Geschwindigkeit konnte sich im Rahmen des Brainstormings lediglich eine Möglichkeit durchsetzen. Hierbei sollen zwei \enquote{Pedale} verwendet werden, um das Fahrzeug zu beschleunigen bzw. zu bremsen. Um die Geschwindigkeit des Fahrzeugs zu halten, muss das \enquote{Gaspedal} durchgehend gedrückt werden. Ein Loslassen des Gaspedals führt zu einer stetigen Verringerung der Geschwindigkeit. Ein Betätigen des Bremspedals führt zu einer deutlich schnelleren Verringerung der Geschwindigkeit. Wird das Bremspedal nach Stillstand des Fahrzeugs erneut betätigt, fährt dieses mit verringerter Geschwindigkeit rückwärts. Aufgrund dieser Beschreibung ergibt sich, dass zwei Pedale als Komponenten auf dem Bildschirm benötigt werden.
 		<TODO: Minikarte?>
 		<Anmerkung: mögliche inputs (touch,beschleunigung,magnet/ausrichtung...) auflisten, darauf bereits genutzte steuerungen auflisten und dann herraussuchen (Quellen ;) ) >
 
-		\textbf{Kameraperspektive:}\newline
+		\paragraph{Kameraperspektive:}
 		Grundsätzlich sind für Rennspiele drei Kameraperspektiven denkbar. Diese sind:
 		\begin{itemize}
 			\item{Kamera zeigt das innere des Fahrzeugs und schaut durch die Frontscheibe}
@@ -186,7 +186,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		Befindet sich die Kamera hinter dem Fahrzeug, ist die Sicht auf die kommende Strecke bei besonders kurvigen Strecken stark eingeschränkt. Da ein frühzeitiges Sehen des Streckenverlaufs hilft, gleichzeitig die gestellten Aufgaben zu lösen und das Fahrzeug zu steuern, fällt die Entscheidung an dieser Stelle auf die Ansicht von oben.
 		Der Spieler kann so die Strecke früh erkennen und sich auf die kommenden Kurven einstellen, ohne dabei die Konzentration für die gestellten Aufgaben zu erhalten. Der Kamerawinkel wird leicht geneigt sein, um die Modelle plastischer zu gestalten und 3D-Modelle verwenden zu können.
 
-		\textbf{Musik und Sound:}\newline
+		\paragraph{Musik und Sound:}
 		Um den Umfang des Spiels zu vervollstänigen, muss an dieser Stelle noch die Musik und Sound im Allgemeinen betrachtet werden. Im Brainstorming wurde entschieden, dass das Spiel eine Hintergrundmusik erhalten soll. Zudem benötigen Kollisionen, die Fahrzeuge und bestimmte Momente im Spiel (Start, Ziel, Lösen einer Aufgabe) ein spezielles Sound-Pack.
 		Zudem soll der Spieler die Möglichkeit bekommen, im Spiel Einstellungen an den Sounds vorzunehmen. Dazu gehört vor Allem die Lautstärkeeinstellung sowie die Möglichkeit, den Sound vollständig zu deaktivieren. Dabei soll zwischen der Spielmusik, den Fahrzeuggeräuschen und den Umgebungsgeräuschen unterschieden werden.
 
@@ -198,7 +198,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	\end{description}
 	Daraus ergeben sich folgende 4 Personas:
 
-	\begin{tabl}{ccc}{Play-Persona Matrix}
+	\begin{tabl}{lcc}{Play-Persona Matrix}
 		\toprule
 			Name/Eigenschaft & Rennen Fahren & Aufgaben Lösen \\
 		\midrule
@@ -209,51 +209,42 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\bottomrule
 	\end{tabl}
 
-	Schule:
-	Grundschule in einer Kleinstadt
-	Recht Fortschrittlich
-	Staatliche Schule
-	Gesponsert durch großes IT Unternehmen
-	Grundschule Helmsheim
-	liegt in Helmsheim am Stadtrand
-
-
-	\begin{enumerate}
-		\item{Florian Klein: Der Anfänger}
-		\begin{itemize}
-			\item{7 Jahre alt, zweite Klasse, Eltern + 2 Geschwister, älterer Bruder, jüngere Schwester}
-			\item{Hausaufgaben machen, evtl auf Schwester aufpassen}
-			\item{Will später Rennfahrer werden, wünscht sich einen Rennwagen, will Rennwagen fahren, Will immer besser werden im Spiel (Besser als sein Bruder)}
-			\item{er mag Rennautos, spielt gern mit Spielzeugautos, Abneigung gegen Smarts und Mädchen, Sieht gern Autosendungen im Fernsehen spielt Fußball}
+	\begin{description}
+		\item[Die Grundschule Helmsheim]\hfill\\
+		Helmsheim ist eine Kleinstadt in Deutschland mit knapp 6000 Einwohnern. Die Grundschule Helmsheim liegt am Stadtrand und ist eine der beiden Grundschulen in der Stadt. Die Grundschule ist recht fortschrittlich, da sie zwar staatlich betrieben, jedoch durch ein ortsansässiges IT-Unternehmen gesponsort wird. Durch dieses Sponsoring hat die Schule die Möglichkeit, neue Technologien einzusetzen und so beispielsweise educational games für den Unterricht zu verwenden.
+		\item[Florian Klein: Der Anfänger]\hfill
+		\begin{description}
+			\item[Familiäres Umfeld]{Florian ist sieben Jahre alt und lebt mit seinen Eltern und zwei Geschwistern am Stadtrand. Seine Geschwister sind Andy(10) und Laura(4). Florians Vater arbeitet bei einem ortsansässigen IT Unternehmen, seine Mutter ist Hausfrau. Gelegentlich passt Florian auf seine kleine Schwester auf und macht regelmäßig seine Hausaufgaben aus der Schule, weitere Aufgaben im Haushalt hat er jedoch nicht.}
+			\item[Schulisches Umfeld]{Florian besucht, genauso wie sein Bruder, die Helmsheimer Grundschule. Dort ist er aktuell in der zweiten Klasse. Florian befindet sich im schulischen Durchschnitt und findet keinen besonderen Spaß am Lernen.}
+			\item[Interessen und Hobbys]{Florian ist ein begeisterter Auto-Fan. Er spielt gerne mit Spielzeugautos, sieht Autosendungen im Fernsehen und will später unbedingt Rennfahrer werden. Er hat sehr viel Spaß daran, Rennen zu fahren und hat bei seinem Bruder ein Auto-Rennspiel gesehen, dass er nun auch spielt. Außerdem spielt er in seiner Freizeit Fußball. Er hat eine Abneigung gegen kleine Autos (Smarts) und Mädchen.}
+			\item[Motivation]{Die Motivation Florians liegt im Ehrgeiz, seinen Bruder zu schlagen. Er möchte bessere Rundenzeiten im Rennen erreichen und so lange immer besser im Spiel werden, bis er seinen Bruder im Multiplayer besiegen kann.}
 			\item{\enquote{Mama, Mama, guck mal ein rotes Rennauto!}}
-		\end{itemize}
-		\item{Joachim Wolf: Der Lehrer}
-		\begin{itemize}
-			\item{58 Jahre alt, Lehrer an der Grundschule Helmsheim, Lebt mit seiner Frau (Ulrike, 56) zusammen, Tochter Natalie studiert woanders, noch keine Enkel, Hat Lehramt in Geschichte und Geographie studiert, hat mit 41 beschlossen auf Grundschule zu wechseln}
-			\item{Unterricht vorbereiten, Unterrichten, Klassenarbeiten korregieren, Nachhilfe geben, evtl Seminare besuchen}
-			\item{Will den Kindern möglichst viel beibringen, Will spielerisches Lernen ausprobieren, hat erst seit kurzem ein Smartphone, Erwartet, dass die Kinder es freiwillig spielen, wünscht sich besseres Lernumfeld und Spaß für die Kinder, will von den Kindern gemocht werden}
-			\item{Bondage, BDSM, Nachhilfe aus Hobby, Fährt viel Fahrrad und Spielt Schach im Stadtpark, Er ließt viele Bücher (Romane und Krimis)}
+		\end{description}
+		\item[Joachim Wolf: Der Lehrer]\hfill
+		\begin{description}
+			\item[Familiäres Umfeld]{Joachim ist 58 Jahre alt und lebt mit seiner Frau Ulrike(56) in Helmsheim. Seine Tochter Natalie(25) wohnt nicht mehr bei ihnen, da sie für ihr Studium umgezogen ist. Joachim hat noch keine Enkelkinder. Während er nicht in der Grundschule ist, muss er den Unterricht für kommende Tage vorbereiten, Klassenarbeiten korregieren und ab und an ein Seminar für Lehrer besuchen.}
+			\item[Schulisches Umfeld]{Joachim hat Lehramt in den Fächern Geschichte und Geographie studiert, beschloss jedoch mit 41 das Gymnasium zu verlassen und an der Grundschule weiter zu arbeiten. Seitdem arbeitet er bei der Grundschule Helmsheim.}
+			\item[Interessen und Hobbys]{In seiner Freizeit ließt Joachim sehr viel. Vor allem Romane und Krimis interessieren ihn besonders. Er fährt viel Fahrrad und nutzt jede mögliche Gelegenheit, um im nahe gelegenen Stadtpark Schach mit seinen Freunden zu spielen. Zudem gibt er aus Hobby Nachhilfe und beschafft sich somit einen kleinen Nebenverdienst.}
+			\item[Motivation]{Die größte Motivation für Joachim ist es, den Kindern möglichst viel beizubringen. Dafür möchte er für die Kinder ein besseres Lernumfeld schaffen, damit die Kinder Spaß am Lernen haben. Um dies zu erreichen, möchte er mit seinen Klassen das spielerische Lernen ausprobieren. Er hofft, dass die Kinder freiwillig lernen (spielen), wenn sie auch Spaß daran haben.}
 			\item{\enquote{Wissen sollte Spaß machen, um es in jungen Jahren nach vorn zu bringen.}}
-		\end{itemize}
-		\item{Laura Dietz: Die Rennfahrerin}
-		\begin{itemize}
-			\item{12 Jahre alt, fünfte Klasse Realschule (wegen Vorschule), Lebt mit ihrer Mutter neben dem Lehrer, Eltern sind getrennt, hat nen Freund, interessiert sich nicht so fürs lernen, Mutter hat sie bei Nachhilfe angemeldet (bei Joachim), Einzelkind}
-			\item{im Haushalt helfen, geht mit dem Hund}
-			\item{Will gutes Verhältnis mit der Mutter beibehalten, deshalb geht sie in die Nachhilfe, Will Zeit lieber mit dem Freund und ihren Spielen verbringen}
-			\item{Will ne Konsole haben, hat über Spiele viel gelernt und ist zur Zockerin geworden, Computer spielen, Mit ihrem Freund knutschen, abneigung: schule und lernen (im klassischen Sinn)}
+		\end{description}
+		\item[Laura Dietz: Die Rennfahrerin]\hfill
+		\begin{description}
+			\item[Familiäres Umfeld]{Laura ist 12 Jahre alt und lebt zusammen mit ihrer Mutter im Nachbarhaus von Joachim. Lauras Eltern leben getrennt. Laura ist ein Einzelkind und muss, da ihre Mutter arbeiten geht, regelmäßig im Haushalt helfen und mit dem Hund gehen. Zudem wurde sie von ihrer Mutter in der Nachhilfe von Joachim angemeldet. Sie geht dort hin, um ein gutes Verhältnis zu ihrer Mutter zu wahren, auch wenn sie die Zeit viel lieber mit ihrem dreizehnjährigen Freund und ihren Spielen verbringen würde.}
+			\item[Schulisches Umfeld]{Sie besucht die fünfte Klasse einer Realschule in Helmsheim, interessiert sich allerdings nicht sonderlich fürs Lernen. Da sie die Vorschule besucht hat, gehört sie zu den Ältesten in ihrer Klasse. Da ihre Mutter schon früher nicht viel Zeit mit Laura verbringen konnte, hat Laura viel gespielt. Sie hat über diese Spiele viel gelernt und hat deshalb das grundsätzliche Desinteresse am Lernen.}
+			\item[Interessen und Hobbys]{Laura verbringt gerne viel Zeit mit ihrem Handy oder am Computer. Sie nutzt beides hauptsächlich zum Spielen und zum Chatten mit ihrem Freund. Sie möchte endlich eine Spielekonsole haben, um ihre Leidenschaft zum Spielen noch weiter verfolgen zu können. Wenn sie nicht gerade spielt, trifft sie sich mit ihrem Freund.}
+			\item[Motivation]{Laura wurde von Joachim gebeten, das Lernspiel auszuprobieren, da Joachim weiß, wie gern Laura spielt. Sie ist wenig motiviert, viel zu lernen, möchte jedoch Joachim den Gefallen tun, da ihre Mutter ja für die Nachhilfe mit Joachim zahlt.}
 			\item{\enquote{Nur noch fünf Minuten spielen, Mama?}}
-		\end{itemize}
-		\item{Andy Klein: Der Experte}
-		\begin{itemize}
-			\item{10 Jahre alt, vierte Klasse, Bruder von Florian,  }
-			\item{Lernen, Hausaufgaben machen, }
-			\item{Will Abitur machen, Will Wissen beigebracht bekommen, will spaß beim Spielen haben, will Klassenbester in Mathe werden}
-			\item{Naturwissenschaft (Physik und Chemie), ließt viel über Naturwissenschaft, geht in einen Physik-Club, Spielt gern Geschicklichkeitsspiele, Spielt mit Chemiebaukasten}, spielt Physik und Chemie spiele, Spielt aber auch mal action / Rennspiele
+		\end{description}
+		\item[Andy Klein: Der Experte]\hfill
+		\begin{description}
+			\item[Familiäres Umfeld]{Andy ist zehn Jahre alt und Bruder von Florian. Zu seinen Aufgaben gehören, genau wie bei Florian das Lernen und das Machen der Hausaufgaben, jedoch hat Andy daran deutlich mehr Spaß als Florian.}
+			\item[Schulisches Umfeld]{Er besucht die vierte Klasse der Helmsheimer Grundschule und ist ein motivierter Schüler. Er verfolgt zur Zeit zwei schulische Ziele: Zum einen möchte er zum Klassenbesten in Mathe werden, zum anderen bereitet er sich schon jetzt auf die weiterführende Schule vor um einen möglichst guten Abschluss zu erreichen. }
+			\item[Interessen und Hobbys]{Andy ist wissenschaftlich sehr interesssiert. Besonders angetan haben es ihm die Physik und die Chemie. Er spielt gern mit seinem Chemiebaukasten, sowie andere Physik- und Chemie-, sowie Geschicklichkeitsspiele. Ab und an spielt er nebenbei allerdings auch Action- bzw. Rennspiele. Er geht einmal wöchentlich nach der Schule in einen Physik-Club for Kids, wo kleinere Experimente für die Kinder durchgeführt werden.}
+			\item[Motivation]{Seine Klasse wird in Mathe von Joachim unterrichtet, daher sollen alle Kinder der Klasse das Lernspiel ausprobieren. Da er Klassenbester in Mathe werden möchte, geht er mit besonders viel Enthusiasmus an das Spiel heran, um schnell möglichst hohe Erfolge zu erzielen. Außerdem macht ihm das Spielen Spaß, was zusätzlich zum Weiterspielen motiviert.}
 			\item{\enquote{Mit Spielen lernen, macht ja schon Spaß!}}
-		\end{itemize}
-	\end{enumerate}
-
-	<TODO:personas ausarbeiten>
+		\end{description}
+	\end{description}
 \subsection{Lernziele Umsetzung}
 	\enquote{pay to win} wird zu \enquote{learn to win}
 \subsection{Game-Engine Evaluation}\label{ssec:engineeval}
