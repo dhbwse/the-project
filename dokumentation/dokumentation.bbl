@@ -87,6 +87,115 @@
       \verb https://andersdrachen.files.wordpress.com/2014/07/play-personas-behaviors-and-belief-systems-in-user-centered-game-design_interact2009.pdf
       \endverb
     \endentry
+    \entry{persona-crit2}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=e29066f66faa888e404f65dddf873982}{%
+           family={Chapman},
+           family_i={C\bibinitperiod},
+           given={Christopher\bibnamedelima N.},
+           given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=42bf17ccdbffd11dbdeeac56ed651ca1}{%
+           family={Love},
+           family_i={L\bibinitperiod},
+           given={Edwin},
+           given_i={E\bibinitperiod}}}%
+        {{uniquename=0,hash=8a17a681ae5f37e11fa238cc25f6a9d6}{%
+           family={Milham},
+           family_i={M\bibinitperiod},
+           given={Russell\bibnamedelima P.},
+           given_i={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=6b56134ef309fd02c345486b0a346e73}{%
+           family={ElRif},
+           family_i={E\bibinitperiod},
+           given={Paul},
+           given_i={P\bibinitperiod}}}%
+        {{uniquename=0,hash=189fdb8ca90be0433d38bc32c14c5d45}{%
+           family={Alford},
+           family_i={A\bibinitperiod},
+           given={James\bibnamedelima L.},
+           given_i={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{28aebfae2d0a610e0560c4fbb1035ccf}
+      \strng{fullhash}{28aebfae2d0a610e0560c4fbb1035ccf}
+      \field{labelalpha}{Cha+08}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Human Factors and Ergonomics Society 52 nd Annual Meeting}
+      \field{title}{Quantitative evaluation of personas as information}
+      \field{urlday}{19}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2008}
+      \field{pages}{1107\bibrangedash 1111}
+      \range{pages}{5}
+      \verb{url}
+      \verb https://www.researchgate.net/publication/242935675
+      \endverb
+    \endentry
+    \entry{persona-crit}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=e29066f66faa888e404f65dddf873982}{%
+           family={Chapman},
+           family_i={C\bibinitperiod},
+           given={Christopher\bibnamedelima N.},
+           given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=8a17a681ae5f37e11fa238cc25f6a9d6}{%
+           family={Milham},
+           family_i={M\bibinitperiod},
+           given={Russell\bibnamedelima P.},
+           given_i={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7fcc23cdb802732fa24474d018dbc2c}
+      \strng{fullhash}{f7fcc23cdb802732fa24474d018dbc2c}
+      \field{labelalpha}{CM06}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Human Factors and Ergonomics Society 50th Annual Meeting}
+      \field{subtitle}{methodological and practical arguments against a popular method}
+      \field{title}{The persona’s new clothes}
+      \field{urlday}{19}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2006}
+      \field{pages}{634\bibrangedash 636}
+      \range{pages}{3}
+      \verb{url}
+      \verb http://cnchapman.files.wordpress.com/2007/03/chapman-milham-personas-hfes2006-0139-0330.pdf
+      \endverb
+    \endentry
+    \entry{persona-crit3}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=98a98c662070485303ebbfcac53df724}{%
+           family={Ronkko},
+           family_i={R\bibinitperiod},
+           given={Kari},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{98a98c662070485303ebbfcac53df724}
+      \strng{fullhash}{98a98c662070485303ebbfcac53df724}
+      \field{labelalpha}{Ron05}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Proceedings of the 38th Annual Hawaii International Conference on System Sciences - Volume 08}
+      \field{series}{HICSS '05}
+      \field{title}{An Empirical Study Demonstrating How Different Design Constraints, Project Organization and Contexts Limited the Utility of Personas}
+      \field{urlday}{19}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.1109/HICSS.2005.85
+      \endverb
+      \verb{url}
+      \verb https://www.computer.org/csdl/proceedings/hicss/2005/2268/08/22680220a.pdf
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
