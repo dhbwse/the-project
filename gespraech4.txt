@@ -5,7 +5,7 @@ marc:
 		gameengines
 		psychologische grundlagen
 	konzipierung:
-		alles außer requirements und gamification und lernziele
+		gameengines
 	implementierung:
 
 marvin:
