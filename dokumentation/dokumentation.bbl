@@ -48,7 +48,7 @@
       \verb https://www.researchgate.net/publication/304451539
       \endverb
     \endentry
-    \entry{persona}{incollection}{}
+    \entry{play-persona}{incollection}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=6236e62a4bc28fe218334e9fa6c944b6}{%
            family={Canossa},
@@ -165,6 +165,56 @@
       \range{pages}{3}
       \verb{url}
       \verb http://cnchapman.files.wordpress.com/2007/03/chapman-milham-personas-hfes2006-0139-0330.pdf
+      \endverb
+    \endentry
+    \entry{persona}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d78505b492960cdf2af17b725dcb25e2}{%
+           family={Cooper},
+           family_i={C\bibinitperiod},
+           given={Alan},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d78505b492960cdf2af17b725dcb25e2}
+      \strng{fullhash}{d78505b492960cdf2af17b725dcb25e2}
+      \field{labelalpha}{Coo08}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{05}
+      \field{title}{The origin of personas}
+      \field{urlday}{20}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2008}
+      \verb{url}
+      \verb https://www.cooper.com/journal/2017/1/the_origin_of_personas
+      \endverb
+    \endentry
+    \entry{persona-crit4}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9d086f348cfed06f7f4e3a87b486a152}{%
+           family={Portigal},
+           family_i={P\bibinitperiod},
+           given={Steve},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d086f348cfed06f7f4e3a87b486a152}
+      \strng{fullhash}{9d086f348cfed06f7f4e3a87b486a152}
+      \field{labelalpha}{Por08}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Persona Non Grata}
+      \field{urlday}{20}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2008}
+      \verb{url}
+      \verb http://www.portigal.com/wp-content/uploads/2008/01/Portigal-Consulting-White-Paper-Persona-Non-Grata.pdf
       \endverb
     \endentry
     \entry{persona-crit3}{inproceedings}{}
