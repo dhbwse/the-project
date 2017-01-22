@@ -19,6 +19,28 @@
 
 \refsection{0}
   \sortlist[entry]{anyt/global}
+    \entry{android}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e84e30b9390cdb64db6db2c9ab87846d}{%
+           family={Android},
+           family_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84e30b9390cdb64db6db2c9ab87846d}
+      \strng{fullhash}{e84e30b9390cdb64db6db2c9ab87846d}
+      \field{labelalpha}{And17}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Android official Website}
+      \field{urlday}{21}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb android.com
+      \endverb
+    \endentry
     \entry{freemium}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=42c95a809b99aaa7e167cdd71ed86eb6}{%
@@ -244,6 +266,27 @@
       \endverb
       \verb{url}
       \verb https://www.computer.org/csdl/proceedings/hicss/2005/2268/08/22680220a.pdf
+      \endverb
+    \endentry
+    \entry{android-stats}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fee3fc182e02f376217580e5bfec4f51}{%
+           family={StatCounter},
+           family_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{fullhash}{fee3fc182e02f376217580e5bfec4f51}
+      \field{labelalpha}{Sta}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Stats}
+      \field{urlday}{22}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://gs.statcounter.com
       \endverb
     \endentry
   \endsortlist
