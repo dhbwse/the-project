@@ -6,11 +6,26 @@
 	Studien zeigen dass Android weltweit das beliebteste mobile Betriebssystem ist, mit über 70\% Nutzung\footcite[\url{http://gs.statcounter.com/\#mobile_os-ww-monthly-200812-201701}]{android-stats}. IOS steht bei circa 20\%. Wichtig ist hier zu vermerken dass in ärmeren Regionen eher Android verwendet wird.\footcite[\url{http://gs.statcounter.com/\#mobile_os-ww-monthly-201701-201701-map}]{android-stats}
 	Android wie auch IOS und WindowsPhoneOS stellen eine neue Generation von Betriebssystemen für Mobilgeräte dar. Die wichtigsten Merkmale dieser Betriebssysteme sind Appstores, Toucheingabe <TODO:mehr und quelle>.
 \subsection{Game-Engines}
-	Eine Game-Engine soll die Entwicklung von Spielen erleichtern. Dies funktioniert in dem Entwicklern Arbeit abgenommen wird Beispielsweise in dem eine einfach zu nutzende Physik-Komponente oder ein \gls{IDE} bereitgestellt wird. Eine Game-Engine stellt oft verwendete Funktionen Spielentwicklern zu Verfügung und beschleunigt die Entwicklung.
+	Eine Game-Engine soll die Entwicklung von Spielen erleichtern. Dies funktioniert in dem Entwicklern Arbeit abgenommen wird, beispielsweise in dem eine einfach zu nutzende Physik-Komponente oder ein \gls{IDE} bereitgestellt wird\footcite[Jason Gregory - Game Engine Architecture (S.11)]{gregory2014game}. Eine Game-Engine stellt oft verwendete Funktionen Spielentwicklern zu Verfügung und beschleunigt die Entwicklung. Zudem bieten Game-Engines häufig zusätzliche Funktionen, wie eine Rendering-Engine für Videosequenzen oder eine Oberfläche zur 2D/3D Modellierung\footcite[Jason Gregory - Game Engine Architecture (S. 36ff.)]{gregory2014game}.
+	In den folgenden Abschnitten sollen nun ausgewählte Game-Engines genauer betrachtet werden, um eine Basis für eine spätere Evaluation zu schaffen. Folgende Kriterien sind für eine spätere Evaluation relevant und werden somit Teil der Beschreibung sein:
+	\begin{itemize}
+		\item{Ist die Engine für Android geeignet?}
+		\item{Werden Nutzerdaten an die Entwickler übermittelt?}
+		\item{Wie wird mit Lizenzen umgegangen und was kosten diese?}
+		\item{Wie kann Online-Multiplayer mit der Engine umgesetzt werden?}
+		\item{Welche Möglichkeiten der Entwicklung unterstützt die Engine?}
+		\item{Welche Programmiersprachen werden unterstützt?}
+	\end{itemize}
 	\subsubsection*{Unity}
+	Unity ist eine Multiplattform-Game-Engine, welche ein breites Spektrum an Zielplattformen unterstützt\footcite[\label{unity}Unity3d.com/de/unity - Was ist Unity]{unity-home}. Zu den von Unity unterstützten Zielplattformen gehören unter anderem iOS, Android, Windows, sowie viele Konsolen\footref{unity}. Durch die Verwendung von Unity Analytics bekommen die Entwickler die Möglichkeit, das Nutzerverhalten der Spieler zu analysieren. Diese Daten werden jedoch nicht an Unity Technologies übermittelt\footref{unity}. Unity ist grundsätzlich kostenlos. Bei der Wahl des kostenlosen Lizensmodells stehen dem Entwickler jedoch nur der Standardfunktionsumfang zur Verfügung. Für eine Vergrößerung des Funktionsumfangs steht ein Abomodell zur Verfügung, welches beliebig anpassbar ist. Als zusätzliche Kosten erhält Unity Technologyies 5\% aller mit den Spielen erwirtschafteten Gewinnen.\footref{unity}.
+	Für die Umsetzung des Multiplayers stellt die Unity Engine den sog. Unity Multiplayer zur Verfügung. Über die darin enthaltenen Matchmaking-Server sowie den flexibel anpassbaren Low-Level-API kann das Spiel für den Multiplayer optimiert werden\footref{unity}.
+	Im Bereich der Entwicklung bietet Unity sowohl Möglichkeiten für Animationen, Grafikdesign, Performanceoptimierung, Tongestaltung, Physik sowie die allgemeine Entwicklung mit C\# und Javascript\footref{unity}
 	\subsubsection*{Unreal}
 	\subsubsection*{Cryengine}
-	\subsubsection*{mehr?}
+	\subsubsection*{Irrlicht}
+	\subsubsection*{Linderdaum}
+	\subsubsection*{jPCT 3D}
+
 \subsection{Persona}\label{ssec:persona}
 	Ein Persona ist eine Technik aus dem Userexperience (UX) Bereich\footcite{persona}. Personas sollen durch imaginäre Nutzer (Personas) helfen die Nutzerfreundlichkeit zu verbessern. Durch Imitation von Nutzern werden Bewertungen, Verbesserungen oder Entscheidungen aus einer anderen Perspektive generiert. Die Nutzer werden dafür ausführlich beschrieben damit man sich die Person vorstellen kann. Oft werden Verhalten, Ziele, Aussehen, Erfahrungen, Name, Umfeld und weiteres definiert.
 	Personas gehören zu den benutzerorientierten Designmethoden und sind einfach zu implementieren da kein echter Benutzer involviert wird.
