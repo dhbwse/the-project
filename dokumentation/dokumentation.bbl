@@ -215,6 +215,74 @@
       \verb https://www.cooper.com/journal/2017/1/the_origin_of_personas
       \endverb
     \endentry
+    \entry{jpct-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e89aaa9f94163a4e8c2e536f0b4c0e2f}{%
+           family={Foerster},
+           family_i={F\bibinitperiod},
+           given={Helge},
+           given_i={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e89aaa9f94163a4e8c2e536f0b4c0e2f}
+      \strng{fullhash}{e89aaa9f94163a4e8c2e536f0b4c0e2f}
+      \field{labelalpha}{Foe}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{jPCT 3D Engine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.jpct.net/
+      \endverb
+    \endentry
+    \entry{unreal-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=458bc88bbe8feb870616791eae79a483}{%
+           family={Games},
+           family_i={G\bibinitperiod},
+           given={Epic},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{458bc88bbe8feb870616791eae79a483}
+      \strng{fullhash}{458bc88bbe8feb870616791eae79a483}
+      \field{labelalpha}{Gam}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unreal Engine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://www.unrealengine.com/what-is-unreal-engine-4
+      \endverb
+    \endentry
+    \entry{gregory2014game}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3aa33cbc68dddc62080ecebfdd8ed456}{%
+           family={Gregory},
+           family_i={G\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{3aa33cbc68dddc62080ecebfdd8ed456}
+      \strng{fullhash}{3aa33cbc68dddc62080ecebfdd8ed456}
+      \field{labelalpha}{Gre14}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781466560017}
+      \field{title}{Game Engine Architecture, Second Edition}
+      \field{year}{2014}
+    \endentry
     \entry{persona-crit4}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=9d086f348cfed06f7f4e3a87b486a152}{%
@@ -268,6 +336,27 @@
       \verb https://www.computer.org/csdl/proceedings/hicss/2005/2268/08/22680220a.pdf
       \endverb
     \endentry
+    \entry{irrlicht-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b1baf4470e92b775bf262b5b01f4c970}{%
+           family={Sourceforge},
+           family_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1baf4470e92b775bf262b5b01f4c970}
+      \strng{fullhash}{b1baf4470e92b775bf262b5b01f4c970}
+      \field{labelalpha}{Sou}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Irrlicht Engine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://irrlicht.sourceforge.net/?page_id=45
+      \endverb
+    \endentry
     \entry{android-stats}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=fee3fc182e02f376217580e5bfec4f51}{%
@@ -287,6 +376,77 @@
       \field{urlyear}{2017}
       \verb{url}
       \verb http://gs.statcounter.com
+      \endverb
+    \endentry
+    \entry{cry-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=097c817b3823bedb29cf7e4fc8fa649b}{%
+           family={Studios},
+           family_i={S\bibinitperiod},
+           given={Crytek},
+           given_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{097c817b3823bedb29cf7e4fc8fa649b}
+      \strng{fullhash}{097c817b3823bedb29cf7e4fc8fa649b}
+      \field{labelalpha}{Stu}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cryengine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://www.cryengine.com/
+      \endverb
+    \endentry
+    \entry{unity-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=90be999720b0d0b2a8d5132207c73182}{%
+           family={Technologies},
+           family_i={T\bibinitperiod},
+           given={Unity},
+           given_i={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{90be999720b0d0b2a8d5132207c73182}
+      \strng{fullhash}{90be999720b0d0b2a8d5132207c73182}
+      \field{labelalpha}{Tec}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unity}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://unity3d.com/de
+      \endverb
+    \endentry
+    \entry{linderdaum-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=942ef7de4d0f51d1f378c1b80f092ae8}{%
+           family={Technology},
+           family_i={T\bibinitperiod},
+           given={Linderdaum},
+           given_i={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{942ef7de4d0f51d1f378c1b80f092ae8}
+      \strng{fullhash}{942ef7de4d0f51d1f378c1b80f092ae8}
+      \field{labelalpha}{Tec}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linderdaum Engine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.linderdaum.com/home/index.php?title=Main_Page
       \endverb
     \endentry
   \endsortlist
