@@ -95,7 +95,7 @@
   \printtext[bibhyperref]{\printfield{shorthand}}}
 
 \newbibmacro*{cite:ibid}{%
-  \printtext[bibhyperref]{[\makebox[\alphaboxlength]{\printfield{labelalpha}}}] Ibid.%
+  \printtext[bibhyperref]{[\makebox[\alphaboxlength]{\printfield{labelalpha}\printfield{extraalpha}}}] Ibid.%
   \ifloccit
     {\global\booltrue{cbx:loccit}}
     {}}
