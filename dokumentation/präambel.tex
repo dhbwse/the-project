@@ -35,10 +35,7 @@
 \renewcommand{\dateseparator}{.}
 
 \usepackage{listings}
-\usepackage{chngcntr}
-\counterwithout{figure}{section}
-\counterwithout{table}{section}
-\counterwithout{footnote}{section}
+\usepackage{enumitem}
 
 \usepackage[
 	backend=biber,
@@ -77,6 +74,7 @@
 
 % commands
 \newenvironment{tabl}[2]{%
+	\restorelines%
 	\penalty-200%  % breakings!
 	\vspace{1.5ex plus 3ex minus 0.5ex}%
 	\hfil%
@@ -88,6 +86,12 @@
 	\captionof{table}{\tablcaption}%
 	\vspace{1ex plus 2ex minus 0.3ex}%
 }
+
+{\catcode`\^^M=13% big dirty latex hack
+ \gdef\restorelines{\catcode`\^^M=13 \def^^M{}}% undoes obeylines
+}
+\AtEndDocument{\restorelines}% to make sure its gone
+\setlist{before=\restorelines}% fix all lists (\obeylines breaks them)
 
 %Things i need for projectmanagement
 \usepackage[normalem]{ulem}
