@@ -283,6 +283,27 @@
       \field{title}{Game Engine Architecture, Second Edition}
       \field{year}{2014}
     \endentry
+    \entry{linderdaum-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2269ac4990453552326dcb783471135e}{%
+           family={{Linderdaum\bibnamedelimb Technology}},
+           family_i={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2269ac4990453552326dcb783471135e}
+      \strng{fullhash}{2269ac4990453552326dcb783471135e}
+      \field{labelalpha}{Lin}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linderdaum Engine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.linderdaum.com/home/index.php?title=Main_Page
+      \endverb
+    \endentry
     \entry{persona-crit4}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=9d086f348cfed06f7f4e3a87b486a152}{%
@@ -403,18 +424,15 @@
     \endentry
     \entry{unity-home}{online}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=90be999720b0d0b2a8d5132207c73182}{%
-           family={Technologies},
-           family_i={T\bibinitperiod},
-           given={Unity},
-           given_i={U\bibinitperiod}}}%
+        {{uniquename=0,hash=4d09de8c70d9a0e1c44cc53ff3b79afa}{%
+           family={{Unity\bibnamedelimb Technologies}},
+           family_i={U\bibinitperiod}}}%
       }
-      \strng{namehash}{90be999720b0d0b2a8d5132207c73182}
-      \strng{fullhash}{90be999720b0d0b2a8d5132207c73182}
-      \field{labelalpha}{Tec}
-      \field{sortinit}{T}
-      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
-      \field{extraalpha}{1}
+      \strng{namehash}{4d09de8c70d9a0e1c44cc53ff3b79afa}
+      \strng{fullhash}{4d09de8c70d9a0e1c44cc53ff3b79afa}
+      \field{labelalpha}{Uni}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Unity}
@@ -423,30 +441,6 @@
       \field{urlyear}{2017}
       \verb{url}
       \verb https://unity3d.com/de
-      \endverb
-    \endentry
-    \entry{linderdaum-home}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=942ef7de4d0f51d1f378c1b80f092ae8}{%
-           family={Technology},
-           family_i={T\bibinitperiod},
-           given={Linderdaum},
-           given_i={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{942ef7de4d0f51d1f378c1b80f092ae8}
-      \strng{fullhash}{942ef7de4d0f51d1f378c1b80f092ae8}
-      \field{labelalpha}{Tec}
-      \field{sortinit}{T}
-      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Linderdaum Engine}
-      \field{urlday}{23}
-      \field{urlmonth}{01}
-      \field{urlyear}{2017}
-      \verb{url}
-      \verb http://www.linderdaum.com/home/index.php?title=Main_Page
       \endverb
     \endentry
   \endsortlist
