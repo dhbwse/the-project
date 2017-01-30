@@ -2,16 +2,14 @@
 
 marc:
 	grundlagen:
-		gameengines
 		psychologische grundlagen
+		gamification
 	konzipierung:
-		gameengines
+		gameengine evaluation
 	implementierung:
 
 marvin:
 	grundlagen:
-		personas
-		android
 		lernziele
 	konzipierung:
 		requirements
@@ -19,5 +17,3 @@ marvin:
 		lernziele
 		Usecases
 
-noch nicht:
-	Game-Engine Evaluation
