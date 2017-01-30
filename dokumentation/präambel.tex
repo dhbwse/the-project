@@ -88,6 +88,17 @@
 	\vspace{1ex plus 2ex minus 0.3ex}%
 }
 
+\newcommand{\figur}[3][0.5\textwidth]{%
+	\penalty-200%  % breakings!
+	\vspace{1.5ex plus 3ex minus 0.5ex}%
+	\begin{minipage}{\textwidth}%
+		\centering%
+		\includegraphics[width=#1]{img/#2}%
+		\captionof{figure}{#3}%
+	\end{minipage}%
+	\vspace{1ex plus 2ex minus 0.3ex}%
+}
+
 {\catcode`\^^M=13% big dirty latex hack
  \gdef\restorelines{\catcode`\^^M=13 \def^^M{}}% undoes obeylines
 }
