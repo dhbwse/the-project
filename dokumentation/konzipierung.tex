@@ -111,16 +111,21 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	\begin{itemize}
 		\item{  }
 	\end{itemize}
-	non functional
+	non functional:
 	\begin{itemize}
 		\item{ Minimale Bildwiederholrate von 24 Bilder pro Sekunde }
 		\item{ Maximale Speicheranforderung von unter 40MB }
-		\item{ Spielmusik (wenn vorhanden) soll nicht stocken }
+		\item{ Spielmusik soll nicht stocken }
 		\item{ Das Spiel zu starten soll unter einer Sekunde dauern }
 	\end{itemize}
 \subsection{Use Case Diagramm}
-	Um die Entwicklung zu koordinieren und Aufgaben im Team zu verteilen wurde ein Use Case Diagramm\footnote{<TODO:Quelle>} ausgearbeitet.
-	%\figur{usecases.pdf}{Use Case Diagramm}
+	Um die Entwicklung zu koordinieren und Aufgaben im Team zu verteilen wurde ein Use Case Diagramm\footnote{<TODO:Quelle>} ausgearbeitet. Dieses zeigt die verschiedenen Aktionen welche ein Aktor (Zum Beispiel: ein Benutzer oder ein Administrator) im System durchführen kann. Für das Spiel werden zwei Aktoren benötigt:
+	\begin{description}
+		\item[Spieler]{ Die Person welche das Spiel auf dem Handy installiert hat und spielt. }
+		\item[Aufgabensteller]{ Die Person welche neue Aufgaben für das Spiel zusammenstellt, bestehende editiert oder auch Aufgaben entfernt. Die Person benötigt auch eine Methode die Aufgaben zu aktualisieren. }
+	\end{description}
+	Die in den bereits beschriebenen Funktionalitäten aus Kapitel \ref{ssec:spielidee} und \ref{ssec:idee} werden hier kompakt aufgelistet. Detaillierte Beschreibungen zu befinden sich teilweise im nächstem Kapitel, auf eine Komplette Dokumentation wurde verzichtet.
+	\figur[\textwidth]{usecases.pdf}{Use Case Diagramm}
 
 \subsection{Grundsätzliche Eigenschaften des Spiels}
 	Im folgenden Kapitel sollen die Grundlagen des Spiels erarbeitet und abgewogen werden, sodass ein breites Spektrum an Regeln und Eigenschaften des Spiel erarbeitet werden kann. Diese Sammlung von Eigenschaften und Regeln kann im späteren Verlauf der Arbeit als Kriterienkatalog zur Auswahl einer Game-Engine verwendet werden. Dabei sollen zunächst für jede Kategorie verschiedene Möglichkeiten erklärt werden, um im Anschluss die für die Spielidee beste Möglichkeit auszuwählen.
