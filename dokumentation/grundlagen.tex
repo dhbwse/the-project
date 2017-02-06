@@ -139,31 +139,51 @@
     Prof. Dr. Oliver Bendel gibt in seinem Artikel für das Gabler Wirtschaftslexikon\footcite{gabler-gamification} auch Ansätze für Kritik an Gamification. Demnach sei der Erfolg von Gamification davon abhängig, wie ein Anwender auf Spiele anspricht. Ein Anwender welcher nicht auf spielerische Elemente anspricht sei für Gamification-Elemente unanfällig. Zudem bestehe das Risiko, durch die Gewöhnung an spielerische Elemte zu einer Motivationsminderung in traditionellen Bereichen zu verursachen.
 
 \subsection{Lernspiele}
-	Lernspiele sind Spiele welche den Spielern etwas beibringen. Dabei behaupten Spielpädagogen dass jedes Spiel dem Spielendem etwas beibringe.\footcite{lernspiel} Dies kann Beispielsweise einfache Physik durch Simulation oder auch Mathe durch Matheaufgaben sein. So ist es schwer Lernspiele vom normalem Spielbegriff zu trennen, wir ziehen die Unterscheidung durch bewusstes einsetzen einer Lernstrategie um ein Lernziel zu erreichen.
 	Lernspiele haben viele Namen unter anderen: \enquote{serious games}, \enquote{educational games}, \enquote{didaktische Spiele} und so weiter.
+	Lernspiele sind Spiele welche den Spielern etwas beibringen. Dabei behaupten Spielpädagogen dass jedes Spiel dem Spielendem etwas beibringe.\footcite{lernspiel} Dies kann Beispielsweise einfache Physik durch Simulation oder auch Mathe durch Matheaufgaben sein. So ist es schwer Lernspiele vom normalem Spielbegriff zu trennen, wir ziehen die Unterscheidung durch bewusstes einsetzen einer Lernstrategie um ein Lernziel zu erreichen.
 	Lernziel ist bei Lernspielen oft das erlernen von Fakten oder das erreichen einer höheren Geschwindigkeit oder Präzision von einer gewissen Aktion. Es ist eben so möglich dass ein Spiel auch nur eine einzelne Erkenntnis lehren möchte.
 	Die Lernstrategie sagt aus wie das Spiel versucht den Spieler dazu zu motivieren zu lernen. Hier kann unter anderem auf Gamification (siehe \ref{ssec:gamification}) zurückgegriffen werden.
 	Es gibt dabei einige Unterteilungen die an Lernspielen gemacht werden können:
-	\begin{enumerate}
+	\begin{itemize}
 		\item{ Haupt Thema des Spiels: ist Lernen oder etwas anderes (Rennspiel, Strategiespiel, \dots) mit Lernziel. }
 		\item{ War Spielspaß ein Ziel? }
-		\item{ Das zu Lernende ist fest im Spiel oder losgelöst davon ? }
-	\end{enumerate}
+		\item{ Das zu Lernende ist fest teil vom Spiel oder losgelöst davon? Mit losgelöst ist gemeint dass das Spiel auch ohne Lerninhalt funktionieren, Sinn ergeben würde. Der Lerninhalt könnte dann ebenso komplett gegen ein Anderes Thema ausgetauscht werden }
+	\end{itemize}
 	\subsubsection{Analyse Spiele}\label{sssec:lernspielanalyse}
-		Hier sind ein paar Spiele
+		In diesem Unterkapitel wird eine Auswahl an Spielen nach den vorherigen Kriterien untersucht.
+		\begin{description}\obeylines
+			\item[Gut]{
+				Gut\footcite{game-gut} ist ein Lernspiel wie es sich viele Eltern wahrscheinlich vorstellen. Der Spieler Lernt hier ausschließlich.
+				Lernziel ist hier Grammatik wie Wörter aus Fremdsprachen zu erlernen.
+				Das Spiel setzt als Lernstrategie ein Karteikartensystem ein, dieses beruht auf Wiederholung.
+			}
+			\item[Angry Birds]{
+				Angry Birds\footcite{game-angrybirds} ist ein Minispiel für zwischen durch und sehr erfolgreich. Lernen war kein Ziel der Entwickler, aber es lässt sich argumentieren dass Mathe und Physik gelehrt wird. Hier ist wichtig zu vermerken dass Realismus vernachlässigt wird, trotzdem kann Wissen über Flugparabeln und Kräfte gelernt werden.
+				Lernziel ist Präzision und passender Einsatz von den Fähigkeiten der Vögel.
+				Als Lernstrategie kann das Wiederholen und auch die Herausforderung die beste Bewertung in allen Leveln zu erreichen.
+			}
+			\item[Need for Speed]{
+				Need for Speed\footcite{game-nfs} ist ein ebenso sehr erfolgreiches Spiel, gehört aber den Rennspielen an.
+				Das Lernziel des Spieles ist es besser als der Computer fahren zu können und so eine Reihe von Rennen zu gewinnen.
+				Die Lernstrategie ist durch Upgrades Optisch wie Funktional, Story, viel Übung und etwas Ablenkung durch Nebenjobs definierbar.
+			}
+			\item[Crazy Machines]{
+				In Crazy Machines\footcite{game-crazymachine} gehört den Puzzle Spielen an und zeigt wie Spaß und Lernen vereint werden können. Der Spieler löst puzzle mit verschieden Mechanischen Reaktionen und Prozessen und kann durch ausprobieren einiges über Physik und Kettenreaktionen lernen.
+				Lernziel ist es die Puzzle auf eine kreative Art zu lösen und über Physik zu lernen.
+				Lernstrategie ist hier dem Spieler ein großes Arsenal an Möglichkeiten zu bieten und beliebig viel Zeit zum Lösen von vorgegebenen Rätseln aber auch freies Spielen. Der Spieler erkundet so die Möglichkeiten und erlernt spielerisch Physik.
+			}
+		\end{description}
+		Wichtig ist zu bemerken dass alle 4 Spiele auf Wiederholung zusetzen scheinen. Dies kommt auch daher dass eine gewisse Länge von Spielen erwartet wird und diese bei gewissen Typen nicht ohne viele Wiederholungen erreicht werden kann. Es macht ebenso schlichtweg mehr Sinn die Spielmechaniken in Abschnitten einzuführen und eine Geschichte zu erzählen.
+	\subsubsection{Übersicht und Schlüsse}
+		In der nachfolgenden Tabelle sind die Erkenntnisse der Spielanalyse noch einmal zusammengefasst.
 		\begin{tabl}{llll}{Analyse Lernspiele}
 			\toprule
-				Spielname & 1 & 2\footnotemark{} & 3 \\
+				Spielname & Thema & Spielspaß ein Ziel\footnotemark{} & Lerninhalt \\
 			\midrule
-				Gut\footnotemark{} & Wörter Lernen & Nein & Nein\\
-				Angry Birds\footnotemark{} & Physik & Ja & Ja\\
-				Need for Speed\footnotemark{} & Rennen fahren & Ja & Ja\\
-				Crazy Machines 2\footnotemark{} & Puzzle/Physik & Ja & Ja\\
+				Gut & Wörter Lernen & Nein & losgelöst \\
+				Angry Birds & Physik & Ja & fest \\
+				Need for Speed & Rennen fahren & Ja & fest \\
+				Crazy Machines 2 & Puzzle/Physik & Ja & fest \\
 			\bottomrule
-		\end{tabl}
-		\addtocounter{footnote}{-4}% anzahl fußnoten in der tabelle +1
-		\footnotetext{Dies ist die Sichtweise einer der Autoren und nicht Objektiv.}\stepcounter{footnote}%
-		\footcitetext{game-nfs}\stepcounter{footnote}%
-		\footcitetext{game-gut}\stepcounter{footnote}%
-		\footcitetext{game-angrybirds}\stepcounter{footnote}%
-		\footcitetext{game-crazymachine}
+		\end{tabl}%
+		\footnotetext{Dies ist die Sichtweise einer der Autoren und keinesfalls Objektiv.}%
