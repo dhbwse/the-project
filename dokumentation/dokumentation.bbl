@@ -38,7 +38,74 @@
       \field{urlyear}{2017}
       \field{year}{2017}
       \verb{url}
-      \verb android.com
+      \verb https://android.com
+      \endverb
+    \endentry
+    \entry{ios}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9f6290f4436e5a2351f12e03b6433c3c}{%
+           family={Apple},
+           family_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{labelalpha}{App}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IOS}
+      \field{urlday}{30}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://www.apple.com/ios
+      \endverb
+    \endentry
+    \entry{game-nfs}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9915541d33e4202e7bc67c7503c80bc2}{%
+           family={Arts},
+           family_i={A\bibinitperiod},
+           given={Electronic},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9915541d33e4202e7bc67c7503c80bc2}
+      \strng{fullhash}{9915541d33e4202e7bc67c7503c80bc2}
+      \field{labelalpha}{Art}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Need for Speed}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.needforspeed.com/
+      \endverb
+    \endentry
+    \entry{gabler-gamification}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=059fb9f3fb33abbab06f47ed0a9fb705}{%
+           family={Bendel},
+           family_i={B\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.\bibnamedelimi Oliver},
+           given_i={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{059fb9f3fb33abbab06f47ed0a9fb705}
+      \strng{fullhash}{059fb9f3fb33abbab06f47ed0a9fb705}
+      \field{labelalpha}{Ben}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gamification}
+      \field{urlday}{05}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://wirtschaftslexikon.gabler.de/Definition/gamification.html
       \endverb
     \endentry
     \entry{freemium}{thesis}{}
@@ -215,27 +282,105 @@
       \verb https://www.cooper.com/journal/2017/1/the_origin_of_personas
       \endverb
     \endentry
-    \entry{jpct-home}{online}{}
+    \entry{game-angrybirds}{online}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=e89aaa9f94163a4e8c2e536f0b4c0e2f}{%
-           family={Foerster},
-           family_i={F\bibinitperiod},
-           given={Helge},
-           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=80baabefb3f880c4b4867ff5e1874a45}{%
+           family={Entertainment},
+           family_i={E\bibinitperiod},
+           given={Rovio},
+           given_i={R\bibinitperiod}}}%
       }
-      \strng{namehash}{e89aaa9f94163a4e8c2e536f0b4c0e2f}
-      \strng{fullhash}{e89aaa9f94163a4e8c2e536f0b4c0e2f}
-      \field{labelalpha}{Foe}
+      \strng{namehash}{80baabefb3f880c4b4867ff5e1874a45}
+      \strng{fullhash}{80baabefb3f880c4b4867ff5e1874a45}
+      \field{labelalpha}{Ent}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Angry Birds}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.angrybirds.com/
+      \endverb
+    \endentry
+    \entry{psych2}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=b5345b0a06aa9cdee94b71bb13bc369c}{%
+           family={Fu},
+           family_i={F\bibinitperiod},
+           given={Fong-Ling},
+           given_i={F\bibinithyphendelim L\bibinitperiod}}}%
+        {{uniquename=0,hash=5e5d79440c03434bb736ea4007bff808}{%
+           family={Su},
+           family_i={S\bibinitperiod},
+           given={Rong-Chang},
+           given_i={R\bibinithyphendelim C\bibinitperiod}}}%
+        {{uniquename=0,hash=320e3599f9d2954407f82dda3df92eab}{%
+           family={Yu},
+           family_i={Y\bibinitperiod},
+           given={Sheng-Chin},
+           given_i={S\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d541e59200f27f15e5930dcb0e30e644}
+      \strng{fullhash}{d541e59200f27f15e5930dcb0e30e644}
+      \field{labelalpha}{FSY09}
       \field{sortinit}{F}
       \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{jPCT 3D Engine}
-      \field{urlday}{23}
+      \field{journaltitle}{A scale to measure learners' enjoyment of e-learning games}
+      \field{title}{EGameFlow}
+      \field{urlday}{31}
       \field{urlmonth}{01}
       \field{urlyear}{2017}
+      \field{year}{2009}
+      \field{pages}{105\bibrangedash 105}
+      \range{pages}{1}
       \verb{url}
-      \verb http://www.jpct.net/
+      \verb https://www.researchgate.net/publication/222668228
+      \endverb
+    \endentry
+    \entry{gamification2}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=ed0ca427017d1e050907e1b88f508b63}{%
+           family={Fuchs},
+           family_i={F\bibinitperiod},
+           given={Mathias},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=687f3b2b36f9718d85cadadd8b7ba3e4}{%
+           family={Fizek},
+           family_i={F\bibinitperiod},
+           given={Sonia},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=6e5cf25e202ee271dd1bb4bb4b4a588a}{%
+           family={Ruffino},
+           family_i={R\bibinitperiod},
+           given={Paolo},
+           given_i={P\bibinitperiod}}}%
+        {{uniquename=0,hash=0601904575a56bccb38709183cfa6075}{%
+           family={Schrape},
+           family_i={S\bibinitperiod},
+           given={Niklas},
+           given_i={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7c3f018d909a616bfc85e1fdba2d626}
+      \strng{fullhash}{a7c3f018d909a616bfc85e1fdba2d626}
+      \field{labelalpha}{Fuc+14}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rethinking Gamification}
+      \field{urlday}{05}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2014}
+      \field{pages}{21\bibrangedash 22}
+      \range{pages}{2}
+      \verb{url}
+      \verb http://meson.press/wp-content/uploads/2015/03/9783957960016-rethinking-gamification.pdf
       \endverb
     \endentry
     \entry{unreal-home}{online}{}
@@ -261,6 +406,53 @@
       \verb https://www.unrealengine.com/what-is-unreal-engine-4
       \endverb
     \endentry
+    \entry{game-crazymachine}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e421deb743afb378ed420c34bb78cf12}{%
+           family={GmbH},
+           family_i={G\bibinitperiod},
+           given={FAKT\bibnamedelima Software},
+           given_i={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Novitas Publishing Gmbh}%
+      }
+      \strng{namehash}{e421deb743afb378ed420c34bb78cf12}
+      \strng{fullhash}{e421deb743afb378ed420c34bb78cf12}
+      \field{labelalpha}{Gmb}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Crazy Machines 2}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.crazymachines2.com
+      \endverb
+    \endentry
+    \entry{android-fragmentation}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           family_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{labelalpha}{Goo}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Android Developer Dashboards}
+      \field{urlday}{30}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://developer.android.com/about/dashboards/index.html
+      \endverb
+    \endentry
     \entry{gregory2014game}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=3aa33cbc68dddc62080ecebfdd8ed456}{%
@@ -280,28 +472,82 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781466560017}
-      \field{title}{Game Engine Architecture, Second Edition}
+      \field{subtitle}{Second Edition}
+      \field{title}{Game Engine Architecture}
       \field{year}{2014}
     \endentry
-    \entry{linderdaum-home}{online}{}
+    \entry{game-gut}{online}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=2269ac4990453552326dcb783471135e}{%
-           family={{Linderdaum\bibnamedelimb Technology}},
-           family_i={L\bibinitperiod}}}%
+        {{uniquename=0,hash=dcce115c5a597841e7c5c1efe6898253}{%
+           family={Grund},
+           family_i={G\bibinitperiod},
+           given={Martin},
+           given_i={M\bibinitperiod}}}%
       }
-      \strng{namehash}{2269ac4990453552326dcb783471135e}
-      \strng{fullhash}{2269ac4990453552326dcb783471135e}
-      \field{labelalpha}{Lin}
-      \field{sortinit}{L}
-      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \strng{namehash}{dcce115c5a597841e7c5c1efe6898253}
+      \strng{fullhash}{dcce115c5a597841e7c5c1efe6898253}
+      \field{labelalpha}{Gru}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Linderdaum Engine}
-      \field{urlday}{23}
+      \field{title}{Gut}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.gut1.de/
+      \endverb
+    \endentry
+    \entry{gamification}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=01740a561a29d0fcc5fe7dc076f40f5f}{%
+           family={Huotari},
+           family_i={H\bibinitperiod},
+           given={Kai},
+           given_i={K\bibinitperiod}}}%
+        {{uniquename=0,hash=57c059873972ac3bb360bc05ba0a18f1}{%
+           family={Hamari},
+           family_i={H\bibinitperiod},
+           given={Juho},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcc5c4d4d7f254d719aa90473e93465b}
+      \strng{fullhash}{bcc5c4d4d7f254d719aa90473e93465b}
+      \field{labelalpha}{HH12}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{A Service Marketing Perspective}
+      \field{title}{Defining Gamification}
+      \field{urlday}{30}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://www.researchgate.net/publication/259841647
+      \endverb
+    \endentry
+    \entry{java}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           family_i={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{labelalpha}{Ora}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Java}
+      \field{urlday}{30}
       \field{urlmonth}{01}
       \field{urlyear}{2017}
       \verb{url}
-      \verb http://www.linderdaum.com/home/index.php?title=Main_Page
+      \verb http://www.oracle.com/technetwork/java
       \endverb
     \endentry
     \entry{persona-crit4}{article}{}
@@ -326,6 +572,85 @@
       \field{year}{2008}
       \verb{url}
       \verb http://www.portigal.com/wp-content/uploads/2008/01/Portigal-Consulting-White-Paper-Persona-Non-Grata.pdf
+      \endverb
+    \endentry
+    \entry{psych1}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=008cfdd3c34e858d35923f09ed6289f6}{%
+           family={Petri},
+           family_i={P\bibinitperiod},
+           given={Giani},
+           given_i={G\bibinitperiod}}}%
+        {{uniquename=0,hash=5deea1e9b6cb20eb51465b66ed9eb6a2}{%
+           prefix={von},
+           prefix_i={v\bibinitperiod},
+           family={Wangenheim},
+           family_i={W\bibinitperiod},
+           given={Christiane\bibnamedelima Gresse},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{uniquename=0,hash=7633490cdfe7967df17eaccf7954d5c0}{%
+           family={Borgatto},
+           family_i={B\bibinitperiod},
+           given={Adriano\bibnamedelima Ferretti},
+           given_i={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3fa000d2b1d75717415b4584b64dd69}
+      \strng{fullhash}{a3fa000d2b1d75717415b4584b64dd69}
+      \field{labelalpha}{PWB16}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Large-scale Evaluation of a Model for the Evaluation of Educational Games}
+      \field{urlday}{31}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \field{pages}{21\bibrangedash 21}
+      \range{pages}{1}
+      \verb{url}
+      \verb https://www.researchgate.net/publication/309031803
+      \endverb
+    \endentry
+    \entry{psych3}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=008cfdd3c34e858d35923f09ed6289f6}{%
+           family={Petri},
+           family_i={P\bibinitperiod},
+           given={Giani},
+           given_i={G\bibinitperiod}}}%
+        {{uniquename=0,hash=5deea1e9b6cb20eb51465b66ed9eb6a2}{%
+           prefix={von},
+           prefix_i={v\bibinitperiod},
+           family={Wangenheim},
+           family_i={W\bibinitperiod},
+           given={Christiane\bibnamedelima Gresse},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{uniquename=0,hash=7633490cdfe7967df17eaccf7954d5c0}{%
+           family={Borgatto},
+           family_i={B\bibinitperiod},
+           given={Adriano\bibnamedelima Ferretti},
+           given_i={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3fa000d2b1d75717415b4584b64dd69}
+      \strng{fullhash}{a3fa000d2b1d75717415b4584b64dd69}
+      \field{labelalpha}{PWB16}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{a Systematic Literature Review}
+      \field{title}{How to Evaluate Educational Games}
+      \field{urlday}{31}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \field{pages}{1004\bibrangedash 1007}
+      \range{pages}{4}
+      \verb{url}
+      \verb https://www.researchgate.net/publication/307210333
       \endverb
     \endentry
     \entry{persona-crit3}{inproceedings}{}
@@ -356,6 +681,31 @@
       \verb{url}
       \verb https://www.computer.org/csdl/proceedings/hicss/2005/2268/08/22680220a.pdf
       \endverb
+    \endentry
+    \entry{lernspiel}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=7ff93855e1dd84f6e7069d2bd85175c3}{%
+           family={Rudolf},
+           family_i={R\bibinitperiod},
+           given={Anita},
+           given_i={A\bibinitperiod}}}%
+        {{uniquename=0,hash=8eb053a7f8d061a74e27f4bd21d6abd4}{%
+           family={Warwitz},
+           family_i={W\bibinitperiod},
+           given={Siegbert\bibnamedelima A.},
+           given_i={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d7a5efae808436791e8e9e20107152f}
+      \strng{fullhash}{5d7a5efae808436791e8e9e20107152f}
+      \field{labelalpha}{RW16}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journalsubtitle}{Reflexionen und Spielideen}
+      \field{journaltitle}{Vom Sinn des Spielens}
+      \field{title}{Was Spielen bewirken kann}
+      \field{year}{2016}
     \endentry
     \entry{irrlicht-home}{online}{}
       \name{author}{1}{}{%
@@ -398,6 +748,29 @@
       \verb{url}
       \verb http://gs.statcounter.com
       \endverb
+    \endentry
+    \entry{stampfl2012verspielte}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7987f203a44120abbf869e919b3cd9a6}{%
+           family={Stampfl},
+           family_i={S\bibinitperiod},
+           given={Nora\bibnamedelima S.},
+           given_i={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Heise Verlag}%
+      }
+      \strng{namehash}{7987f203a44120abbf869e919b3cd9a6}
+      \strng{fullhash}{7987f203a44120abbf869e919b3cd9a6}
+      \field{labelalpha}{Sta12}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783936931860}
+      \field{journaltitle}{Gamification oder Leben im Zeitalter des Computerspiels}
+      \field{title}{Die verspielte Gesellschaft}
+      \field{year}{2012}
     \endentry
     \entry{cry-home}{online}{}
       \name{author}{1}{}{%
