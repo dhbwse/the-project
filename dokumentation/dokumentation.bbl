@@ -62,29 +62,6 @@
       \verb https://www.apple.com/ios
       \endverb
     \endentry
-    \entry{game-nfs}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=9915541d33e4202e7bc67c7503c80bc2}{%
-           family={Arts},
-           family_i={A\bibinitperiod},
-           given={Electronic},
-           given_i={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{9915541d33e4202e7bc67c7503c80bc2}
-      \strng{fullhash}{9915541d33e4202e7bc67c7503c80bc2}
-      \field{labelalpha}{Art}
-      \field{sortinit}{A}
-      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Need for Speed}
-      \field{urlday}{03}
-      \field{urlmonth}{02}
-      \field{urlyear}{2017}
-      \verb{url}
-      \verb http://www.needforspeed.com/
-      \endverb
-    \endentry
     \entry{gabler-gamification}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=059fb9f3fb33abbab06f47ed0a9fb705}{%
@@ -282,27 +259,91 @@
       \verb https://www.cooper.com/journal/2017/1/the_origin_of_personas
       \endverb
     \endentry
-    \entry{game-angrybirds}{online}{}
+    \entry{cry-home}{online}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=80baabefb3f880c4b4867ff5e1874a45}{%
-           family={Entertainment},
-           family_i={E\bibinitperiod},
-           given={Rovio},
-           given_i={R\bibinitperiod}}}%
+        {{uniquename=0,hash=ea4dbaa7211d4b24b9765d83cec000f9}{%
+           family={{Crytek\bibnamedelimb Studios}},
+           family_i={C\bibinitperiod}}}%
       }
-      \strng{namehash}{80baabefb3f880c4b4867ff5e1874a45}
-      \strng{fullhash}{80baabefb3f880c4b4867ff5e1874a45}
-      \field{labelalpha}{Ent}
+      \strng{namehash}{ea4dbaa7211d4b24b9765d83cec000f9}
+      \strng{fullhash}{ea4dbaa7211d4b24b9765d83cec000f9}
+      \field{labelalpha}{Cry}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cryengine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://www.cryengine.com/
+      \endverb
+    \endentry
+    \entry{game-nfs}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e853db5fb97163e7377be31ae2d55799}{%
+           family={{Electronic\bibnamedelimb Arts}},
+           family_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e853db5fb97163e7377be31ae2d55799}
+      \strng{fullhash}{e853db5fb97163e7377be31ae2d55799}
+      \field{labelalpha}{Ele}
       \field{sortinit}{E}
       \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Angry Birds}
+      \field{title}{Need for Speed}
       \field{urlday}{03}
       \field{urlmonth}{02}
       \field{urlyear}{2017}
       \verb{url}
-      \verb http://www.angrybirds.com/
+      \verb http://www.needforspeed.com/
+      \endverb
+    \endentry
+    \entry{unreal-home}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9a8e747c9835d0edf305e5795486bb25}{%
+           family={{Epic\bibnamedelimb Games}},
+           family_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a8e747c9835d0edf305e5795486bb25}
+      \strng{fullhash}{9a8e747c9835d0edf305e5795486bb25}
+      \field{labelalpha}{Epi}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unreal Engine}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://www.unrealengine.com/what-is-unreal-engine-4
+      \endverb
+    \endentry
+    \entry{game-crazymachine}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2b8bf17b71da074f5c8f5eaed72e1a68}{%
+           family={{FAKT\bibnamedelimb Software\bibnamedelimb GmbH}},
+           family_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Novitas Publishing Gmbh}%
+      }
+      \strng{namehash}{2b8bf17b71da074f5c8f5eaed72e1a68}
+      \strng{fullhash}{2b8bf17b71da074f5c8f5eaed72e1a68}
+      \field{labelalpha}{FAK}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Crazy Machines 2}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.crazymachines2.com
       \endverb
     \endentry
     \entry{psych2}{article}{}
@@ -381,55 +422,6 @@
       \range{pages}{2}
       \verb{url}
       \verb http://meson.press/wp-content/uploads/2015/03/9783957960016-rethinking-gamification.pdf
-      \endverb
-    \endentry
-    \entry{unreal-home}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=458bc88bbe8feb870616791eae79a483}{%
-           family={Games},
-           family_i={G\bibinitperiod},
-           given={Epic},
-           given_i={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{458bc88bbe8feb870616791eae79a483}
-      \strng{fullhash}{458bc88bbe8feb870616791eae79a483}
-      \field{labelalpha}{Gam}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Unreal Engine}
-      \field{urlday}{23}
-      \field{urlmonth}{01}
-      \field{urlyear}{2017}
-      \verb{url}
-      \verb https://www.unrealengine.com/what-is-unreal-engine-4
-      \endverb
-    \endentry
-    \entry{game-crazymachine}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=e421deb743afb378ed420c34bb78cf12}{%
-           family={GmbH},
-           family_i={G\bibinitperiod},
-           given={FAKT\bibnamedelima Software},
-           given_i={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Novitas Publishing Gmbh}%
-      }
-      \strng{namehash}{e421deb743afb378ed420c34bb78cf12}
-      \strng{fullhash}{e421deb743afb378ed420c34bb78cf12}
-      \field{labelalpha}{Gmb}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Crazy Machines 2}
-      \field{urlday}{03}
-      \field{urlmonth}{02}
-      \field{urlyear}{2017}
-      \verb{url}
-      \verb http://www.crazymachines2.com
       \endverb
     \endentry
     \entry{android-fragmentation}{online}{}
@@ -682,6 +674,27 @@
       \verb https://www.computer.org/csdl/proceedings/hicss/2005/2268/08/22680220a.pdf
       \endverb
     \endentry
+    \entry{game-angrybirds}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4ec2195ce9780002f1e976d23e51215b}{%
+           family={{Rovio\bibnamedelimb Entertainment}},
+           family_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ec2195ce9780002f1e976d23e51215b}
+      \strng{fullhash}{4ec2195ce9780002f1e976d23e51215b}
+      \field{labelalpha}{Rov}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Angry Birds}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.angrybirds.com/
+      \endverb
+    \endentry
     \entry{lernspiel}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=7ff93855e1dd84f6e7069d2bd85175c3}{%
@@ -771,29 +784,6 @@
       \field{journaltitle}{Gamification oder Leben im Zeitalter des Computerspiels}
       \field{title}{Die verspielte Gesellschaft}
       \field{year}{2012}
-    \endentry
-    \entry{cry-home}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=097c817b3823bedb29cf7e4fc8fa649b}{%
-           family={Studios},
-           family_i={S\bibinitperiod},
-           given={Crytek},
-           given_i={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{097c817b3823bedb29cf7e4fc8fa649b}
-      \strng{fullhash}{097c817b3823bedb29cf7e4fc8fa649b}
-      \field{labelalpha}{Stu}
-      \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Cryengine}
-      \field{urlday}{23}
-      \field{urlmonth}{01}
-      \field{urlyear}{2017}
-      \verb{url}
-      \verb https://www.cryengine.com/
-      \endverb
     \endentry
     \entry{unity-home}{online}{}
       \name{author}{1}{}{%
