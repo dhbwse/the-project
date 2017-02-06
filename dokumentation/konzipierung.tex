@@ -108,56 +108,66 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 
 \subsection{Funktionale und nicht funktionale Anforderungen}
 	In diesem Unterkapitel werden die Anforderungen an das Spiel Dokumentiert. Begonnen mit einer Übersicht der Funktionalitäten, dann eine detaillierte Beschreibung der Anforderungen der einzelnen Funktionen. Es folgen generelle nicht funktionale Anforderungen.
-	Das Spiel wird hauptsächlich so gesteuert wie auch die Rennen gefahren werden: mit einem Auto
+	Das Spiel wird hauptsächlich so gesteuert wie auch die Rennen gefahren werden: mit einem Auto. Das heißt dass die Menüs auch mit einem Auto angesteuert werden.
+	Für das Spiel werden zwei Aktoren benötigt:
+	\begin{description}
+		\item[Spieler]{ Die Person welche das Spiel auf dem Handy installiert hat und spielt. }
+		\item[Aufgabenstellerin]{ Die Person welche neue Aufgaben für das Spiel zusammenstellt, bestehende editiert oder auch Aufgaben entfernt. Die Person benötigt auch eine Methode die Aufgaben zu aktualisieren. }
+	\end{description}
 
-	\subsubsection{Übersicht}
-		Liste aller Funktionen und eine Beschreibung für einen Überblick der Funktionalität, für weitere Informationen siehe Kapitel \ref{ssec:ucd} und \ref{sssec:spielmechanik}:
-		\begin{description}
-			\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen sich in das Spiel einzufinden. Dies wird über einfache wortlose Bilder gemacht welche verschwinden sobald der Nutzer die Steuerung probiert hat und eine Runde rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
-			\item[Level-Gruppe wechseln]{
-				Der Spieler kann die Level-Gruppen rotieren, jede besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen ein gewisser Preis an gelösten Aufgaben gezahlt werden muss (Finalrennen).
+	Liste aller Funktionen und eine Beschreibung für einen Überblick der Funktionalität, für weitere Informationen siehe Kapitel \ref{ssec:ucd} und \ref{sssec:spielmechanik}:
+	\begin{description}
+		\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen sich in das Spiel einzufinden. Dies wird über wortlose Bilder gemacht welche verschwinden sobald der Nutzer die Steuerung probiert hat und eine Runde rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
+		\item[Level-Gruppe wechseln]{
+			Der Spieler kann die Level-Gruppen rotieren, jede besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen ein gewisser Preis an gelösten Aufgaben gezahlt werden muss (Finalrennen).
 
-				Jede Level-Gruppe ist in einem gewissen Stil durch thematisiert wobei die Karten für die Finalrennen etwas außergewöhnlicher sein sollen.
-			}
-			\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Optionen Bildschirm wo folgende Funktionen zur Verfügung stehen:
-				\begin{description}
-					\item[Lautstärke der Musik einstellen]{ Der Nutzer kann mittels Schieberegler die Lautstärke der Hintergrundmusik, im Spiel wie in den Menüs, einstellen. Die Lautstärke wird in Echtzeit verändert. }
-					\item[Lautstärke der Soundeffekte einstellen]{ Der Nutzer kann mittels Schieberegler die Lautstärke von Soundeffekten anpassen. Bei loslassen des Schiebereglers wird ein Effekt vorgespielt um dem Nutzer Feedback zu geben. }
-					\item[Hilfsagent erneut starten]{ Hierdurch wird der Hilfsagent erneut gestartet. }
-					\item[<TODO:Andere Optionen?>]{ Beschreibung }
-				\end{description}
-			}
-			\item[Level wählen]{ Die Level sind Betitelt un
-				\begin{description}
-					\item[als Rennen gegen die Zeit starten]{  }
-					\item[als Rennen gegen Computergegner starten]{  }
-				\end{description}
-			}
-			\item[Onlinespiel starten]{ Ebenso wie die Optionen ist dies ein speziell gekennzeichneter \enquote{Level} welcher es ermöglicht mit Zufälligen anderen ein Rennen zu fahren. }
-			\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des welches es ermöglicht Punkte durch Aufgabenlösen zu sammeln.  }
-			\item[Spiel Beenden]{ Beendet das Spiel }
-		\end{description}
-		Abhängigkeiten
+			Jede Level-Gruppe ist in einem gewissen Stil durch thematisiert wobei die Karten für die Finalrennen etwas außergewöhnlicher sein sollen.
+		}
+		\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Optionen Bildschirm wo folgende Funktionen zur Verfügung stehen:
+			\begin{description}
+				\item[Lautstärke der Musik einstellen]{ Der Nutzer kann mittels Schieberegler die Lautstärke der Hintergrundmusik, im Spiel wie in den Menüs, einstellen. Die Lautstärke wird in Echtzeit verändert. }
+				\item[Lautstärke der Soundeffekte einstellen]{ Der Nutzer kann mittels Schieberegler die Lautstärke von Soundeffekten anpassen. Bei loslassen des Schiebereglers wird ein Effekt vorgespielt um dem Nutzer Feedback zu geben. }
+				\item[Hilfsagent erneut starten]{ Hierdurch wird der Hilfsagent erneut gestartet. }
+				\item[<TODO:Andere Optionen?>]{ Beschreibung }
+			\end{description}
+		}
+		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Finalrennen ist muss eine Teilnahmegebühr vom Spieler in Punkten gezahlt werden.
+			\begin{description}
+				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben in welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
+				\item[als Rennen gegen Computergegner starten]{ In diesem Spielmodus fahren vom Computer kontrollierte Autos gegen den Spieler rennen. Die Auswertung funktioniert über das Übliche erster zweiter dritter platz verfahren <TODO:Name?>. }
+			\end{description}
+			Gestartete Spiele können jederzeit abgebrochen, pausiert und neugestartet werden.
+		}
+		\item[Onlinespiel starten]{ Ebenso wie die Optionen ist dies ein speziell gekennzeichneter \enquote{Level} welcher es ermöglicht mit Zufälligen anderen ein Rennen zu fahren. }
+		\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des welches es ermöglicht Punkte durch Aufgabenlösen zu sammeln. }
+		\item[Spiel Beenden]{ Beendet das Spiel. }
+		\item[Aufgabenverwaltung durch Aufgabenstellerin]{
+			\begin{itemize}
+				\item{ Die Aufgabenstellerin kann Aufgaben ansehen und manipulieren. }
+				\item{ Die Aufgabenstellerin kann Aufgaben entfernen. }
+				\item{ Die Aufgabenstellerin kann Aufgaben hinzufügen. }
+				\item{ Die Aufgabenstellerin kann entweder \\
+					die Aufgaben in allen Spielen aktualisieren \\
+					oder \\
+					Ein Spiel mit einem geändertem Aufgabensatz erzeugen. <TODO:absprechen>
+				}
+			\end{itemize}
+		}
+	\end{description}
+	Alle Funktionalitäten lassen sich in einem Use Case Diagramm abbilden welches die Autoren bei der Entwicklung Beispielsweise durch vereinfachte und übersichtliche Koordination und Aufgabenaufteilung unterstützt.
+	\label{ssec:ucd}\figur[\textwidth]{usecases.pdf}{Use Case Diagramm}
+
 	\subsubsection{Einschränkungen}
 		Zeitrennen und Rennen gegen Computergegner sollen auch ohne Internetverbindung verfügbar sein.
-		Die Menüstruktur soll so flach wie möglich gehalten werden.
+		Die Menüstruktur soll so flach wie möglich gehalten werden, keine verschachtelten Menübäume.
 	\subsubsection{Nicht funktionale Anforderungen}
 		\begin{itemize}
 			\item{ Minimale Bildwiederholrate von 24 Bilder pro Sekunde }
 			\item{ Maximale Speicheranforderung von unter 40MB }
 			\item{ Spielmusik soll nicht stocken }
 			\item{ Das Spiel zu starten soll unter einer Sekunde dauern }
-			\item{ ??? }
-			\item{ Profit }
+			\item{ <TODO:Mehr?> }
 		\end{itemize}
-\subsection{Use Case Diagramm}\label{ssec:ucd}
-	Um die Entwicklung zu koordinieren und Aufgaben im Team zu verteilen wurde ein Use Case Diagramm\footnote{<TODO:Quelle>} ausgearbeitet. Dieses zeigt die verschiedenen Aktionen welche ein Aktor (Zum Beispiel: ein Benutzer oder ein Administrator) im System durchführen kann. Für das Spiel werden zwei Aktoren benötigt:
-	\begin{description}
-		\item[Spieler]{ Die Person welche das Spiel auf dem Handy installiert hat und spielt. }
-		\item[Aufgabensteller]{ Die Person welche neue Aufgaben für das Spiel zusammenstellt, bestehende editiert oder auch Aufgaben entfernt. Die Person benötigt auch eine Methode die Aufgaben zu aktualisieren. }
-	\end{description}
-	Die in den bereits beschriebenen Funktionalitäten aus Kapitel \ref{ssec:spielidee} und \ref{ssec:idee} werden hier kompakt aufgelistet. Detaillierte Beschreibungen zu befinden sich teilweise im nächstem Kapitel, auf eine Komplette Dokumentation wurde verzichtet.
-	\figur[\textwidth]{usecases.pdf}{Use Case Diagramm}
 
 \subsection{Grundsätzliche Eigenschaften des Spiels}
 	Im folgenden Kapitel sollen die Grundlagen des Spiels erarbeitet und abgewogen werden, sodass ein breites Spektrum an Regeln und Eigenschaften des Spiel erarbeitet werden kann. Diese Sammlung von Eigenschaften und Regeln kann im späteren Verlauf der Arbeit als Kriterienkatalog zur Auswahl einer Game-Engine verwendet werden. Dabei sollen zunächst für jede Kategorie verschiedene Möglichkeiten erklärt werden, um im Anschluss die für die Spielidee beste Möglichkeit auszuwählen.
