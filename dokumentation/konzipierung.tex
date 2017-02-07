@@ -107,7 +107,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\end{itemize}
 	\end{enumerate}
 
-\subsection{Funktionale und nicht funktionale Anforderungen}
+\subsection{Funktionale und nicht funktionale Anforderungen}\label{ssec:requirements}
 	In diesem Unterkapitel werden die Anforderungen an das Spiel Dokumentiert. Begonnen mit einer Übersicht der Funktionalitäten, dann eine detaillierte Beschreibung der Anforderungen der einzelnen Funktionen. Es folgen generelle nicht funktionale Anforderungen.
 	Das Spiel wird hauptsächlich so gesteuert wie auch die Rennen gefahren werden: mit einem Auto. Das heißt dass die Menüs auch mit einem Auto angesteuert werden.
 	Für das Spiel werden zwei Aktoren benötigt:
@@ -121,7 +121,6 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen sich in das Spiel einzufinden. Dies wird über wortlose Bilder gemacht welche verschwinden sobald der Nutzer die Steuerung probiert hat und eine Runde rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
 		\item[Level-Gruppe wechseln]{
 			Der Spieler kann die Level-Gruppen rotieren, jede besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen ein gewisser Preis an gelösten Aufgaben gezahlt werden muss (Finalrennen).
-
 			Jede Level-Gruppe ist in einem gewissen Stil durch thematisiert wobei die Karten für die Finalrennen etwas außergewöhnlicher sein sollen.
 		}
 		\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Optionen Bildschirm wo folgende Funktionen zur Verfügung stehen:
@@ -135,7 +134,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Finalrennen ist muss eine Teilnahmegebühr vom Spieler in Punkten gezahlt werden.
 			\begin{description}
 				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben in welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
-				\item[als Rennen gegen Computergegner starten]{ In diesem Spielmodus fahren vom Computer kontrollierte Autos gegen den Spieler rennen. Die Auswertung funktioniert über das Übliche erster zweiter dritter platz verfahren <TODO:Name?>. }
+				\item[als Rennen gegen Computergegner starten]{ In diesem Spielmodus fahren vom Computer kontrollierte Autos gegen den Spieler rennen. Die Auswertung funktioniert über das Übliche erster zweiter dritter Platz verfahren <TODO:Name?>. }
 			\end{description}
 			Gestartete Spiele können jederzeit abgebrochen, pausiert und neugestartet werden.
 		}
@@ -143,6 +142,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des welches es ermöglicht Punkte durch Aufgabenlösen zu sammeln. }
 		\item[Spiel Beenden]{ Beendet das Spiel. }
 		\item[Aufgabenverwaltung durch Aufgabenstellerin]{
+			Die Aufgabenstellerin kann folgende Aktionen machen:
 			\begin{itemize}
 				\item{ Die Aufgabenstellerin kann Aufgaben ansehen und manipulieren. }
 				\item{ Die Aufgabenstellerin kann Aufgaben entfernen. }
@@ -320,24 +320,25 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		}
 		\item[Laura Dietz]{
 			Die Rennfahrerin stört sich wahrscheinlich am meisten an den Aufgaben, kann aber im Rennen durch geschicktes fahren wieder aufholen. Sie hat Spaß an den Extras solange sie dafür nicht zu viel arbeiten muss.
+			Durch anspruchsvollere Finalrennen soll sie überzeugt werden die Aufgaben zu lösen.
 		}
 		\item[Andy Klein]{
 			Der Experte erkundet das Spiel schnell und hat später durch den Mehrspielermodus die Möglichkeit sich mit anderen zu vergleichen und zusammen Spaß zu haben. So bleibt auch für den Experten das Spiel interessant.
 		}
 	\end{description}
-	<TODO>
+	<TODO:nochmal zusammenfassen und ein zwei allgemeine Sätze>
 
 \subsection{Lernziele Umsetzung}
-	Wie in Kapitel \ref{ssec:gamification-modell} und \ref{ssec:lern-def} beschreiben
-	Die Lernstrategie ist Wiederholung und spielerisches einsetzen von Aufgaben. Dazu sollen die Finalrunden etwas Herausforderndes und Besonderes sein.
-	Wie schon in \ref{ssec:spielidee} beschrieben gibt es dafür mehrere Möglichkeiten an denen im Spiel Aufgaben abgearbeitet werden können. Die Lernziele sollten als Teil von dem Spiel umgesetzt werden um die Spieler zu motivieren diese zu lösen, auch soll damit kontinuierlich gelernt werden. Wichtig ist dass die Aufgaben nur für Finalrunden-Teilnahme unbedingt gelöst werden müssen.
+	Die Lernstrategie ist Wiederholung und spielerisches einsetzen von Aufgaben. Dazu sollen die Finalrunden etwas Herausforderndes und Besonderes sein. Nutzer sollen durch Gamification motiviert werden mehr und länger zu spielen (siehe \ref{ssec:gamification-modell}).
+	Die Lernziele wurden bereits in Kapitel \ref{ssec:lern-def} definiert.
+	Wie schon in Kapitel \ref{ssec:spielidee}, \ref{ssec:idee} und \ref{ssec:requirements} beschrieben gibt es mehrere Möglichkeiten wie Aufgaben im Spiel eingebaut werden können. Wichtig ist dass die Aufgaben nur für Finalrunden-Teilnahme unbedingt gelöst werden müssen. Das Lösen von Aufgaben ist in allen anderen Fällen zwanglos, wird aber psychologisch gefördert (siehe \ref{ssec:psycho-grundlagen}).
 	Die Idee ein Punktekonto für Aufgaben zu erstellen ist von dem \enquote{pay to win}\footnote{<TODO:Quelle>} Modell der Monetization\footcite{freemium} abgeleitet und \enquote{learn to win} getauft.
 	\begin{description}
 		\item[Aufgabe zum Start des Rennens]{
 			Eine Aufgabe um \enquote{den Motor zu starten} nimmt möglicherweise etwas Spannung aus dem Start, passt aber ins Spielkonzept und stört deshalb möglicherweise weniger.
 		}
 		\item[Aufgaben in Form von Weggabelungen]{
-			Auf dem oberem Rand des Bildschirms taucht die Frage auf und kurz später eine Weggabelung, beispielsweise ein Tor mit zwei Durchgängen oder eine
+			Auf dem oberem Rand des Bildschirms taucht die Frage auf und kurz später eine Weggabelung, beispielsweise ein Tor mit zwei Durchgängen. Durch so eine spielerische Nutzung von Aufgaben kann ein Spieler motiviert werden zu lernen.
 		}
 		\item[Aufgaben für Punkte]{
 			Punkte können später in normalen Rennen für witzige aber auch hilfreiche Dinge eingesetzt werden und haben so einen Sinn.
@@ -347,7 +348,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 			Eine Teilnahmegebühr für Finalrunden bringt nicht nur den Spieler zum lernen sondern setzt die Finalrunden von den normalen Level ab und macht sie so zu etwas besonderem. Durch ein besonders hervorgehobenen Leveleingang soll der Spieler darauf aufmerksam gemacht werden.
 		}
 	\end{description}
-	Im Optimalfall werden die alternativen durch Spieltests empirisch belegt <TODO:spieletests oder so>.
+	Im Optimalfall werden die verschiedenen Alternativen durch Spieltests empirisch belegt <TODO:spieletests oder so>.
 
 \subsection{Game-Engine Evaluation}\label{ssec:engineeval}
 	Für die Evaluation, welche der betrachteten Engines am geeignetsten für die Umsetzung des Spiels ist, sollen zunächst die Kriterien erneut erwähnt und genauer beschrieben werden.
