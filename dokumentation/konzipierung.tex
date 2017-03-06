@@ -1,6 +1,6 @@
 % !TEX root = dokumentation.tex
 \section{Konzipierung}
-Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und non-functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel \ref{sec:impl} Implementierung das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder computergesteuerte Gegner (e.g. Bots) betrachtet. Abschließend soll betrachtet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
+Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und non-functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel \ref{sec:impl} Implementierung das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder computergesteuerte Gegner (e.g. Bots) betrachtet. Abschließend soll betrachtet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
 \subsection{Kriterien für die Spielidee}\label{ssec:kriterien}
 	Auf Basis der in der Aufgabenstellung genannten Kriterien und mit Erweiterung durch eigens erarbeitete Kriterien konnte ein Kriterienkatalog entwickelt werden. Damit eine vollständige Zusammenfassung aller Kriterien möglich ist, werden die Kriterien aus der Aufgabenstellung erneut aufgegriffen.
 	\begin{enumerate}
@@ -53,7 +53,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 		\item{Rennfahrspiel Version 1:}
 		\begin{itemize}
 			\item{Der Spieler nimmt an einer wilden Renntour durch die Stadt teil.}
-			\item{Der Spieler wird von der Polizei verfolgt und bekommt beim geschnappt werden verschiedene Animationen des Scheiterns angezeigt.}
+			\item{Der Spieler wird von der Polizei verfolgt und bekommt beim geschnappt werden verschiedene Animationen des Scheiterns angezeigt.<TODO:Formulierung "geschnappt" ist umgangssprachlich}
 			\item{Sollte der Spieler scheitern, kann er eine Aufgabe absolvieren um einen weiteren Versuch zu erhalten. Das ist drei mal möglich.}
 			\item{Diese Aufgaben / Minigames sind beispielsweise:}
 			\begin{itemize}
@@ -131,10 +131,10 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 				\item[<TODO:Andere Optionen?>]{ Beschreibung }
 			\end{description}
 		}
-		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Finalrennen ist muss eine Teilnahmegebühr vom Spieler in Punkten gezahlt werden.
+		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Finalrennen ist muss der Spieler eine Teilnahmegebühr zahlen.
 			\begin{description}
 				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben in welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
-				\item[als Rennen gegen Computergegner starten]{ In diesem Spielmodus fahren vom Computer kontrollierte Autos gegen den Spieler rennen. Die Auswertung funktioniert über das Übliche erster zweiter dritter Platz verfahren <TODO:Name?>. }
+				\item[als Rennen gegen Computergegner starten]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos um die Wette.<TODO:Formulierung?> Die Auswertung funktioniert über das Übliche erster zweiter dritter Platz verfahren <TODO:Name?>. }
 			\end{description}
 			Gestartete Spiele können jederzeit abgebrochen, pausiert und neugestartet werden.
 		}
@@ -231,7 +231,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 
 		\paragraph{Heads-Up Display und Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
-		Zur Steuerung der Fahrtrichtung des Fahrzeugs kann über zwei Wege realisiert werden. Der erste Weg wäre die Verwendung des Neigungssensors des Nutzergeräts. Dabei müsste der Spieler sein Gerät ähnlich einem Lenkrad in die entsprechende Richtung neigen, um eine Reaktion des Fahrzeugs hervorzurufen. Die zweite Möglichkeit wäre die Verwendung eines \enquote{Lenkrads}, wobei der Spieler mittels Bewegungen auf dem Touchscreen das Fahrzeug steuern kann. Da ein Steuern des Fahrzeugs mittels des Neigungssensors und ein gleichzeitiges Lesen und Lösen der auf dem Bildschirm angezeigten Aufgaben als zu schwierig erachtet wird, soll die Steuerung über Touchscreen-Eingaben realisiert werden. Hierbei eignet sich das für Mobile-Spiele übliche stufenlose Steuerkreuz am Besten. Somit ist dieses Steuerkreuz eine nötige Komponente auf dem Bildschirm.
+		Die Steuerung der Fahrtrichtung des Fahrzeugs kann über zwei Wege realisiert werden.<TODO:Referenz human computer interaction> Der erste Weg wäre die Verwendung des Neigungssensors des Nutzergeräts. Dabei müsste der Spieler sein Gerät ähnlich einem Lenkrad in die entsprechende Richtung neigen, um eine Reaktion des Fahrzeugs hervorzurufen. Die zweite Möglichkeit wäre die Verwendung eines \enquote{Lenkrads}, wobei der Spieler mittels Bewegungen auf dem Touchscreen das Fahrzeug steuern kann. Da ein Steuern des Fahrzeugs mittels des Neigungssensors und ein gleichzeitiges Lesen und Lösen der auf dem Bildschirm angezeigten Aufgaben als zu schwierig erachtet wird, soll die Steuerung über Touchscreen-Eingaben realisiert werden. Hierbei eignet sich das für Mobile-Spiele übliche stufenlose Steuerkreuz am Besten. Somit ist dieses Steuerkreuz eine nötige Komponente auf dem Bildschirm.
 		Für die Steuerung der Geschwindigkeit konnte sich im Rahmen des Brainstormings lediglich eine Möglichkeit durchsetzen. Hierbei sollen zwei \enquote{Pedale} verwendet werden, um das Fahrzeug zu beschleunigen bzw. zu bremsen. Um die Geschwindigkeit des Fahrzeugs zu halten, muss das \enquote{Gaspedal} durchgehend gedrückt werden. Ein Loslassen des Gaspedals führt zu einer stetigen Verringerung der Geschwindigkeit. Ein Betätigen des Bremspedals führt zu einer deutlich schnelleren Verringerung der Geschwindigkeit. Wird das Bremspedal nach Stillstand des Fahrzeugs erneut betätigt, fährt dieses mit verringerter Geschwindigkeit rückwärts. Aufgrund dieser Beschreibung ergibt sich, dass zwei Pedale als Komponenten auf dem Bildschirm benötigt werden.
 		<TODO: Minikarte?>
 		<Anmerkung: mögliche inputs (touch,beschleunigung,magnet/ausrichtung...) auflisten, darauf bereits genutzte steuerungen auflisten und dann herraussuchen (Quellen ;) ) >
@@ -313,13 +313,13 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels ansich. D
 	Die verschiedenen Personas sollen wie folgt angesprochen werden:
 	\begin{description}
 		\item[Florian Klein]{
-			Durch einen leichten einstieg und viel verrückten Rennspaß kann der Anfänger viel lernen. Durch eine einfache Steuerung, viele Extras und auch freunde bleibt er längere zeit am Spiel und somit Lernen begeistert.
+			Durch einen leichten Einstieg und viel verrückten Rennspaß kann der Anfänger viel lernen. Durch eine einfache Steuerung, viele Extras und auch Freunde bleibt er längere Zeit am Spiel und somit am Lernen begeistert.
 		}
 		\item[Joachim Wolf]{
-			Der Lehrer hat die Möglichkeit durch Aufgaben und nicht Reaktionszeit oder Renntalent zu glänzen. So lernt kann auch der Lehrer Beispielsweise mit seinen Schülern mithalten und sich in Geschicklichkeit und Reaktionszeit üben.
+			Der Lehrer hat die Möglichkeit durch Aufgaben und nicht Reaktionszeit oder Renntalent zu glänzen. So kann auch der Lehrer Beispielsweise mit seinen Schülern mithalten und sich in Geschicklichkeit und Reaktionszeit üben.
 		}
 		\item[Laura Dietz]{
-			Die Rennfahrerin stört sich wahrscheinlich am meisten an den Aufgaben, kann aber im Rennen durch geschicktes fahren wieder aufholen. Sie hat Spaß an den Extras solange sie dafür nicht zu viel arbeiten muss.
+			Die Rennfahrerin stört sich wohl am meisten an den Aufgaben, kann aber im Rennen durch geschicktes Fahren wieder aufholen. Sie hat Spaß an den Extras solange sie dafür nicht zu viel arbeiten muss.
 			Durch anspruchsvollere Finalrennen soll sie überzeugt werden die Aufgaben zu lösen.
 		}
 		\item[Andy Klein]{

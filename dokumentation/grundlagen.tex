@@ -1,8 +1,8 @@
 % !TEX root = dokumentation.tex
 \section{Grundlagen}
-	In diesem Kapitel werden die Theoretischen Grundlagen der Arbeit aufgezeigt.
-\subsection{Android}
-	Android ist ein Open-Source Betriebssystem welches auf dem Linux Kernel basiert.\footcite{android} Es konkurriert mit IOS\footcite{ios}, dem Betriebssystem von Apple für IPhone Geräte. Anwendungen\footnote{Auch App genannt, dies ist eine Kurzform von \enquote{Application}.} für Android werden in der Programmiersprache Java verfasst und sind so theoretisch plattformunabhängig.\footcite{java} Die Plattformunabhängigkeit wird durch Abhängigkeiten zu der versionierten Systemschnittstelle von Android eingeschränkt, viele Anwendungen sind deshalb erst ab einer Android Version funktionstüchtig. Über 80\% aller Android Geräte sind dabei über oder gleich Version 4.4.\footcite{android-fragmentation}
+	In diesem Kapitel werden die theoretischen Grundlagen der Arbeit aufgezeigt.
+\subsection{Android}\label{ssec:android}
+	Android ist ein Open-Source Betriebssystem welches auf dem Linux Kernel basiert.\footcite{android} Es konkurriert mit IOS,\footcite{ios} dem Betriebssystem von Apple für IPhone Geräte. Anwendungen\footnote{Auch App genannt, dies ist eine Kurzform von \enquote{Application}.} für Android werden in der Programmiersprache Java verfasst und sind so theoretisch plattformunabhängig.\footcite{java} Die Plattformunabhängigkeit wird durch Abhängigkeiten zu der versionierten Systemschnittstelle von Android eingeschränkt, viele Anwendungen sind deshalb erst ab einer Android Version funktionstüchtig. Über 80\% aller Android Geräte sind dabei über oder gleich Version 4.4.\footcite{android-fragmentation}
 	Studien zeigen dass Android weltweit das beliebteste mobile Betriebssystem ist, mit über 70\% Nutzung.\footcite[\url{http://gs.statcounter.com/\#mobile_os-ww-monthly-200812-201701}]{android-stats} IOS steht bei circa 20\%. Wichtig ist hier zu vermerken dass in ärmeren Regionen eher Android verwendet wird.\footcite[\url{http://gs.statcounter.com/\#mobile_os-ww-monthly-201701-201701-map}]{android-stats} Smartphones sind zur Zeit die am weitesten verbreiteten programmierbaren Rechengeräte.
 	Android wie auch IOS und WindowsPhoneOS stellen eine neue Generation von Betriebssystemen für Mobilgeräte dar. Die wichtigsten Merkmale dieser Betriebssysteme sind Appstores, Toucheingabe und auch meist eine öffentliche Systemschnittstelle, so können Nutzer den Funktionsumfang durch Softwarepakete erweitern.
 	Die Hardwareausstattung umschließt generell viele Sensoren, unter anderen Magnetsensor, Beschleunigungssensor, GPS-Empfänger, Ultraschall Sensor und so weiter.
@@ -45,7 +45,7 @@
 	\subsubsection{Kritik an Personas}
 		In der Wissenschaft sind Personas umstritten.\footcite{persona-crit}\footcite{persona-crit2}\footcite{persona-crit3}\footcite{persona-crit4} Die drei Argumente gegen Personas sind:
 		\begin{enumerate}\obeylines
-			\item{ Fehlender Zusammenhang zwischen Nutzergruppe und Persona: Chapman und Milham\footcite{persona-crit} stellen die Frage: \enquote{Wie viele Nutzer werden von einem Persona abgebildet?}. Sie stellen stellen fest dass die Wahrscheinlichkeit dass ein Nutzer von einem Persona beschrieben wird abnimmt wenn dem Persona Details hinzugefügt werden. }
+			\item{ Fehlender Zusammenhang zwischen Nutzergruppe und Persona: Chapman und Milham\footcite{persona-crit} stellen die Frage: \enquote{Wie viele Nutzer werden von einem Persona abgebildet?}. Sie stellen fest dass die Wahrscheinlichkeit dass ein Nutzer von einem Persona beschrieben wird abnimmt wenn dem Persona Details hinzugefügt werden. }
 			\item{ Kritik an der Umsetzung: Der Berater Steve Portigal merkt an: \enquote{Personas werden missbraucht um von den Nutzern Abstand zu halten}.\footcite[Übersetzt aus dem Orginal: \enquote{Personas are misused to maintain a “safe” distance from the people we design for [\dots]}]{persona-crit4}
 			Weiterhin beschreibt er dass es mehr als Personas braucht um ein benutzerorientiertes Design zu erzeugen. Anwender sollten die korrekte Nutzung von Personas lernen.
 			Die Gefahr die Methode zu missbrauchen sei größer als der nutzen. }
@@ -77,8 +77,8 @@
 	Platz zwei auf der Liste der meisten wissenschaftlichen Erwähnungen belegt die \enquote{Social Interaction}. Bei diesem Faktor stehen Erfahrungen, welche in Verbindung mit anderen Spielern gemacht werden, im Vordergrund. Nach Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto soll dabei ein Gefühl einer geteilten Umgebung und einer gewissen Verbundenheit zu den anderen Spielern entstehen. Diese Verbundenheit kann sich entweder durch Zusammenarbeit oder Wettbewerb äußern. In beiden Fällen steht der gemeinsame Spaß im Fokus und wird durch ein \enquote{Belohnen} des Zusammenspiels weiter vorangetrieben.
 	Genau wie der vorherige Faktor, kann die Social Interaction in verschiedene Ausprägungen unterteilt werden.
 	\begin{enumerate}
-		\item{I feel cooperative toward oter classmates}\hfill \\
-		Der Spieler erkennt die Möglichkeit zur Interaktion mit anderen Spielern und erkennt diese als Alternative an.
+		\item{I feel cooperative toward other classmates}\hfill \\
+		Der Spieler erkennt die Möglichkeit zur Interaktion mit anderen Spielern und erkennt diese als Alternativen an.
 		\item{I strongly collaborate with other classmates}\hfill \\
 		Der Spieler nutzt die gegebenen Möglichkeiten für die Interaktion mit anderen Spielern stark.
 		\item{The cooperation in the game is helpful to the learning}\hfill \\
@@ -122,8 +122,8 @@
 		\attrib{2014 Huotari und Hamari\footcite[Seite 3, Abschnitt 7]{gamification}}
 	\end{quote}
 
-	Nach Prof. Dr. Oliver Bendel beschreibt Gamification \enquote{die Übertragung von spieltypischen Elementen und Vorgängen in spielfremde Zusammenhänge}. Weiterhin hat die Gamification zum Ziel, die Motivation von Anwendern zu steigern, indem die Anwender beispielsweise verglichen werden oder Preise erhalten. Andere spieltypische Elemente können gemeinsame Ziele, oder die Bewältigung speziell gewählter Aufgaben sein.\footcite[\url{http://wirtschaftslexikon.gabler.de/Definition/gamification.html}]{gabler-gamification} Diese Definition wird so häufig verwendet, beispielsweise auch von Niklas Schrape und Mathias Fuchs.\footcite{gamification2}
-	Das zu Eingang dieses Abschnittes verwendete Zitat betrachtet die Gamification aus einem anderen Blickwinkel. Demnach beschränke sich die Anwendung der spieltypischen Elemente nicht ausschließlich auf spielfremde Zusammenhänge. Da das Ziel dieser Arbeit die Entwicklung eines Lernspiels ist, können beide Definitionen potentiell Verwendung finden. Während des Spiels kann die Definition nach Huotari und Hamari\footcite{gamification} angewandt werden, da das Spiel kein spielfremder Zusammenhang ist. Wird das Lernen betrachtet, so kann auf die Definition nach Bendel\footcite{gabler-gamification} und die Definition nach Fuchs und Schrape\footcite{gamification2} zurückgegriffen werden.
+	Nach Prof. Dr. Oliver Bendel beschreibt Gamification \enquote{die Übertragung von spieltypischen Elementen und Vorgängen in spielfremde Zusammenhänge}. Weiterhin hat Gamification zum Ziel, die Motivation von Anwendern zu steigern, indem die Anwender beispielsweise verglichen werden oder Preise erhalten. Andere spieltypische Elemente können gemeinsame Ziele, oder die Bewältigung speziell gewählter Aufgaben sein.\footcite[\url{http://wirtschaftslexikon.gabler.de/Definition/gamification.html}]{gabler-gamification} Diese Definition wird so häufig verwendet, beispielsweise auch von Niklas Schrape und Mathias Fuchs.\footcite{gamification2}
+	Das zu Eingang dieses Abschnittes verwendete Zitat betrachtet Gamification aus einem anderen Blickwinkel. Demnach beschränke sich die Anwendung der spieltypischen Elemente nicht ausschließlich auf spielfremde Zusammenhänge. Da das Ziel dieser Arbeit die Entwicklung eines Lernspiels ist, können beide Definitionen potentiell Verwendung finden. Während des Spiels kann die Definition nach Huotari und Hamari\footcite{gamification} angewandt werden, da das Spiel kein spielfremder Zusammenhang ist. Wird das Lernen betrachtet, so kann auf die Definition nach Bendel\footcite{gabler-gamification} und die Definition nach Fuchs und Schrape\footcite{gamification2} zurückgegriffen werden.
     Niklas Schrape gibt in seinem Artikel \enquote{Gamification and Governmentality} die Bonusmeilen von Fluggesellschaften als Beispiel für Gamification. Durch die Möglichkeit, mittels Belohnungen auf ein Ziel hin zu arbeiten (vergleichsweise einen Flug nach Hawaii), werden Kunden dazu motiviert, eine Fluggesellschaft mit Bonusmeilen einer anderen (möglicherweise billigeren) Fluggesellschaft vorzuziehen.\footcite[S.26ff]{gamification2}
     Nora S. Stampfl beschreibt in ihrem Werk \enquote{Die verspielte Gesellschaft : Gamification oder Leben im Zeitalter des Computerspiels} die Bausteine von Gamification:\footcite{stampfl2012verspielte}
     \begin{description}
@@ -140,18 +140,19 @@
     Prof. Dr. Oliver Bendel gibt in seinem Artikel für das Gabler Wirtschaftslexikon\footcite{gabler-gamification} auch Ansätze für Kritik an Gamification. Demnach sei der Erfolg von Gamification davon abhängig, wie ein Anwender auf Spiele anspricht. Ein Anwender welcher nicht auf spielerische Elemente anspricht sei für Gamification-Elemente unanfällig. Zudem bestehe das Risiko, durch die Gewöhnung an spielerische Elemente zu einer Motivationsminderung in traditionellen Bereichen zu verursachen.
 
 \subsection{Lernspiele}
-	Lernspiele haben viele Namen unter anderen: \enquote{serious games}, \enquote{educational games}, \enquote{didaktische Spiele} und so weiter.
-	Lernspiele sind Spiele welche den Spielern etwas beibringen. Dabei behaupten Spielpädagogen dass jedes Spiel dem Spielendem etwas beibringe.\footcite{lernspiel} Dies kann Beispielsweise einfache Physik durch Simulation oder auch Mathe durch Matheaufgaben sein. So ist es schwer Lernspiele vom normalem Spielbegriff zu trennen, wir ziehen die Unterscheidung durch bewusstes einsetzen einer Lernstrategie um ein Lernziel zu erreichen.
+	Lernspiele haben viele Namen unter anderem: \enquote{serious games}, \enquote{educational games}, \enquote{didaktische Spiele} und so weiter.
+	Lernspiele sind Spiele welche den Spielern etwas beibringen. Dabei behaupten Spielpädagogen dass jedes Spiel dem Spielendem etwas beibringe.\footcite{lernspiel} Dies kann Beispielsweise einfache Physik durch Simulation oder auch Mathe durch Matheaufgaben sein. So ist es schwer Lernspiele von dem normalem Spielbegriff zu trennen, wir ziehen die Unterscheidung durch bewusstes einsetzen einer Lernstrategie um ein Lernziel zu erreichen.
 	Lernziel ist bei Lernspielen oft das erlernen von Fakten oder das erreichen einer höheren Geschwindigkeit oder Präzision von einer gewissen Aktion. Es ist eben so möglich dass ein Spiel auch nur eine einzelne Erkenntnis lehren möchte.
 	Die Lernstrategie sagt aus wie das Spiel versucht den Spieler dazu zu motivieren zu lernen. Hier kann unter anderem auf Gamification (siehe \ref{ssec:gamification}) zurückgegriffen werden.
 	Es gibt dabei einige Unterteilungen die an Lernspielen gemacht werden können:
 	\begin{itemize}
 		\item{ Haupt Thema des Spiels: ist Lernen oder etwas anderes (Rennspiel, Strategiespiel, \dots) mit Lernziel. }
 		\item{ War Spielspaß ein Ziel? }
-		\item{ Das zu Lernende ist fest teil vom Spiel oder losgelöst davon? Mit losgelöst ist gemeint dass das Spiel auch ohne Lerninhalt funktionieren, Sinn ergeben würde. Der Lerninhalt könnte dann ebenso komplett gegen ein Anderes Thema ausgetauscht werden }
+		\item{ Das zu Lernende ist fest teil vom Spiel oder losgelöst davon? Mit losgelöst ist gemeint dass das Spiel auch ohne Lerninhalt funktionieren, Sinn ergeben würde. Der Lerninhalt könnte dann ebenso komplett gegen ein anderes Thema ausgetauscht werden }
 	\end{itemize}
 	\subsubsection{Analyse Spiele}\label{sssec:lernspielanalyse}
 		In diesem Unterkapitel wird eine Auswahl an Spielen nach den vorherigen Kriterien untersucht.
+		<TODO:begründen warum diese>
 		\begin{description}\obeylines
 			\item[Gut]{
 				Gut\footcite{game-gut} ist ein Lernspiel wie es sich viele Eltern wahrscheinlich vorstellen. Der Spieler Lernt hier ausschließlich.
