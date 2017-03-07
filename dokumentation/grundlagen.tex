@@ -40,26 +40,26 @@
 	Irrlicht-Engine ist eine Open Source Engine, welche sehr hohen Wert auf Performance legt.\footcite[\url{http://irrlicht.sourceforge.net/}]{irrlicht-home} Sie kann plattformübergreifend eingesetzt werden und ist primär für Windows, Linux, OSX sowie weitere Computerplattformen konzipiert. Eine Entwicklung von mobilen Anwendungen für Android, iOS und Symbian wird durch Erweiterungen möglich gemacht. Diese Erweiterungen werden zur Zeit perfektioniert und befinden sich noch nicht im finalen Zustand.\footcite[\url{http://irrlicht.sourceforge.net/?page\_id=45}]{irrlicht-home}\addtocontents{footnote}{-1}. Ähnlich wie in der Cryengine, erhält der Entwickler keine besondere Unterstützung für die Implementierung eines Mehrspieler-Modus. Die für die Entwicklung eines Multiplayers benötigten Komponenten befinden sich dabei im Framework, der eigentliche Multiplayer muss jedoch von dem Entwickler zusammengesetzt werden.\footnotemark{} Mit der Irrlicht-Engine bekommt der Entwickler Möglichkeiten zur Charakteranimation, der Implementierung von Spezialeffekten, Collision-Detection und viele mehr. Die grafischen Elemente werden dabei in Echtzeit gerendert. Dies geschieht unter Verwendung von Direkt3D und OpenGL. Die verwendete Programmiersprache von Irrlicht ist C++.\footnotemark{}\stepcounter{footnote}
 
 \subsection{Persona}\label{ssec:persona}
-	Ein Persona ist eine Technik aus dem Userexperience (UX) Bereich\footcite{persona}. Personas sollen durch imaginäre Nutzer (Personas) helfen die Nutzerfreundlichkeit zu verbessern. Durch Imitation von Nutzern werden Bewertungen, Verbesserungen oder Entscheidungen aus einer anderen Perspektive generiert. Die Nutzer werden dafür ausführlich beschrieben damit man sich die Person vorstellen kann. Oft werden Verhalten, Ziele, Aussehen, Erfahrungen, Name, Umfeld und weiteres definiert.
+	Ein Persona ist eine Technik aus dem Userexperience (UX) Bereich.\footcite{persona} Personas sollen durch imaginäre Nutzer (Personas) helfen die Nutzerfreundlichkeit zu verbessern. Durch Imitation von Nutzern werden Bewertungen, Verbesserungen oder Entscheidungen aus einer anderen Perspektive generiert. Die Nutzer werden dafür ausführlich beschrieben, damit man sich die Person vorstellen kann. Oft werden Verhalten, Ziele, Aussehen, Erfahrungen, Name, Umfeld und weiteres definiert.
 	Personas gehören zu den benutzerorientierten Designmethoden und sind einfach zu implementieren da kein echter Benutzer involviert wird.
 	\subsubsection{Kritik an Personas}
 		In der Wissenschaft sind Personas umstritten.\footcite{persona-crit}\footcite{persona-crit2}\footcite{persona-crit3}\footcite{persona-crit4} Die drei Argumente gegen Personas sind:
 		\begin{enumerate}\obeylines
-			\item{ Fehlender Zusammenhang zwischen Nutzergruppe und Persona: Chapman und Milham\footcite{persona-crit} stellen die Frage: \enquote{Wie viele Nutzer werden von einem Persona abgebildet?}. Sie stellen fest dass die Wahrscheinlichkeit dass ein Nutzer von einem Persona beschrieben wird abnimmt wenn dem Persona Details hinzugefügt werden. }
-			\item{ Kritik an der Umsetzung: Der Berater Steve Portigal merkt an: \enquote{Personas werden missbraucht um von den Nutzern Abstand zu halten}.\footcite[Übersetzt aus dem Orginal: \enquote{Personas are misused to maintain a “safe” distance from the people we design for [\dots]}]{persona-crit4}
-			Weiterhin beschreibt er dass es mehr als Personas braucht um ein benutzerorientiertes Design zu erzeugen. Anwender sollten die korrekte Nutzung von Personas lernen.
-			Die Gefahr die Methode zu missbrauchen sei größer als der nutzen. }
+			\item{ Fehlender Zusammenhang zwischen Nutzergruppe und Persona: Chapman und Milham\footcite{persona-crit} stellen die Frage: \enquote{Wie viele Nutzer werden von einem Persona abgebildet?}. Sie stellen fest, dass die Wahrscheinlichkeit, dass ein Nutzer von einem Persona beschrieben wird abnimmt wenn dem Persona Details hinzugefügt werden. }
+			\item{ Kritik an der Umsetzung: Der Berater Steve Portigal merkt an: \enquote{Personas werden missbraucht, um von den Nutzern Abstand zu halten}.\footcite[Übersetzt aus dem Orginal: \enquote{Personas are misused to maintain a “safe” distance from the people we design for [\dots]}]{persona-crit4}
+			Weiterhin beschreibt er, dass es mehr als Personas braucht um ein benutzerorientiertes Design zu erzeugen. Anwender sollten die korrekte Nutzung von Personas lernen.
+			Die Gefahr die Methode zu missbrauchen sei größer als der Nutzen. }
 		\end{enumerate}
 	\subsubsection{Play-Personas}
-		Die in der Arbeit eingesetzten Play-Personas\footcite{play-persona} sind eine Variante der Personas welche sich direkt auf die Spielmechaniken bezieht und so die Abdeckung der Nutzergruppe erhöht. Für jede zentrale Spielmechanik wird dabei ein Wertebereich vergeben (Beispielsweise: Akrobatik: \{gut, mittel, schlecht\}). Dann werden für alle Kombinationen Personas angelegt und ausgearbeitet. So ist für jede Kombination ein Persona vorhanden und alle Spielmechaniken abgedeckt.
+		Die in der Arbeit eingesetzten Play-Personas\footcite{play-persona} sind eine Variante der Personas, welche sich direkt auf die Spielmechaniken bezieht und so die Abdeckung der Nutzergruppe erhöht. Für jede zentrale Spielmechanik wird dabei ein Wertebereich vergeben (Beispielsweise: Akrobatik: \{gut, mittel, schlecht\}). Dann werden für alle Kombinationen Personas angelegt und ausgearbeitet. So ist für jede Kombination ein Persona vorhanden und alle Spielmechaniken abgedeckt.
 
 \subsection{Psychologische Grundlagen für Spiele}\label{ssec:psycho-grundlagen}
-	Für die Betrachtung von Psychologischen Grundlagen für Spiele werden im Wesentlichen drei Quellen verwendet. In allen drei Quellen werden die wichtigsten Eigenschaften von Spielen in Verbindung mit deren psychologischer Bedeutung tabellarisch dargestellt.
+	Für die Betrachtung von psychologischen Grundlagen für Spiele werden im Wesentlichen drei Quellen verwendet. In allen drei Quellen werden die wichtigsten Eigenschaften von Spielen in Verbindung mit deren psychologischer Bedeutung tabellarisch dargestellt.
 	Die erwähnten Quellen sind einerseits  \enquote{A Large-scale Evaluation of a Model for the Evaluation of Educational Games} und \enquote{How to Evaluate Educational Games: a Systematic Literature Review} von Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto.\footcite{psych1}\footcite{psych3} Dem gegenüber steht \enquote{EGameFlow: A scale to measure learners' enjoyment of e-learning games} von Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu.\footcite{psych2}
 
 	Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto geben in den beiden genannten Werken einen Eindruck darüber, welche Faktoren der Psychologie für Spiele relevant sind. Um an dieser Stelle den Umfang in einem gewissen Rahmen zu halten, werden im Folgenden die Faktoren mit der meisten Erwähnung in wissenschaftlichen Artikeln, sowie die für die Anwendung relevanten Punkte erläutert. Im Nachhinein kann für jeden genannten Punkt mit Daten aus dem Werk von Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu ergänzt werden.
 
-	Der Faktor, welcher nach Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto die meisten wissenschaftlichen Erwähnungen erhält, ist das Lernen. Das Lernen ist dabei in zwei Kategorien aufgeteilt. Das \enquote{Long-term learning} zeichnet sich besonders dadurch aus, dass Wissen auf lange Sicht gesehen gespeichert und später die Professionalität mit diesem Wissen verbessert werden kann. Das \enquote{Short-term learning} hingegen ist eher auf den Lernprozess selbst ausgelegt. Das Wissen aus dem Short-term learning bringt den Lern- und Verständnisprozess voran und bringt dem Lernenden im Vergleich zu alternativen Lernmethoden schnelleren Fortschritt. Nach Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu kann die Wissenssteigerung in fünf Ausprägungen unterteilt werden:
+	Der Faktor, welcher nach Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto die meisten wissenschaftlichen Erwähnungen erhält, ist das Lernen. Das Lernen ist dabei in zwei Kategorien aufgeteilt. \enquote{Long-term learning} zeichnet sich besonders dadurch aus, dass Wissen auf lange Sicht gesehen gespeichert und später die Professionalität mit diesem Wissen verbessert werden kann. Das \enquote{Short-term learning} hingegen ist eher auf den Lernprozess selbst ausgelegt. Das Wissen aus dem Short-term learning bringt den Lern- und Verständnisprozess voran und bringt dem Lernenden im Vergleich zu alternativen Lernmethoden schnelleren Fortschritt. Nach Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu kann die Wissenssteigerung in fünf Ausprägungen unterteilt werden:
 	\begin{enumerate}
 		\item{The game increases my knowledge} \hfill \\
 		Das Spielen des Spiels verbessert das Wissen des Spielers. Dies kann sowohl unterbewusst als auch bewusst geschehen.
@@ -75,7 +75,7 @@
 	Da eines der primären Ziele des zu entwickelnden Spiels die Vermittlung von Wissen ist, spielt dieser Faktor eine große Rolle. Primär soll das Spiel auf das erwähnte Short-term learning abzielen. Das Spielen des Spiels soll den Lernprozess verbessern und das Themenverständnis des Spielers anregen. Die genauen Lerninformationen haben auf lange Sicht keine Relevanz.
 
 	Platz zwei auf der Liste der meisten wissenschaftlichen Erwähnungen belegt die \enquote{Social Interaction}. Bei diesem Faktor stehen Erfahrungen, welche in Verbindung mit anderen Spielern gemacht werden, im Vordergrund. Nach Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto soll dabei ein Gefühl einer geteilten Umgebung und einer gewissen Verbundenheit zu den anderen Spielern entstehen. Diese Verbundenheit kann sich entweder durch Zusammenarbeit oder Wettbewerb äußern. In beiden Fällen steht der gemeinsame Spaß im Fokus und wird durch ein \enquote{Belohnen} des Zusammenspiels weiter vorangetrieben.
-	Genau wie der vorherige Faktor, kann die Social Interaction in verschiedene Ausprägungen unterteilt werden.
+	Genau wie der vorherige Faktor kann die Social Interaction in verschiedene Ausprägungen unterteilt werden.
 	\begin{enumerate}
 		\item{I feel cooperative toward other classmates}\hfill \\
 		Der Spieler erkennt die Möglichkeit zur Interaktion mit anderen Spielern und erkennt diese als Alternativen an.
@@ -92,7 +92,7 @@
 	\end{enumerate}
 	Da das zu entwickelnde Spiel primär als Einzelspieler-Spiel gedacht ist, welches durch einen Mehrspielermodus erweitert wird, spielen die Ausprägungen eine eher untergeordnete Rolle. Der Mehrspielermodus soll die soziale Interaktion lediglich dazu nutzen, im Wettstreit gegen seine Freunde gemeinsam Spaß zu haben. Eine Gründung von Communities sowie die Verwendung eines Chats werden demnach nicht betrachtet.
 
-	Diesen beiden Faktoren folgen in der Liste von Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto viele Eigenschafen gemeinsam auf dem dritten Platz. Aus diesem Grund werden die für das Spiel relevanten betrachtet, die Eigenschaften mit weniger Relevanz hingegen nicht.
+	Diesen beiden Faktoren folgen in der Liste von Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto vielen Eigenschafen gemeinsam auf dem dritten Platz. Aus diesem Grund werden die für das Spiel relevanten betrachtet, die Eigenschaften mit weniger Relevanz hingegen nicht.
 
 	Als dritter Faktor der psychologischen Grundlagen für das zu entwickelnde Spiel steht der Spielspaß. Der Spielspaß ist neben dem Lernen der leitende Faktor bei allen Entscheidungen. Somit gilt, für das Spiel die Gradwanderung zwischen Spielspaß und Lernen zu meistern.
 	Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto formulieren über den Spielspaß:
@@ -106,10 +106,10 @@
 		\item{Ich bin tief in das Spiel eingetaucht und habe meine Umgebung vergessen.}
 	\end{itemize}
 	werden mit der Definition des Spielspaßes abgedeckt. Der Spielspaß als solches wird im Werk von Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu nicht direkt referenziert, jedoch finden sich in vielen anderen Ausprägungen der Definition von Spielspaß nach Giani Petri, Christiane Gresse von Wangenheim und Adriano Ferretti Borgatto.
-	Da der Spaß für das zu entwickelnde Spiel eine große Rolle spielt und gleichzeitig dazu dienen kann, die Spieler psychisch an das Spiel zu binden, wird dies bei der späteren Konzipierung und Implementierung eine große Rolle spielen.
+	Da der Spaß, für das zu entwickelnde Spiel eine große Rolle spielt und gleichzeitig dazu dienen kann, die Spieler psychisch an das Spiel zu binden, wird dies bei der späteren Konzipierung und Implementierung eine große Rolle spielen.
 
 	Der vierte und letzte Punkt im Bereich der psychologischen Grundlagen ist eine Kombination aus \enquote{Attention} und \enquote{Challenge}. Attention hat zum Ziel, die Spieler auf das Spiel aufmerksam zu machen. Dies kann beispielsweise durch ein attraktives Gamedesign, durch einen guten Start in eine Storyline oder eine Variation des Spielgeschehens realisiert werden. Im Fall des zu entwickelnden Spiels werden die Spieler durch die Aktivitäten in der Spielplattform dazu gebracht, das Spiel zu spielen. Unter Einbezug der Ansichten von Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu sollte zudem gewährleistet sein, dass der Spieler während des Spiels konzentriert bleibt und nicht die Aufmerksamkeit verliert. Hat das Spiel die Aufmerksamkeit des Spielers gewonnen, kann diese über eine Zusammenarbeit von \enquote{Challenge} und Spielspaß verstärkt und gehalten werden.
-	Mit einem steigenden Schwierigkeitsgrad über den Verlauf des Spiels kann der Spieler laufend seine Fähigkeiten im Spiel verbessern und wird dennoch nicht gelangweilt. Wichtig dabei ist vor Allem, die Lernkurve so zu gestalten, dass sowohl Neueinsteiger, wie auch erfahrenere Spieler interessiert bleiben. Nach der Definition von Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu soll der Spieler niemals das Gefühl bekommen, gelangweilt zu sein. Außerdem besteht die Möglichkeit, Hinweise im Spiel zu verbauen, welche den Spieler beim meistern einer Herausforderung unterstützen. Weiterhin soll der Spieler das Gefühl erhalten, seine eigenen Fähigkeiten durch das Vollbringen der Herausforderungen zu verbessern.
+	Mit einem steigenden Schwierigkeitsgrad über den Verlauf des Spiels kann der Spieler laufend seine Fähigkeiten im Spiel verbessern und wird dennoch nicht gelangweilt. Wichtig dabei ist vor Allem, die Lernkurve so zu gestalten, dass sowohl Neueinsteiger, wie auch erfahrenere Spieler interessiert bleiben. Nach der Definition von Fong-Ling Fu, Rong-Chang Su und Sheng-Chin Yu soll der Spieler niemals das Gefühl bekommen, gelangweilt zu sein. Außerdem besteht die Möglichkeit, Hinweise im Spiel zu verbauen, welche den Spieler beim Meistern einer Herausforderung unterstützen. Weiterhin soll der Spieler das Gefühl erhalten, seine eigenen Fähigkeiten durch das Vollbringen der Herausforderungen zu verbessern.
 
 	Abschließend wird folgende These aufgestellt, welche im Rahmen der Studienarbeit bestätigt oder widerlegt werden soll:
 	\enquote{Durch eine Kombination aller vier genannten Merkmale entsteht für den Spieler ein persönliches Engagement. Durch die Lernkurve und den ansteigenden Schwierigkeitsgrad fühlt sich der Spieler herausgefordert. Der Spielspaß unterstützt diesen Effekt, da der Spieler das Spiel gern spielt. Während der Spieler also auf die Herausforderungen des Spiels konzentriert ist und dabei Spaß empfindet, fällt der Lerneffekt und damit die Verbesserung der akademischen Fähigkeiten nicht auf.}
@@ -122,60 +122,60 @@
 		\attrib{2014 Huotari und Hamari\footcite[Seite 3, Abschnitt 7]{gamification}}
 	\end{quote}
 
-	Nach Prof. Dr. Oliver Bendel beschreibt Gamification \enquote{die Übertragung von spieltypischen Elementen und Vorgängen in spielfremde Zusammenhänge}. Weiterhin hat Gamification zum Ziel, die Motivation von Anwendern zu steigern, indem die Anwender beispielsweise verglichen werden oder Preise erhalten. Andere spieltypische Elemente können gemeinsame Ziele, oder die Bewältigung speziell gewählter Aufgaben sein.\footcite[\url{http://wirtschaftslexikon.gabler.de/Definition/gamification.html}]{gabler-gamification} Diese Definition wird so häufig verwendet, beispielsweise auch von Niklas Schrape und Mathias Fuchs.\footcite{gamification2}
+	Nach Prof. Dr. Oliver Bendel beschreibt Gamification \enquote{die Übertragung von spieltypischen Elementen und Vorgängen in spielfremde Zusammenhänge}. Weiterhin hat Gamification zum Ziel, die Motivation von Anwendern zu steigern, indem die Anwender beispielsweise verglichen werden oder Preise erhalten. Andere spieltypische Elemente können gemeinsame Ziele oder die Bewältigung speziell gewählter Aufgaben sein.\footcite[\url{http://wirtschaftslexikon.gabler.de/Definition/gamification.html}]{gabler-gamification} Diese Definition wird so häufig verwendet, beispielsweise auch von Niklas Schrape und Mathias Fuchs.\footcite{gamification2}
 	Das zu Eingang dieses Abschnittes verwendete Zitat betrachtet Gamification aus einem anderen Blickwinkel. Demnach beschränke sich die Anwendung der spieltypischen Elemente nicht ausschließlich auf spielfremde Zusammenhänge. Da das Ziel dieser Arbeit die Entwicklung eines Lernspiels ist, können beide Definitionen potentiell Verwendung finden. Während des Spiels kann die Definition nach Huotari und Hamari\footcite{gamification} angewandt werden, da das Spiel kein spielfremder Zusammenhang ist. Wird das Lernen betrachtet, so kann auf die Definition nach Bendel\footcite{gabler-gamification} und die Definition nach Fuchs und Schrape\footcite{gamification2} zurückgegriffen werden.
     Niklas Schrape gibt in seinem Artikel \enquote{Gamification and Governmentality} die Bonusmeilen von Fluggesellschaften als Beispiel für Gamification. Durch die Möglichkeit, mittels Belohnungen auf ein Ziel hin zu arbeiten (vergleichsweise einen Flug nach Hawaii), werden Kunden dazu motiviert, eine Fluggesellschaft mit Bonusmeilen einer anderen (möglicherweise billigeren) Fluggesellschaft vorzuziehen.\footcite[S.26ff]{gamification2}
     Nora S. Stampfl beschreibt in ihrem Werk \enquote{Die verspielte Gesellschaft : Gamification oder Leben im Zeitalter des Computerspiels} die Bausteine von Gamification:\footcite{stampfl2012verspielte}
     \begin{description}
-    	\item[Punkte]{Punkte werden als Belohnung angesehen und geben Informationen über den Fortschritt}
-    	\item[Levels]{Levels zeigen den Fortschritt in Form von Meilensteinen an. Das Absolvieren verschiedener Level kann Respekt und Status bedeuten.}
-    	\item[Herausforderungen]{Herausforderungen stellen größere Ziele und geben das Gefühl, auf etwas größeres hinzuarbeiten}
-    	\item[Auszeichnungen]{Auszeichnungen zeigen nach außen, dass ein Nutzer etwas besonderes erreicht hat. Ein Beispiel dafür können Forum-Badges sein}
-    	\item[Wertungen]{Wertungen geben die Möglichkeit, den Nutzer im direkten Vergleich mit weiteren Nutzern zu vergleichen.}
-    	\item[Belohnungen]{Belohnungen sind in verschiedensten Formen möglich und zeigen dem Nutzer, dass die getätigte Aktion korrekt und gewollt war.}
+    	\item[Punkte]{werden als Belohnung angesehen und geben Informationen über den Fortschritt.}
+    	\item[Levels]{zeigen den Fortschritt in Form von Meilensteinen an. Das Absolvieren verschiedener Level kann Respekt und Status bedeuten.}
+    	\item[Herausforderungen]{stellen größere Ziele und geben das Gefühl, auf etwas Größeres hinzuarbeiten.}
+    	\item[Auszeichnungen]{zeigen nach außen, dass ein Nutzer etwas Besonderes erreicht hat. Ein Beispiel dafür können Forum-Badges sein.}
+    	\item[Wertungen]{geben die Möglichkeit, den Nutzer im direkten Vergleich mit weiteren Nutzern zu vergleichen.}
+    	\item[Belohnungen]{sind in verschiedensten Formen möglich und zeigen dem Nutzer, dass die getätigte Aktion korrekt und gewollt war.}
     \end{description}
     Weiterhin beschreibt Stampfl in ihrem Werk, dass eine Kombination von mehreren dieser Bausteine zu einem Gamification-Modell führen können. Eine Erfüllung aller Bausteine ist hierbei nicht nötig.\footcite{stampfl2012verspielte}
 
     \paragraph{Kritik an Gamification}
-    Prof. Dr. Oliver Bendel gibt in seinem Artikel für das Gabler Wirtschaftslexikon\footcite{gabler-gamification} auch Ansätze für Kritik an Gamification. Demnach sei der Erfolg von Gamification davon abhängig, wie ein Anwender auf Spiele anspricht. Ein Anwender welcher nicht auf spielerische Elemente anspricht sei für Gamification-Elemente unanfällig. Zudem bestehe das Risiko, durch die Gewöhnung an spielerische Elemente zu einer Motivationsminderung in traditionellen Bereichen zu verursachen.
+    Prof. Dr. Oliver Bendel gibt in seinem Artikel für das Gabler Wirtschaftslexikon\footcite{gabler-gamification} auch Ansätze für Kritik an Gamification. Demnach sei der Erfolg von Gamification davon abhängig, wie ein Anwender auf Spiele anspricht. Ein Anwender, welcher nicht auf spielerische Elemente anspricht, sei für Gamification-Elemente unanfällig. Zudem bestehe das Risiko, durch die Gewöhnung an spielerische Elemente zu einer Motivationsminderung in traditionellen Bereichen zu verursachen.
 
 \subsection{Lernspiele}
 	Lernspiele haben viele Namen unter anderem: \enquote{serious games}, \enquote{educational games}, \enquote{didaktische Spiele} und so weiter.
-	Lernspiele sind Spiele welche den Spielern etwas beibringen. Dabei behaupten Spielpädagogen dass jedes Spiel dem Spielendem etwas beibringe.\footcite{lernspiel} Dies kann Beispielsweise einfache Physik durch Simulation oder auch Mathe durch Matheaufgaben sein. So ist es schwer Lernspiele von dem normalem Spielbegriff zu trennen, wir ziehen die Unterscheidung durch bewusstes einsetzen einer Lernstrategie um ein Lernziel zu erreichen.
-	Lernziel ist bei Lernspielen oft das erlernen von Fakten oder das erreichen einer höheren Geschwindigkeit oder Präzision von einer gewissen Aktion. Es ist eben so möglich dass ein Spiel auch nur eine einzelne Erkenntnis lehren möchte.
+	Lernspiele sind Spiele welche den Spielern etwas beibringen. Dabei behaupten Spielpädagogen, dass jedes Spiel dem Spielendem etwas beibringe.\footcite{lernspiel} Dies kann Beispielsweise einfache Physik durch Simulation oder auch Mathematik durch Matheaufgaben sein. So ist es schwer Lernspiele von dem normalem Spielbegriff zu trennen, wir ziehen die Unterscheidung durch bewusstes einsetzen einer Lernstrategie, um ein Lernziel zu erreichen.
+	Lernziel ist bei Lernspielen oft das Erlernen von Fakten oder das Erreichen einer höheren Geschwindigkeit oder Präzision von einer gewissen Aktion. Es ist eben so möglich, dass ein Spiel auch nur eine einzelne Erkenntnis lehren möchte.
 	Die Lernstrategie sagt aus wie das Spiel versucht den Spieler dazu zu motivieren zu lernen. Hier kann unter anderem auf Gamification (siehe \ref{ssec:gamification}) zurückgegriffen werden.
-	Es gibt dabei einige Unterteilungen die an Lernspielen gemacht werden können:
+	Es gibt dabei einige Unterteilungen, die an Lernspielen gemacht werden können:
 	\begin{itemize}
 		\item{ Haupt Thema des Spiels: ist Lernen oder etwas anderes (Rennspiel, Strategiespiel, \dots) mit Lernziel. }
 		\item{ War Spielspaß ein Ziel? }
-		\item{ Das zu Lernende ist fest teil vom Spiel oder losgelöst davon? Mit losgelöst ist gemeint dass das Spiel auch ohne Lerninhalt funktionieren, Sinn ergeben würde. Der Lerninhalt könnte dann ebenso komplett gegen ein anderes Thema ausgetauscht werden }
+		\item{ Das zu Lernende ist fest teil vom Spiel oder losgelöst davon? Mit losgelöst ist gemeint, dass das Spiel auch ohne Lerninhalt funktionieren, Sinn ergeben würde. Der Lerninhalt könnte dann ebenso komplett gegen ein anderes Thema ausgetauscht werden }
 	\end{itemize}
 	\subsubsection{Analyse Spiele}\label{sssec:lernspielanalyse}
 		In diesem Unterkapitel wird eine Auswahl an Spielen nach den vorherigen Kriterien untersucht.
 		<TODO:begründen warum diese>
 		\begin{description}\obeylines
 			\item[Gut]{
-				Gut\footcite{game-gut} ist ein Lernspiel wie es sich viele Eltern wahrscheinlich vorstellen. Der Spieler Lernt hier ausschließlich.
+				\footcite{game-gut} ist ein Lernspiel wie es sich viele Eltern wahrscheinlich vorstellen. Der Spieler lernt hier ausschließlich.
 				Lernziel ist hier Grammatik wie Wörter aus Fremdsprachen zu erlernen.
 				Das Spiel setzt als Lernstrategie ein Karteikartensystem ein, dieses beruht auf Wiederholung.
 			}
 			\item[Angry Birds]{
-				Angry Birds\footcite{game-angrybirds} ist ein Minispiel für zwischen durch und sehr erfolgreich. Lernen war kein Ziel der Entwickler, aber es lässt sich argumentieren dass Mathe und Physik gelehrt wird. Hier ist wichtig zu vermerken dass Realismus vernachlässigt wird, trotzdem kann Wissen über Flugparabeln und Kräfte gelernt werden.
+				\footcite{game-angrybirds} ist ein Minispiel für zwischen durch und sehr erfolgreich. Lernen war kein Ziel der Entwickler, aber es lässt sich argumentieren, dass Mathe und Physik gelehrt wird. Hier ist wichtig zu vermerken, dass Realismus vernachlässigt wird, trotzdem kann Wissen über Flugparabeln und Kräfte gelernt werden.
 				Lernziel ist Präzision und passender Einsatz von den Fähigkeiten der Vögel.
 				Als Lernstrategie kann das Wiederholen und auch die Herausforderung die beste Bewertung in allen Leveln zu erreichen.
 			}
 			\item[Need for Speed]{
-				Need for Speed\footcite{game-nfs} ist ein ebenso sehr erfolgreiches Spiel, gehört aber den Rennspielen an.
-				Das Lernziel des Spieles ist es besser als der Computer fahren zu können und so eine Reihe von Rennen zu gewinnen.
-				Die Lernstrategie ist durch Upgrades Optisch wie Funktional, Story, viel Übung und etwas Ablenkung durch Nebenjobs definierbar.
+				\footcite{game-nfs} ist ein ebenso sehr erfolgreiches Spiel, welches aber zu den Rennspielen gehört.
+				Das Lernziel des Spieles ist es, besser als der Computer fahren zu können und so eine Reihe von Rennen zu gewinnen.
+				Die Lernstrategie ist durch Upgrades optisch wie Funktional, Story, viel Übung und etwas Ablenkung durch Nebenjobs definierbar.
 			}
 			\item[Crazy Machines]{
-				In Crazy Machines\footcite{game-crazymachine} gehört den Puzzle Spielen an und zeigt wie Spaß und Lernen vereint werden können. Der Spieler löst puzzle mit verschieden Mechanischen Reaktionen und Prozessen und kann durch ausprobieren einiges über Physik und Kettenreaktionen lernen.
-				Lernziel ist es die Puzzle auf eine kreative Art zu lösen und über Physik zu lernen.
+				\footcite{game-crazymachine} gehört den Puzzle-Spielen an und zeigt wie Spaß und Lernen vereint werden können. Der Spieler löst puzzle mit verschieden mechanischen Reaktionen und Prozessen und kann durch ausprobieren einiges über Physik und Kettenreaktionen lernen.
+				Lernziel ist es die Puzzles auf eine kreative Art zu lösen und über Physik zu lernen.
 				Lernstrategie ist hier dem Spieler ein großes Arsenal an Möglichkeiten zu bieten und beliebig viel Zeit zum Lösen von vorgegebenen Rätseln aber auch freies Spielen. Der Spieler erkundet so die Möglichkeiten und erlernt spielerisch Physik.
 			}
 		\end{description}
-		Wichtig ist zu bemerken dass alle 4 Spiele auf Wiederholung zusetzen scheinen. Dies kommt auch daher dass eine gewisse Länge von Spielen erwartet wird und diese bei gewissen Typen nicht ohne viele Wiederholungen erreicht werden kann. Es macht ebenso schlichtweg mehr Sinn die Spielmechaniken in Abschnitten einzuführen und eine Geschichte zu erzählen.
+		Wichtig ist zu bemerken, dass alle 4 Spiele auf Wiederholung zusetzen scheinen. Dies kommt auch daher, dass eine gewisse Länge von Spielen erwartet wird und diese bei gewissen Typen nicht ohne viele Wiederholungen erreicht werden kann. Es ergibt ebenso schlichtweg mehr Sinn die Spielmechaniken in Abschnitten einzuführen und eine Geschichte zu erzählen.
 	\subsubsection{Übersicht und Schlüsse}
 		In der nachfolgenden Tabelle sind die Erkenntnisse der Spielanalyse noch einmal zusammengefasst.
 		\begin{tabl}{llll}{Analyse Lernspiele}
