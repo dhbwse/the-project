@@ -2,7 +2,8 @@
 \section{Konzipierung}
 Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und non-functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel \ref{sec:impl} Implementierung das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder computergesteuerte Gegner (e.g. Bots) betrachtet. Abschließend soll betrachtet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
 \subsection{Kriterien für die Spielidee}\label{ssec:kriterien}
-	Auf Basis der in der Aufgabenstellung genannten Kriterien und mit Erweiterung durch eigens erarbeitete Kriterien konnte ein Kriterienkatalog entwickelt werden. Damit eine vollständige Zusammenfassung aller Kriterien möglich ist, werden die Kriterien aus der Aufgabenstellung erneut aufgegriffen.
+	<TODO:Fazite aus vorgehenden Kapiteln klar einarbeiten>
+	Auf Basis der in der Aufgabenstellung genannten Kriterien und mit Erweiterung durch eigens erarbeitete Kriterien konnte ein Kriterienkatalog entwickelt werden. Damit eine vollständige Zusammenfassung aller Kriterien möglich ist, werden die Kriterien aus der Aufgabenstellung erneut aufgegriffen.\footnote{<TODO: nein>}
 	\begin{enumerate}
 		\item{Das Spiel soll levelbasiert sein, d.h. dass voneinander unabhängige Spielabschnitte vorhanden sind.}
 		\item{Der Umfang des Spiels ist auf zwei bis drei Stunden Spielspaß ausgelegt. Durch modulare Gestaltung (Levels) kann das Spiel im Nachhinein erweitert werden.}
@@ -17,10 +18,10 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		\item{Die Zielgruppe für das Spiel ist durch die Personas aus Kapitel \ref{ssec:persona} gegeben. Nach Möglichkeit soll dieses Spiel und die zugehörige Lernplattform auch Flüchtlingskindern zur Verfügung gestellt werden.}
 	\end{enumerate}
 
-	Die Entstehung dieser Kriterien ist teilweise auf die Ergebnisse aus dem Brainstorming zurückzuführen. Durch das Brainstorming konnten die Erwartungen der Projektteilnehmer an das Spiel weiter spezifiziert werden. Somit ist eine genaue Trennung der Kriterien aus dem Brainstorming nur schwer möglich und dient lediglich der Übersichtlichkeit.
+	Die Entstehung dieser Kriterien ist teilweise auf die Ergebnisse aus dem Brainstorming\footnote{<TODO: Brainstorming erklären und verlinken>} zurückzuführen. Durch das Brainstorming konnten die Erwartungen der Projektteilnehmer an das Spiel weiter spezifiziert werden. Somit ist eine genaue Trennung der Kriterien aus dem Brainstorming nur schwer möglich und dient lediglich der Übersichtlichkeit.
 
 \subsection{Lernziele Definition}\label{ssec:lern-def}
-	Als Lernziel haben sich die Autoren auf Faktenwissen geeinigt. Soll heißen beliebige Fragen mit einer eindeutigen Antwort. Mögliche Themengebiete sind so unbeschränkt unter anderem Mathematik, Naturwissenschaften, Sprachwissen(Übersetzen wie Grammatik) oder auch Geschichte. So muss für das Spiel nur eine Liste von Fragen mit Antwort und möglichen falschen antworten gepflegt werden.
+	Als Lernziel haben sich die Autoren auf die Vermittlung von Faktenwissen geeinigt. Soll heißen beliebige Fragen mit einer eindeutigen Antwort. Mögliche Themengebiete sind so unbeschränkt unter anderem Mathematik, Naturwissenschaften, Sprachwissen(Übersetzen wie Grammatik) oder auch Geschichte. So muss für das Spiel nur eine Liste von Fragen mit Antwort und möglichen falschen antworten gepflegt werden.
 	Die Lernstrategie soll durch Wiederholung von Aufgaben und spielerischem Anregen zum Lernen umgesetzt werden.
 
 \subsection{Brainstorming \& Game Design}\label{ssec:idee}
@@ -106,6 +107,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 			\item{Der Spieler kann weitere Fahrzeuge / spielbare Objekte für die Ingame-Währung kaufen. Alternativ ist über diese Währung auch ein Farbwechsel der bisher gekauften Objekte oder ein Wechsel des Spielersymbols (für den Multiplayer) denkbar.}
 		\end{itemize}
 	\end{enumerate}
+	<TODO:Berkling "Besser wäre hier gewesen, Kriterien aufzustellen, die Ideen anhand der Kriterien zu evaluieren und in einer Tabelle vergleichen und dann eine wählen.">
 
 \subsection{Funktionale und nicht funktionale Anforderungen}\label{ssec:requirements}
 	In diesem Unterkapitel werden die Anforderungen an das Spiel dokumentiert. Begonnen mit einer Übersicht der Funktionalitäten, dann eine detaillierte Beschreibung der Anforderungen der einzelnen Funktionen. Es folgen generelle nicht funktionale Anforderungen.
@@ -172,6 +174,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 
 \subsection{Grundsätzliche Eigenschaften des Spiels}
 	Im folgenden Kapitel sollen die Grundlagen des Spiels erarbeitet und abgewogen werden, sodass ein breites Spektrum an Regeln und Eigenschaften des Spiels erarbeitet werden kann. Diese Sammlung von Eigenschaften und Regeln kann im späteren Verlauf der Arbeit als Kriterienkatalog zur Auswahl einer Game-Engine verwendet werden. Dabei sollen zunächst für jede Kategorie verschiedene Möglichkeiten erklärt werden, um im Anschluss die für die Spielidee beste Möglichkeit auszuwählen.
+	<TODO:überarbeiten und mit Grundlagen auf Linie bringen. (Interessant ist hier wo sich unser Ansatz von der Wissenschaft unterscheidet)>
 
 	\subsubsection{Spielmechanik}\label{sssec:spielmechanik}
 	In den Bereich der Spielmechanik fallen all jene Regeln und Eigenschaften, welche das Spielgeschehen (Die Spielerfahrung des Spielers) beeinflussen und diese ausmachen.
@@ -182,6 +185,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
 		\paragraph{Regeln innerhalb der Level-Pakete:}
+		\footnote{<TODO:Berkling "Woher kommt die Idee?">}%
 		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Finalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Finalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Finalrennen verfügbar zu machen.
 		Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Finalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden, besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen <TODO:quelle>. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
@@ -196,7 +200,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		Eine weitere Möglichkeit wäre es, das Rennen an einem bestimmten Punkt zu pausieren und eine Aufgabe anzuzeigen. Die gemessene Zeit des Zeitrennens läuft dabei weiter. Erst mit Eingabe der korrekten Lösung wird das Rennen fortgesetzt und der Spieler darf weiterfahren. Dies würde jedoch den Spielfluss maßgeblich unterbrechen und somit zu einem Verlust an Spielspaß führen. Somit fällt die Wahl für die Zusatzaufgaben auf die Weggabelungen im Rennen.
 
 		\paragraph{Belohnungen / Strafen bei Zusatzaufgaben:}
-		\marginpar{\tiny\raggedright\sloppy<TODO:Berkling: Was sind psychologische vor Nachteile bei Bestrafung und Belohnung? Wissen sie das? Gibt es darüber Literatur? Würde mich interessieren, auch ein Experiment, wie Leute auf die beiden Varianten reagieren wäre interessant\dots>}
+		\marginpar{\tiny\raggedright\sloppy<TODO:Berkling "Was sind psychologische vor Nachteile bei Bestrafung und Belohnung? Wissen sie das? Gibt es darüber Literatur? Würde mich interessieren, auch ein Experiment, wie Leute auf die beiden Varianten reagieren wäre interessant\dots>"}
 		Da die Zusatzaufgaben fester Bestandteil des Spiels und zur Übermittlung des Lernerfolgs nötig sind, muss ein Absolvieren bzw. Nichtabsolvieren der Aufgaben auch Auswirkungen auf das Spiel haben. Für die Zusatzaufgaben innerhalb der Rennen ergeben sich zwei mögliche Lösungen.
 		Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methodik würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
 		Bei der belohnenden Methodik würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
@@ -393,3 +397,4 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		\item[Zusätzliche Software]{Unity benötigt für die Implementierung eines Spiels keine zusätzliche Software. Alle benötigten Komponenten sind in der Engine direkt enthalten und können über diese aufgerufen werden. Die Unreal-Engine hingegen besitzt keinen eigenen Code-Editor. Möchte ein Entwickler C++ Code schreiben, so wird Visual Studio von Microsoft dafür benötigt. Aus diesem Grund erhält die Unreal-Engine einen Minuspunkt.}
 	\end{description}
 	Wird die Gesamtheit der Evaluation betrachtet, so erreicht Unity einen Punkt mehr im gewählten Wertesystem, als die Unreal-Engine. Somit wird Unity das Mittel der Wahl und wird für die Implementierung des Spiels verwendet.
+	<TODO: 1 Punkt mehr reicht nicht (nicht signifikant), überarbeiten>
