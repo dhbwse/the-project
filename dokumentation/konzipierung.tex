@@ -3,7 +3,7 @@
 Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und non-functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel \ref{sec:impl} Implementierung das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder computergesteuerte Gegner (e.g. Bots) betrachtet. Abschließend soll betrachtet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
 \subsection{Kriterien für die Spielidee}\label{ssec:kriterien}
 	<TODO:Fazite aus vorgehenden Kapiteln klar einarbeiten>
-	Auf Basis der in der Aufgabenstellung genannten Kriterien und mit Erweiterung durch eigens erarbeitete Kriterien konnte ein Kriterienkatalog entwickelt werden. Damit eine vollständige Zusammenfassung aller Kriterien möglich ist, werden die Kriterien aus der Aufgabenstellung erneut aufgegriffen.\footnote{<TODO: nein>}
+	Auf Basis der in der Aufgabenstellung genannten Kriterien und mit Erweiterung durch eigens erarbeitete Kriterien konnte ein Kriterienkatalog entwickelt werden.
 	\begin{enumerate}
 		\item{Das Spiel soll levelbasiert sein, d.h. dass voneinander unabhängige Spielabschnitte vorhanden sind.}
 		\item{Der Umfang des Spiels ist auf zwei bis drei Stunden Spielspaß ausgelegt. Durch modulare Gestaltung (Levels) kann das Spiel im Nachhinein erweitert werden.}
@@ -13,18 +13,19 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		\item{Der vollständige Programmieraufwand für das Spiel ist auf 3 Monate Arbeit ausgelegt. Somit bleiben weitere volle drei Monate für das Verfassen der Arbeit.}
 		\item{Ziel ist, eine originelle Spielidee zu entwickeln, sodass das Spiel kein Klon eines bereits existierenden Spiels ist.}
 		\item{Als Beispiele zur Orientierung wurde \enquote{arcademics.com} genannt, welche Spiele der gewünschten Art beinhaltet, jedoch eine Internetverbindung benötigt. Daraus ergibt sich, dass das Spiel auch offline spielbar sein soll.}
-		\item{Bei frühen Brainstorming-Sessions konnte sich darauf geeinigt werden, dass das Spiel in keinem Fall ein \gls{RPG} sein soll.}
+		\item{In anfänglichen Gesprächen wurde sich darauf geeinigt, dass das Spiel in keinem Fall ein \gls{RPG} sein soll.}
 		\item{Es besteht keine Notwendigkeit der Einhaltung der Lernstandards. Die Spieler sollen mit dem Spiel Spaß haben und das Spiel auch spielen wollen.}
 		\item{Die Zielgruppe für das Spiel ist durch die Personas aus Kapitel \ref{ssec:persona} gegeben. Nach Möglichkeit soll dieses Spiel und die zugehörige Lernplattform auch Flüchtlingskindern zur Verfügung gestellt werden.}
 	\end{enumerate}
 
-	Die Entstehung dieser Kriterien ist teilweise auf die Ergebnisse aus dem Brainstorming\footnote{<TODO: Brainstorming erklären und verlinken>} zurückzuführen. Durch das Brainstorming konnten die Erwartungen der Projektteilnehmer an das Spiel weiter spezifiziert werden. Somit ist eine genaue Trennung der Kriterien aus dem Brainstorming nur schwer möglich und dient lediglich der Übersichtlichkeit.
+	Die Entstehung dieser Kriterien ist teilweise auf die Ergebnisse aus dem Brainstorming\footnote{<TODO: Berkling fragen wegen Brainstorming>} zurückzuführen. Durch das Brainstorming konnten die Erwartungen der Projektteilnehmer an das Spiel weiter spezifiziert werden. Somit ist eine genaue Trennung der Kriterien aus dem Brainstorming nur schwer möglich und dient lediglich der Übersichtlichkeit.
 
 \subsection{Lernziele Definition}\label{ssec:lern-def}
 	Als Lernziel haben sich die Autoren auf die Vermittlung von Faktenwissen geeinigt. Soll heißen beliebige Fragen mit einer eindeutigen Antwort. Mögliche Themengebiete sind so unbeschränkt unter anderem Mathematik, Naturwissenschaften, Sprachwissen(Übersetzen wie Grammatik) oder auch Geschichte. So muss für das Spiel nur eine Liste von Fragen mit Antwort und möglichen falschen antworten gepflegt werden.
 	Die Lernstrategie soll durch Wiederholung von Aufgaben und spielerischem Anregen zum Lernen umgesetzt werden.
 
 \subsection{Brainstorming \& Game Design}\label{ssec:idee}
+	<TODO:wissenschaftlifizieren>
 	Über mehrere Gespräche hinweg wurden Ideen für das zu entwickelnde Spiel gesammelt. Dieses Kapitel hat zum Zweck, den Ablauf der Ideenfindung in eine Reihenfolge zu bringen und diese zu präsentieren.
 	\begin{enumerate}
 		\item{Chemie / Physik Simulation:}
@@ -86,6 +87,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 			\item{Ein Level-Paket besteht aus zwei normalen Strecken und einem Finalrennen.}
 			\item{Um an einer finalen Strecke teilnehmen zu können, muss der Spieler eine Startgebühr bezahlen. Verliert der Spieler dieses Rennen, wird die Startgebühr erneut fällig.}
 			\item{Mit dem Abschluss der zwei normalen Strecken wird das Finalrennen verfügbar. Mit dem Abschluss des Finalrennen wird das nächste Level-Paket freigeschaltet.}
+			\item{Durch dieses Konzept ist Erweiterbarkeit gewährleistet.}
 		\end{itemize}
 		\item{Auf den Strecken werden verschiedene Abzweigungen möglich sein, bei welchen der Spieler die Auswahl zwischen zwei Wegen hat.}
 		\begin{itemize}
@@ -130,30 +132,26 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 				\item[Lautstärke der Musik einstellen]{ Der Nutzer kann mittels Schieberegler die Lautstärke der Hintergrundmusik, im Spiel wie in den Menüs, einstellen. Die Lautstärke wird in Echtzeit verändert. }
 				\item[Lautstärke der Soundeffekte einstellen]{ Der Nutzer kann mittels Schieberegler die Lautstärke von Soundeffekten anpassen. Wird der Schieberegler losgelassen, wird ein Effekt vorgespielt, um damit der Nutzer Feedback erhält. }
 				\item[Hilfsagent erneut starten]{ Hierdurch wird der Hilfsagent erneut gestartet. }
-				\item[<TODO:Andere Optionen?>]{ Beschreibung }
 			\end{description}
 		}
 		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Finalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
 			\begin{description}
 				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
-				\item[als Rennen gegen Computergegner starten]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos um die Wette.<TODO:Formulierung?> Die Auswertung funktioniert über das Übliche erster zweiter dritter Platz verfahren <TODO:Name?>. }
+				\item[als Rennen gegen Computergegner starten (Optional)]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos. Die Auswertung funktioniert über das Übliche Rang-Verfahren: die besten drei Spieler werden hervorgehoben und gekürt, nur der Erste gewinnt.}
 			\end{description}
 			Gestartete Spiele können jederzeit abgebrochen, pausiert und neugestartet werden.
 		}
 		\item[Onlinespiel starten]{ Ebenso wie die Optionen ist dies ein speziell gekennzeichneter \enquote{Level} welcher es ermöglicht mit Zufälligen anderen ein Rennen zu fahren. }
 		\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des welches es ermöglicht Punkte durch Aufgabenlösen zu sammeln. }
 		\item[Spiel Beenden]{ Beendet das Spiel. }
+		\item[Einkaufen]{ siehe Kaufbares für Ingame-Währung }
 		\item[Aufgabenverwaltung durch Aufgabenstellerin]{
 			Die Aufgabenstellerin kann folgende Aktionen machen:
 			\begin{itemize}
 				\item{ Die Aufgabenstellerin kann Aufgaben ansehen und manipulieren. }
 				\item{ Die Aufgabenstellerin kann Aufgaben entfernen. }
 				\item{ Die Aufgabenstellerin kann Aufgaben hinzufügen. }
-				\item{ Die Aufgabenstellerin kann entweder \\
-					die Aufgaben in allen Spielen aktualisieren \\
-					oder \\
-					Ein Spiel mit einem geändertem Aufgabensatz erzeugen. <TODO:absprechen>
-				}
+				\item{ Die Aufgabenstellerin kann ein Spiel mit einem geändertem Aufgabensatz erzeugen.	}
 			\end{itemize}
 		}
 	\end{description}
@@ -166,10 +164,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 	\subsubsection{Nicht funktionale Anforderungen}
 		\begin{itemize}
 			\item{ Minimale Bildwiederholrate von 24 Bilder pro Sekunde. }
-			\item{ Maximale Speicheranforderung von unter 40MB. }
+			\item{ Maximale Speicheranforderung von unter 300MB. }
 			\item{ Spielmusik soll nicht stocken. }
-			\item{ Das Spiel zu starten soll unter einer Sekunde dauern. }
-			\item{ <TODO:Mehr?> }
+			\item{ Das Spiel soll in unter einer Sekunde auf Nutzereingaben. }
 		\end{itemize}
 
 \subsection{Grundsätzliche Eigenschaften des Spiels}
@@ -185,7 +182,6 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
 		\paragraph{Regeln innerhalb der Level-Pakete:}
-		\footnote{<TODO:Berkling "Woher kommt die Idee?">}%
 		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Finalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Finalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Finalrennen verfügbar zu machen.
 		Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Finalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden, besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen <TODO:quelle>. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
@@ -205,7 +201,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methodik würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
 		Bei der belohnenden Methodik würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
 		Die zweite Möglichkeit besteht darin, an den Weggabelungen unterschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
-		<TODO: Methode wählen und Abschluss formulieren>
+		<TODO: Methode wählen und Abschluss formulieren: PLAYTEST>
 
 		\paragraph{Zusatzaufgaben im Multiplayer:}
 		Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
@@ -222,24 +218,26 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		Die beiden übrigen Möglichkeiten bieten dem Spieler Motivation und vergrößern den potentiellen Lernerfolg. Somit wird für die Umsetzung des Spiels eine Kombination aus Siegerprämie und (täglich beschränkten) Zusatzaufgaben implementiert.
 
 		\paragraph{Verlassen des vorgegebenen Wegs:}
-		Jedes Rennen verfügt über einen vorgegeben Weg, welcher von Start bis zum Ziel führt. Dieser vorgegebene Weg verbreitert sich um breite Randstreifen\footnote{<Anmerkung:Randstreifen hauptsächlich aus visuellen gründen? ich würde die Strecke so gestalten dass es kein vom weg abkommen gibt ;)>} zur fertigen Strecke. Ein verlassen der Straße muss gewisser Weise Auswirkungen auf das Fahrzeug des Spielers haben, um das Fahren auf der Strecke zu begünstigen. Denkbar wäre, das Fahrzeug des Spielers merklich zu verlangsamen, falls dieser die Strecke verlässt. Zusätzlich sollte dem Spieler eine Warnung zum Zurückkehren auf die Strecke angezeigt werden. Weiterhin kann das Fahrzeug des Spielers automatisiert auf die Strecke zurückgesetzt werden, falls es den vorgegebenen Weg für eine gewisse Zeit X verlässt. Gleiches gilt, falls ein Spieler sein Fahrzeug wendet und die Strecke in entgegengesetzter Richtung fährt. Dabei soll das Fahrzeug jedoch nicht verlangsamt werden. Für die Implementierung wird eine Kombination aus Anzeigen einer Warnung und Verlangsamung des Fahrzeugs gewählt. Somit hat ein Verlassen der Strecke einen merklichen Nachteil im Zeitrennen, da die Verlangsamung viel Zeit kostet. Auf ein automatisches Zurücksetzen wird verzichtet, damit der Spieler aus seinen Fehlern lernt, da er selbstständig auf die Strecke zurückfahren muss.
+		Jedes Rennen verfügt über einen vorgegeben Weg, welcher von Start bis zum Ziel führt. Dieser vorgegebene Weg verbreitert sich um breite Randstreifen zur fertigen Strecke. Ein verlassen der Straße muss gewisser Weise Auswirkungen auf das Fahrzeug des Spielers haben, um das Fahren auf der Strecke zu begünstigen. Denkbar wäre, das Fahrzeug des Spielers merklich zu verlangsamen, falls dieser die Strecke verlässt. Zusätzlich sollte dem Spieler eine Warnung zum Zurückkehren auf die Strecke angezeigt werden. Weiterhin kann das Fahrzeug des Spielers automatisiert auf die Strecke zurückgesetzt werden, falls es den vorgegebenen Weg für eine gewisse Zeit X verlässt. Gleiches gilt, falls ein Spieler sein Fahrzeug wendet und die Strecke in entgegengesetzter Richtung fährt. Dabei soll das Fahrzeug jedoch nicht verlangsamt werden. Für die Implementierung wird eine Kombination aus Anzeigen einer Warnung und Verlangsamung des Fahrzeugs gewählt.
+		Somit hat ein Verlassen der Strecke einen merklichen Nachteil im Zeitrennen, da die Verlangsamung viel Zeit kostet. Auf ein automatisches Zurücksetzen wird verzichtet, damit der Spieler aus seinen Fehlern lernt, da er selbstständig auf die Strecke zurückfahren muss. Durch Level-Design kann ein Verlassen des vorgegebenen Wegs großteils vermieden werden, neben der Rennstrecke befinden sich Blockierelemente und der Level beschränkt sich auf einen dünnen Streifen neben der Straße.
 
 		\paragraph{Hindernisse auf der Strecke:}
 		Um den Schwierigkeitsgrad der Rennen zusätzlich zu erhöhen, besteht die Möglichkeit auf Hindernisse zurückzugreifen, welche sich auf der Strecke befinden. Für eine Kollision mit einem solchen Hindernis muss geklärt werden, welches Verhalten das Fahrzeug zeigt. Die beiden naheliegenden Möglichkeiten für eine Kollisionsreaktion sind das vollständige Stoppen (Abprallen) und das Verlangsamen des Fahrzeugs.
-		Ein vollständiges Stoppen des Fahrzeugs würde eine Art Unterbrechung des Spielflusses bedeuten. Da dies, wie bereits erwähnt, nach Möglichkeit vermieden werden soll, scheidet diese Möglichkeit aus. Ein Verlangsamen des Fahrzeugs kann entweder als Verlangsamung um einen Prozentsatz X (basierend auf der aktuellen Geschwindigkeit) oder mittels einer Verlangsamung der Geschwindigkeit auf einen Festen Wert umgesetzt werden. <TODO: Entscheiden und Erklären>
+		Ein vollständiges Stoppen des Fahrzeugs würde eine Art Unterbrechung des Spielflusses bedeuten. Da dies, wie bereits erwähnt, nach Möglichkeit vermieden werden soll, scheidet diese Möglichkeit aus. Ein Verlangsamen des Fahrzeugs kann entweder als Verlangsamung um einen Prozentsatz X (basierend auf der aktuellen Geschwindigkeit) oder mittels einer Verlangsamung der Geschwindigkeit auf einen Festen Wert umgesetzt werden.
+		Aus Gründen der Plattform kann eine detaillierte Physiksimulation nicht umgesetzt werden. Stattdessen sollen Hindernisse welche sich auf der Strecke befinden explodieren und bremsen. Sonstige Kollisionen verlangsamen das Gefährt nur.
 
 	\subsubsection{Sonstige Eigenschaften des Spiels}
 	Im Bereich der sonstigen Eigenschaften sollen Eigenschaften betrachtet werden, die nicht direkt die Spielmechanik betreffen. Dazu gehören unter Anderem Kameraeinstellungen, das Optionsmenü und ähnliches.
 
 		\paragraph{Kaufbares für Ingame-Währung:}
-		Für die Spezifizierung der kaufbaren Dinge im Spiel<TODO:grammatik?>, können zwei Kategorien festgelegt werden. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Finalrennen und ist im Multiplayer nicht verfügbar.
+		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Finalrennen und ist im Multiplayer nicht verfügbar.
 
 		\paragraph{Heads-Up Display und Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
 		Die Steuerung der Fahrtrichtung des Fahrzeugs kann über zwei Wege realisiert werden.<TODO:Referenz human computer interaction> Der erste Weg wäre die Verwendung des Neigungssensors des Nutzergeräts. Dabei müsste der Spieler sein Gerät ähnlich einem Lenkrad in die entsprechende Richtung neigen, um eine Reaktion des Fahrzeugs hervorzurufen. Die zweite Möglichkeit wäre die Verwendung eines \enquote{Lenkrads}, wobei der Spieler mittels Bewegungen auf dem Touchscreen das Fahrzeug steuern kann. Da ein Steuern des Fahrzeugs mittels des Neigungssensors und ein gleichzeitiges Lesen und Lösen der auf dem Bildschirm angezeigten Aufgaben als zu schwierig erachtet wird, soll die Steuerung über Touchscreen-Eingaben realisiert werden. Hierbei eignet sich das für Mobile-Spiele übliche stufenlose Steuerkreuz am Besten. Somit ist dieses Steuerkreuz eine nötige Komponente auf dem Bildschirm.
 		Für die Steuerung der Geschwindigkeit konnte sich im Rahmen des Brainstormings lediglich eine Möglichkeit durchsetzen. Hierbei sollen zwei \enquote{Pedale} verwendet werden, um das Fahrzeug zu beschleunigen bzw. zu bremsen. Um die Geschwindigkeit des Fahrzeugs zu halten, muss das \enquote{Gaspedal} durchgehend gedrückt werden. Ein Loslassen des Gaspedals führt zu einer stetigen Verringerung der Geschwindigkeit. Ein Betätigen des Bremspedals führt zu einer deutlich schnelleren Verringerung der Geschwindigkeit. Wird das Bremspedal nach Stillstand des Fahrzeugs erneut betätigt, fährt dieses mit verringerter Geschwindigkeit rückwärts. Aufgrund dieser Beschreibung ergibt sich, dass zwei Pedale als Komponenten auf dem Bildschirm benötigt werden.
-		<TODO: Minikarte?>
-		<Anmerkung: mögliche inputs (touch,beschleunigung,magnet/ausrichtung...) auflisten, darauf bereits genutzte steuerungen auflisten und dann herraussuchen (Quellen ;) ) >
+		<TODO: Minikarte definieren>
+		<TODO: mögliche inputs (touch,beschleunigung,magnet/ausrichtung...) auflisten, darauf bereits genutzte steuerungen auflisten und dann herraussuchen (Quellen ;) ) >
 
 		\paragraph{Kameraperspektive:}
 		Grundsätzlich sind für Rennspiele drei Kameraperspektiven denkbar. Diese sind:
@@ -313,8 +311,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 	\end{description}
 
 \subsection{Gamification Modell}\label{ssec:gamification-modell}
-	Das Spiel soll durch einen gewissen Schwierigkeitsgrad Herausfordernd aber trotzdem Anfängerfreundlich sein. Ein Punktesystem und freiwilliges bearbeiten von Aufgaben ermöglicht Spielern zusätzliche Funktionalitäten zu erkunden und dadurch fürs lernen belohnt zu werden.
+	Das Spiel soll durch einen gewissen Schwierigkeitsgrad herausfordernd aber trotzdem anfängerfreundlich sein. Ein Punktesystem und freiwilliges bearbeiten von Aufgaben ermöglicht Spielern zusätzliche Funktionalitäten zu erkunden und dadurch fürs Lernen belohnt zu werden.
 	Durch Hinweise auf diese Zusatzfunktionen und Extras soll der Spieler kontinuierlich daran erinnert werden, dass er mehr erkunden könnte, dabei sollen diese Hinweise nicht störend oder aufdringlich sein.
+	Spieler sollen für den ersten Platz durch Nennung nach einem Sieg belohnt werden.
 	Die verschiedenen Personas sollen wie folgt angesprochen werden:
 	\begin{description}
 		\item[Florian Klein]{
@@ -355,46 +354,4 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 	\end{description}
 	Im Optimalfall werden die verschiedenen Alternativen durch Spieltests empirisch belegt.\footnote{<TODO:spieletests oder so>}
 
-\subsection{Game-Engine Evaluation}\label{ssec:engineeval}
-	Für die Evaluation, welche der betrachteten Engines am geeignetsten für die Umsetzung des Spiels ist, sollen zunächst die Kriterien erneut erwähnt und genauer beschrieben werden.
-	\begin{description}
-			\item[Androidfähig]{Dieses Kriterium beschreibt, ob die jeweilige Engine den Entwickler bei der Erstellung von Android-Anwendungen zu unterstützen. Die Bestwertung wird erziehlt, wenn die Engine standardmäßig dazu in der Lage ist, Android Anwendungen zu entwickeln und zu deployen. Benötigt die Engine eine separate Erweiterung für die Entwicklung von Android-Anwendungen, so erhält sie weniger Punkte. Ist die Engine nicht in der Lage, Android-Anwendungen zu entwickeln und zu deployen, werden keine Punkte vergeben.}
-			\item[Lizenzen]{Mit dem Lizenz-Kriterium werden die verschiedenen Geschäftsmodelle beschrieben und kategorisiert. Eine Open-Source Engine erhält dabei die meisten Punkte. Gefolgt wird dies von kostenlosen Engines. Den Abschluss in dieser Evaluation bilden kostenpflichtige Engines. Da die Anwendung keine Gewinne einbringen soll, sondern kostenlos zur Verfügung gestellt wird und keine Ingame-Echtgeld-Transaktionen besitzt, spielt die Gewinnbeteiligung der Herausgeber der Game-Engines für diese Evaluation keine Rolle.}
-			\item[Networking]{Das Networking beschreibt, in wechlcher Form und wie sehr eine Engine die Entwickler dabei unterstützt, einen Multiplayer-Modus für ein Spiel zu entwickeln. Relevant sind dabei sowohl die Möglichkeiten existierender Frameworks, die Bereitstellung von Matchmaking-Servern und die generelle Unterstützung bei der Entwicklung des Multiplayers. Engines, zu deren Funktionsumfang ein Tool für die Entwicklung von Mehrspieler-Modi gehört, belegen in diesem Fall die höchste Bewertung. Engines, welche dem Entwickler durch ihre Frameworks die Möglichkeit zur Mehrspieler-Entwicklung geben, belegen die zweithöchste Bewertung. Gefolgt werden sie von Engines, welche zwar für Mehrspieler-Entwicklung geeignet sind, dies jedoch nicht unmittelbar unterstützen. Abschließend folgen Engines, welche nicht für die Entwicklung eines Multiplayers geeignet sind.}
-			\item[Funktionsumfang]{Durch den Funktionsumfang kann eine Aussage darüber getroffen werden, welche Möglichkeiten ein Entwickler bekommt, wenn er die jeweilige Game-Engine einsetzt. Game-Engines mit einem großen Funktionsumfang schneiden in dieser Kategorie besonders gut ab, kleinere Game-Engines mit geringerem Funktionsumfang erhalten eine schlechte Bewertung. Dieses Kriterium beschreibt somit lediglich den faktischen Umfang an Funktionen und trifft keine Aussage über die Lernkurve oder die Übersichtlichkeit einer Engine. Auch werden Zusatzfunktionen, welche durch Erweiterungen erreicht werden können, nicht betrachtet.}
-			\item[Intuitivität]{Die Intuitivität beschreibt den Einstieg in eine Engine und die Lernkurve um den Funktionsumfang der Engine zu meistern. Engines, welche dem Nutzer einen klaren Leitfaden für den Einstieg geben, werden hierbei besser bewertet, als Engines die dies nicht können. Zudem werden Engines, welche dem Nutzer Beispiele, Tutorials und weiteres im Funktionsumfang mitliefern, besser bewertet. Die grundsätzliche Übersichtlichkeit der Engine und der Editoren wirkt sich auf die Intuitivität aus. Engines mit einem komplizierten / undurchsichtigen Aufbau erhalten somit eine schlechtere Bewertung. Die Einschätzung in diesem Kriterium basiert ausschließlich auf persönlichen Eindrücken. Für die Evaluation wurden alle genannten Engines installiert und betrachtet.}
-			\item[Programmiersprache]{Die Programmiersprache ist das Kriterium mit dem geringsten Einfluss auf das Ergebnis dieser Evaluation. Die ausgewählten Engines verwenden entweder C\# oder C++ für die Implementierung der Spiele. Für Java-Entwickler ist der Einstieg in C\# durch die Ähnlichkeiten zu Java zwar erleichtert, jedoch bietet C++ dem Entwickler mehr Freiheiten. Da die Fähigkeiten der Projektteilnehmer sowohl in Java, als auch in C und Ruby ausgeprägt sind, kann die Lernkurve der Programmiersprache vernachlässigt werden. Auf Grund der Freiheiten des Programmierers erhalten C++ Engines einen kleinen Vorteil gegenüber C\# Engines.}
-			\item[Zusätzliche Software]{Dieses Kriterium beschreibt die Notwendigkeit für weitere Anwendungen, um den Funktionsumfang vollständig nutzen zu können. Engines, welche keine weitern Anwendungen benötigen, behalten ihre Punktzahl. Engines, bei denen zusätzliche Anwendungen nötig sind, erhalten Maluspunkte.}
-		\end{description}
-		Für die Evaluation wird ein Punktesystem verwendet, welches über fünf Ausprägungen verfügt. Die Ausprägungen sind dabei wie folgt aufgestellt: $ ++ > + > \bigcirc > - > -- $
-		Bei Eigenschaften, welche über weniger als fünf mögliche Einteilungen verfügen, kann dieses Punktesystem für eine Skalierung verwendet werden. Wird dieses Punktesystem auf Basis der zuvor beschriebenen Kriterien auf die vier Game-Engines angewandt und skaliert, entsteht folgende Ergebnismatrix:
 
-	\begin{tabl}{lcccc}{Game-Engine Evaluation}
-		\toprule
-			Kriterium/Engine & Unreal-Engine & Unity & Cry-Engine & Irrlicht-Engine\\
-		\midrule
-			Androidfähig 			& $++$	& $++$ 		& $--$ 		& $\bigcirc$	\\
-			Lizenzen 				& + 	& + 		& + 		& $++$		\\
-			Networking				& + 	& $++$ 		& --		& --		\\
-			Funktionsumfang 		& $++$ 	& + 		& $++$		& +			\\
-			Programmiersprache 		& + 	& $\bigcirc$ 	& +			& +			\\
-			Intuitivität 			& + 	& $++$ 		& +			& $++$		\\
-			Zusätzliche Software	& -- 	& $\bigcirc$	& $\bigcirc$	& $\bigcirc$	\\
-		\hline
-			Gesamtpunktzahl			& 7 	& 8			& 2 		& 5			\\
-		\bottomrule
-	\end{tabl}
-
-	Zur Erläuterung der Skalierung und der Zusammenfassung sollen nun die Plätze 1 und 2 genauer beleuchtet werden.
-	Da die Cryengine und die Irrlicht-Engine mit größerem Abstand hinter der Unreal-Engine und dem Gewinner Unity zurückliegen, werden diese in der folgenden Analyse nicht betrachtet.
-	\begin{description}
-		\item[Androidfähig]{Sowohl die Unreal-Engine, als auch Unity bieten in ihrem Standardumfang die Möglichkeit, Android-Anwendungen zu erstellen und zu deployen. Da in diesem Fall eine der beiden Engines einen Vorteil gegenüber der Anderen hat, erhalten beide die volle Punktzahl.}
-		\item[Lizenzen]{Auch im Fall der Lizenzen sind sie die Engines ebenbürtig. Beide Engines sind vollständig kostenlos nutzbar. Bei beiden Engines fällt zudem eine Gewinnbeteiligung von 5\% statt, welche jedoch wie bereits erwähnt vernachlässigt werden kann.}
-		\item[Networking]{In der Kategorie Networking gewinnt Unity, da mittels \enquote{Unity Multiplayer} ein Tool im Funktionsumfang enthalten ist, welches die Entwicklung eines Mehrspielermodus stark vereinfacht. In diesem Tool sind Matchmaking-Server enthalten, welche lediglich auf einen eigenen Server aufgesetzt und im Anschluss direkt vewendet werden können. Die Unreal-Engine bietet für einen Multiplayer lediglich eine Unterstützung durch das Framework.}
-		\item[Funktionsumfang]{Mit dem kostenlosen Lizenzmodell stellt Unity nur einen beschränkten Funktionsumfang zur Verfügung. Um den vollen Funktionsumfang zu erhalten ist bei Unity die Bezahlung eines Abo-Modells notwendig. Die Unreal-Engine stelle dem Nutzer durchgehend den vollen Umfang zur Verfügung. Aus diesem Grund erhält die Unreal-Engine in dieser Kategorie die volle Punkzahl. Da der von Unity zur Verfügung gestellte Funktionsumfang jedoch für die Entwicklung des Spiels ausreicht, erhält Unity in dieser Kategorie dennoch Punkte.}
-		\item[Programmiersprache]{Im Bereich der Programmiersprachen erhält die Unreal-Engine einen Punkt, da für die Programmierung C++ verwendet wird. Unity bekommt wie in der Beschreibung der Sprachen erwähnt, keinen Punkt für die Verwendung von C\#.}
-		\item[Intuitivität]{Werden die Unreal-Engine und Unity aus dem Aspekt der Intuitivität betrachtet, fällt schnell auf, dass der größere Funktionsumfang der Unreal-Engine zum Nachteil wird. Durch die vielen Funktionen wirkt die Engine überladen und kompliziert. Dies würde grundsätzlich eine Einordnung in einen deutlich niedrigeren Wertebereich rechtfertigen. Epic-Games, die Entwickler der Unreal-Engine, stellen jedoch eine Vielzahl von Video-Tutorials und Beispielen zur Verfügung, welche dabei helfen die komplexe Gesamtheit der Engine zu überblicken. Unity ist hingegen von der Oberfläche und dem Funktionsumfang übersichtlich und intuitiv nutzbar. Zudem stellt auch Unity Beispiele und Tutorials zur Verfügung. Daraus ergibt sich ein klarer Platz eins für Unity.}
-		\item[Zusätzliche Software]{Unity benötigt für die Implementierung eines Spiels keine zusätzliche Software. Alle benötigten Komponenten sind in der Engine direkt enthalten und können über diese aufgerufen werden. Die Unreal-Engine hingegen besitzt keinen eigenen Code-Editor. Möchte ein Entwickler C++ Code schreiben, so wird Visual Studio von Microsoft dafür benötigt. Aus diesem Grund erhält die Unreal-Engine einen Minuspunkt.}
-	\end{description}
-	Wird die Gesamtheit der Evaluation betrachtet, so erreicht Unity einen Punkt mehr im gewählten Wertesystem, als die Unreal-Engine. Somit wird Unity das Mittel der Wahl und wird für die Implementierung des Spiels verwendet.
-	<TODO: 1 Punkt mehr reicht nicht (nicht signifikant), überarbeiten>
