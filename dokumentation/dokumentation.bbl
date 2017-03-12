@@ -29,7 +29,7 @@
       \strng{fullhash}{e84e30b9390cdb64db6db2c9ab87846d}
       \field{labelalpha}{And17}
       \field{sortinit}{A}
-      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Android official Website}
@@ -51,7 +51,7 @@
       \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
       \field{labelalpha}{App}
       \field{sortinit}{A}
-      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{IOS}
@@ -74,7 +74,7 @@
       \strng{fullhash}{059fb9f3fb33abbab06f47ed0a9fb705}
       \field{labelalpha}{Ben}
       \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Gamification}
@@ -97,7 +97,7 @@
       \strng{fullhash}{42c95a809b99aaa7e167cdd71ed86eb6}
       \field{labelalpha}{Ber16}
       \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -134,7 +134,7 @@
       \strng{fullhash}{bc379665d1898f9d65a773ca8ef64103}
       \field{labelalpha}{CD09}
       \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Human-Computer Interaction {–} {INTERACT} 2009}
@@ -185,7 +185,7 @@
       \strng{fullhash}{28aebfae2d0a610e0560c4fbb1035ccf}
       \field{labelalpha}{Cha+08}
       \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Human Factors and Ergonomics Society 52 nd Annual Meeting}
@@ -217,7 +217,7 @@
       \strng{fullhash}{f7fcc23cdb802732fa24474d018dbc2c}
       \field{labelalpha}{CM06}
       \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Human Factors and Ergonomics Society 50th Annual Meeting}
@@ -245,7 +245,7 @@
       \strng{fullhash}{d78505b492960cdf2af17b725dcb25e2}
       \field{labelalpha}{Coo08}
       \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -269,7 +269,7 @@
       \strng{fullhash}{ea4dbaa7211d4b24b9765d83cec000f9}
       \field{labelalpha}{Cry}
       \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cryengine}
@@ -290,7 +290,7 @@
       \strng{fullhash}{e853db5fb97163e7377be31ae2d55799}
       \field{labelalpha}{Ele}
       \field{sortinit}{E}
-      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Need for Speed}
@@ -311,7 +311,7 @@
       \strng{fullhash}{9a8e747c9835d0edf305e5795486bb25}
       \field{labelalpha}{Epi}
       \field{sortinit}{E}
-      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Unreal Engine}
@@ -335,7 +335,7 @@
       \strng{fullhash}{2b8bf17b71da074f5c8f5eaed72e1a68}
       \field{labelalpha}{FAK}
       \field{sortinit}{F}
-      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Crazy Machines 2}
@@ -368,7 +368,7 @@
       \strng{fullhash}{d541e59200f27f15e5930dcb0e30e644}
       \field{labelalpha}{FSY09}
       \field{sortinit}{F}
-      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{A scale to measure learners' enjoyment of e-learning games}
@@ -410,7 +410,7 @@
       \strng{fullhash}{a7c3f018d909a616bfc85e1fdba2d626}
       \field{labelalpha}{Fuc+14}
       \field{sortinit}{F}
-      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Rethinking Gamification}
@@ -434,7 +434,7 @@
       \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
       \field{labelalpha}{Goo}
       \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Android Developer Dashboards}
@@ -460,7 +460,7 @@
       \strng{fullhash}{3aa33cbc68dddc62080ecebfdd8ed456}
       \field{labelalpha}{Gre14}
       \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781466560017}
@@ -480,7 +480,7 @@
       \strng{fullhash}{dcce115c5a597841e7c5c1efe6898253}
       \field{labelalpha}{Gru}
       \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Gut}
@@ -508,7 +508,7 @@
       \strng{fullhash}{bcc5c4d4d7f254d719aa90473e93465b}
       \field{labelalpha}{HH12}
       \field{sortinit}{H}
-      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{subtitle}{A Service Marketing Perspective}
@@ -531,7 +531,7 @@
       \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
       \field{labelalpha}{Ora}
       \field{sortinit}{O}
-      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Java}
@@ -554,7 +554,7 @@
       \strng{fullhash}{9d086f348cfed06f7f4e3a87b486a152}
       \field{labelalpha}{Por08}
       \field{sortinit}{P}
-      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Persona Non Grata}
@@ -590,7 +590,7 @@
       \strng{fullhash}{a3fa000d2b1d75717415b4584b64dd69}
       \field{labelalpha}{PWB16}
       \field{sortinit}{P}
-      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
       \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -629,7 +629,7 @@
       \strng{fullhash}{a3fa000d2b1d75717415b4584b64dd69}
       \field{labelalpha}{PWB16}
       \field{sortinit}{P}
-      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
       \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -657,7 +657,7 @@
       \strng{fullhash}{98a98c662070485303ebbfcac53df724}
       \field{labelalpha}{Ron05}
       \field{sortinit}{R}
-      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the Proceedings of the 38th Annual Hawaii International Conference on System Sciences - Volume 08}
@@ -684,7 +684,7 @@
       \strng{fullhash}{4ec2195ce9780002f1e976d23e51215b}
       \field{labelalpha}{Rov}
       \field{sortinit}{R}
-      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Angry Birds}
@@ -712,7 +712,7 @@
       \strng{fullhash}{5d7a5efae808436791e8e9e20107152f}
       \field{labelalpha}{RW16}
       \field{sortinit}{R}
-      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journalsubtitle}{Reflexionen und Spielideen}
@@ -730,7 +730,7 @@
       \strng{fullhash}{b1baf4470e92b775bf262b5b01f4c970}
       \field{labelalpha}{Sou}
       \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Irrlicht Engine}
@@ -751,7 +751,7 @@
       \strng{fullhash}{fee3fc182e02f376217580e5bfec4f51}
       \field{labelalpha}{Sta}
       \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Global Stats}
@@ -777,7 +777,7 @@
       \strng{fullhash}{7987f203a44120abbf869e919b3cd9a6}
       \field{labelalpha}{Sta12}
       \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9783936931860}
@@ -795,7 +795,7 @@
       \strng{fullhash}{4d09de8c70d9a0e1c44cc53ff3b79afa}
       \field{labelalpha}{Uni}
       \field{sortinit}{U}
-      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{sortinithash}{1554584e7f69d2b4fe0a645e73d50194}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Unity}
