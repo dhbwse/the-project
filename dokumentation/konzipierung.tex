@@ -84,9 +84,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		\end{itemize}
 		\item{Die Strecken werden in Level-Paketen ausgeliefert. Diese Level-Pakete müssen von dem Spieler durch Abschluss des vorherigen Level-Pakets freigeschaltet werden.}
 		\begin{itemize}
-			\item{Ein Level-Paket besteht aus zwei normalen Strecken und einem Finalrennen.}
+			\item{Ein Level-Paket besteht aus zwei normalen Strecken und einem Pokalrennen.}
 			\item{Um an einer finalen Strecke teilnehmen zu können, muss der Spieler eine Startgebühr bezahlen. Verliert der Spieler dieses Rennen, wird die Startgebühr erneut fällig.}
-			\item{Mit dem Abschluss der zwei normalen Strecken wird das Finalrennen verfügbar. Mit dem Abschluss des Finalrennen wird das nächste Level-Paket freigeschaltet.}
+			\item{Mit dem Abschluss der zwei normalen Strecken wird das Pokalrennen verfügbar. Mit dem Abschluss des Pokalrennen wird das nächste Level-Paket freigeschaltet.}
 			\item{Durch dieses Konzept ist Erweiterbarkeit gewährleistet.}
 		\end{itemize}
 		\item{Auf den Strecken werden verschiedene Abzweigungen möglich sein, bei welchen der Spieler die Auswahl zwischen zwei Wegen hat.}
@@ -105,7 +105,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		\begin{itemize}
 			\item{Für ein Rennen gegen computergesteuerte Bots kann sich der Spieler eine bessere Startposition erkaufen.}
 			\item{Für ein Zeitrennen kann sich der Spieler einen Zeitbonus erkaufen.}
-			\item{Der Spieler kann die Teilnahmegebühr für die Finalrunden sowohl über die Ingame-Währung als auch über das Absolvieren von Aufgaben bezahlen.}
+			\item{Der Spieler kann die Teilnahmegebühr für die Pokalrennen sowohl über die Ingame-Währung als auch über das Absolvieren von Aufgaben bezahlen.}
 			\item{Der Spieler kann weitere Fahrzeuge / spielbare Objekte für die Ingame-Währung kaufen. Alternativ ist über diese Währung auch ein Farbwechsel der bisher gekauften Objekte oder ein Wechsel des Spielersymbols (für den Multiplayer) denkbar.}
 		\end{itemize}
 	\end{enumerate}
@@ -124,8 +124,8 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 	\begin{description}
 		\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen sich in das Spiel einzufinden. Dies wird über wortlose Bilder gemacht, welche verschwinden, sobald der Nutzer die Steuerung probiert hat und eine Runde rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
 		\item[Level-Gruppe wechseln]{
-			Der Spieler kann die Level-Gruppen rotieren, jede besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen ein gewisser Preis an gelösten Aufgaben gezahlt werden muss (Finalrennen).
-			Jede Level-Gruppe ist in einem gewissen Stil durch thematisiert wobei die Karten für die Finalrennen etwas außergewöhnlicher sein sollen.
+			Der Spieler kann die Level-Gruppen rotieren, jede besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen ein gewisser Preis an gelösten Aufgaben gezahlt werden muss (Pokalrennen).
+			Jede Level-Gruppe ist in einem gewissen Stil durch thematisiert wobei die Karten für die Pokalrennen etwas außergewöhnlicher sein sollen.
 		}
 		\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Bildschirm wo folgende Funktionen zur Verfügung stehen:
 			\begin{description}
@@ -134,7 +134,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 				\item[Hilfsagent erneut starten]{ Hierdurch wird der Hilfsagent erneut gestartet. }
 			\end{description}
 		}
-		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Finalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
+		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Pokalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
 			\begin{description}
 				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
 				\item[als Rennen gegen Computergegner starten (Optional)]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos. Die Auswertung funktioniert über das Übliche Rang-Verfahren: die besten drei Spieler werden hervorgehoben und gekürt, nur der Erste gewinnt.}
@@ -182,8 +182,8 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
 		\paragraph{Regeln innerhalb der Level-Pakete:}
-		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Finalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Finalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Finalrennen verfügbar zu machen.
-		Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Finalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden, besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen <TODO:quelle>. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
+		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Pokalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Pokalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Pokalrennen verfügbar zu machen.
+		Für den Umfang des Spiels wurde eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikaionsrennens für die Freischaltung des Pokalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden, besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen <TODO:quelle>. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
 		\paragraph{Gewinnbedingungen eines Rennens:}
 		Zur Durchführung der Einzelspieler Rennen stehen grundsätzlich zwei Möglichkeiten zur Auswahl. Die erste Möglichkeit ist, dass der Spieler gegen computergesteuerte Rennteilnehmer (im folgenden Bots genannt) antritt. Zur Realisierung dieser Alternative ist die Entwicklung einer sogenannten KI <TODO: Erklärung?> nötig. Weiterhin werden dadurch Punkte, wie beispielsweise die Kollision mit anderen Rennteilnehmern notwendig. Um ein Rennen zu gewinnen, muss der Spieler als erster die Ziellinie überqueren.
@@ -230,7 +230,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 	Im Bereich der sonstigen Eigenschaften sollen Eigenschaften betrachtet werden, die nicht direkt die Spielmechanik betreffen. Dazu gehören unter Anderem Kameraeinstellungen, das Optionsmenü und ähnliches.
 
 		\paragraph{Kaufbares für Ingame-Währung:}
-		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Finalrennen und ist im Multiplayer nicht verfügbar.
+		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Multiplayer nicht verfügbar.
 
 		\paragraph{Heads-Up Display und Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
@@ -324,7 +324,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		}
 		\item[Laura Dietz]{
 			Die Rennfahrerin stört sich wohl am meisten an den Aufgaben, kann aber im Rennen durch geschicktes Fahren wieder aufholen. Sie hat Spaß an den Extras solange sie dafür nicht zu viel arbeiten muss.
-			Durch anspruchsvollere Finalrennen soll sie überzeugt werden die Aufgaben zu lösen.
+			Durch anspruchsvollere Pokalrennen soll sie überzeugt werden die Aufgaben zu lösen.
 		}
 		\item[Andy Klein]{
 			Der Experte erkundet das Spiel schnell und hat später durch den Mehrspielermodus die Möglichkeit sich mit anderen zu vergleichen und zusammen Spaß zu haben. So bleibt auch für den Experten das Spiel interessant.
@@ -333,9 +333,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 	<TODO:nochmal zusammenfassen und ein zwei allgemeine Sätze>
 
 \subsection{Lernziele Umsetzung}
-	Die Lernstrategie ist Wiederholung und spielerisches einsetzen von Aufgaben. Dazu sollen die Finalrunden etwas Herausforderndes und Besonderes sein. Nutzer sollen durch Gamification motiviert werden mehr und länger zu spielen (siehe \ref{ssec:gamification-modell}).
+	Die Lernstrategie ist Wiederholung und spielerisches einsetzen von Aufgaben. Dazu sollen die Pokalrennen etwas Herausforderndes und Besonderes sein. Nutzer sollen durch Gamification motiviert werden mehr und länger zu spielen (siehe \ref{ssec:gamification-modell}).
 	Die Lernziele wurden bereits in Kapitel \ref{ssec:lern-def} definiert.
-	Wie schon in Kapitel \ref{ssec:spielidee}, \ref{ssec:idee} und \ref{ssec:requirements} beschrieben gibt es mehrere Möglichkeiten, wie Aufgaben im Spiel eingebaut werden können. Wichtig ist, dass die Aufgaben nur für Finalrunden-Teilnahme unbedingt gelöst werden müssen. Das Lösen von Aufgaben ist in allen anderen Fällen zwanglos, wird aber psychologisch gefördert (siehe \ref{ssec:psycho-grundlagen}).
+	Wie schon in Kapitel \ref{ssec:spielidee}, \ref{ssec:idee} und \ref{ssec:requirements} beschrieben gibt es mehrere Möglichkeiten, wie Aufgaben im Spiel eingebaut werden können. Wichtig ist, dass die Aufgaben nur für Pokalrennen-Teilnahme unbedingt gelöst werden müssen. Das Lösen von Aufgaben ist in allen anderen Fällen zwanglos, wird aber psychologisch gefördert (siehe \ref{ssec:psycho-grundlagen}).
 	Die Idee ein Punktekonto für Aufgaben zu erstellen ist von dem \enquote{pay to win}\footnote{<TODO:Quelle>} Modell der Monetization\footcite{freemium} abgeleitet und \enquote{learn to win} getauft.
 	\begin{description}
 		\item[Aufgabe zum Start des Rennens]{
@@ -348,8 +348,8 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 			Punkte können später in normalen Rennen für witzige aber auch hilfreiche Dinge eingesetzt werden und haben so einen Sinn.
 			Hilfreiche Dinge sind möglicherweise ein Vorsprung, Zeitbonus, optische Verbesserungen, besondere Autos,
 		}
-		\item[Aufgabe für Teilnahme an Finalrunde]{
-			Eine Teilnahmegebühr für Finalrunden bringt nicht nur den Spieler zum Lernen, sondern setzt die Finalrunden von den normalen Level ab und macht sie so zu etwas besonderem. Durch ein besonders hervorgehobenen Leveleingang soll der Spieler darauf aufmerksam gemacht werden.
+		\item[Aufgabe für Teilnahme an Pokalrennen]{
+			Eine Teilnahmegebühr für Pokalrennen bringt nicht nur den Spieler zum Lernen, sondern setzt die Pokalrennen von den normalen Level ab und macht sie so zu etwas besonderem. Durch ein besonders hervorgehobenen Leveleingang soll der Spieler darauf aufmerksam gemacht werden.
 		}
 	\end{description}
 	Im Optimalfall werden die verschiedenen Alternativen durch Spieltests empirisch belegt.\footnote{<TODO:spieletests oder so>}
