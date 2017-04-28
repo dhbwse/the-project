@@ -1,16 +1,21 @@
 % !TEX root = dokumentation.tex
 \section{Implementierung}\label{sec:impl}
-In diesem Kapitel wird die Entwicklung des Spieles beschrieben.
+In diesem Kapitel wird die konkrete Entwicklung des Spieles beschrieben. Dabei werden sowohl die verschiedenen Prototypen betrachtet, wichtige Design-Entscheidungen offen gelegt und die technischen Hintergründe erläutert.
 \subsection{Prototypeing}
-	Als Basis wurde ein Beispiel Rennspiel verwendet\footnote{<TODO:paket nennen>}, dieses wurde im Lauf der Entwicklung entsprechend angepasst und erweitert.
+	Als Basis der Implementierung wurde ein in Unity vorhandenes Beispiel verwendet\footnote{<TODO:paket nennen>}, welches im Lauf der Entwicklung entsprechend angepasst und erweitert wurde. Zu diesem Beispiel gehört ein vereinfachtes Modell eines Autos, eine Kamera, welche sich hinter dem Fahrzeug befindet und einfache Nutzersteuerung für die Tastatur.
+	In diesem Abschnitt der Studienarbeit sollen nun die Prototypen in chronologischer Reihenfolge dargestellt werden, um die Entwicklung des Spiels zu verdeutlichen. Alle Stadien des Spiels wurden sowohl von den Entwicklern, wie auch ausgewählten Testspielern geprüft. Das erhaltene Feedback bietet somit die maßgebliche Grundlage für die Änderungen zwischen zwei Prototypen. Eine ausführliche Darlegung der Design-Entscheidungen befindet sich im folgenden Kapitel.
 	\begin{enumerate}[label=Prototyp \arabic*]
-		\item{ Kopie des Beispiel Rennspiels. Kamera über Auto gesetzt. }
-		\item{ Steuerung relativ zur Kamera Richtung. }
+		\item{Für den Beginn der Entwicklung wurde zunächst eine Kopie des genannten Beispiel Rennspiels angefertigt. Auf Basis der grundsätzlichen Spielidee wurde die Kamera oberhalb des Fahrzeugs positioniert, um eine Top-Down Ansicht zu erhalten. Durch die initiale Positionierung der Kamera hinter dem Fahrzeug, rotierte die Kamera mit dem Fahrzeug. Zwecks besserer Übersichtlichkeit wurde das Drehverhalten unterbunden und die Kamera lediglich relativ zur Position, jedoch nicht der Rotation des Fahrzeugs erweitert. Um das Spiel auf mobilen Endgeräten spielen zu können, wurde nun eine zunächst vereinfachte Steuerung über einen Joystick und zwei Buttons (Vorwärts und Rückwärts) implementiert. Die Eingaben des Joysticks wurden relativ zur Rotation des Fahrzeugs verarbeitet, somit führte beispielsweise ein \enquote{nach links ziehen} des Joysticks zu einer Linkskurve des Fahrzeugs. Die vertikale Achse des Joysticks fand in diesem Prototyp keine Verwendung, weshalb ein Slider als Alternative zum Joystick evaluiert wurde. }
+		\item{Für den zweiten Prototyp stand die Weiterentwicklung der Steuerung im Fokus. Dabei wurde zunächst die Idee eines Sliders zur Lenkung des Fahrzeugs verworfen. Anschließend wurde die Steuerung nicht relativ zur Ausrichtung des Fahrzeugs, sondern relativ zur Blickrichtung der Kamera implementiert. Somit schlägt das Fahrzeug immer die gleiche Richtung ein, wie der Joystick abhängig von seinem Mittelpunkt bewegt wird. Ein ziehen des Joysticks nach Rechts führt somit in jedem Fall dazu, dass das Fahrzeug nach rechts fährt. Die vorherige Fahrtrichtung des Fahrzeugs spielt dabei keine Rolle. }
 		\item{ Bremse hinzugefügt, Rückwärtsgang entfernt. }
 		\item{ Benutzeroberfläche überarbeitet (Buttons), Tacho Version. }
 		\item{ rückwärtsgang, aufgaben anzeigen(nur aufgabe), minimap }
 		\item{NEXT: nurnoch symbole im menü, spielstand speicherung, aufgaben auswertung (min 20\%), rückwärz vorwährts fahren nurnoch bei stillstand wechseln, reifen nachziehen, mehr maps, pfeile auf der map um die aufgaben zuzuweisen, sounds(bei aufgaben lösen, hintergrundtöne, kollisionen) }
 	\end{enumerate}
+\subsection{Design-Entscheidungen in der Entwicklung}
+	\subsubsection{Automatisch Gas vs Gaspedal}
+	\subsubsection{Steuerung relativ zu Kamera vs Steuerung relativ zu Fahrzeug}
+	\subsubsection{Joystick vs Slider}
 \subsection{Entwicklung}
 	\subsubsection{Level Design}
 		Wie bereits in \ref{par:streckendesign} und \ref{par:streckendesign2} beschrieben sollen die Rennstrecken schlauchartig...
