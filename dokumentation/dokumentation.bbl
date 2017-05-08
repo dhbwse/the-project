@@ -291,6 +291,7 @@
       \field{labelalpha}{Ele}
       \field{sortinit}{E}
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Need for Speed}
@@ -299,6 +300,26 @@
       \field{urlyear}{2017}
       \verb{url}
       \verb http://www.needforspeed.com/
+      \endverb
+    \endentry
+    \entry{easports}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d177668b351a948781f0477db6a22991}{%
+           family={{Electronic\bibnamedelimb Arts\bibnamedelimb Inc.}},
+           family_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d177668b351a948781f0477db6a22991}
+      \strng{fullhash}{d177668b351a948781f0477db6a22991}
+      \field{labelalpha}{Ele}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{urlday}{08}
+      \field{urlmonth}{05}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://ea.com
       \endverb
     \endentry
     \entry{unreal-home}{online}{}

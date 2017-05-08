@@ -232,13 +232,32 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels an sich. 
 		\paragraph{Kaufbares für Ingame-Währung:}
 		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor Allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Multiplayer nicht verfügbar.
 
-		\paragraph{Heads-Up Display und Steuerung:}
+		\paragraph{Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
-		Die Steuerung der Fahrtrichtung des Fahrzeugs kann über zwei Wege realisiert werden.<TODO:Referenz human computer interaction> Der erste Weg wäre die Verwendung des Neigungssensors des Nutzergeräts. Dabei müsste der Spieler sein Gerät ähnlich einem Lenkrad in die entsprechende Richtung neigen, um eine Reaktion des Fahrzeugs hervorzurufen. Die zweite Möglichkeit wäre die Verwendung eines \enquote{Lenkrads}, wobei der Spieler mittels Bewegungen auf dem Touchscreen das Fahrzeug steuern kann. Da ein Steuern des Fahrzeugs mittels des Neigungssensors und ein gleichzeitiges Lesen und Lösen der auf dem Bildschirm angezeigten Aufgaben als zu schwierig erachtet wird, soll die Steuerung über Touchscreen-Eingaben realisiert werden. Hierbei eignet sich das für Mobile-Spiele übliche stufenlose Steuerkreuz am Besten. Somit ist dieses Steuerkreuz eine nötige Komponente auf dem Bildschirm.
-		Für die Steuerung der Geschwindigkeit konnte sich im Rahmen des Brainstormings lediglich eine Möglichkeit durchsetzen. Hierbei sollen zwei \enquote{Pedale} verwendet werden, um das Fahrzeug zu beschleunigen bzw. zu bremsen. Um die Geschwindigkeit des Fahrzeugs zu halten, muss das \enquote{Gaspedal} durchgehend gedrückt werden. Ein Loslassen des Gaspedals führt zu einer stetigen Verringerung der Geschwindigkeit. Ein Betätigen des Bremspedals führt zu einer deutlich schnelleren Verringerung der Geschwindigkeit. Wird das Bremspedal nach Stillstand des Fahrzeugs erneut betätigt, fährt dieses mit verringerter Geschwindigkeit rückwärts. Aufgrund dieser Beschreibung ergibt sich, dass zwei Pedale als Komponenten auf dem Bildschirm benötigt werden.
-		<TODO: Minikarte definieren>
-		<TODO: mögliche inputs (touch,beschleunigung,magnet/ausrichtung...) auflisten, darauf bereits genutzte steuerungen auflisten und dann herraussuchen (Quellen ;) ) >
+		Die Steuerung des Fahrzeugs könnte in mehreren Varianten realisiert werden, mittels
+		\begin{description}
+			\item[Neigungssensor]{ Durch Neigung des Handys fährt das Auto entsprechend Links oder Rechts, dabei entscheidet der Grad der Neigung, wie stark die Kurve gefahren wird. Wichtig ist hier eine Kalibrierung des Sensors um den korrekten Nullpunkt zu verwenden. Ebenso sollte der Bereich, welcher das Auto geradeaus fahren lässt, eine gewisse Breite aufweisen, so sorgt leichtes wackeln nicht zum Kurvenfahren. Die generelle Empfindlichkeit sollte für Anwender Konfigurierbar sein. }
+			\item[Lenkrad auf dem Touchscreen]{ Auf dem Bildschirm wird ein Lenkrad aus der Sicht des Fahrers gezeigt, der Nutzer kann dieses mittels tappen und ziehen drehen und ein links oder Rechtsfahren bewirken. }
+			\item[Direkteingabe über den Bildschirm]{ Mit dem Finger auf den Bildschirm tappen oder halten, das Spiel berechnet dann die gewünschte Richtung und lässt das Auto an die zuletzt berührte Stelle fahren. In manchen Implementierungen werden bei dieser Art der Steuerung auch Hindernisse umgangen,\footnote{Beispielsweise in \enquote{League of Legends}.} dies ist in Rennspielen nicht gut, weil hier die Schwierigkeit im Fahren an sich besteht.  }
+			\item[Digitalem Joystick]{ Joystick welcher relativ zum Auto interpretiert wird. Nach rechts ziehen lässt das Auto eine Rechtskurve fahren. Nach unten ziehen bremst und kann auch rückwärts fahren bewirken. }
+			\item[Digitalem Joystick nur Richtung]{ Knüppel, welcher mit zwei Achsen die Fahrtrichtung direkt angibt. Die Richtung sollte relativ zur Kamera interpretiert werden, dass nach rechts ziehen auch einem nach rechts Fahren entspricht. }
+		\end{description}
+		Lenkung durch den Neigungssensor wurde verworfen, weil dadurch die Aufgaben schwerer zu lesen sind.
+		Ein Lenkrad auf dem Bildschirm nimmt zu viel Platz auf dem Bildschirm ein.
+		Direkteingabe über den Bildschirm ist zu einfach zu steuern und wird bei höheren Geschwindigkeiten schnell untauglich.
+		Ein Joystick welcher gleichzeitig Gas gibt und bremst vereinfacht die Steuerung zu arg und vermindert das Gefühl ein Auto zu fahren.
 
+		Aus diesen Gründen wurde eine Steuerung mit digitalem Joystick, welcher die Fahrtrichtung übernimmt und Pedalen für Gas und Bremse gewählt. Rückwärts fahren soll dabei nur aus dem Stillstand durch ein Lenken nach hinten und Gasgeben möglich sein.
+		Um die Geschwindigkeit des Fahrzeugs zu halten, muss das Gaspedal durchgehend gedrückt werden.
+		Ein Loslassen des Gaspedals lässt das Fahrzeug bis zum stillstand rollen. Ein Betätigen des Bremspedals führt zu einer deutlich schnelleren Verringerung der Geschwindigkeit.
+		Ein Beispiel für digitale Joysticks, welche in Mobilen-Spielen relativ üblich sind ist in der Folgenden Abbildung zu sehen.
+
+		\figur{dpad.png}{Digitaler Joystick auch D-Pad unten links. Abbildung \cite{easports}\footnotemark}%
+		\footcitetext[\url{http://www2.ea.com/uk/fifa-11-iphone/images/f784dabc26b7b210VgnVCM2000001165140aRCRD}]{easports}
+
+
+		\paragraph{Heads-Up Display:}
+			steuerelemente + Minikarte, Aufgaben und Zeitanzeige
 		\paragraph{Kameraperspektive:}
 		Grundsätzlich sind für Rennspiele drei Kameraperspektiven denkbar. Diese sind:
 		\begin{itemize}
