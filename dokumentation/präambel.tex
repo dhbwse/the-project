@@ -107,6 +107,14 @@
 \AtEndDocument{\restorelines}% to make sure its gone
 \setlist{before=\restorelines}% fix all lists (\obeylines breaks them)
 
+% newline after paragraph
+\makeatletter%
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+   {-3.25ex\@plus -1ex \@minus -.2ex}%
+   {0.5ex \@plus .2ex}%
+   {\normalfont\normalsize\bfseries}}%
+\makeatother
+
 %Things i need for projectmanagement
 \usepackage[normalem]{ulem}
 \usepackage[table]{xcolor}
