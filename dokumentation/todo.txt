@@ -1,0 +1,81 @@
+marc
+	ab seite 45 schreiben
+	bild gamification modell - übersicht
+marvin
+	zeit
+	terme zusammenpacken
+	todos
+	bilder
+		grundlagen - lernspiele
+		konzipierung
+			brainstorming/game design
+				gas evolution reinpacken
+				generell bilder
+			grundsätzliche eigenschaften
+			play personas 4 bilder
+		implementierung
+			prototyping - aktuelles aussehen
+	steuerungs formel in latex formulieren
+
+
+
+
+
+
+
+term konsolidierung:
+	Ingame-Währung, Punkte
+	Teilnahmegebühr
+	Engines, game engine, spiele engine => Game-Engine
+	multiplayer, mehrspieler
+zeit?
+	gegenwart
+
+playtests
+	collision im menu
+		ja
+		nein
+	steuerungs alternativen
+		steuerung
+			1
+				relativ zum auto
+				relativ zum bild
+			2
+				direkt (steuerkreutz zeigt in die richtung)
+				indirekt
+		beschleunigen:
+			im steuerknüppel
+			getrennt
+			knüpel steuert gaß, bremse ist ein taster zum umschalten (gas/bremse)
+
+
+aufgaben interface
+	app startbar über
+		normalen starter
+			startet mit mathe I
+		über ali gestartet
+			liefert string <content> mit
+			wir prüfen ob es aktuell ist und aktualisieren ggf.
+			startet mit content
+	datenbank (json)
+
+
+
+welche art von themen eignen sich für das spiel?
+welche art von lerninhalten werden mit drill eher gelernt oder eher nicht?
+
+end evaluation
+	merkmale analysieren
+
+
+
+korrektur
+	Grundlagen psychologische grundlagen:
+		links: fragezeichen (seite 16(11))
+			alternativen zu was?
+	Analyse Spiele Tabelle: kommentar oben (seite 22(17))
+		ausformulieren die kriterien
+	Lernzile definition: typen von lerninhalt? (seite 23(18))
+		faktenwissen und so als typen von lerninhalt erklären
+
+
