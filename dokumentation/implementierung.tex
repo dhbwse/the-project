@@ -42,7 +42,37 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	Wird die Ausrichtung des Joysticks zur Wahl der Fahrtrichtung verwendet, so wird die Konsistenz gewahrt. Das Betätigen des Bremspedals führt dabei ungeachtet der Fahrtrichtung zu einer Verlangsamung des Fahrzeugs, wohingegen ein Betätigen des Gaspedals in jedem Fall zu einer Beschleunigung des Fahrzeugs führt. Da die Wahrung der Konsistenz für die Entwicklung eines Spiels eine große Rolle spielt, wird für die Implementierung des Rückwärtsgangs die Abhängigkeit zur Ausrichtung des Joysticks gewählt.
 
 	\subsubsection{Auswertung eines Rennens}
-	
+	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale, soll eine Entscheidungstabelle erstellt werden, welche die Leistung des Spielers bewertet. Für die Auswertung der benötigten Zeit erhält jedes Level drei Zeiten, welche zur Bestimmung der Rennleistung genutzt werden. Diese Zeiten werden im Folgenden als Bronze, Silber und Gold bezeichnet. Für jede dieser Zeiten existieren drei Stadien: 
+	\begin{enumerate}
+		\item{ Die Zeit wurde überschritten. Ein Überschreiten der Zeit bedeutet, dass der Spieler zu langsam war und das Ziel nicht rechtzeitig erreicht hat. Dabei wird davon ausgegangen, dass die nächst schlechtere Zeit unterschritten und somit geschafft ist. (Definition: slow)}
+		\item{ Die Zeit wurde mit geringem Offset erreicht. Der Offset ist hierbei fest definiert und bestimmt das Intervall: Zeit - Offset bis Zeit + Offset. (Definition: medium)}
+		\item{ Die Zeit wurde unterschritten. Dies bedeutet, dass der Spieler schneller war uns somit potentiell in das Intervall der nächst besseren Zeit fällt. (Definition: fast)}
+	\end{enumerate}
+	Weiterhin ist für die Erstellung einer Entscheidungstabelle eine Auswertung der Aufgaben relevant. Dabei werden für die Auswertung der Aufgaben folgende Regeln verwendet:
+	\begin{itemize}
+		\item{ Der Spieler hat keine der Aufgaben korrekt gelöst.}
+		\item{ Der Spieler hat 20\% der Aufgaben korrekt gelöst.}
+		\item{ Der Spieler hat 60\% der Aufgaben korrekt gelöst.}
+		\item{ Der Spieler hat 100\% der Aufgaben korrekt gelöst.}
+	\end{itemize}
+	Unter Verwendung der bisher genannten Kriterien entsteht somit die Entscheidungstabelle \ref{pokal-tabelle}. Durch die Farbgebung der Felder wird der erreichte Pokal simuliert, eine Einfärbung in Rot bedeutet, dass kein Pokal erreicht wurde.
+	\begin{table}[]
+\centering
+\caption{Entscheidungstablle für Vergabe von Pokalen}
+\label{pokal-tabelle}
+\begin{tabular}{l|lll|lll|lll}
+                       & \multicolumn{3}{c|}{\textbf{Bronze}}                                           & \multicolumn{3}{c|}{\textbf{Silber}}                                           & \multicolumn{3}{c|}{\textbf{Gold}}                                             \\ \cline{2-10} 
+                       & \textbf{slow}            & \textbf{medium}          & \textbf{fast}            & \textbf{slow}            & \textbf{medium}          & \textbf{fast}            & \textbf{slow}            & \textbf{medium}          & \textbf{fast}            \\ \hline
+\textbf{0\%}   & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} \\
+\textbf{20\%}  & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} \\
+\textbf{60\%}  & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} \\
+\textbf{100\%} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{E6F404} & \cellcolor[HTML]{E6F404}
+\end{tabular}
+\end{table}
+
+Die Entscheidungstabelle zeigt, welche Pokalfarbe auf Basis der gespielten Zeit in Verbindung mit der Anzahl an gelösten Aufgaben ergibt. Das Erreichen des Gold Pokals ist dabei absichtlich schwierig gewählt, um den Spieler zu fordern und zu motivieren. Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (vgl. einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei Gold unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn Bronze unterschritten, jedoch Silber noch nicht erreicht wurde. In diesem Fall müssen alle Aufgaben korrekt gelöst sein.
+
+
 \subsection{Entwicklung}
 	\subsubsection{Level Design}
 		Wie bereits in \ref{par:streckendesign} und \ref{par:streckendesign2} beschrieben sollen die Rennstrecken schlauchartig...
