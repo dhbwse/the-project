@@ -42,11 +42,11 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	Wird die Ausrichtung des Joysticks zur Wahl der Fahrtrichtung verwendet, so wird die Konsistenz gewahrt. Das Betätigen des Bremspedals führt dabei ungeachtet der Fahrtrichtung zu einer Verlangsamung des Fahrzeugs, wohingegen ein Betätigen des Gaspedals in jedem Fall zu einer Beschleunigung des Fahrzeugs führt. Da die Wahrung der Konsistenz für die Entwicklung eines Spiels eine große Rolle spielt, wird für die Implementierung des Rückwärtsgangs die Abhängigkeit zur Ausrichtung des Joysticks gewählt.
 
 	\subsubsection{Auswertung eines Rennens}
-	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale und Punkte wird eine Tabelle eine Entscheidungstabelle hergeleitet. Die dafür relevanten Kriterien sind die Prozentzahl der korrekten Aufgaben und die Zeit, welche der Spieler für die Strecke gebraucht hat.
-	Für die Auswertung der benötigten Zeit erhält jedes Level drei Zeiten, welche zur Bestimmung der Rennleistung genutzt werden. Für jede dieser Zeiten existieren zwei Stadien und für die schnellste und langsamste zeit je ein zusätzliches:
+	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale und Punkte wird  eine Entscheidungstabelle hergeleitet. Die dafür relevanten Kriterien sind die Prozentzahl der korrekten Aufgaben und die Zeit, welche der Spieler für die Strecke benötigt hat.
+	Für die Auswertung der benötigten Zeit erhält jedes Level drei Zeiten, welche zur Bestimmung der Rennleistung genutzt werden. Für jede dieser Zeiten existieren zwei Stadien und für die schnellste und langsamste Zeit je ein zusätzliches:
 	\begin{enumerate}
-		\item{ Langsamer als die Zeit, aber näher als an der Zeit darunter. Für die letzte zeit wird hier ein maximal Abstand von $60$ Sekunden verwendet. Alles darunter ist \enquote{zu langsam} und in der folgenden Tabelle mit $<<$, lies viel langsamer markiert. }
-		\item{ Schneller als die jeweilige Zeit, dabei nicht näher an der Zeit darüber. Für die Erste beziehungsweise schnellste Zeit wird diese Gruppe mit $60$ Sekunden Differenz definiert. Schnellere Zeiten sind unter $>>$ zusammengefasst. }
+		\item{ Langsamer als die gesetzte Zeit, jedoch näher an dieser, als an der nächst langsameren Zeit. Für die letzte Zeit wird hier ein maximal Abstand von $60$ Sekunden verwendet. Alles darunter ist \enquote{zu langsam} und in der folgenden Tabelle mit $<<$ markiert. }
+		\item{ Schneller als die jeweilige Zeit, dabei jedoch nicht näher an der nächst schnelleren Zeit. Für die Erste beziehungsweise schnellste Zeit wird diese Gruppe mit $60$ Sekunden Differenz definiert. Schnellere Zeiten sind unter $>>$ zusammengefasst. }
 	\end{enumerate}
 	Wie in \ref{gewinnbedinungen} definiert soll ebenso die Menge der korrekten Aufgaben in die Gewinnfunktion einfließen. Die Aufgaben werden in 4 Regionen unterteilt:
 	\begin{enumerate}
@@ -55,7 +55,7 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 		\item{ unter 100\% der Aufgaben wurden korrekt gelöst. }
 		\item{ 100\% der Aufgaben wurden korrekt gelöst. }
 	\end{enumerate}
-	Mit diesen den beiden Achsen wurde dann die folgende Tabelle mit den jeweiligen gewonnenen Pokalen definiert:
+	Mit diesen beiden Achsen kann so die folgende Tabelle mit den jeweiligen gewonnenen Pokalen definiert werden:
 
 	\newcommand{\bronze}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_bronze.pdf}}}
 	\newcommand{\silber}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
@@ -72,14 +72,15 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 		\bottomrule
 	\end{tabl}
 
-Das Erreichen von Gold-Pokalen wird dabei absichtlich selten gewählt, um den Spieler zu fordern, motivieren und auch um realistische Ergebnisse zu setzen. Erst, wenn die Aufgaben und die Zeit perfektioniert wurden, gibt es einen Gold-Pokal.
+Das Erreichen von Gold-Pokalen wird dabei absichtlich schwierig gewählt, um den Spieler zu fordern, motivieren und auch um realistische Ergebnisse zu setzen. Erst wenn die Aufgaben und die Zeit perfektioniert wurden, erhält der Spieler einen Gold-Pokal.
 Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (beziehungsweise einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei die schnellste Zeit deutlich unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn der Spieler schneller als die langsamste Zeit fährt und alle Aufgaben korrekt löst.
 
 \subsection{Entwicklung}
 In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anwendung aufgegriffen. Dabei liegt der Fokus besonders auf Kernaspekten bzw. Kernproblemen, welche im Laufe der Entwicklung aufkommen.
 	\subsubsection{Level Design}
-		Wie bereits in \ref{par:streckendesign} und \ref{par:streckendesign2} beschrieben sollen die Rennstrecken schlauchartig...
+		Wie bereits in \ref{par:streckendesign} und \ref{par:streckendesign2} beschrieben sollen die Rennstrecken schlauchartig aufgebaut sein. Das bedeutet, dass für jedes Level ein fester Startpunkt sowie ein fester Endpunkt existiert. Weiterhin existiert nur ein korrekter Weg zwischen diesen Punkten. Grundsätzlich können dem Spieler Abzweigungen innerhalb des Levels angeboten werden, diese Abzweigungen führen den Spieler jedoch nicht ans Ziel. 
 		\label{ssec:schlauch}\figur{Schlauchlevel.png}{Beispiel: Schlauchlevel}
+		Die Abbildung \ref{ssec:schlauch} zeigt einen Ausschnitt eines Levels. In der Mitte der Abbildung befindet sich die Rennstrecke, welche auf beiden Seiten von einem Seitenstreifen eingeschlossen wird. An den Außenrändern der Seitenstreifen befinden sich statische Objekte, welche ein Verlassen des vorgegeben Wegs verhindern. Somit wird gewährleistet, dass der Spieler den vorgegeben Bereich nicht verlassen kann und ungewollte Abkürzungen zwischen dem Start und dem Ziel nicht existieren. Durch die Entscheidung für Schlauchlevel kann dem Spieler ein klar vorgegebener Rahmen präsentiert werden. Der Bereich außerhalb dieses Schlauches kann aus den genannten Gründen im Bereich des Leveldesigns ignoriert werden. Verlässt der Spieler den in der Abbildung \ref{ssec:schlauch} braun markierten Bereich, wird ein C\# Script ausgelöst, welches die Geschwindigkeit verringert. Die genaue Umsetzung der Geschwindigkeitsreduktion soll an dieser Stelle nicht behandelt werden. Nähere Informationen dazu befinden sich im Kapitel <TODO: Verlinkung einfügen>.
 		\label{ssec:statisch}\figur{Statische_Objekte.png}{Beispiel: Unbewegliche Objekte neben der Strecke}
 		\label{ssec:beweglich}\figur{Bewegliche_Objekte.png}{Beispiel: Bewegliche Objekte auf der Strecke}
 	\subsubsection{UI Design}
