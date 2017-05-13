@@ -512,6 +512,33 @@
       \verb http://www.gut1.de/
       \endverb
     \endentry
+    \entry{free-to-play_is_pay-to-win}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=63d60f55593985b61ea2cb46ac7682e6}{%
+           family={Hartup},
+           family_i={H\bibinitperiod},
+           given={Andy},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {gamesradar}%
+      }
+      \strng{namehash}{63d60f55593985b61ea2cb46ac7682e6}
+      \strng{fullhash}{63d60f55593985b61ea2cb46ac7682e6}
+      \field{labelalpha}{Har13}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{day}{03}
+      \field{month}{04}
+      \field{urlday}{13}
+      \field{urlmonth}{05}
+      \field{urlyear}{2017}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://www.gamesradar.com/free-play-still-pay-win
+      \endverb
+    \endentry
     \entry{gamification}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=01740a561a29d0fcc5fe7dc076f40f5f}{%
@@ -540,6 +567,46 @@
       \field{year}{2012}
       \verb{url}
       \verb https://www.researchgate.net/publication/259841647
+      \endverb
+    \endentry
+    \entry{pay-to-win}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=585cae26e50b9abda8d670814c579760}{%
+           family={Kimppa},
+           family_i={K\bibinitperiod},
+           given={Kai\bibnamedelima K.},
+           given_i={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{uniquename=0,hash=6c8efe25d815b9bed2f541649d405124}{%
+           family={Heimo},
+           family_i={H\bibinitperiod},
+           given={Olli\bibnamedelima I.},
+           given_i={O\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{uniquename=0,hash=3b63bb1693a30814de52595c4fcad5e1}{%
+           family={Harviainen},
+           family_i={H\bibinitperiod},
+           given={J.\bibnamedelimi Tuomas},
+           given_i={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery ({ACM})}%
+      }
+      \strng{namehash}{793d29448c19bc8a4e5812c161bb2ede}
+      \strng{fullhash}{793d29448c19bc8a4e5812c161bb2ede}
+      \field{labelalpha}{KHH16}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{ACM} {SIGCAS} Computers and Society}
+      \field{month}{01}
+      \field{number}{3}
+      \field{title}{First dose is always freemium}
+      \field{volume}{45}
+      \field{year}{2016}
+      \field{pages}{132\bibrangedash 137}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/2874239.2874258
       \endverb
     \endentry
     \entry{java}{online}{}
