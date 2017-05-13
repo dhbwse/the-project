@@ -56,19 +56,21 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 		\item{ Der Spieler hat 100\% der Aufgaben korrekt gelöst.}
 	\end{itemize}
 	Unter Verwendung der bisher genannten Kriterien entsteht somit die Entscheidungstabelle \ref{pokal-tabelle}. Durch die Farbgebung der Felder wird der erreichte Pokal simuliert, eine Einfärbung in Rot bedeutet, dass kein Pokal erreicht wurde.
-	\begin{table}[]
-\centering
-\caption{Entscheidungstablle für Vergabe von Pokalen}
-\label{pokal-tabelle}
-\begin{tabular}{l|lll|lll|lll}
-                       & \multicolumn{3}{c|}{\textbf{Bronze}}                                           & \multicolumn{3}{c|}{\textbf{Silber}}                                           & \multicolumn{3}{c|}{\textbf{Gold}}                                             \\ \cline{2-10}
-                       & \textbf{slow}            & \textbf{medium}          & \textbf{fast}            & \textbf{slow}            & \textbf{medium}          & \textbf{fast}            & \textbf{slow}            & \textbf{medium}          & \textbf{fast}            \\ \hline
-\textbf{0\%}   & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} \\
-\textbf{20\%}  & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} \\
-\textbf{60\%}  & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} \\
-\textbf{100\%} & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{A17610} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{E6F404} & \cellcolor[HTML]{E6F404}
-\end{tabular}
-\end{table}
+
+	\newcommand{\bronze}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_bronze.pdf}}}
+	\newcommand{\silber}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
+	\newcommand{\gold}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_gold.pdf}}}
+	\begin{tabl}{r@{\hspace{8mm}}cccrlccc}{Vergabe von Pokalen}%
+		\toprule\label{pokal-tabelle}
+			& \multicolumn{3}{c}{Dritte Zeit} & \multicolumn{2}{c}{Zweite Zeit} & \multicolumn{3}{c}{Erste Zeit} \\
+			$\sum$ Aufgaben & $<<$ & $<$ & $>$ & $<$ & $>$ & $<$ & $>$ & $>>$ \\
+		\midrule
+			$<30\%$ & $-$ & $-$ & $-$ & \hspace{5mm}$-$ & $-$\hspace{4mm} & $-$ & $-$ & \bronze \\
+			$<60\%$ & $-$ & \bronze & \bronze & \bronze & \bronze & \bronze & \silber & \silber \\
+			$<100\%$ & $-$ & \bronze & \bronze & \silber & \silber & \silber & \silber & \silber \\
+			$=100\%$ & $-$ & \bronze & \silber & \silber & \silber & \silber & \gold & \gold \\
+		\bottomrule
+	\end{tabl}
 
 Die Entscheidungstabelle zeigt, welche Pokalfarbe auf Basis der gespielten Zeit in Verbindung mit der Anzahl an gelösten Aufgaben ergibt. Das Erreichen des Gold Pokals ist dabei absichtlich schwierig gewählt, um den Spieler zu fordern und zu motivieren. Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (vgl. einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei Gold unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn Bronze unterschritten, jedoch Silber noch nicht erreicht wurde. In diesem Fall müssen alle Aufgaben korrekt gelöst sein.
 
