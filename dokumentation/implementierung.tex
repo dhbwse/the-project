@@ -42,20 +42,20 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	Wird die Ausrichtung des Joysticks zur Wahl der Fahrtrichtung verwendet, so wird die Konsistenz gewahrt. Das Betätigen des Bremspedals führt dabei ungeachtet der Fahrtrichtung zu einer Verlangsamung des Fahrzeugs, wohingegen ein Betätigen des Gaspedals in jedem Fall zu einer Beschleunigung des Fahrzeugs führt. Da die Wahrung der Konsistenz für die Entwicklung eines Spiels eine große Rolle spielt, wird für die Implementierung des Rückwärtsgangs die Abhängigkeit zur Ausrichtung des Joysticks gewählt.
 
 	\subsubsection{Auswertung eines Rennens}
-	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale, soll eine Entscheidungstabelle erstellt werden, welche die Leistung des Spielers bewertet. Für die Auswertung der benötigten Zeit erhält jedes Level drei Zeiten, welche zur Bestimmung der Rennleistung genutzt werden. Diese Zeiten werden im Folgenden als Bronze, Silber und Gold bezeichnet. Für jede dieser Zeiten existieren drei Stadien:
+	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale und Punkte wird eine Tabelle eine Entscheidungstabelle hergeleitet. Die dafür relevanten Kriterien sind die Prozentzahl der korrekten Aufgaben und die Zeit, welche der Spieler für die Strecke gebraucht hat.
+	Für die Auswertung der benötigten Zeit erhält jedes Level drei Zeiten, welche zur Bestimmung der Rennleistung genutzt werden. Für jede dieser Zeiten existieren zwei Stadien und für die schnellste und langsamste zeit je ein zusätzliches:
 	\begin{enumerate}
-		\item{ Die Zeit wurde überschritten. Ein Überschreiten der Zeit bedeutet, dass der Spieler zu langsam war und das Ziel nicht rechtzeitig erreicht hat. Dabei wird davon ausgegangen, dass die nächst schlechtere Zeit unterschritten und somit geschafft ist. (Definition: slow)}
-		\item{ Die Zeit wurde mit geringem Offset erreicht. Der Offset ist hierbei fest definiert und bestimmt das Intervall: Zeit - Offset bis Zeit + Offset. (Definition: medium)}
-		\item{ Die Zeit wurde unterschritten. Dies bedeutet, dass der Spieler schneller war uns somit potentiell in das Intervall der nächst besseren Zeit fällt. (Definition: fast)}
+		\item{ Langsamer als die Zeit, aber näher als an der Zeit darunter. Für die letzte zeit wird hier ein maximal Abstand von $60$ Sekunden verwendet. Alles darunter ist \enquote{zu langsam} und in der folgenden Tabelle mit $<<$, lies viel langsamer markiert. }
+		\item{ Schneller als die jeweilige Zeit, dabei nicht näher an der Zeit darüber. Für die Erste beziehungsweise schnellste Zeit wird diese Gruppe mit $60$ Sekunden Differenz definiert. Schnellere Zeiten sind unter $>>$ zusammengefasst. }
 	\end{enumerate}
-	Weiterhin ist für die Erstellung einer Entscheidungstabelle eine Auswertung der Aufgaben relevant. Dabei werden für die Auswertung der Aufgaben folgende Regeln verwendet:
-	\begin{itemize}
-		\item{ Der Spieler hat keine der Aufgaben korrekt gelöst.}
-		\item{ Der Spieler hat 20\% der Aufgaben korrekt gelöst.}
-		\item{ Der Spieler hat 60\% der Aufgaben korrekt gelöst.}
-		\item{ Der Spieler hat 100\% der Aufgaben korrekt gelöst.}
-	\end{itemize}
-	Unter Verwendung der bisher genannten Kriterien entsteht somit die Entscheidungstabelle \ref{pokal-tabelle}. Durch die Farbgebung der Felder wird der erreichte Pokal simuliert, eine Einfärbung in Rot bedeutet, dass kein Pokal erreicht wurde.
+	Wie in \ref{gewinnbedinungen} definiert soll ebenso die Menge der korrekten Aufgaben in die Gewinnfunktion einfließen. Die Aufgaben werden in 4 Regionen unterteilt:
+	\begin{enumerate}
+		\item{ unter 30\% der Aufgaben wurden korrekt gelöst. }
+		\item{ unter 60\% der Aufgaben wurden korrekt gelöst. }
+		\item{ unter 100\% der Aufgaben wurden korrekt gelöst. }
+		\item{ 100\% der Aufgaben wurden korrekt gelöst. }
+	\end{enumerate}
+	Mit diesen den beiden Achsen wurde dann die folgende Tabelle mit den jeweiligen gewonnenen Pokalen definiert:
 
 	\newcommand{\bronze}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_bronze.pdf}}}
 	\newcommand{\silber}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
@@ -67,12 +67,13 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 		\midrule
 			$<30\%$ & $-$ & $-$ & $-$ & \hspace{5mm}$-$ & $-$\hspace{4mm} & $-$ & $-$ & \bronze \\
 			$<60\%$ & $-$ & \bronze & \bronze & \bronze & \bronze & \bronze & \silber & \silber \\
-			$<100\%$ & $-$ & \bronze & \bronze & \silber & \silber & \silber & \silber & \silber \\
+			$<100\%$ & $-$ & \bronze & \bronze & \bronze & \silber & \silber & \silber & \silber \\
 			$=100\%$ & $-$ & \bronze & \silber & \silber & \silber & \silber & \gold & \gold \\
 		\bottomrule
 	\end{tabl}
 
-Die Entscheidungstabelle zeigt, welche Pokalfarbe auf Basis der gespielten Zeit in Verbindung mit der Anzahl an gelösten Aufgaben ergibt. Das Erreichen des Gold Pokals ist dabei absichtlich schwierig gewählt, um den Spieler zu fordern und zu motivieren. Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (vgl. einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei Gold unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn Bronze unterschritten, jedoch Silber noch nicht erreicht wurde. In diesem Fall müssen alle Aufgaben korrekt gelöst sein.
+Das Erreichen von Gold-Pokalen wird dabei absichtlich selten gewählt, um den Spieler zu fordern, motivieren und auch um realistische Ergebnisse zu setzen. Erst, wenn die Aufgaben und die Zeit perfektioniert wurden, gibt es einen Gold-Pokal.
+Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (beziehungsweise einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei die schnellste Zeit deutlich unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn der Spieler schneller als die langsamste Zeit fährt und alle Aufgaben korrekt löst.
 
 \subsection{Entwicklung}
 In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anwendung aufgegriffen. Dabei liegt der Fokus besonders auf Kernaspekten bzw. Kernproblemen, welche im Laufe der Entwicklung aufkommen.
