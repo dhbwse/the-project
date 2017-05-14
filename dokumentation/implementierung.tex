@@ -105,27 +105,28 @@ In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anw
 		\item{ Das Haken-Symbol wird im Shop verwendet und bestätigt einen Kauf.}
 	\end{itemize}
 	Bei allen erwähnten Symbolen wird ein gleichbleibender Farbverlauf verwendet. Außerdem sind alle Icons mit einem helleren Rand versehen. 
-	Eine Besonderheit stellt die Visualisierung der beiden Pedale dar. In der Abbildung \ref{ssec:buttons} sind lediglich die final gewählten Designs enthalten. Für die Darstellung der beiden Funktionen \enquote{Gas geben} und \enquote{Bremsen} als Icons sind im Laufe der Entwicklung viele Zwischenstadien entstanden. Die wichtigsten dieser Zwischenstadien zeigt die Tabelle. Die entsprechenden Kritiken und Erläuterungen können der Tabelle entnommen werden. <TODO: Gas Evolution>
+	Eine Besonderheit stellt die Visualisierung der beiden Pedale dar. In der Abbildung \ref{ssec:buttons} sind lediglich die final gewählten Designs enthalten. Für die Darstellung der beiden Funktionen \enquote{Gas geben} und \enquote{Bremsen} als Icons sind im Laufe der Entwicklung viele Zwischenstadien entstanden. Die wichtigsten dieser Zwischenstadien zeigt die Tabelle. Die entsprechenden Kritiken und Erläuterungen können der folgenden Tabelle entnommen werden. 
+	\newcommand{\pedaleSchrift}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/1.pdf}}}
+	\newcommand{\pedaleRealistisch}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/2.pdf}}}
+	\newcommand{\tacho}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/3.pdf}}}
+	\newcommand{\autoPfeil}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/4.pdf}}}
+	\newcommand{\symbolbild}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/5.pdf}}}
 
-	\newcommand{\pedaleSchrift}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_bronze.pdf}}}
-	\newcommand{\pedaleRealistisch}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
-	\newcommand{\tacho}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_gold.pdf}}}
-	\newcommand{\autoPfeil}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
-	\newcommand{\symbolbild}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_gold.pdf}}}
-	\begin{tabl}{r@{\hspace{8mm}}cccc}{Evolution der Pedale}%
-		\toprule\label{gasevo-tabelle}
-			 & Beschreibung & Vorteile & Nachteile \\
-		\midrule
-			\pedaleSchrift 		&  &  &  \\
-			\symbolbild 		&  &  &  \\
-			\autoPfeil 			&  &  &  \\
-			\tacho 				&  &  &  \\
-			\pedaleRealistisch 	&  &  &  \\
-		\bottomrule
-	\end{tabl}
-
-	\figur{Positionierung-UI.png}{\label{ssec:ui-design}Zusammenfügen der Icons zu einem User Interface}
-	Die Abbildung \ref{ssec:ui-design}
+	\begin{longtable}{cp{3.9cm}p{3.9cm}p{3.9cm}}%
+		\toprule\label{gasevo-tabelle} \endhead%
+		\bottomrule \caption{Evolution der Pedale} \endlastfoot%
+			 & Beschreibung & Vorteile & Nachteile \\ \midrule
+			\pedaleSchrift 		& Beschriftete Pedale werden in vielen Rennspielen verwendet. Dabei sind die Pedale mit \enquote{G} für Gas und \enquote{B} für Bremsen beschriftet. & Für deutschsprachige Spieler ist diese Einteilung einfach verständlich. & Im Rahmen der multilingualen Verwendbarkeit kann eine solche Beschriftung zu Missverständnissen führen. \\%
+			\symbolbild 		& Eine weitere Möglichkeit ist die Verwendung von Symbolbildern. Dabei soll ein Symbol das langsame Fahren, und ein Symbol das schnelle Fahren symbolisieren. & Die Assoziation mit Schnell und Langsam ist sehr einfach. Die Symbole sind auch für Kinder sehr leicht verständlich. & Die Symbolbilder können nicht direkt als Schaltflächen erkannt werden. Eine Verwechslung mit beispielsweise einem Fahrzeugwechsel ist möglich und kann für Verwirrung sorgen.es wird  \\%
+			\autoPfeil 			&  Die Fahrzeuge werden mit entsprechenden erklärenden Pfeilen ausgestattet. Ein Pfeil zeigt auf das Fahrzeug selbst, was einen Stillstand symbolisiert. Der zweite Pfeil zeigt vom Fahrzeug weg, was eine Beschleunigung symbolisieren soll. & Durch die Verwendung des gleichen Fahrzeugs ist eine Assoziation mit einem Fahrzeugwechsel ausgeschlossen. & Die Bedeutung der jeweiligen Pfeile ist nicht eindeutig. Ein großer Interpretationsspielraum kann sehr leicht Missverständnisse hervorrufen. \\%
+			\tacho 				& Zur Symbolisierung für schnelles und langsames Fahren werden Tachos mit unterschiedlichen Nadelausschlägen verwendet. Ein voll ausgeschlagener Tacho bedeutet dabei schnelles Fahren. & Da keine irritierenden Pfeile verwendet werden, sinkt die Gefahr eines Missverständnisses. Da ebenso kein Fahrzeug symbolisiert wird, kann auch jegliches Missverständnis in dieser Richtung vermieden werden. & Tachos sind leicht verwechselbar mit einer Benzinanzeige oder einer reinen Geschwindigkeitsanzeige. Usertests haben gezeigt, das Spieler nicht intuitiv auf die Tachos drücken. \\%
+			\pedaleRealistisch 	& Das finale Design geht zurück zu den Pedalen, verzichtet jedoch auf die Beschriftung. Zur besseren Unterscheidbarkeit werden unterschiedliche Designs für die jeweiligen Pedale gewählt. Dabei orientieren sich die Pedale an Pedale von realen Fahrzeugen. & Die Pedale sind einfach als Schaltflächen erkennbar, durch das Verzichten auf Beschriftung sind die Pedale multilingual einsetzbar. Durch die Orientierung an realen Pedalen ist eine Assoziation mit diesen gegeben. & Der Spieler erkennt zwar nicht auf den ersten Blick, welche Funktion die Schaltflächen haben, kann dies jedoch über \enquote{Ausprobieren} testen. \\%	
+	\end{longtable}
+	Der letzte Punkt im Bereich des UI Designs befasst sich mit der grundsätzlichen Positionierung der Schaltflächen und Icons. Wie in <TODO: Verlinkung zum Konzept> bereits erwähnt, soll das Spiel auf mobilen Endgeräten im Querformat gespielt und mit zwei Händen bedient werden. Da die wichtigsten Steuerelemente der Joystick sowie die Pedale sind, werden diese in den unteren Ecken zur Bedienung mit beiden Daumen positioniert. Die Schaltflächen für Pause und Zurücksetzen sind in den oberen Ecken positioniert, um eine versehentliche Betätigung durch den Spieler zu verhindern. 
+	\figur{Positionierung-UI.png}{\label{ssec:ui-design}User Interface mit geöffnetem Menü}
+	Die Abbildung \ref{ssec:ui-design} zeigt das User Interface, während das Menü geöffnet ist. Die Menü-Schaltflächen für \enquote{Spiel fortsetzen / Spiel starten}, \enquote{Optionsmenü öffnen} sowie \enquote{Zum Hauptmenü zurückkehren} sind an der Mitte des Bildschirms orientiert.
+	\figur{Positionierung-UI-2.png}{\label{ssec:ui-design2}User Interface während des Rennens}
+	Während des Spiels entspricht das User Interface der Abbildung \ref{ssec:ui-design2}. An Stelle der Schaltflächen des Menüs befinden sich am oberen Bildschirmrand nun eine Zeitanzeige, sowie eine Minikarte. Die Minikarte stellt den Streckenverlauf leicht transparent dar und zeigt die Position und Rotation des Fahrzeugs mittels eines roten Pfeils an. Die Zeitanzeige ist als Zeitstrahl dargestellt. Dabei sinkt die Größe des gelben Anteils des Zeitstrahls. Ist kein gelber Anteil mehr vorhanden, so ist die Zeit für das Rennen vollständig abgelaufen.
 	\subsubsection{Physik und Steuerung}
 	\subsubsection{}
 \subsection{Implementation in Game-Engine X}
