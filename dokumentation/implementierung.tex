@@ -75,6 +75,14 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 Das Erreichen von Gold-Pokalen wird dabei absichtlich schwierig gewählt, um den Spieler zu fordern, motivieren und auch um realistische Ergebnisse zu setzen. Erst wenn die Aufgaben und die Zeit perfektioniert wurden, erhält der Spieler einen Gold-Pokal.
 Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (beziehungsweise einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei die schnellste Zeit deutlich unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn der Spieler schneller als die langsamste Zeit fährt und alle Aufgaben korrekt löst.
 
+\subsection{Entwicklungsablauf in Unity}
+Bei der Entwicklung von Anwendungen mit Unity erhält der Anwender mehrere Möglichkeiten zur Verfügung. In diesem Kapitel sollen die Kompontenen von Unity, welche bei der Entwicklung des Spiels verwendet werden, beleuchtet werden.
+
+\subsubsection{Scene View}
+\figur{Unity-SceneView.png}{\label{ssec:sceneView}Die Unity Scene View mit Hierarchy Reiter}
+Die Unity Scene View ist der Leveleditor von Unity. In der Scene View kann der Nutzer (abhängig vom verwendeten Modus) 2D oder 3D Objekte im Level platzieren. Jegliche (optische) Gestaltung der einzelnen Level, genauso wie die Erstellung des User Interface oder das Platzieren von Kollisionszonen findet in der Scene View statt. Über den Hierarchy Reiter kann der Anwender alle im Level platzierten Objekte auswählen, um beispielsweise deren Position in der Scene View zu ändern. 
+
+
 \subsection{Entwicklung}
 In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anwendung aufgegriffen. Dabei liegt der Fokus besonders auf Kernaspekten bzw. Kernproblemen, welche im Laufe der Entwicklung aufkommen.
 	\subsubsection{Level Design}
@@ -127,9 +135,10 @@ In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anw
 	Die Abbildung \ref{ssec:ui-design} zeigt das User Interface, während das Menü geöffnet ist. Die Menü-Schaltflächen für \enquote{Spiel fortsetzen / Spiel starten}, \enquote{Optionsmenü öffnen} sowie \enquote{Zum Hauptmenü zurückkehren} sind an der Mitte des Bildschirms orientiert.
 	\figur{Positionierung-UI-2.png}{\label{ssec:ui-design2}User Interface während des Rennens}
 	Während des Spiels entspricht das User Interface der Abbildung \ref{ssec:ui-design2}. An Stelle der Schaltflächen des Menüs befinden sich am oberen Bildschirmrand nun eine Zeitanzeige, sowie eine Minikarte. Die Minikarte stellt den Streckenverlauf leicht transparent dar und zeigt die Position und Rotation des Fahrzeugs mittels eines roten Pfeils an. Die Zeitanzeige ist als Zeitstrahl dargestellt. Dabei sinkt die Größe des gelben Anteils des Zeitstrahls. Ist kein gelber Anteil mehr vorhanden, so ist die Zeit für das Rennen vollständig abgelaufen.
+
 	\subsubsection{Physik und Steuerung}
 	\subsubsection{}
-\subsection{Implementation in Game-Engine X}
+
 \subsection{Class Diagram, DB}
 \subsection{Wie wurden gewisse Dinge umgesetzt}
 \subsection{Integration in Lernplattform}
