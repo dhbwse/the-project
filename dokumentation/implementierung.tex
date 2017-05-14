@@ -92,10 +92,44 @@ In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anw
 		Im zweiten Levelpack wird auf ein Aufspalten der Strecke verzichtet. Im Fall der Abbildung \ref{ssec:tunnel} ist die Entscheidung auf einen Tunnel mit zwei Eingängen gefallen. Dabei ist ebenso ein Eingang mit der korrekten, und ein Eingang mit der falschen Lösung verbunden. In beiden Levelpaketen wird der Nutzer durch farbige Pfeile auf der Strecke (vgl. Abbildung \ref{ssec:roadsplit} und Abbildung \ref{ssec:tunnel}) darauf hingewiesen, welche Lösung zu welchem möglichen Weg gehört. 
 
 	\subsubsection{UI Design}
+	In frühen Versionen des Spiels sind wichtige Funktionen für die Interaktion mit dem Nutzer durch beschriftete Buttons realisiert. Um eine multilinguale Einsetzbarkeit des Spiels zu gewährleisten, werden diese Beschriftungen aus dem Spiel entfernt und durch aussagekräftige Icons ersetzt.	Für die Entwicklung eines User Interfaces steht zunächst ein einheitliches Layout im Vordergrund. Dabei wird besonderes Augenmerk auf gleichbleibende Skalierung sowie ein einheitliches Design der Icons für das Spiel geachtet.
 	\figur{icons.pdf}{\label{ssec:buttons}Übersicht über Icons}
+	Die Abblidung \ref{ssec:buttons} zeigt einen Überblick über die im Spiel verwendeten Symbole. Für jede wichtige Interaktionsmöglichkeit des Nutzers mit der Anwendung existiert ein zugehöriges Symbol:
+	\begin{itemize}
+		\item{ Zur Steuerung des Fahrzeugs wird ein Joystick mit Pfeilen verwendet.}
+		\item{ Über zwei Pedale kann das Fahrzeug beschleunigt und abgebremst werden. Die Pedale sind dabei mit Größenverhältnis und Form an reale Fahrzeugpedale angepasst.}
+		\item{ Durch Betätigen des runden Pfeils kann das Rennen neu gestartet werden.}
+		\item{ Das Zahnrad öffnet das Optionsmenü des Spiels.}
+		\item{ Der Pause- und Play-Button pausieren das Rennen und setzen es fort.}
+		\item{ Das Haus-Symbol bringt den Spieler zurück ins Hauptmenü.}
+		\item{ Das Haken-Symbol wird im Shop verwendet und bestätigt einen Kauf.}
+	\end{itemize}
+	Bei allen erwähnten Symbolen wird ein gleichbleibender Farbverlauf verwendet. Außerdem sind alle Icons mit einem helleren Rand versehen. 
+	Eine Besonderheit stellt die Visualisierung der beiden Pedale dar. In der Abbildung \ref{ssec:buttons} sind lediglich die final gewählten Designs enthalten. Für die Darstellung der beiden Funktionen \enquote{Gas geben} und \enquote{Bremsen} als Icons sind im Laufe der Entwicklung viele Zwischenstadien entstanden. Die wichtigsten dieser Zwischenstadien zeigt die Tabelle. Die entsprechenden Kritiken und Erläuterungen können der Tabelle entnommen werden. <TODO: Gas Evolution>
+
+	\newcommand{\pedaleSchrift}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_bronze.pdf}}}
+	\newcommand{\pedaleRealistisch}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
+	\newcommand{\tacho}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_gold.pdf}}}
+	\newcommand{\autoPfeil}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
+	\newcommand{\symbolbild}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_gold.pdf}}}
+	\begin{tabl}{r@{\hspace{8mm}}cccc}{Evolution der Pedale}%
+		\toprule\label{gasevo-tabelle}
+			 & Beschreibung & Vorteile & Nachteile \\
+		\midrule
+			\pedaleSchrift 		&  &  &  \\
+			\symbolbild 		&  &  &  \\
+			\autoPfeil 			&  &  &  \\
+			\tacho 				&  &  &  \\
+			\pedaleRealistisch 	&  &  &  \\
+		\bottomrule
+	\end{tabl}
+
+	\figur{Positionierung-UI.png}{\label{ssec:ui-design}Zusammenfügen der Icons zu einem User Interface}
+	Die Abbildung \ref{ssec:ui-design}
 	\subsubsection{Physik und Steuerung}
 	\subsubsection{}
 \subsection{Implementation in Game-Engine X}
 \subsection{Class Diagram, DB}
 \subsection{Wie wurden gewisse Dinge umgesetzt}
 \subsection{Integration in Lernplattform}
+s
