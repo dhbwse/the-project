@@ -569,6 +569,30 @@
       \verb https://www.researchgate.net/publication/259841647
       \endverb
     \endentry
+    \entry{lernplattform}{unpublished}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f784dd0a178925dd9aadac372186f625}{%
+           family={Incekara},
+           family_i={I\bibinitperiod},
+           given={Mehmet\bibnamedelima Ali},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=a7977fd7691922b3a40a569e3c2cc150}{%
+           family={Wolske},
+           family_i={W\bibinitperiod},
+           given={Tom},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3c7d5591215b7ba73af2968ddbaf99c}
+      \strng{fullhash}{d3c7d5591215b7ba73af2968ddbaf99c}
+      \field{labelalpha}{IW17}
+      \field{sortinit}{I}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Entwicklung einer spielbasierten Lernspielplattform}
+      \field{title}{NoRPG}
+      \field{year}{2017}
+    \endentry
     \entry{pay-to-win}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=585cae26e50b9abda8d670814c579760}{%
