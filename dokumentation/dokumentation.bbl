@@ -609,6 +609,35 @@
       \verb 10.1145/2874239.2874258
       \endverb
     \endentry
+    \entry{generalgameandlearning}{misc}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=386a0092979057b1adfaf152cddc50dc}{%
+           family={Kirriemuir},
+           family_i={K\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=4cfc22992a4ee7fd8c52e1189d327e36}{%
+           family={Mcfarlane},
+           family_i={M\bibinitperiod},
+           given={Angela},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{767b313edb603c0d2ac1582b5da60d8b}
+      \strng{fullhash}{767b313edb603c0d2ac1582b5da60d8b}
+      \field{labelalpha}{KM04}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Literature Review in Games and Learning}}
+      \field{urlday}{14}
+      \field{urlmonth}{05}
+      \field{urlyear}{2017}
+      \field{year}{2004}
+      \verb{url}
+      \verb https://telearn.archives-ouvertes.fr/hal-00190453
+      \endverb
+    \endentry
     \entry{java}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=30162ed78b6c10f731411f2fc440c24f}{%
