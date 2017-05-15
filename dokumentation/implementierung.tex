@@ -196,7 +196,7 @@ Quaternion rotation = Quaternion.FromToRotation(
 	(transform.rotation * Vector3.forward), direction);
 	\end{lstlisting}
 
-	Im nächsten Schritt wertet der CarController die Eingaben des Joysticks aus. Dazu greift er auf die Informationen des CrossPlatformInputManagers (im Codebeispiel als CrossPlatform abgekürzt) zurück. Dieser liefert Informationen über die horizontale und Vertikale Ausrichtung des Joysticks. Dies sind generell Werte zwischen -1 und 1. Durch Vektormultiplikationen mit den beiden Einheitsvektoren (x- und y-Richtung) entsteht ein Richtungsvektor. Dieser Richtungsvektor ist zweidimensional (bzw. der z-Wert ist immer 0) und stellt die Zugrichtung des Joysticks dar.
+	Im nächsten Schritt wertet der CarController die Eingaben des Joysticks aus. Dazu greift er auf die Informationen des CrossPlatformInputManagers (im Codebeispiel als CrossPlatform abgekürzt) zurück. Dieser liefert Informationen über die horizontale und vertikale Ausrichtung des Joysticks. Dies sind generell Werte zwischen -1 und 1. Durch Vektormultiplikationen mit den beiden Einheitsvektoren (x- und y-Richtung) entsteht ein Richtungsvektor. Dieser Richtungsvektor ist zweidimensional (bzw. der z-Wert ist immer 0) und stellt die Zugrichtung des Joysticks dar.
 	Aus der derzeitigen Ausrichtung des Fahrzeugs und dem zuvor errechneten Richtungsvektor kann ein Quaternion errechnet werden. Ein Quaternion beschreibt eine Bewegung eines Objekts. Das errechnete Quaternion beschreibt somit eine Rotation des Objekts von der derzeitigen Ausrichtung hin zur gewünschten Ausrichtung.
 
 	\begin{lstlisting}
@@ -221,8 +221,13 @@ if (180 - Mathf.Abs(steerAngle - 180) > m_MaximumSteerAngle){
 }
 	\end{lstlisting}
 
+	Im letzten Schritt müssen die Räder des Fahrzeugs entsprechend ausgerichtet werden. Dabei wird zunächst aus der Rotation eine Drehwinkel berechnet. Über die Fallunterscheidung aus dem obrigen Codebeispiel wird bestimmt, ob der Joystick entgegen der Fahrzeugausrichtung bewegt wird. Eine Bewegung entgegen der Ausrichtung des Fahrzeugs wird dabei als Befehl zum rückwärts fahren interpretiert. Um eine realistische Kurvenbahn zu erhalten, wird der Drehwinkel der Räder auf einen Bereich zwischen -45° und +45° begrenzt. Ein Bewegen des Joysticks außerhalb dieses Bereichs setzt den Winkel auf das jeweilige Maximum fest. So wird beispielsweise -60° in -45° umgewandelt. Somit ist gewährleistet, dass das Fahrzeug konstante Kurven fährt und das Angleichen der Fahrtrichtung an die Position des Joysticks nicht zu ruckartig geschieht. Das Verhalten der Räder bei Einschlagen des Rückwärtsgangs stellt eine Besonderheit dar. Die Räder sind mit einer Rotationsrichtung versehen, welche nicht einfach invertiert werden kann. Aus diesem Grund müssen alle Räder vollständig invertiert werden, wenn der Nutzer das Fahrzeug rückwärts steuern möchte. Die Hinterräder werden in diesem Fall exakt um 180° gedreht, die Vorderräder werden erst auf Basis des Lenkwinkels ausgerichtet und dann um 180° rotiert. Sobald die Fahrtrichtung wieder auf vorwärts wechselt, werden alle Räder erneut invertiert. 
 
-	\subsubsection{PHysik}
+	Zur Realisierung der Beschleunigung ist eine Betrachtung des Rückwärtsgangs somit nicht nötig. Für die Beschleunigung wird eine zusätzliche Achse \enquote{Acceleration} entwickelt, welche mit dem Gaspedal verknüpft wird. Ein Betätigen des Gaspedals setzt den Wert der Achse auf 1, im generellen Fall beträgt der Wert 0. Das Bremspedal ist auf sehr ähnliche Weise definiert, ein Betätigen des Pedals setzt einen Wert \enquote{Bremskraft}, welcher ebenso wie die Beschleunigung in die generelle Bewegungsfunktion des Fahrzeugs eingebunden ist.
+
+
+	\subsubsection{Physik}
+	Im Rahmen dieser Arbeit wird auf die Entwicklung einer eigenen Physiksimulation verzichtet. Für die Implementierung der physikalisch interagierbaren Objekte wird auf die Grundfunktionen der Unity Engine zurückgegriffen. So können Objekte mit sogenannten \enquote{Physical Materials} versehen werden. Über diese Physical Materials können Objekte beispielsweise eine gewisse Elastizität erreichen oder wie Gummibälle von Gegenständen und Wänden abprallen. Über die Physical Materials wird versucht, die Reaktion der Objekte der Realität anzupassen. Die Leitkegel erhalten dabei einen höheren \enquote{Bouncyness} Wert als die Fässer, was dazu führt, das Leitkegel eher vom Fahrzeug abprallen, wohingegen Fässer eher vom Fahrzeug verschoben werden. Dieses Verhalten wird durch den erhöhten Gewichtswert der Fässer verstärkt, welcher dazu führt, dass die Fässer das Fahrzeug stärker abbremsen.
 
 \subsection{Class Diagram, DB}
 \subsection{Wie wurden gewisse Dinge umgesetzt}
