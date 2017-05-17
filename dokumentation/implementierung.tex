@@ -281,19 +281,29 @@ GetComponent<NewGameAudio>().playCrashSound(volume);
 	\item{ Reduzierung der Dateigröße durch geringere Standardgröße aller 3D Objekte.}
 	\end{itemize}
 
-	Nach der Durchführung der vier genanten Schritte ist eine deutliche Optimierung sichtbar. Die Dateigröße der APK-Installationsdatei ist auf ca $70$ MB gesunken, die Größe des installierten Spiels auf dem Endgerät beträgt lediglich noch $128$ MB.
+	Nach der Durchführung der vier genannten Schritte ist eine deutliche Optimierung sichtbar. Die Dateigröße der APK-Installationsdatei ist auf etwa $70$ MB gesunken, die Größe des installierten Spiels auf dem Endgerät beträgt lediglich noch $128$ MB.
 	Auf dem \emph{HTC ONE M8} läuft die Anwendung merklich flüssiger, die leichten Ruckler sind kaum erkennbar. Auf dem \emph{Samsung Galaxy S2} konnte die Anwendung leider nicht flüssig ausgeführt werden. Die Bildrate ist durch die Optimierung merklich gestiegen, jedoch ist ein gut spielbarer Status nicht erreicht. Auf dem \emph{Fairphone 2} konnte die optimierte Anwendung bis zum aktuellen Zeitpunkt nicht erneut getestet werden.
 
 	Die Verteilung der einzelnen Optimierungsschritte sieht dabei wie folgt aus:
-	Die Reduzierung der Standardgröße aller 3D Objekt hat leider nicht den gewünschten Effekt erziehlt. Die endgültige Dateigröße hat sich durch diesen Schritt um lediglich $2$ MB verkleinert. Die höhere Kompression der Texturen hatte im Rahmen der Optimierung den größten Effekt. Die Größe aller Texturen konnte von insgesamt rund $240$ MB auf $20$ MB verringert werden. Diese Werte sind nicht direkt im obrigen Gesamtergebnis erkennbar, da die Texturen im laufe des Build-Prozesses erneut komprimiert werden.
-	Im Rahmen der Performanceoptimierung konnte der größte Erfolg durch das Entfernen einiger Elemnte aus den Leveln erzielt werden. Die geringeren Qualitätseinstellungen für Texturen und Modelle verändern hierbei lediglich die Optik, verändern jedoch die Performance nur minimal.
+	Die Reduzierung der Standardgröße aller 3D Objekt hat leider nicht den gewünschten Effekt erzielt. Die endgültige Dateigröße hat sich durch diesen Schritt um lediglich $2$ MB verkleinert. Die höhere Kompression der Texturen hatte im Rahmen der Optimierung den größten Effekt. Die Größe aller Texturen konnte von insgesamt rund $240$ MB auf $20$ MB verringert werden. Diese Werte sind nicht direkt im obigen Gesamtergebnis erkennbar, da die Texturen im Laufe des Build-Prozesses erneut komprimiert werden.
+	Im Rahmen der Performanceoptimierung konnte der größte Erfolg durch das Entfernen einiger Elemente aus den Leveln erzielt werden. Die geringeren Qualitätseinstellungen für Texturen und Modelle verändern hierbei lediglich die Optik, verändern jedoch die Performance nur minimal.
 
 \subsection{Struktur und Aufbau}
 Wie im vorherigen Kapitel bereits erwähnt, werden Programmfunktionen in Unity grundsätzlich über Skripte realisiert. Diese Skripte sind in den meisten Fällen unabhängig voneinander. Das Zusammenfügen der Komponenten wird in diesem Fall von der Unity Engine übernommen. Von einer Darstellung aller internen Komponenten der Engine wird an dieser Stelle abgesehen, da während der Entwicklung des Spiels kein Einfluss auf diese internen Verknüpfungen genommen werden kann. Da eine Darstellung der einzelnen Skripte lediglich eine Zusammenstellung von einzelnen Dateien ist und somit kein Mehrwert für die Arbeit erziehlt werden kann, wird dies ebenso unterlassen. Allgemein zusammengefasst lässt sich ableiten: Die Unity Engine steht in der Mitte eines Diagramms, viele Skripte sind in Form einer Wolke um die Engine verteilt, stehen jedoch nicht in Verbindung zueinander.
 Bei der Implementierung des Spiels wurde keine Datenbank verwendet. Die Datenspeicherung geschieht wie in \ref{speicherung} bereits erwähnt über die Datei \enquote{GameData.bin}.
 
 \subsection{Integration in Lernplattform}
-	Die Integration in die Lernplattform von Incekara und Wolske\footcite{lernplattform} konnte nicht umgesetzt werden. Die Möglichkeiten des Spiels verschiedene Lernstandards gleichzeitig zu implementieren sind nicht in der Plattform vorgesehen und es müsste ein Interface in beiden Anwendungen implementiert werden.
-	Eine Möglichkeit dieses Interface umzusetzen wurde ausgearbeitet aber schlussendlich nicht verwendet.
-	<TODO:Interface beschreiben>
-
+	Die Integration in die Lernplattform von Incekara und Wolske\footcite{lernplattform} konnte nicht umgesetzt werden. Die Möglichkeiten des Spiels verschiedene Lernstandards gleichzeitig zu implementieren sind nicht in der Plattform vorgesehen und es müsste eine Schnittstelle implementiert werden.
+	Eine Möglichkeit diese Schnittstelle umzusetzen wurde ausgearbeitet aber schlussendlich nicht verwendet.
+	\subsubsection*{Beschreibung Schnittstelle}
+		Für die Kommunikation zwischen Anwendungen auf Android ist die Verwendung von AIDL\footcite{android-interfaces} oder ähnlichem nötig.\footnote{Weitere Möglichkeiten werden auf der zitieren Seite genannt.}
+		Ein unterstütztes Lernspiel bietet zwei Schnittstellen:
+		\begin{description}
+			\item[Lernstandards auflisten]{
+				Gibt eine Liste der unterstützten Standards zurück.
+			}
+			\item[Mit Standard $X$ starten]{
+				Startet das Spiel mit dem ausgewähltem Standard.
+			}
+		\end{description}
+		Für die Lernplattform reicht es aus die Standards beim Starten für alle Spiele zu sammeln und wenn vom Spieler gewünscht diese mit dem Passendem Standard starten.

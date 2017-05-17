@@ -707,6 +707,32 @@
       \verb http://www.portigal.com/wp-content/uploads/2008/01/Portigal-Consulting-White-Paper-Persona-Non-Grata.pdf
       \endverb
     \endentry
+    \entry{android-interfaces}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=77a02a3e2a923f3f2e3b7692ab37150e}{%
+           family={Project},
+           family_i={P\bibinitperiod},
+           given={Android\bibnamedelimb Open\bibnamedelima Source},
+           given_i={A\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{77a02a3e2a923f3f2e3b7692ab37150e}
+      \strng{fullhash}{77a02a3e2a923f3f2e3b7692ab37150e}
+      \field{labelalpha}{Pro16}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{11}
+      \field{title}{Android Interface Definition Language}
+      \field{urlday}{17}
+      \field{urlmonth}{05}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://developer.android.com/guide/components/aidl.html
+      \endverb
+    \endentry
     \entry{psych1}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=008cfdd3c34e858d35923f09ed6289f6}{%
