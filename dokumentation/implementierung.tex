@@ -229,8 +229,69 @@ if (180 - Mathf.Abs(steerAngle - 180) > m_MaximumSteerAngle){
 	\subsubsection{Physik}
 	Im Rahmen dieser Arbeit wird auf die Entwicklung einer eigenen Physiksimulation verzichtet. Für die Implementierung der physikalisch interagierbaren Objekte wird auf die Grundfunktionen der Unity Engine zurückgegriffen. So können Objekte mit sogenannten \enquote{Physical Materials} versehen werden. Über diese Physical Materials können Objekte beispielsweise eine gewisse Elastizität erreichen oder wie Gummibälle von Gegenständen und Wänden abprallen. Über die Physical Materials wird versucht, die Reaktion der Objekte der Realität anzupassen. Die Leitkegel erhalten dabei einen höheren \enquote{Bouncyness} Wert als die Fässer, was dazu führt, das Leitkegel eher vom Fahrzeug abprallen, wohingegen Fässer eher vom Fahrzeug verschoben werden. Dieses Verhalten wird durch den erhöhten Gewichtswert der Fässer verstärkt, welcher dazu führt, dass die Fässer das Fahrzeug stärker abbremsen.
 
-\subsection{Class Diagram, DB}
-\subsection{Wie wurden gewisse Dinge umgesetzt}
+	\subsubsection{Verlangsamung des Fahrzeugs}
+	\begin{lstlisting}
+public void adjustTopSpeed()
+{
+float changeFactor = -Mathf.Cos(m_Topspeed/80 - 0.2f)*1.5f+1.6f;
+if (isSlow){
+    m_Topspeed = Mathf.Max(m_Topspeed - changeFactor * 1.3f, m_TopspeedSlow);
+}else{
+    m_Topspeed = Mathf.Min(m_Topspeed + changeFactor, m_TopspeedNormal);
+}
+}
+    \end{lstlisting}
+    Das obrige Codebeispiel zeigt die beiden mathematischen Funktionen, welche für die Verlangsamung des Fahrzeugs verantwortlich sind. Der Methodenaufruf der adjustTopSpeed() Methode geschieht immer dann, wenn das Fahrzeug eine Zone betritt oder verlässt, welche die Geschwindigkeit manipuliert. Beim Betreten einer so genannten \enquote{SlowDown}-Zone wird die Variable \enquote{isSlow} auf \enquote{true} gesetzt. Daraufhin wird die Höchstgeschwindigkeit des Fahrzeugs kontinuierlich reduziert, bis die festgesetzte Geschwindigkeit erreicht ist. Verlässt das Fahrzeug die SlowDown-Zone wieder, so wird isSlow auf \enquote{false} gesetzt und die Höchstgeschwindigkeit des Fahrzeugs wird kontinuierlich erhöht, bis die ursprüngliche Höchstgeschwindigkeit erreicht ist.
+
+	\subsubsection{Erkennung einer Frontalkollision}
+	Um die Erkennung einer Frontalkollision zu ermöglichen, wird das Fahrzeug mit zwei Hilfs-Punkten ausgestattet. Diese Punkte sind jeweils mittig des Fahrzeugs positioniert, wobei eine der Punkte am vorderen Ende des Fahrzeugs und der zweite Punkt am Heck positioniert ist. 
+	\begin{lstlisting}
+private void OnCollisionEnter(Collision collision){
+Vector3 localAverageVorn = frontColliderHelper.transform.InverseTransformPoint(collision.contacts[0].point);
+float distVorn = Vector3.Distance(localAverageVorn, new Vector3(0, 0, 0));
+Vector3 localAverageBack = backColliderHelper.transform.InverseTransformPoint(collision.contacts[0].point);
+float distBack = Vector3.Distance(localAverageBack, new Vector3(0, 0, 0));
+if (distVorn <= 0.8 || distBack <= 0.8)
+{
+float speed = collision.relativeVelocity.magnitude;
+float volume = Mathf.Pow(Mathf.Clamp(speed/10, 0f, 1f), 3);
+GetComponent<NewGameAudio>().playCrashSound(volume);
+}
+}
+\end{lstlisting}
+	Das gezeigte Skript ist eine Komponente des Fahrzeugs. Im Moment der Kollision werden alle relevanten Daten über das kollidierte Objekt in der \enquote{Collision} gespeichert. Aus der Collision können die Kontaktpunkte der beiden Objekte ausgelesen werden. Im nächsten Schritt wird die Durchschnittsposition aller Kontaktpunkte (also der mittlere aller Punkte) mit beiden eingangs erwähnten Hilfs-Punkten vergleichen. Dabei werden die derzeitigen Weltkoordinaten beider Punkte verwendet und die Distanz dieser beiden Punkte errechnet. Ist einer der beiden errechnet Werte (\enquote{distVorn} oder \enquote{distBack}) kleiner oder gleich 0.8, so wird von einer Frontalkollision ausgegangen. Der Abstand von 0.8 ist so gewählt, dass die äußeren Ecken des Fahrzeugs noch als Frontalkollision erkannt werden, seitlich versetzte Kollisionen jedoch nicht. Somit kann für beide Fälle ein anderer Sound abgespielt werden. Im Fall einer Frontalkollision wird ein Aufprall-Sound abgespielt, bei einer seitlichen Kollision ertönt ein \enquote{Kratzen}.
+	Die Lautstärke des abgespielten Tons errechnet sich dabei aus der Geschwindigkeit des Fahrzeugs zum Zeitpunkt der Kollsion. Je schneller das Fahrzeug mit einem Objekt kollidiert, desto lauter wird der Sound abgespielt.
+
+	\subsubsection{Speicherung der Spielstände\label{speicherung}}
+	Für die Speicherung der Spielstände stehen grundsätzlich zwei Möglichkeiten zur Verfügung. Zum einen kann eine Datenbank eingebunden werden, welche alle relevanten Daten speichert, zum anderen kann eine Datei erstellt werden, welche mittels serialisierbaren Feldern Informationen über den Spielfortschritt bereitstellt.
+	Da keine großen Datenmengen zu erwarten sind, wird eine Datei im \enquote{.bin Format} verwendet. 
+	Die im Nutzerverzeichnis des Endgeräts befindliche \enquote{GameData.bin} enthält Informationen über die bereits gewonnenen Rennen, über freigeschaltete Gegenstände aus dem Shop, über die Anzahl an Münzen, die der Nutzer besitzt, sowie die aus dem Shop ausgerüsteten Gegenstände. Dadurch ist gewährleistet, dass der Nutzer das Spiel bei einem Neustart im gleichen Zustand vorfindet, wie es verlassen wurde. 
+	Alle genannten Attribute sind über sogenannte [SerializeField] Attribute definiert, was eine Speicherung im Textformat ermöglicht. Über den Aufruf \enquote{GameData.GetInstance()} kann an jeder beliebigen Stelle des Programmcodes auf die gespeicherten Werte zugegriffen werden. Somit ist eine Anwendungsweite Synchronisation gewährleistet.
+
+	\subsubsection{Performance und Dateigröße}
+	Ein wichtiger Schritt der Entwicklung des Spiels ist die Performance der Anwendung. Durch die Vorgaben der Aufgabenstellung soll das Spiel auch für Kinder der ärmeren Bevölkerungsschichten zugänglich sein. Kinder, die diesen Schichten angehören, besitzen häufig keine sehr guten mobilen Geräte. Somit rückt die Performance in den Vordergrund.
+	Vor der Optimierung der Anwendung ist diese auf einem HTC ONE M8 gerade so spielbar. Die Anwendung ruckelt leicht, ein erfolgreiches Abschließen der Level ist jedoch ohne weiteres möglich. Auf dem zweiten Testgerät, einem <TODO: Marvins Handymodell einfügen> sowie auf dem Fairphone <TODO: War doch so, oder?> ist die Anwendung unspielbar und springt von einem Standbild zum nächsten.
+	Hinzu kommt, dass die Anwendung in diesem Status der Entwicklung zu viel Speicherplatz einnimmt. Vor der Optimierung beträgt die Größe der APK-Installationsdatei ca 100mb, das Installierte Spiel nimmt 280mb ein. 
+
+	Für die Optimierung der Performance und der Dateigröße werden folgende Schritte definiert:
+	\begin{itemize}
+	\item{ Reduzierung der Dateigröße durch höhere Kompression der Texturen.}
+	\item{ Verbesserung der Performance durch geringere Qualitätseinstellungen für Texturen und 3D Modelle.}
+	\item{ Optimierung der Performance durch entfernen einiger Elemente aus den Leveln.}
+	\item{ Reduzierung der Dateigröße durch geringere Standardgröße aller 3D Objekte.}
+	\end{itemize}
+
+	Nach der Durchführung der vier genanten Schritte ist eine deutliche Optimierung sichtbar. Die Dateigröße der APK-Installationsdatei ist auf ca 70mb gesunken, die Größe des installierten Spiels auf dem Endgerät beträgt lediglich noch 128mb.
+	Auf dem HTC ONE M8 läuft die Anwendung merklich flüssiger, die leichten Ruckler sind kaum erkennbar. Auf dem <TODO: Nochmal Marvins Gerät> konnte die Anwendung leider nicht flüssig ausgeführt werden. Die Bildrate ist durch die Optimierung merklich gestiegen, jedoch ist ein gut spielbarer Status nicht erreicht. Auf dem FairPhone <TODO: War doch so? ^^> konnte die optimierte Anwendung bis zum aktuellen Zeitpunkt nicht erneut getestet werden.
+
+	Die Verteilung der einzelnen Optimierungsschritte sieht dabei wie folgt aus:
+	Die Reduzierung der Standardgröße aller 3D Objekt hat leider nicht den gewünschten Effekt erziehlt. Die endgültige Dateigröße hat sich durch diesen Schritt um lediglich 2 mb verkleinert. Die höhere Kompression der Texturen hatte im Rahmen der Optimierung den größten Effekt. Die Größe aller Texturen konnte von insgesamt rund 240mb auf 20mb verringert werden. Diese Werte sind nicht direkt im obrigen Gesamtergebnis erkennbar, da die Texturen im laufe des Build-Prozesses erneut komprimiert werden.
+	Im Rahmen der Performanceoptimierung konnte der größte Erfolg durch das Entfernen einiger Elemnte aus den Leveln erzielt werden. Die geringeren Qualitätseinstellungen für Texturen und Modelle verändern hierbei lediglich die Optik, verändern jedoch die Performance nur minimal. 
+
+\subsection{Struktur und Aufbau}
+Wie im vorherigen Kapitel bereits erwähnt, werden Programmfunktionen in Unity grundsätzlich über Skripte realisiert. Diese Skripte sind in den meisten Fällen unabhängig voneinander. Das Zusammenfügen der Komponenten wird in diesem Fall von der Unity Engine übernommen. Von einer Darstellung aller internen Komponenten der Engine wird an dieser Stelle abgesehen, da während der Entwicklung des Spiels kein Einfluss auf diese internen Verknüpfungen genommen werden kann. Da eine Darstellung der einzelnen Skripte lediglich eine Zusammenstellung von einzelnen Dateien ist und somit kein Mehrwert für die Arbeit erziehlt werden kann, wird dies ebenso unterlassen. Allgemein zusammengefasst lässt sich ableiten: Die Unity Engine steht in der Mitte eines Diagramms, viele Skripte sind in Form einer Wolke um die Engine verteilt, stehen jedoch nicht in Verbindung zueinander.
+Bei der Implementierung des Spiels wurde keine Datenbank verwendet. Die Datenspeicherung geschieht wie in \ref{speicherung} bereits erwähnt über die Datei \enquote{GameData.bin}.
+
 \subsection{Integration in Lernplattform}
 	Die Integration in die Lernplattform von Incekara und Wolske\footcite{lernplattform} konnte nicht umgesetzt werden. Die Möglichkeiten des Spiels verschiedene Lernstandards gleichzeitig zu implementieren sind nicht in der Plattform vorgesehen und es müsste ein Interface in beiden Anwendungen implementiert werden.
 	Eine Möglichkeit dieses Interface umzusetzen wurde ausgearbeitet aber schlussendlich nicht verwendet.
