@@ -1,38 +1,38 @@
 % !TEX root = dokumentation.tex
 \section{Einleitung}
-	Üblicherweise geht es in der Spieleentwicklung darum, dem Spieler eine bestimmte Emotion zu vermitteln, meistens ist dies Spaß oder Freude.\footcite[Abstract]{persona} Es ist wohlbekannt dass durch Spiele auch Wissen vermittelt werden kann.\footcite{generalgameandlearning} Wenn diese Lernspiele betrachtet werden, fällt oft auf, dass der Spielspaß dabei vernachlässigt wurde (siehe \ref{sssec:lernspielanalyse}).
+	Üblicherweise geht es in der Spieleentwicklung darum, dem Spieler eine bestimmte Emotion zu vermitteln, meistens ist dies Spaß oder Freude.\footcite[Abstract]{persona} Es ist wohlbekannt, dass durch Spiele auch Wissen vermittelt werden kann.\footcite{generalgameandlearning} Wenn diese Lernspiele betrachtet werden, fällt oft auf, dass der Spielspaß dabei vernachlässigt wird (siehe \ref{sssec:lernspielanalyse}).
 
-	Kinder zeigen in einem gewissen Alter oft eine Abneigung gegen Schule und die Vermutung, dass dies am Zwang liegt, kommt auf. Diese These lässt sich auf Lernspiele übertragen: wenn das Spiel stetig zum Lernen auffordert, aber keinen Gegenwert bringt, wird dem Spiel auch mit Abneigung begegnet.
+	Kinder zeigen in einem gewissen Alter <TODO: In welchem Alter?> oft eine Abneigung gegen Schule und die Vermutung, dass dies am Zwang liegt, kommt auf. Diese These lässt sich auf Lernspiele übertragen: wenn das Spiel stetig zum Lernen auffordert, aber keinen Gegenwert bringt, wird dem Spiel auch mit Abneigung begegnet.
 
-	Durch das spielerische Lernen können die Spieler Fähigkeiten schulen oder etwas für das Leben lernen, während sie Spaß am Spiel haben. Können die Lerninhalte erfolgreich mit dem Spielspaß kombiniert werden, merkt der Spieler unter Umständen nicht einmal, dass gerade Wissen vermittelt wird.
+	Durch das spielerische Lernen können die Kinder Fähigkeiten schulen, Zusammenhänge erfassen und sich Wissen aneignen, während sie Spaß am Spiel haben. Können die Lerninhalte erfolgreich mit dem Spielspaß kombiniert werden, merkt der Spieler unter Umständen nicht einmal, dass gerade Wissen vermittelt wird.
 
-	Das Ziel dieser Studienarbeit ist die Entwicklung eines Lernspiels für Android. Die Problemstellung liegt dabei darin, sowohl den Spielspaß, als auch Wissen zu vermitteln. Das erwartete Ergebnis ist zum einen die Veröffentlichung des Spiels sowie die Erarbeitung und Anwendung von Wissen über Spieleentwicklung, Gamification und Game-Engines. Das Spiel soll durch regelmäßige Tests von Prototypen kontinuierlich evaluiert werden.
+	Das Ziel dieser Studienarbeit ist die Entwicklung eines Lernspiels für Android. Die Problemstellung liegt darin, Spielspaß und Wissensvermittlung zu kombinieren. Das erwartete Ergebnis ist zum einen die Veröffentlichung des Spiels zum anderen die Erarbeitung und Anwendung von Wissen über Spieleentwicklung, Gamification und Game-Engines. Das Spiel soll durch regelmäßige Tests von Prototypen kontinuierlich evaluiert werden.
 
 \subsection{Aufgabenstellung}
-	Folgende Anforderungen konnten für die Durchführung der Studienarbeit und die Entwicklung der Software definiert werden:
+	Folgende Anforderungen werden für die Durchführung der Studienarbeit und die Entwicklung der Software definiert:
 	\begin{itemize}
 		\item{ Die Zielgruppe für das Lernspiel besteht aus Kindern im Alter der ersten bis sechsten Klasse.\footnote{Nach deutschem Schulsystem, also Kinder von circa 6 bis 12 Jahren.} Nach Möglichkeit soll dieses Spiel und die zugehörige Lernplattform auch Flüchtlingskindern zur Verfügung gestellt werden. }
 		\item{ Das Spiel soll Android als Zielplattform unterstützen. Dort befindet sich im mobilen Bereich die größte Nutzerbasis. (siehe \ref{ssec:android}) }
 		\item{ Die Lernziele des Spiels sind an den gängigen Lernstandards orientiert, dabei wird darauf geachtet von keinem speziellen Lernstandard abhängig zu sein. Die Spieler (Kinder) sollen mit dem Spiel Spaß haben und das Spiel auch spielen wollen. }
 		\item{ Durch Ändern der Aufgabenliste sollen beliebige Lernstandards erfüllt werden können. }
 		\item{ Als Beispiel wurde \url{https://arcademics.com} genannt, eine Seite welche Spiele der gewünschten Art beinhaltet. }
-		\item{ Das Spiel soll teil der Lernplattform von Prof. PhD. Kay Berkling werden und Lernerfolge an diese melden. }
-		\item{ Das Spiel soll auch offline spielbar sein. Falls Lernerfolge anfallen sollen diese nachträglich an die Lernplattform gemeldet werden. }
+		\item{ Das Spiel soll Teil der Lernplattform von Prof. PhD. Kay Berkling werden und Lernerfolge an diese melden. }
+		\item{ Das Spiel soll auch offline spielbar sein. Die eintretenden Lernerfolge sollen an die Lernplattform übermittelt werden. }
 		\item{ Der Spaß steht im Vordergrund und die Lernerfolge sollen unterbewusst stattfinden. }
 	\end{itemize}
 	Eine vollständige Liste der Kriterien bezüglich des Spiels ist in Kapitel \ref{ssec:kriterien} zu finden.
 	Für die Umsetzung der Lerninhalte ist somit ein geeignetes Format zu wählen, welches den Spielspaß nicht mindert und dennoch wichtige Grundfertigkeiten vermittelt.
-	Bei der Auswahl der Gamification-Modelle gilt besondere Achtsamkeit bei der Anfälligkeit der Zielgruppe gegenüber den gewählten Methoden. Somit soll das Spiel sowohl die Aufmerksamkeit des Spielers erreichen, sowie diese für einen gesetzten Zeitraum halten.
+	Bei der Auswahl der Gamification-Modelle gilt besondere Achtsamkeit bei der Anfälligkeit der Zielgruppe gegenüber den gewählten Methoden. Das Spiel soll die Aufmerksamkeit des Spielers erreichen und diese für einen gesetzten Zeitraum halten.
 
 \subsection{Spielidee}\label{ssec:spielidee}
-	Um zur endgültigen Spielidee zu gelangen, wurden mehrere Ideen ausgearbeitet (siehe \ref{ssec:idee}) und gegen unsere Kriterien (siehe \ref{ssec:kriterien}) abgewogen.
-	Als endgültige Spielidee wurde ein Rennspiel ausgearbeitet. In diesem mit verschiedenen Dingen (Beispielsweise: ein Würfel, ein Auto oder eine Rakete) ein Rennen stattfinden sollen. Um Lerninhalte in ein Rennspiel einzubauen wurden mehrere Möglichkeiten ausgearbeitet:
+	Um zur endgültigen Spielidee zu gelangen, werden mehrere Ideen ausgearbeitet (siehe \ref{ssec:idee}) und gegen definierte Kriterien (siehe \ref{ssec:kriterien}) abgewogen.
+	Als endgültige Spielidee wird ein Rennspiel ausgearbeitet, in welchem mit verschiedenen Dingen (Beispielsweise: ein Würfel, ein Auto oder eine Rakete) ein Rennen stattfinden soll. Um Lerninhalte in ein Rennspiel einzubauen werden mehrere Möglichkeiten ausgearbeitet:
 	\begin{itemize}
 		\item{ Aufgabe zum Start des Rennens. Hier kann der schnellste Spieler als Erstes starten. Durch eine maximale Zeit und mehrere Versuche kann der Nachteil beschränkt werden, um schwächere Spieler besser zu inkludieren. }
 		\item{ Aufgaben in Form von Weggabelungen (wie beispielsweise Tore oder Schanzen). Eine Aufgabe erscheint bevor eine Weggabelung erreicht wird auf dem Bildschirm. Bei jeder Abzweigungsmöglichkeit steht eine Lösung zur Aufgabe. Fährt ein Spieler falsch, bekommt er einen Nachteil oder alle Spieler die korrekt fahren einen Vorteil. }
-		\item{ Learn-To-Win: Spieler können durch lösen von Aufgaben virtuelles Geld verdienen und gewisse Vorteile im Spiel durch Einsatz des Geldes genießen. Diese Idee ist von dem Pay-To-Win Monetarisierungsmodell abgeleitet. }
+		\item{ Learn-To-Win: Spieler können durch Lösen von Aufgaben virtuelles Geld verdienen und gewisse Vorteile im Spiel durch Einsatz des Geldes genießen. Diese Idee ist von dem Pay-To-Win Monetarisierungsmodell abgeleitet. }
 	\end{itemize}
-	Ein wichtiges Kriterium für die Spielidee war, dass Lerninhalte ein Teil von dem Spiel sind und so auch das Lernen selbst durch Spaß angeregt wird.
+	Ein wichtiges Kriterium für die Spielidee ist, dass Lerninhalte ein Teil des Spiel sind und so auch das Lernen selbst durch Spaß angeregt wird.
 	Das Spiel selbst soll in mindestens zwei Spielmodi spielbar sein:
 	\begin{itemize}
 		\item{ Online Multiplayer: Rennen fahren mit anderen echten Personen über das Internet. }
