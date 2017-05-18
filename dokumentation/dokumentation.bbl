@@ -445,6 +445,31 @@
       \verb http://meson.press/wp-content/uploads/2015/03/9783957960016-rethinking-gamification.pdf
       \endverb
     \endentry
+    \entry{easy-to-learn-hard-to-master}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=41e053a961b41a655080aad81342eb0c}{%
+           family={Gamasutra},
+           family_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{41e053a961b41a655080aad81342eb0c}
+      \strng{fullhash}{41e053a961b41a655080aad81342eb0c}
+      \field{labelalpha}{Gam09}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{02}
+      \field{month}{04}
+      \field{subtitle}{Familiarity, Habituation, and Catchiness}
+      \field{title}{Persuasive Games}
+      \field{urlday}{18}
+      \field{urlmonth}{05}
+      \field{urlyear}{2017}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.gamasutra.com/view/feature/3977/persuasive_games_familiarity_.php
+      \endverb
+    \endentry
     \entry{android-fragmentation}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=8b36e9207c24c76e6719268e49201d94}{%
