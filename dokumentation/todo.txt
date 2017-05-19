@@ -2,8 +2,12 @@ marc
 	ab seite 45 schreiben
 	bild gamification modell - übersicht
 marvin
-	zeit
 	terme zusammenpacken
+		Engines, game engine, spiele engine => Game-Engine
+		ingame-währung, punkte, geld, gold => ingame-währung
+		multiplayer, mehrspieler,  => Mehrspieler-Modus
+		Teilnahmegebühr, Startgebühr => Teilnahmegebühr
+		Bots, Ai, computergegner, = computergegner
 	todos
 	bilder
 		grundlagen - lernspiele
@@ -19,17 +23,6 @@ marvin
 	roadsplit bilder nebeneinander setzen
 
 
-
-
-
-
-term konsolidierung:
-	Ingame-Währung, Punkte
-	Teilnahmegebühr
-	Engines, game engine, spiele engine => Game-Engine
-	multiplayer, mehrspieler
-zeit?
-	gegenwart
 
 playtests
 	collision im menu
