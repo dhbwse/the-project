@@ -167,11 +167,11 @@ In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anw
 	 emph={double,bool,int,unsigned,char,true,false,void}, emphstyle=\color{blue}, emph={Assert,Test}, emphstyle=\color{red}, emph={[2]\using,\#define,\#ifdef,\#endif}, emphstyle={[2]\color{blue}}}
 	Die Steuerung des Fahrzeugs ergibt sich aus dem Zusammenspiel vieler Komponenten und Code-Bestandteile, welche über mehrere Skripte verteilt sind. In diesem Kapitel werden aus diesem Grund lediglich die wichtigsten Kernaspekte der Steuerung erläutert. Der Prozess der Steuerung läuft dabei in mehreren Schritten ab:
 	\begin{enumerate}
-		\item{ Das \enquote{CarUserControl} Skript entscheidet, ob das Fahrzeug fahren darf.}
-		\item{ Falls ja erteilt das Skript dem \enquote{CarController} Skript den Befehl zur Bewegung}
-		\item{ Im CarController wird die Ausrichtung des Joysticks ausgelesen.}
-		\item{ Im CarController wird berechnet, um wieviel Grad das Fahrzeug drehen muss, um den gewünschten Winkel zu erhalten.}
-		\item{ Die Räder werden im entsprechenden Winkel gedreht und das Fahrzeug bewegt sich in diese Richtung.}
+		\item{ Das \enquote{CarUserControl} Skript entscheidet, ob das Fahrzeug fahren darf. }
+		\item{ Falls ja erteilt das Skript dem \enquote{CarController} Skript den Befehl zur Bewegung }
+		\item{ Im CarController wird die Ausrichtung des Joysticks ausgelesen. }
+		\item{ Im CarController wird berechnet, um wie viel Grad das Fahrzeug drehen muss, um den gewünschten Winkel zu erhalten. }
+		\item{ Die Räder werden im entsprechenden Winkel gedreht und das Fahrzeug bewegt sich in diese Richtung. }
 	\end{enumerate}
 	Im Folgenden sollen diese Schritte genauer analysiert werden. Dabei wird die Nummerierung aus der Aufzählung als Referenz verwendet.
 	\begin{lstlisting}
