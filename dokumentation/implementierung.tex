@@ -43,7 +43,7 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	Wird die Ausrichtung des Joysticks zur Wahl der Fahrtrichtung verwendet, so wird die Konsistenz gewahrt. Das Betätigen des Bremspedals führt dabei ungeachtet der Fahrtrichtung zu einer Verlangsamung des Fahrzeugs, wohingegen ein Betätigen des Gaspedals in jedem Fall zu einer Beschleunigung des Fahrzeugs führt. Da die Wahrung der Konsistenz für die Entwicklung eines Spiels eine große Rolle spielt, wird für die Implementierung des Rückwärtsgangs die Abhängigkeit zur Ausrichtung des Joysticks gewählt.
 
 	\subsubsection{Auswertung eines Rennens}
-	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale und Punkte wird  eine Entscheidungstabelle hergeleitet. Die dafür relevanten Kriterien sind die Prozentzahl der korrekten Aufgaben und die Zeit, welche der Spieler für die Strecke benötigt hat.
+	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale und Ingame-Währung wird eine Entscheidungstabelle hergeleitet. Die dafür relevanten Kriterien sind die Prozentzahl der korrekten Aufgaben und die Zeit, welche der Spieler für die Strecke benötigt hat.
 	Für die Auswertung der benötigten Zeit erhält jedes Level drei Zeiten, welche zur Bestimmung der Rennleistung genutzt werden. Für jede dieser Zeiten existieren zwei Stadien und für die schnellste und langsamste Zeit je ein zusätzliches:
 	\begin{enumerate}
 		\item{ Langsamer als die gesetzte Zeit, jedoch näher an dieser, als an der nächst langsameren Zeit. Für die letzte Zeit wird hier ein maximal Abstand von $60$ Sekunden verwendet. Alles darunter ist \enquote{zu langsam} und in der folgenden Tabelle mit $<<$ markiert. }
@@ -74,6 +74,7 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	\end{tabl}
 
 Das Erreichen von Gold-Pokalen wird dabei absichtlich schwierig gewählt, um den Spieler zu fordern, motivieren und auch um realistische Ergebnisse zu setzen. Erst wenn die Aufgaben und die Zeit perfektioniert wurden, erhält der Spieler einen Gold-Pokal.
+Für einen Bronze-Pokal erhält der Spieler $10$ Einheiten der Ingame-Währung, $20$ und $30$ für Silber und Gold.
 Mit dieser Entscheidungstabelle ist der Grad zwischen Spielern, welche sehr gut Rennen fahren können, und Spielern, welche gut im Lösen der Aufgaben sind, perfekt ausgeglichen. Ein Spieler kann das Rennen schaffen (beziehungsweise einen Bronze-Pokal erhalten), ohne eine Aufgabe korrekt zu lösen. Allerdings muss die gespielte Zeit dabei die schnellste Zeit deutlich unterschreiten, was einem perfekt gefahrenen Rennen ohne Fehler gleichkommt. Andererseits kann beispielsweise ein Silber-Pokal bereits erreicht werden, wenn der Spieler schneller als die langsamste Zeit fährt und alle Aufgaben korrekt löst.
 
 \subsection{Entwicklungsablauf in Unity}
@@ -245,7 +246,7 @@ if (isSlow){
     Das Codebeispiel oben zeigt die beiden mathematischen Funktionen, welche für die Verlangsamung des Fahrzeugs verantwortlich sind. Der Methodenaufruf der adjustTopSpeed() Methode geschieht immer dann, wenn das Fahrzeug eine Zone betritt oder verlässt, welche die Geschwindigkeit manipuliert. Beim Betreten einer so genannten \enquote{SlowDown}-Zone wird die Variable \enquote{isSlow} auf \enquote{true} gesetzt. Daraufhin wird die Höchstgeschwindigkeit des Fahrzeugs kontinuierlich reduziert, bis die festgesetzte Geschwindigkeit erreicht ist. Verlässt das Fahrzeug die SlowDown-Zone wieder, so wird isSlow auf \enquote{false} gesetzt und die Höchstgeschwindigkeit des Fahrzeugs wird kontinuierlich erhöht, bis die ursprüngliche Höchstgeschwindigkeit erreicht ist.
 
 	\subsubsection{Erkennung einer Frontalkollision}
-	Um die Erkennung einer Frontalkollision zu ermöglichen, wird das Fahrzeug mit zwei Hilfs-Punkten ausgestattet. Diese Punkte sind jeweils mittig des Fahrzeugs positioniert, wobei eine der Punkte am vorderen Ende des Fahrzeugs und der zweite Punkt am Heck positioniert ist.
+	Um die Erkennung einer Frontalkollision zu ermöglichen, wird das Fahrzeug mit zwei Hilfs-Punkten ausgestattet. Diese Punkte sind jeweils mittig des Fahrzeugs positioniert, wobei einer der Punkte am vorderen Ende des Fahrzeugs und der zweite Punkt am Heck positioniert ist.
 	\begin{lstlisting}
 private void OnCollisionEnter(Collision collision){
 Vector3 localAverageVorn = frontColliderHelper.transform.InverseTransformPoint(collision.contacts[0].point);
