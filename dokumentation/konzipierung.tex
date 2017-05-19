@@ -78,7 +78,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\end{itemize}
 		\item{Für die verschiedenen Spielmodi stehen folgende Ideen zur Auswahl:}
 		\begin{itemize}
-			\item{Im Online Multiplayer haben die Spieler die Möglichkeit, gegen bis zu drei weitere Spieler anzutreten. Gewinner ist dabei, wer zuerst das Ziel erreicht.}
+			\item{Im Online Mehrspieler-Modus haben die Spieler die Möglichkeit, gegen bis zu drei weitere Spieler anzutreten. Gewinner ist dabei, wer zuerst das Ziel erreicht.}
 			\item{Die Level für den Spielfortschritt sind als Zeitrennen umgesetzt. Dabei muss der Spieler das Ziel in der vorgegebenen Zeit erreichen. Am Spielende überschüssige Zeit kann unter Umständen in zusätzliche Belohnungen verwandelt werden.}
 			\item{Die Level für den Spielfortschritt werden gegen computergesteuerte Bots gefahren. Um das Level zu beenden, muss der Spieler als erster das Ziel erreichen.}
 		\end{itemize}
@@ -95,7 +95,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\item{Beide möglichen Wege werden mit einer Lösung versehen. Eine dieser Lösungen ist die Lösung der vorher gezeigten Aufgabe. Dieser Weg gilt als der Richtige.}
 			\item{Wählt der Spieler den falschen Weg, erhält der Spieler einen Nachteil. Im Fall des Zeitrennens kann dies z.B.\@ der Verlust von einigen Sekunden sein.}
 		\end{itemize}
-		\item{Im Multiplayer müssen die Spieler Aufgaben absolvieren, um das Rennen beginnen zu können.}
+		\item{Im Mehrspieler-Modus müssen die Spieler Aufgaben absolvieren, um das Rennen beginnen zu können.}
 			\begin{itemize}
 				\item{Sobald die Aufgabe gelöst ist, kann ein Spieler losfahren. Somit können sich Spieler über schnelles Absolvieren der Aufgaben einen Vorteil im Rennen erspielen.}
 				\item{Können die Aufgaben nicht gelöst werden, darf der Spieler nach einer Zeitverzögerung dennoch losfahren. Spieler, welche die Aufgaben gelöst haben, haben im Rennen dadurch einen Vorteil.}
@@ -106,7 +106,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\item{Für ein Rennen gegen computergesteuerte Bots kann sich der Spieler eine bessere Startposition erkaufen.}
 			\item{Für ein Zeitrennen kann sich der Spieler einen Zeitbonus erkaufen.}
 			\item{Der Spieler kann die Teilnahmegebühr für die Pokalrennen sowohl über die Ingame-Währung als auch über das Absolvieren von Aufgaben bezahlen.}
-			\item{Der Spieler kann weitere Fahrzeuge / spielbare Objekte für die Ingame-Währung kaufen. Alternativ ist über diese Währung auch ein Farbwechsel der bisher gekauften Objekte oder ein Wechsel des Spielersymbols (für den Multiplayer) denkbar.}
+			\item{Der Spieler kann weitere Fahrzeuge / spielbare Objekte für die Ingame-Währung kaufen. Alternativ ist über diese Währung auch ein Farbwechsel der bisher gekauften Objekte oder ein Wechsel des Spielersymbols (für den Mehrspieler-Modus) denkbar.}
 		\end{itemize}
 	\end{enumerate}
 
@@ -208,7 +208,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Die zweite Möglichkeit besteht darin, an den Weggabelungen unterschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
 		Als Belohnung und Bestrafung wird eine Sammlung von Reaktionstönen fungieren, beispielsweise ein Jubeln, oder Händeklatschen als positive Rückmeldung und Ausbuhen als negative Rückmeldung.
 
-		\paragraph{Zusatzaufgaben im Multiplayer:}
+		\paragraph{Zusatzaufgaben im Mehrspieler-Modus:}
 		Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
 		Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
@@ -235,7 +235,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	Im Bereich der sonstigen Eigenschaften sollen Eigenschaften betrachtet werden, die nicht direkt die Spielmechanik betreffen. Dazu gehören unter anderem Kameraeinstellungen, das Optionsmenü und ähnliches.
 
 		\paragraph{Kaufbares für Ingame-Währung:}
-		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste Rennen zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Multiplayer nicht verfügbar.
+		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste Rennen zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Mehrspieler-Modus nicht verfügbar.
 
 		\paragraph{Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
@@ -284,7 +284,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 \subsection{Entwicklung Play-Persona \label{ssec:personadef}}
 	Wie in Kapitel \ref{ssec:persona} beschrieben, werden für die Entwicklung von Play-Personas die Spielmechaniken und Fähigkeiten der Spieler benötigt. Im Falle des zu entwickelnden Rennspiels ergeben sich zwei Kernkompetenzen, nach welchen die Spieler unterschieden werden können. Diese sind:
 	\begin{description}
-		\item[Rennen fahren]{Die Kompetenz des Rennenfahrens tätigt eine Aussage darüber, wie gut bzw. schlecht ein Spieler beim Steuern des Fahrzeugs ist. Diese Fähigkeit kann durch Rundenzeiten bzw. durch Platzierungen in Multiplayer-Rennen gemessen werden.}
+		\item[Rennen fahren]{Die Kompetenz des Rennenfahrens tätigt eine Aussage darüber, wie gut bzw. schlecht ein Spieler beim Steuern des Fahrzeugs ist. Diese Fähigkeit kann durch Rundenzeiten bzw. durch Platzierungen in Mehrspieler-Modus-Rennen gemessen werden.}
 		\item[Aufgaben lösen]{Durch die Kompetenz des Aufgabenlösens wird abgedeckt, ob ein Spieler die gestellten Aufgaben richtig lösen kann, wie viel Prozent der Aufgaben korrekt gelöst wurden und wie viel Zeit dafür benötigt wurde.}
 	\end{description}
 	Daraus ergeben sich folgende 4 Personas:
@@ -308,7 +308,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\item[Familiäres Umfeld]{Florian ist sieben Jahre alt und lebt mit seinen Eltern und zwei Geschwistern am Stadtrand. Seine Geschwister sind Andy(10) und Laura(4). Florians Vater arbeitet bei einem ortsansässigen IT Unternehmen, seine Mutter ist Hausfrau. Gelegentlich passt Florian auf seine kleine Schwester auf und macht regelmäßig seine Hausaufgaben aus der Schule, weitere Aufgaben im Haushalt hat er jedoch nicht.}
 			\item[Schulisches Umfeld]{Florian besucht, genauso wie sein Bruder, die Helmsheimer Grundschule. Dort ist er aktuell in der zweiten Klasse. Florian befindet sich im schulischen Durchschnitt und findet keinen besonderen Spaß am Lernen.}
 			\item[Interessen und Hobbys]{Florian ist ein begeisterter Auto-Fan. Er spielt gerne mit Spielzeugautos, sieht Autosendungen im Fernsehen und will später unbedingt Rennfahrer werden. Er hat sehr viel Spaß daran, Rennen zu fahren und hat bei seinem Bruder ein Auto-Rennspiel gesehen, dass er nun auch spielt. Außerdem spielt er in seiner Freizeit Fußball. Er hat eine Abneigung gegen kleine Autos (Smarts) und Mädchen.}
-			\item[Motivation]{Die Motivation Florians liegt im Ehrgeiz, seinen Bruder zu schlagen. Er möchte bessere Rundenzeiten im Rennen erreichen und so lange immer besser im Spiel werden, bis er seinen Bruder im Multiplayer besiegen kann.}
+			\item[Motivation]{Die Motivation Florians liegt im Ehrgeiz, seinen Bruder zu schlagen. Er möchte bessere Rundenzeiten im Rennen erreichen und so lange immer besser im Spiel werden, bis er seinen Bruder im Mehrspieler-Modus besiegen kann.}
 			\item{\enquote{Mama, Mama, guck mal ein rotes Rennauto!}}
 		\end{description}
 		\item[Joachim Wolf: Der Lehrer]<TODO: Bild!>\hfill
@@ -353,7 +353,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			Durch anspruchsvollere Pokalrennen soll sie überzeugt werden die Aufgaben zu lösen.
 		}
 		\item[Andy Klein]{
-			Der Experte erkundet das Spiel schnell und hat später durch den Mehrspielermodus die Möglichkeit sich mit anderen zu vergleichen und zusammen Spaß zu haben. So bleibt auch für den Experten das Spiel interessant.
+			Der Experte erkundet das Spiel schnell und hat später durch den Mehrspieler-Modus die Möglichkeit sich mit anderen zu vergleichen und zusammen Spaß zu haben. So bleibt auch für den Experten das Spiel interessant.
 			Für ihn ist es wichtig jeden Level mit der besten Wertung abzuschließen, das sollte nicht zu schwer gemacht werden um die anderen zu inkludieren.
 		}
 	\end{description}
