@@ -7,7 +7,7 @@ marvin
 		ingame-währung, punkte, geld, gold => ingame-währung
 		multiplayer, mehrspieler,  => Mehrspieler-Modus
 		Teilnahmegebühr, Startgebühr => Teilnahmegebühr
-		Bots, Ai, computergegner, = computergegner
+		Bots, Ai, computergegner, = computergesteuerte (Rennautos, Gegner)
 	todos
 	bilder
 		grundlagen - lernspiele
