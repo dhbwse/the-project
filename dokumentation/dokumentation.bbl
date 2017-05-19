@@ -27,7 +27,7 @@
       }
       \strng{namehash}{e84e30b9390cdb64db6db2c9ab87846d}
       \strng{fullhash}{e84e30b9390cdb64db6db2c9ab87846d}
-      \field{labelalpha}{And17}
+      \field{labelalpha}{And}
       \field{sortinit}{A}
       \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
       \field{labelnamesource}{author}
@@ -36,9 +36,35 @@
       \field{urlday}{21}
       \field{urlmonth}{01}
       \field{urlyear}{2017}
-      \field{year}{2017}
       \verb{url}
       \verb https://android.com
+      \endverb
+    \endentry
+    \entry{android-interfaces}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=77a02a3e2a923f3f2e3b7692ab37150e}{%
+           family={Project},
+           family_i={P\bibinitperiod},
+           given={Android\bibnamedelimb Open\bibnamedelima Source},
+           given_i={A\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{77a02a3e2a923f3f2e3b7692ab37150e}
+      \strng{fullhash}{77a02a3e2a923f3f2e3b7692ab37150e}
+      \field{labelalpha}{AOSP}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{11}
+      \field{shorthand}{AOSP}
+      \field{title}{Android Interface Definition Language}
+      \field{urlday}{17}
+      \field{urlmonth}{05}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://developer.android.com/guide/components/aidl.html
       \endverb
     \endentry
     \entry{ios}{online}{}
@@ -280,28 +306,6 @@
       \verb https://www.cryengine.com/
       \endverb
     \endentry
-    \entry{game-nfs}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=e853db5fb97163e7377be31ae2d55799}{%
-           family={{Electronic\bibnamedelimb Arts}},
-           family_i={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{e853db5fb97163e7377be31ae2d55799}
-      \strng{fullhash}{e853db5fb97163e7377be31ae2d55799}
-      \field{labelalpha}{Ele}
-      \field{sortinit}{E}
-      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
-      \field{extraalpha}{1}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Need for Speed}
-      \field{urlday}{03}
-      \field{urlmonth}{02}
-      \field{urlyear}{2017}
-      \verb{url}
-      \verb http://www.needforspeed.com/
-      \endverb
-    \endentry
     \entry{easports}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=d177668b351a948781f0477db6a22991}{%
@@ -313,7 +317,6 @@
       \field{labelalpha}{Ele}
       \field{sortinit}{E}
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
-      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{urlday}{08}
       \field{urlmonth}{05}
@@ -687,6 +690,28 @@
       \verb https://telearn.archives-ouvertes.fr/hal-00190453
       \endverb
     \endentry
+    \entry{game-nfs}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e853db5fb97163e7377be31ae2d55799}{%
+           family={{Electronic\bibnamedelimb Arts}},
+           family_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e853db5fb97163e7377be31ae2d55799}
+      \strng{fullhash}{e853db5fb97163e7377be31ae2d55799}
+      \field{labelalpha}{NFS}
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{shorthand}{NFS}
+      \field{title}{Need for Speed}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.needforspeed.com/
+      \endverb
+    \endentry
     \entry{java}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=30162ed78b6c10f731411f2fc440c24f}{%
@@ -730,32 +755,6 @@
       \field{year}{2008}
       \verb{url}
       \verb http://www.portigal.com/wp-content/uploads/2008/01/Portigal-Consulting-White-Paper-Persona-Non-Grata.pdf
-      \endverb
-    \endentry
-    \entry{android-interfaces}{misc}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=77a02a3e2a923f3f2e3b7692ab37150e}{%
-           family={Project},
-           family_i={P\bibinitperiod},
-           given={Android\bibnamedelimb Open\bibnamedelima Source},
-           given_i={A\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \strng{namehash}{77a02a3e2a923f3f2e3b7692ab37150e}
-      \strng{fullhash}{77a02a3e2a923f3f2e3b7692ab37150e}
-      \field{labelalpha}{Pro16}
-      \field{sortinit}{P}
-      \field{sortinithash}{24100cef455d7974167575052c29146e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{17}
-      \field{month}{11}
-      \field{title}{Android Interface Definition Language}
-      \field{urlday}{17}
-      \field{urlmonth}{05}
-      \field{urlyear}{2017}
-      \field{year}{2016}
-      \verb{url}
-      \verb https://developer.android.com/guide/components/aidl.html
       \endverb
     \endentry
     \entry{psych1}{article}{}
@@ -920,11 +919,12 @@
       }
       \strng{namehash}{b1baf4470e92b775bf262b5b01f4c970}
       \strng{fullhash}{b1baf4470e92b775bf262b5b01f4c970}
-      \field{labelalpha}{Sou}
+      \field{labelalpha}{SF}
       \field{sortinit}{S}
       \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{shorthand}{SF}
       \field{title}{Irrlicht Engine}
       \field{urlday}{23}
       \field{urlmonth}{01}
