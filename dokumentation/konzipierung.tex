@@ -206,6 +206,8 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methode würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
 		Bei der belohnenden Methode würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
 		Die zweite Möglichkeit besteht darin, an den Weggabelungen unterschiedliche Streckenabschnitte zu positionieren. Somit würde die falsche Wahl des Wegs zu einem längeren Streckenabschnitt führen, was den Spieler wichtige Zeit kostet.
+		Da eine fundierte wissenschaftliche Entscheidung bezüglich der Wahl einer der genannten Methoden sehr schwer fällt, wird in der Umsetzung des Spiels darauf verzichtet.
+		Die Anzahl an gelösten Aufgaben ist somit unabhängig von der erreichten Zeit im Rennen. Für die Auswertung eines Rennens wird in der Implementierung eine Entscheidungstabelle erstellt, welche aus der Anzahl korrekter Aufgaben und der gefahrenen Zeit einen Pokal auswählt.
 		Als Belohnung und Bestrafung wird eine Sammlung von Reaktionstönen fungieren, beispielsweise ein Jubeln, oder Händeklatschen als positive Rückmeldung und Ausbuhen als negative Rückmeldung.
 
 		\paragraph{Zusatzaufgaben im Mehrspieler-Modus:}
@@ -349,7 +351,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			Der Lehrer hat die Möglichkeit durch Aufgaben und nicht Reaktionszeit oder Renntalent zu glänzen. So kann auch der Lehrer mit seinen Schülern mithalten und sich in Geschicklichkeit und Reaktionszeit üben.
 		}
 		\item[Laura Dietz]{
-			Die Rennfahrerin stört sich wohl am meisten an den Aufgaben, kann aber im Rennen durch geschicktes Fahren wieder aufholen. Sie hat Spaß an den Extras solange sie dafür nicht zu viel arbeiten muss.
+			Die Rennfahrerin stört sich wohl am meisten an den Aufgaben, kann aber im Rennen durch geschicktes Fahren wieder aufholen. Sie hat Spaß an den Extras solange sie dafür nicht zu viel arbeiten muss. 
 			Durch anspruchsvollere Pokalrennen soll sie überzeugt werden die Aufgaben zu lösen.
 		}
 		\item[Andy Klein]{
