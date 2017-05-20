@@ -6,7 +6,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	Auf Basis der in der Aufgabenstellung genannten Kriterien wird ein Kriterienkatalog entwickelt. Dieser wird mit zusätzlichen eigenen Kriterien erweitert.
 	\begin{enumerate}
 		\item{Das Spiel soll levelbasiert sein, d.h. dass voneinander unabhängige Spielabschnitte vorhanden sind.}
-		\item{Der Umfang des Spiels ist auf zwei bis drei Stunden Spielspaß ausgelegt. Durch modulare Gestaltung (Levels) kann das Spiel im Nachhinein erweitert werden.}
+		\item{Der Umfang des Spiels ist auf zwei bis drei Stunden Spielspaß ausgelegt. Durch modulare Gestaltung (Levelbasiert) kann das Spiel im Nachhinein erweitert werden.}
 		\item{Das Spiel ist ein \enquote{educational game}, der Spielspaß steht im Vordergrund. Die Spieler sollen unbewusst nebenbei lernen.}
 		\item{Das Lernen selbst soll Spaß machen. Das Spiel soll die Spieler nicht zum Lernen nötigen, sondern das Lernen als festen Bestandteil in das Geschehen integrieren.}
 		\item{Das Spiel soll \enquote{casual} sein, d.h.\@ ein Spiel \enquote{für zwischendurch} sein.}
@@ -80,7 +80,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\begin{itemize}
 			\item{Im Online Mehrspieler-Modus haben die Spieler die Möglichkeit, gegen bis zu drei weitere Spieler anzutreten. Gewinner ist dabei, wer zuerst das Ziel erreicht.}
 			\item{Die Level für den Spielfortschritt sind als Zeitrennen umgesetzt. Dabei muss der Spieler das Ziel in der vorgegebenen Zeit erreichen. Am Spielende überschüssige Zeit kann unter Umständen in zusätzliche Belohnungen verwandelt werden.}
-			\item{Die Level für den Spielfortschritt werden gegen computergesteuerte Rennautos gefahren. Um das Level zu beenden, muss der Spieler als erster das Ziel erreichen.}
+			\item{Die Level für den Spielfortschritt werden gegen computergesteuerte Rennautos gefahren. Um den Level zu beenden, muss der Spieler als erster das Ziel erreichen.}
 		\end{itemize}
 		\item{Die Strecken werden in Level-Paketen ausgeliefert. Diese Level-Pakete müssen von dem Spieler durch Abschluss des vorherigen Level-Pakets freigeschaltet werden.}
 		\begin{itemize}
@@ -122,9 +122,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	Liste aller Funktionen und eine Beschreibung für einen Überblick der Funktionalität, für weitere Informationen siehe Kapitel \ref{ssec:ucd} und \ref{sssec:spielmechanik}:
 	\begin{description}
 		\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen, sich in das Spiel einzufinden. Dies wird über wortlose Bilder erreicht, welche verschwinden, sobald der Nutzer die Steuerung ausprobiert hat und ein Rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
-		\item[Level-Gruppe wechseln]{
-			Der Spieler kann die Level-Gruppen rotieren, jede besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen eine Teilnahmegebühr anfällt (Pokalrennen).
-			Jede Level-Gruppe ist in einem eigenen Stil thematisiert, wobei die Karten für die Pokalrennen außergewöhnlicher sein sollen.
+		\item[Level-Pakete wechseln]{
+			Der Spieler kann die Level-Pakete rotieren, jedes besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen eine Teilnahmegebühr anfällt (Pokalrennen).
+			Jedes Level-Pack ist in einem eigenen Stil thematisiert, wobei die Karten für die Pokalrennen außergewöhnlicher sein sollen.
 		}
 		\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Bildschirm wo folgende Funktionen zur Verfügung stehen:
 			\begin{description}
@@ -133,7 +133,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 				\item[Hilfsagent erneut starten]{ Der Hilfsagent wird neu gestartet und kann erneut gespielt werden.}
 			\end{description}
 		}
-		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf ein Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Pokalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
+		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf einen Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Pokalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
 			\begin{description}
 				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
 				\item[als Rennen gegen Computergegner starten (Optional)]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos. Die Auswertung funktioniert über das Übliche Rang-Verfahren: die besten drei Spieler werden hervorgehoben und gekürt, nur der Erste gewinnt.}
@@ -180,7 +180,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	\subsubsection*{Regeln für den Spielfortschritt:}
 		Zum Durchspielen des Spiels muss der Spieler eine Reihe von Level-Paketen abschließen. Die genaue Anzahl an zu spielenden Paketen ist variabel und kann jederzeit um ein zusätzliches Paket erweitert oder gekürzt werden. Die zu treffende Entscheidung an dieser Stelle ist, ob der Spieler die einzelnen Level-Pakete bereits von Beginn an auswählen kann oder sich diese im Laufe des Spiels freispielen muss. Ein Freispielen der einzelnen Level-Pakete gibt die Möglichkeit, einen Schwierigkeitsgrad einzuführen. Somit können zum Beispiel zuerst alle Pakete mit Schwierigkeitsgrad \enquote{Einfach} verfügbar sein. Mit erfolgreichem Abschluss aller einfachen Pakete würden dann die Pakete mit Schwierigkeit \enquote{Mittel} freigeschaltet.
 		Die vollständige Verfügbarkeit aller Level-Pakete von Beginn an, hat für den Spieler den Vorteil der freien Wahl. Allerdings ist eine Umsetzung von unterschiedlichen Schwierigkeitsgraden unter Umständen nicht möglich. Durch sofortige vollständige Verfügbarkeit bleibt eine Lernkurve aus und der Spieler kann schnell die Motivation am Spiel verlieren.
-		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
+		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
 	\subsubsection*{Regeln innerhalb der Level-Pakete:}
 		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Pokalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Pokalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Pokalrennen verfügbar zu machen.
@@ -214,7 +214,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Um dem Spieler die Möglichkeit zu geben, Boni und optische Upgrades zu erwerben, soll dem Spiel eine Ingame-Währung beigefügt werden. Potentiell sind drei Möglichkeiten für den Erwerb dieser Währung denkbar.
 		\begin{enumerate}
 			\item{ Erwerb der Währung über reale Zahlungen. Dies ist die Einnahmequelle für Spiele nach dem \enquote{freemium} Modell\footcite[Seite 8]{freemium}. }
-			\item{ Verdienen der Währung über das Gewinnen von Rennen. Diese Siegerprämie kann als zusätzliche Motivation für den Spieler dienen, Level-Pakete zu Wiederholen um zusätzliche Währung zu verdienen. }
+			\item{ Verdienen der Währung über das Gewinnen von Rennen. Diese Siegerprämie kann als zusätzliche Motivation für den Spieler dienen, Level-Pakete zu wiederholen um zusätzliche Währung zu verdienen. }
 			\item{ Lösen von zusätzlichen Aufgaben. }
 		\end{enumerate}
 		Die erste genannte Möglichkeit der Bezahlung mit realen Transaktionen wird an dieser Stelle verworfen, da das Spiel nicht gewinnorientiert ist. Außerdem kann somit das Risiko von versehentlichen Belastungen der elterlichen Kreditkarten verhindert werden.
@@ -373,7 +373,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			Münzen können später in normalen Rennen für witzige aber auch hilfreiche Dinge eingesetzt werden. Hilfreiche Dinge sind unter anderem ein Zeitbonus oder eine erhöhte Geschwindigkeit. Außerdem sollen auch Dinge verfügbar sein, welche dem Spieler keinen Vorteil bringen. Diese können beispielsweise optische Verbesserungen oder andere Fahrzeuge sein.
 		}
 		\item[Teilnahmegebühr für Pokalrennen]{
-			Eine Teilnahmegebühr für Pokalrennen bringt nicht nur den Spieler zum Lernen, sondern setzt die Pokalrennen von den normalen Level ab und macht sie so zu etwas besonderem. Die für die Gebühr benötigten Münzen kann der Spieler durch wiederholtes Spielen der Level verdienen. Somit steigt der Lernerfolg durch Wiederholung weiter an. Durch einen besonders hervorgehobenen Leveleingang innerhalb des Menü-Levels soll der Spieler zusätzlich darauf aufmerksam gemacht werden.
+			Eine Teilnahmegebühr für Pokalrennen bringt nicht nur den Spieler zum Lernen, sondern setzt die Pokalrennen von den normalen Leveln ab und macht sie so zu etwas besonderem. Die für die Gebühr benötigten Münzen kann der Spieler durch wiederholtes Spielen der Level verdienen. Somit steigt der Lernerfolg durch Wiederholung weiter an. Durch einen besonders hervorgehobenen Leveleingang innerhalb des Menü-Levels soll der Spieler zusätzlich darauf aufmerksam gemacht werden.
 		}
 	\end{description}
 	Im Optimalfall werden die verschiedenen Alternativen durch Spieltests empirisch belegt.
