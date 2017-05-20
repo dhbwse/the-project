@@ -9,6 +9,8 @@ marvin
 		Teilnahmegebühr, Startgebühr => Teilnahmegebühr
 		Bots, Ai, computergegner, => computergesteuerte (Rennautos, Gegner)
 		usecases, Use-Cases => Use-Case
+		level paket, levelpack => das Level-Paket
+		level, der level, das level => der Level
 	todos
 	bilder
 		grundlagen - lernspiele
