@@ -7,13 +7,13 @@ marvin
 		ingame-währung, punkte, geld, gold => ingame-währung
 		multiplayer, mehrspieler,  => Mehrspieler-Modus
 		Teilnahmegebühr, Startgebühr => Teilnahmegebühr
-		Bots, Ai, computergegner, = computergesteuerte (Rennautos, Gegner)
+		Bots, Ai, computergegner, => computergesteuerte (Rennautos, Gegner)
+		usecases, Use-Cases => Use-Case
 	todos
 	bilder
 		grundlagen - lernspiele
 		konzipierung
 			brainstorming/game design
-				gas evolution reinpacken
 				generell bilder
 			grundsätzliche eigenschaften
 			play personas 4 bilder
@@ -52,10 +52,6 @@ aufgaben interface
 			startet mit content
 	datenbank (json)
 
-
-
-welche art von themen eignen sich für das spiel?
-welche art von lerninhalten werden mit drill eher gelernt oder eher nicht?
 
 end evaluation
 	merkmale analysieren
