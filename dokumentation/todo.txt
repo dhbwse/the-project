@@ -1,7 +1,5 @@
-marc
-	ab seite 45 schreiben
+todo
 	bild gamification modell - übersicht
-marvin
 	terme zusammenpacken
 		Engines, game engine, spiele engine => Game-Engine
 		ingame-währung, punkte, geld, gold => ingame-währung
@@ -21,7 +19,7 @@ marvin
 			play personas 4 bilder
 		implementierung
 			prototyping - aktuelles aussehen
-	steuerungs formel in latex formulieren
+	aufzählungen mit : statt -
 	roadsplit bilder nebeneinander setzen
 
 
