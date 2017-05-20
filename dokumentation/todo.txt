@@ -9,6 +9,7 @@ todo
 		usecases, Use-Cases => Use-Case
 		level paket, levelpack => das Level-Paket
 		level, der level, das level => der Level
+		minimap, übersichtskarte
 	todos
 	bilder
 		grundlagen - lernspiele
