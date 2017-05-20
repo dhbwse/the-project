@@ -63,15 +63,15 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	\newcommand{\bronze}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_bronze.pdf}}}
 	\newcommand{\silber}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_silber.pdf}}}
 	\newcommand{\gold}{\raisebox{-.5ex}{\includegraphics[height=12pt]{img/pokal_gold.pdf}}}
-	\begin{tabl}{r@{\hspace{8mm}}cccrlccc}{Vergabe von Pokalen}%
+	\begin{tabl}{l@{\hspace{8mm}}cccrlccc}{Vergabe von Pokalen}%
 		\toprule\label{pokal-tabelle}
 			& \multicolumn{3}{c}{Dritte Zeit} & \multicolumn{2}{c}{Zweite Zeit} & \multicolumn{3}{c}{Erste Zeit} \\
 			$P$ Aufgaben & $<<$ & $<$ & $>$ & $<$ & $>$ & $<$ & $>$ & $>>$ \\
 		\midrule
-			$P<30$ \% & $-$ & $-$ & $-$ & \hspace{5mm}$-$ & $-$\hspace{4mm} & $-$ & $-$ & \bronze \\
-			$30<=P<60$ \% & $-$ & \bronze & \bronze & \bronze & \bronze & \bronze & \silber & \silber \\
-			$60<=P<100$ \% & $-$ & \bronze & \bronze & \bronze & \silber & \silber & \silber & \silber \\
-			$P=100$ \% & $-$ & \bronze & \silber & \silber & \silber & \silber & \gold & \gold \\
+			$P \in [\;\:0\%, \:\;30\%[$ & $-$ & $-$ & $-$ & \hspace{5mm}$-$ & $-$\hspace{4mm} & $-$ & $-$ & \bronze \\
+			$P \in [30\%, \:\;60\%[$ & $-$ & \bronze & \bronze & \bronze & \bronze & \bronze & \silber & \silber \\
+			$P \in [60\%, 100\%[$ & $-$ & \bronze & \bronze & \bronze & \silber & \silber & \silber & \silber \\
+			$P = 100\%$ & $-$ & \bronze & \silber & \silber & \silber & \silber & \gold & \gold \\
 		\bottomrule
 	\end{tabl}
 
