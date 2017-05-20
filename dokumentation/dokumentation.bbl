@@ -690,6 +690,26 @@
       \verb https://telearn.archives-ouvertes.fr/hal-00190453
       \endverb
     \endentry
+    \entry{learn-game-history}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=30031a6ff9a93f94f37bc57e3e68fa68}{%
+           family={Malone},
+           family_i={M\bibinitperiod},
+           given={Thomas\bibnamedelima W.},
+           given_i={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{30031a6ff9a93f94f37bc57e3e68fa68}
+      \strng{fullhash}{30031a6ff9a93f94f37bc57e3e68fa68}
+      \field{labelalpha}{Mal80}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{subtitle}{A Study of Intrinsically Motivatin Computer Games}
+      \field{title}{What Makes Things Fun to Learn?}
+      \field{year}{1980}
+    \endentry
     \entry{game-nfs}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=e853db5fb97163e7377be31ae2d55799}{%
