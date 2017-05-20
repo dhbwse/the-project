@@ -10,6 +10,7 @@ todo
 		level paket, levelpack => das Level-Paket
 		level, der level, das level => der Level
 		minimap, übersichtskarte
+		leveldesign,  => Level-Design
 	todos
 	bilder
 		grundlagen - lernspiele
