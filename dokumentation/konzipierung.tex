@@ -173,35 +173,31 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\item{ Das Spiel soll in unter einer Sekunde auf Nutzereingaben reagieren. }
 		\end{itemize}
 
-\subsection{Grundsätzliche Eigenschaften des Spiels}
+\subsection{Eigenschaften des Spiels}\label{sssec:spielmechanik}
 	Im folgenden Kapitel sollen die Grundlagen des Spiels erarbeitet und abgewogen werden, sodass ein breites Spektrum an Regeln und Eigenschaften des Spiels erarbeitet werden kann. Diese Sammlung von Eigenschaften und Regeln kann im späteren Verlauf der Arbeit als Kriterienkatalog zur Auswahl einer Game-Engine verwendet werden. Dabei sollen zunächst für jede Kategorie verschiedene Möglichkeiten erklärt werden, um im Anschluss die für die Spielidee beste Möglichkeit auszuwählen.
 	<TODO:überarbeiten und mit Grundlagen auf Linie bringen. (Interessant ist hier wo sich unser Ansatz von der Wissenschaft unterscheidet)>
 
-	<TODO: Trennung der zwei folgenden sections überdenken>
-	\subsubsection{Spielmechanik}\label{sssec:spielmechanik}
-	In den Bereich der Spielmechanik fallen all jene Regeln und Eigenschaften, welche das Spielgeschehen beeinflussen und die Spielerfahrung des Spielers ausmachen.
-
-		\paragraph{Regeln für den Spielfortschritt:}
+	\subsubsection*{Regeln für den Spielfortschritt:}
 		Zum Durchspielen des Spiels muss der Spieler eine Reihe von Level-Paketen abschließen. Die genaue Anzahl an zu spielenden Paketen ist variabel und kann jederzeit um ein zusätzliches Paket erweitert oder gekürzt werden. Die zu treffende Entscheidung an dieser Stelle ist, ob der Spieler die einzelnen Level-Pakete bereits von Beginn an auswählen kann oder sich diese im Laufe des Spiels freispielen muss. Ein Freispielen der einzelnen Level-Pakete gibt die Möglichkeit, einen Schwierigkeitsgrad einzuführen. Somit können zum Beispiel zuerst alle Pakete mit Schwierigkeitsgrad \enquote{Einfach} verfügbar sein. Mit erfolgreichem Abschluss aller einfachen Pakete würden dann die Pakete mit Schwierigkeit \enquote{Mittel} freigeschaltet.
 		Die vollständige Verfügbarkeit aller Level-Pakete von Beginn an, hat für den Spieler den Vorteil der freien Wahl. Allerdings ist eine Umsetzung von unterschiedlichen Schwierigkeitsgraden unter Umständen nicht möglich. Durch sofortige vollständige Verfügbarkeit bleibt eine Lernkurve aus und der Spieler kann schnell die Motivation am Spiel verlieren.
 		Aus den genannten Punkten ergibt sich die Entscheidung für das Freispielen. Somit ist eine Lernkurve gewährleistet. Für das Abschließen des Spiels (durch die Absolvierung des Final-Levels?) muss der Spieler alle vorangegangenen Level erfolgreich gespielt haben. Dies gewährleistet dem Spieler einen \enquote{roten Faden durch das Spiel} und ermöglicht einen linearen Spielfortschritt.
 
-		\paragraph{Regeln innerhalb der Level-Pakete:}
+	\subsubsection*{Regeln innerhalb der Level-Pakete:}
 		Ein Level-Paket besteht aus insgesamt drei Rennen. Diese sind aufgeteilt in zwei Qualifikationsrennen und ein Pokalrennen. Für den Fortschritt innerhalb eines Level-Pakets wäre es möglich, entweder eines der Qualifikationsrennen abzuschließen um das Pokalrennen freizuschalten oder beide Qualifikationsrennen in entweder festgelegter oder beliebiger Reihenfolge abzuschließen um das Pokalrennen verfügbar zu machen.
 		Für den Umfang des Spiels wird eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikationsrennens für die Freischaltung des Pokalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden, besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
-		\paragraph{Gewinnbedingungen eines Rennens:}\label{gewinnbedinungen}
+	\subsubsection*{Gewinnbedingungen eines Rennens:}\label{gewinnbedinungen}
 		Zur Durchführung der Einzelspieler Rennen stehen grundsätzlich zwei Möglichkeiten zur Auswahl. Die erste Möglichkeit ist, dass der Spieler gegen computergesteuerte Rennteilnehmer antritt. Zur Realisierung dieser Alternative ist die Entwicklung einer Künstlichen Intelligenz nötig. Weiterhin werden dadurch Punkte, wie beispielsweise die Kollision mit anderen Rennteilnehmern notwendig. Um ein Rennen zu gewinnen, muss der Spieler als erster die Ziellinie überqueren.
 		Die zweite Möglichkeit wäre die Realisierung der Rennen über eine vorgegebene Zeit. Das so entstehende Zeitrennen muss in der vorgegeben Zeit absolviert werden. Überschüssige Zeit verfällt und kann für folgende Rennen nicht verwendet werden.
 		Unter Beachtung der erwähnten Punkte und mit Blick auf den gesetzten Zeitrahmen wird von der Entwicklung einer KI abgesehen. Somit bleibt für die Realisierung des Rennens das Zeitrennen übrig.
 		Das richtige Beantworten von Aufgaben sollte ebenfalls in die Gewinnbedingungen einfließen, wenn keine einzige Aufgabe korrekt ist, verliert der Spieler. Die konkrete Umsetzung befindet sich in Tabelle \ref{pokal-tabelle}.
 
-		\paragraph{Zusatzaufgaben während eines Rennens:}\label{par:aufgaben}
+	\subsubsection*{Zusatzaufgaben während eines Rennens:}\label{par:aufgaben}
 		Der Spieler soll während eines Rennens Zusatzaufgaben erhalten. Eine Möglichkeit für die Umsetzung dieser Zusatzaufgaben konnte während des Brainstormings erarbeitet werden. Diese hat sich im Laufe der Zeit weiterentwickelt und wurde verfeinert. Auf eine ausführliche Erläuterung des exakten Werdegangs wird an dieser Stelle verzichtet.
 		Bei der erarbeiteten Umsetzung bekommt der Spieler während des Rennens eine Aufgabe auf einer freien Stelle des Bildschirms angezeigt. Nach einer vorgegebenen Zeit X (diese variiert anhand der Schwierigkeit der Aufgabe oder dem Verlauf der Strecke) verschwindet diese Aufgabe und die Rennstrecke führt zu einer Weggabelung. Beide Wege sind mit Schildern versehen, auf denen jeweils mögliche Lösungen der Aufgabe angezeigt werden. Auf einem der Schilder steht somit die korrekte Lösung, auf dem anderen Schild stehen falsche Lösungen. Der Spieler muss nun sein Auto auf den richtigen Weg lenken.
 		Eine weitere Möglichkeit wäre es, das Rennen an einem bestimmten Punkt zu pausieren und eine Aufgabe anzuzeigen. Die gemessene Zeit des Zeitrennens läuft dabei weiter. Erst mit Eingabe der korrekten Lösung wird das Rennen fortgesetzt und der Spieler darf weiterfahren. Dies würde jedoch den Spielfluss maßgeblich unterbrechen und somit zu einem Verlust an Spielspaß führen. Somit fällt die Wahl für die Zusatzaufgaben auf die Weggabelungen im Rennen.
 
-		\paragraph{Belohnungen / Strafen bei Zusatzaufgaben:}
+	\subsubsection*{Belohnungen / Strafen bei Zusatzaufgaben:}
 		Da die Zusatzaufgaben fester Bestandteil des Spiels und zur Übermittlung des Lernerfolgs nötig sind, muss ein Absolvieren bzw. Nichtabsolvieren der Aufgaben auch Auswirkungen auf das Spiel haben. Für die Zusatzaufgaben innerhalb der Rennen ergeben sich zwei mögliche Lösungen.
 		Die erste Möglichkeit zur Lösung dieses Problems ist, die Weggabelung der Strecke in zwei Streckenabschnitte mit identischer Länge zu führen und die Belohnungen / Strafen über die benötigte Zeit zu regeln. Mit der bestrafenden Methode würde ein Wählen des falschen Wegs zu einem Abzug in der verbleibenden Zeit führen, was ein erfolgreiches Absolvieren des Rennens maßgeblich erschwert. Ein Wählen des richtigen Wegs hätte in diesem Fall keine Auswirkungen auf den Spieler.
 		Bei der belohnenden Methode würde ein Wählen des richtigen Wegs einen Zeitbonus und somit eine Erleichterung für den Spieler bedeuten und der falsche Weg hätte keine Auswirkungen. Eine Verbindung beider Methoden ist selbstverständlich möglich.
@@ -210,11 +206,11 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Die Anzahl an gelösten Aufgaben ist somit unabhängig von der erreichten Zeit im Rennen. Für die Auswertung eines Rennens wird in der Implementierung eine Entscheidungstabelle erstellt, welche aus der Anzahl korrekter Aufgaben und der gefahrenen Zeit einen Pokal auswählt.
 		Als Belohnung und Bestrafung wird eine Sammlung von Reaktionstönen fungieren, beispielsweise ein Jubeln, oder Händeklatschen als positive Rückmeldung und Ausbuhen als negative Rückmeldung.
 
-		\paragraph{Zusatzaufgaben im Mehrspieler-Modus:}
+	\subsubsection*{Zusatzaufgaben im Mehrspieler-Modus:}
 		Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
 		Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
-		\paragraph{Umsetzung einer Ingame-Währung:}
+	\subsubsection*{Umsetzung einer Ingame-Währung:}
 		Um dem Spieler die Möglichkeit zu geben, Boni und optische Upgrades zu erwerben, soll dem Spiel eine Ingame-Währung beigefügt werden. Potentiell sind drei Möglichkeiten für den Erwerb dieser Währung denkbar.
 		\begin{enumerate}
 			\item{ Erwerb der Währung über reale Zahlungen. Dies ist die Einnahmequelle für Spiele nach dem \enquote{freemium} Modell\footcite[Seite 8]{freemium}. }
@@ -224,22 +220,19 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Die erste genannte Möglichkeit der Bezahlung mit realen Transaktionen wird an dieser Stelle verworfen, da das Spiel nicht gewinnorientiert ist. Außerdem kann somit das Risiko von versehentlichen Belastungen der elterlichen Kreditkarten verhindert werden.
 		Die beiden übrigen Möglichkeiten bieten dem Spieler Motivation und vergrößern den potentiellen Lernerfolg. Somit wird für die Umsetzung des Spiels eine Kombination aus Siegerprämie und (täglich beschränkten) Zusatzaufgaben implementiert.
 
-		\paragraph{Verlassen des vorgegebenen Wegs:}\label{par:streckendesign}
+	\subsubsection*{Verlassen des vorgegebenen Wegs:}\label{par:streckendesign}
 		Jedes Rennen verfügt über einen vorgegeben Weg, welcher von Start bis zum Ziel führt. Dieser vorgegebene Weg verbreitert sich um breite Randstreifen zur fertigen Strecke. Ein Verlassen der Straße muss in gewisser Weise Auswirkungen auf das Fahrzeug des Spielers haben, um das Fahren auf der Strecke zu begünstigen. Denkbar wäre, das Fahrzeug des Spielers merklich zu verlangsamen, falls dieser die Strecke verlässt. Zusätzlich sollte dem Spieler eine Warnung zum Zurückkehren auf die Strecke angezeigt werden. Weiterhin kann das Fahrzeug des Spielers automatisiert auf die Strecke zurückgesetzt werden, falls es den vorgegebenen Weg für eine gewisse Zeit X verlässt. Gleiches gilt, falls ein Spieler sein Fahrzeug wendet und die Strecke in entgegengesetzter Richtung fährt. Dabei soll das Fahrzeug jedoch nicht verlangsamt werden. Für die Implementierung wird vorrangig eine Verlangsamung des Fahrzeugs gewählt.
 		Somit hat ein Verlassen der Strecke einen merklichen Nachteil im Zeitrennen, da die Verlangsamung viel Zeit kostet. Auf ein automatisches Zurücksetzen wird verzichtet, damit der Spieler aus seinen Fehlern lernt, da er selbstständig auf die Strecke zurückfahren muss. Durch Level-Design kann ein Verlassen des vorgegebenen Wegs großteils vermieden werden, neben der Rennstrecke befinden sich Blockierelemente und der Level beschränkt sich auf einen breiten Streifen neben der Straße.
 
-		\paragraph{Hindernisse auf der Strecke:}\label{par:streckendesign2}
+	\subsubsection*{Hindernisse auf der Strecke:}\label{par:streckendesign2}
 		Um den Schwierigkeitsgrad der Rennen zusätzlich zu erhöhen, besteht die Möglichkeit, Hindernisse in den Streckenverlauf einzubauen. Für eine Kollision mit einem solchen Hindernis muss geklärt werden, welches Verhalten das Fahrzeug zeigt. Die beiden naheliegenden Möglichkeiten für eine Kollisionsreaktion sind das vollständige Stoppen (Abprallen) und das Verlangsamen des Fahrzeugs.
 		Ein vollständiges Stoppen des Fahrzeugs würde eine Art Unterbrechung des Spielflusses bedeuten. Da dies, wie bereits erwähnt, nach Möglichkeit vermieden werden soll, scheidet diese Möglichkeit weitgehend aus. Ein Verlangsamen des Fahrzeugs kann entweder als Verlangsamung um einen Prozentsatz X (basierend auf der aktuellen Geschwindigkeit) oder mittels einer Verlangsamung der Geschwindigkeit auf einen Festen Wert umgesetzt werden.
 		Aus Gründen der Plattform kann eine detaillierte Physiksimulation nicht umgesetzt werden. Stattdessen sollen Hindernisse welche sich auf der Strecke befinden mit dem Fahrzeug interagieren (vgl. Weggestoßen werden). Für Objekte welche sich neben der Strecke befinden wird trotz der Unterbrechung des Spielflusses ein vollständiges Stoppen gewählt. Somit wird der Spieler weiterhin dazu animiert, die Strecke nicht zu verlassen.
 
-	\subsubsection{Sonstige Eigenschaften des Spiels}
-	Im Bereich der sonstigen Eigenschaften sollen Eigenschaften betrachtet werden, die nicht direkt die Spielmechanik betreffen. Dazu gehören unter anderem Kameraeinstellungen, das Optionsmenü und ähnliches.
-
-		\paragraph{Kaufbares für Ingame-Währung:}
+	\subsubsection*{Kaufbares für Ingame-Währung:}
 		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste Rennen zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Mehrspieler-Modus nicht verfügbar.
 
-		\paragraph{Steuerung:}
+	\subsubsection*{Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
 		Die Steuerung des Fahrzeugs könnte in mehreren Varianten realisiert werden, mittels:
 		\begin{description}
@@ -262,13 +255,13 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\figur{dpad.png}{Digitaler Joystick auch D-Pad unten links. Abbildung \cite{easports}\footnotemark}%
 		\footcitetext[\url{http://www2.ea.com/uk/fifa-11-iphone/images/f784dabc26b7b210VgnVCM2000001165140aRCRD}]{easports}
 
-		\paragraph{Heads-Up Display:}
+	\subsubsection*{Heads-Up Display:}
 			Das Heads-Up Display beschreibt die eingeblendeten Anzeigen und Interaktionselemente während das Spiel läuft.
-			Die wichtigsten Elemente sind hier die Steuerelemente: Gas, Bremse und digitaler Joystick gefolgt von dem Menübutton und dem Neustartknopf. 
+			Die wichtigsten Elemente sind hier die Steuerelemente: Gas, Bremse und digitaler Joystick gefolgt von dem Menübutton und dem Neustartknopf.
 			Hinzu kommen die angezeigte Aufgabe und die beiden Antwortmöglichkeiten, eine Übersichtskarte, welche den Streckenverlauf anzeigt, und eine Zeitanzeige, welche den zeitlichen Rahmen klar macht.
 			Bei den verschiedenen Elementen soll farblich klar sein, mit welchen interagiert werden kann und mit welchen nicht.
 
-		\paragraph{Kameraperspektive:}
+	\subsubsection*{Kameraperspektive:}
 		Grundsätzlich sind für Rennspiele drei Kameraperspektiven denkbar. Diese sind:
 		\begin{itemize}
 			\item{ Die Kamera zeigt das Innere des Fahrzeugs und schaut durch die Frontscheibe. Diese Perspektive wird auch \enquote{First-Person} genannt. }
@@ -279,7 +272,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Befindet sich die Kamera hinter dem Fahrzeug, ist die Sicht auf die kommende Strecke bei besonders kurvigen Strecken stark eingeschränkt. Da ein frühzeitiges Sehen des Streckenverlaufs hilft, gleichzeitig die gestellten Aufgaben zu lösen und das Fahrzeug zu steuern, fällt die Entscheidung an dieser Stelle auf die Ansicht von oben.
 		Der Spieler kann so die Strecke früh erkennen und sich auf die kommenden Kurven einstellen, ohne dabei die Konzentration für die gestellten Aufgaben zu verlieren. Der Kamerawinkel wird leicht geneigt sein, um die Modelle plastischer zu gestalten und 3D-Modelle verwenden zu können.
 
-		\paragraph{Musik und Sound:}
+	\subsubsection*{Musik und Sound:}
 		Um den Umfang des Spiels zu vervollständigen, müssen an dieser Stelle noch Musik und Sound im Allgemeinen betrachtet werden. Wie im Brainstorming erwähnt, soll das Spiel eine Hintergrundmusik erhalten. Zudem werden Töne für Kollisionen, Fahrzeuge und bestimmte Momente im Spiel (Start, Ziel und Lösen einer Aufgabe) benötigt.
 		Dazu soll der Spieler die Möglichkeit bekommen, im Spiel Einstellungen an der Tonausgabe vorzunehmen. Dazu gehören vor allem die Lautstärkeeinstellung und die Möglichkeit, den Sound vollständig zu deaktivieren. Dabei soll zwischen der Spielmusik, den Fahrzeuggeräuschen und den Umgebungsgeräuschen unterschieden werden.
 
@@ -351,11 +344,11 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			Der Lehrer hat die Möglichkeit durch Aufgaben und nicht Reaktionszeit oder Renntalent zu glänzen. So kann auch der Lehrer mit seinen Schülern mithalten und sich in Geschicklichkeit und Reaktionszeit üben.
 		}
 		\item[Laura Dietz]{
-			Die Rennfahrerin stört sich wohl am meisten an den Aufgaben, kann aber im Rennen durch geschicktes Fahren wieder aufholen. Sie hat Spaß an den Extras, solange sie dafür nicht zu viel arbeiten muss.  
+			Die Rennfahrerin stört sich wohl am meisten an den Aufgaben, kann aber im Rennen durch geschicktes Fahren wieder aufholen. Sie hat Spaß an den Extras, solange sie dafür nicht zu viel arbeiten muss.
 			Durch anspruchsvollere Pokalrennen soll sie überzeugt werden, die Aufgaben zu lösen.
 		}
 		\item[Andy Klein]{
-			Der Experte erkundet das Spiel schnell und hat später durch den Mehrspieler-Modus die Möglichkeit sich mit anderen zu vergleichen und zusammen Spaß zu haben. So bleibt auch für den Experten das Spiel interessant. 
+			Der Experte erkundet das Spiel schnell und hat später durch den Mehrspieler-Modus die Möglichkeit sich mit anderen zu vergleichen und zusammen Spaß zu haben. So bleibt auch für den Experten das Spiel interessant.
 			Für ihn ist es wichtig, jeden Level mit der besten Wertung abzuschließen. Das sollte nicht zu schwer gemacht werden, um die anderen zu inkludieren.
 		}
 	\end{description}
@@ -370,7 +363,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	Wie schon in den Kapiteln \ref{ssec:spielidee}, \ref{ssec:idee} und \ref{ssec:requirements} beschrieben existieren mehrere Möglichkeiten, um Aufgaben in das Spiel einzubauen. Wichtig ist, dass für die Teilnahme an Pokalrennen Aufgaben gelöst werden müssen. Von den Aufgaben innerhalb der Rennen abgesehen, sind weitere Zusatzaufgaben optional, werden jedoch psychologisch gefördert (siehe \ref{ssec:psycho-grundlagen}).
 	\begin{description}
 		\item[Aufgabe zum Start des Rennens]{
-			Eine Aufgabe um \enquote{den Motor zu starten} nimmt etwas Spannung aus dem Start, passt aber in das Spielkonzept und stört deshalb möglicherweise weniger. 
+			Eine Aufgabe um \enquote{den Motor zu starten} nimmt etwas Spannung aus dem Start, passt aber in das Spielkonzept und stört deshalb möglicherweise weniger.
 			Für den Einzelspielermodus wird dies nicht umgesetzt, für einen potentiellen Mehrspielermodus sollen Aufgaben zum Rennstart hinzugefügt werden.
 		}
 		\item[Aufgaben in Form von Weggabelungen]{
