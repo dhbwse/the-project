@@ -46,9 +46,8 @@ In diesem Kapitel sollen während des Prototypings aufgetretene Designentscheidu
 	\subsubsection{Auswertung eines Rennens}
 	Für die Auswertung eines Rennens und somit für die Vergabe der Pokale und Ingame-Währung wird eine Entscheidungstabelle hergeleitet. Die dafür relevanten Kriterien sind die Prozentzahl der korrekten Aufgaben und die Zeit, welche der Spieler für die Strecke benötigt hat.
 	Für die Auswertung der benötigten Zeit erhält jeder Level drei Zeitwerte, welche zur Bestimmung der Rennleistung genutzt werden. In der folgenden Tabelle wird die langsamste Zeit als \enquote{Dritte Zeit}, die schnellste Zeit entsprechend als \enquote{Erste Zeit} definiert. Für jeden Zeitwert existieren zwei grundsätzliche Varianten. Die schnellste und langsamste Zeit werden hingegen um eine zusätzliche Variante erweitert.
-	<TODO: Klingt irgendwie scheiiße>
 	\begin{enumerate}
-		\item{ Langsamer als die gesetzte Zeit, jedoch näher an dieser, als an der nächst langsameren Zeit: Für die dritte Zeit wird hier ein maximal Abstand von $60$ Sekunden verwendet. Alle Zeiten, deren Abstand zur dritten gesetzten Zeit größer als $60$ Sekunden ist, sind in der folgenden Tabelle mit $<<$ markiert. }
+		\item{ Langsamer als die gesetzte Zeit, jedoch näher an dieser, als an der nächst langsameren Zeit: Für die dritte Zeit wird hier ein maximal Abstand von $60$ Sekunden verwendet. Alle Zeiten, die langsamer als die Dritte Zeit sind und deren Abstand zur dritten Zeit größer als $60$ Sekunden ist, sind in der folgenden Tabelle mit $<<$ markiert. }
 		\item{ Schneller als die jeweilige Zeit, dabei jedoch nicht näher an der nächst schnelleren Zeit: Für die erste beziehungsweise schnellste Zeit wird diese Gruppe mit $60$ Sekunden Differenz definiert. Schnellere Zeiten sind unter $>>$ zusammengefasst. }
 	\end{enumerate}
 	Wie in Kapitel \ref{gewinnbedinungen} definiert, soll ebenso die Anzahl der korrekten Aufgaben in die Gewinnfunktion einfließen. Die Aufgaben werden in 4 Gruppen unterteilt:
