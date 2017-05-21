@@ -31,7 +31,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\begin{itemize}
 			\item{Die Simulation findet in einer Laborumgebung statt. Dabei steuert der Spieler den Laborarbeiter (bzw. aus der Sicht des Laborarbeiters).}
 			\item{Der Spieler führt einfache Experimente aus den Bereichen Chemie und Physik durch.}
-			\item{Fehler, welche dem Spieler in den Experimenten passieren, führen zum Scheitern des Versuchs.}
+			\item{Fehler, die dem Spieler in den Experimenten passieren, führen zum Scheitern des Versuchs.}
 			\item{Der Spieler hat die Möglichkeit, die Hände des Laborarbeiters zu steuern.}
 			\item{Alternativ kann der Spieler über den Touchscreen mit den Utensilien im Labor interagieren.}
 			\item{Die Idee wird verworfen, da eine realistische Steuerung von Experimenten aus Chemie und Physik nur schwer über einen Touchscreen umzusetzen ist. Weiterhin ist die für diese Art von Spiel benötigte Physiksimulation ungeeignet für die Zielplattform. Außerdem stellt diese Idee nicht den gewünschten Lernerfolg für die gewünschte Zielgruppe zur Verfügung. }
@@ -71,9 +71,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\item{Als Steuerung nutzt der Spieler ein Steuerkreuz, sowie einen Button für Gas und einen Button für Bremse. Somit muss der Spieler sowohl lenken, als auch seine Geschwindigkeit steuern.}
 		\item{Bei der Auswahl der spielbaren Objekte ist kein Fokus auf Realismus gesetzt. Beispielhafte spielbare Dinge sind:}
 		\begin{itemize}
-			\item{Ein rollender Ball und ein rollender Würfel (welcher logischerweise ungleichmäßige Bewegungen vollführt).}
-			\item{Ein rennender Mensch oder ein rennendes Tier (welche die gleiche Geschwindigkeit wie Autos erreichen).}
-			\item{Ein Auto oder ein Flugzeug, welches sich in Bodennähe aufhält und auf die Gegebenheiten der Strecke ebenso reagieren muss.}
+			\item{Ein rollender Ball und ein rollender Würfel (der logischerweise ungleichmäßige Bewegungen vollführt).}
+			\item{Ein rennender Mensch oder ein rennendes Tier (die die gleiche Geschwindigkeit wie Autos erreichen).}
+			\item{Ein Auto oder ein Flugzeug, das sich in Bodennähe aufhält und auf die Gegebenheiten der Strecke ebenso reagieren muss.}
 		\end{itemize}
 		\item{Für die verschiedenen Spielmodi stehen folgende Ideen zur Auswahl:}
 		\begin{itemize}
@@ -97,7 +97,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\item{Im Mehrspieler-Modus müssen die Spieler Aufgaben absolvieren, um das Rennen beginnen zu können.}
 			\begin{itemize}
 				\item{Sobald die Aufgabe gelöst ist, kann ein Spieler losfahren. Somit können sich Spieler über schnelles Absolvieren der Aufgaben einen Vorteil im Rennen erspielen.}
-				\item{Können die Aufgaben nicht gelöst werden, darf der Spieler nach einer Zeitverzögerung dennoch losfahren. Spieler, welche die Aufgaben gelöst haben, haben im Rennen dadurch einen Vorteil.}
+				\item{Können die Aufgaben nicht gelöst werden, darf der Spieler nach einer Zeitverzögerung dennoch losfahren. Spieler, die die Aufgaben gelöst haben, haben im Rennen dadurch einen Vorteil.}
 				\item{Falscheingaben resultieren in einer neuen Aufgabe, um schummeln zu verhindern.}
 			\end{itemize}
 		\item{Der Spieler erhält die Möglichkeit, zusätzliche Aufgaben auf freiwilliger Basis zu lösen. Als Belohnung wird eine Ingame-Währung eingeführt, die für folgende Aktionen genutzt werden kann:}
@@ -114,15 +114,15 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	Das Spiel wird hauptsächlich so gesteuert wie auch die Rennen gefahren werden: mit einem Auto. Das heißt, dass die Menüs auch mit einem Auto angesteuert werden.
 	Für das Spiel werden zwei Aktoren benötigt:
 	\begin{description}
-		\item[Spieler]{ Die Person, welche das Spiel auf dem Handy installiert hat und spielt. }
-		\item[Aufgabensteller]{ Die Person, welche neue Aufgaben für das Spiel zusammenstellt, bestehende editiert oder auch Aufgaben entfernt. Die Person benötigt eine Methode die Aufgaben zu aktualisieren. }
+		\item[Spieler]{ Die Person, die das Spiel auf dem Handy installiert hat und spielt. }
+		\item[Aufgabensteller]{ Die Person, die neue Aufgaben für das Spiel zusammenstellt, bestehende editiert oder auch Aufgaben entfernt. Die Person benötigt eine Methode die Aufgaben zu aktualisieren. }
 	\end{description}
 
 	Liste aller Funktionen und eine Beschreibung für einen Überblick der Funktionalität, für weitere Informationen siehe Kapitel \ref{ssec:ucd} und \ref{sssec:spielmechanik}:
 	\begin{description}
 		\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen, sich in das Spiel einzufinden. Dies wird über wortlose Bilder erreicht, welche verschwinden, sobald der Nutzer die Steuerung ausprobiert hat und ein Rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
 		\item[Level-Pakete wechseln]{
-			Der Spieler kann die Level-Pakete rotieren, jedes besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level, für welchen eine Teilnahmegebühr anfällt (Pokalrennen).
+			Der Spieler kann die Level-Pakete rotieren, jedes besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level, für den eine Teilnahmegebühr anfällt (Pokalrennen).
 			Jedes Level-Pack ist in einem eigenen Stil thematisiert, wobei die Karten für die Pokalrennen außergewöhnlicher sein sollen.
 		}
 		\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Bildschirm wo folgende Funktionen zur Verfügung stehen:
@@ -134,16 +134,16 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		}
 		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf einen Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Pokalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
 			\begin{description}
-				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben, welche den Spieler herausfordern, sich mehr anzustrengen. }
+				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben, die den Spieler herausfordern, sich mehr anzustrengen. }
 				\item[als Rennen gegen Computergegner starten (Optional)]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos. Die Auswertung funktioniert über das Übliche Rang-Verfahren: die besten drei Spieler werden hervorgehoben und gekürt, nur der Erste gewinnt.}
 			\end{description}
 			Gestartete Spiele können jederzeit abgebrochen, pausiert und neugestartet werden.
 		}
 		\item[Onlinespiel starten (Optional)]{ Ebenso wie die Optionen ist dies ein speziell gekennzeichneter \enquote{Level}, in welchem Rennen gegen zufällig ausgewählte Spieler gefahren werden können. }
-		\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des Bildschirms, welches ermöglicht, Münzen durch Lösen von Aufgaben zu sammeln. }
+		\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des Bildschirms, das ermöglicht, Münzen durch Lösen von Aufgaben zu sammeln. }
 		\item[Einkaufen]{ Wie bereits im Rahmen der Ingame-Währung erwähnt, kann der Spieler beispielsweise Fahrzeuge und Farben erwerben.
 			\begin{description}
-				\item[Gegenstand Kaufen]{ Der Spieler erhält im Austausch für Ingame-Währung den Artikel, dieser wird dann auch ausgewählt. Im Ingame-Shop existieren Gegenstände, welche verbraucht werden, zum Beispiel Zeitboni und Gegenstände, die dem Spieler verfügbar bleiben, wie Fahrzeuge. }
+				\item[Gegenstand Kaufen]{ Der Spieler erhält im Austausch für Ingame-Währung den Artikel, dieser wird dann auch ausgewählt. Im Ingame-Shop existieren Gegenstände, die verbraucht werden, zum Beispiel Zeitboni und Gegenstände, die dem Spieler verfügbar bleiben, wie Fahrzeuge. }
 				\item[Gegenstand Auswählen]{ Ein bereits bezahlter Gegenstand, welcher nicht verbraucht werden kann, wird aktiviert. So kann beispielsweise zwischen zwei bereits gekauften Fahrzeugen gewechselt werden.}
 			\end{description}
 		}
@@ -158,7 +158,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\end{itemize}
 		}
 	\end{description}
-	Alle Funktionalitäten lassen sich in einem Use-Case Diagramm abbilden, welches die Autoren bei der Entwicklung durch vereinfachte und übersichtliche Koordination und Aufgabenaufteilung unterstützt.
+	Alle Funktionalitäten lassen sich in einem Use-Case Diagramm abbilden, das die Autoren bei der Entwicklung durch vereinfachte und übersichtliche Koordination und Aufgabenaufteilung unterstützt.
 	\label{ssec:ucd}\figur[\textwidth]{usecases.pdf}{Use-Case Diagramm}
 
 	\subsubsection{Einschränkungen}
@@ -205,7 +205,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Als Belohnung und Bestrafung wird eine Sammlung von Reaktionstönen fungieren, beispielsweise ein Jubeln, oder Händeklatschen als positive Rückmeldung und Ausbuhen als negative Rückmeldung.
 
 	\subsubsection*{Zusatzaufgaben im Mehrspieler-Modus:}
-		Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach welchen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
+		Für die Implementierung der Zusatzaufgaben im Mehrspieler-Modus werden zunächst die Zusatzaufgaben aus dem Einzelspieler-Modus übernommen. Das bedeutet, dass auch im Mehrspieler-Modus Weggabelungen existieren werden, die Einfluss auf das Rennergebnis haben. Diese werden für jeden Spieler einzeln berechnet, sodass ein Abschauen von dem Vordermann nicht möglich ist. Zusätzlich zu diesen Aufgaben sollen weitere Aufgaben zu Beginn des Rennens eingeführt werden. Dabei besteht die Möglichkeit, einen \enquote{Start-Timer} einzuführen. Dieser würde eine festgelegte Anzahl an Sekunden herunter zählen, nach denen das Rennen für jeden Spieler startet. Diejenigen Spieler, die allerdings in einer kürzeren Zeit eine Aufgabe lösen können, dürfen früher starten und erhalten somit einen Vorteil fürs Rennen.
 		Durch diese Lösung ist gewährleistet, dass jeder Spieler starten kann, ungeachtet ob die Aufgabe lösbar ist. Durch eine exakte Optimierung dieser Zeitspanne kann gewährleistet werden, dass sowohl Können beim Fahren sowie das schnelle Lösen von Aufgaben zum Sieg beitragen.
 
 	\subsubsection*{Umsetzung einer Ingame-Währung:}
@@ -219,16 +219,16 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Die beiden übrigen Möglichkeiten bieten dem Spieler Motivation und vergrößern den potentiellen Lernerfolg. Somit wird für die Umsetzung des Spiels eine Kombination aus Siegerprämie und (täglich beschränkten) Zusatzaufgaben implementiert.
 
 	\subsubsection*{Verlassen des vorgegebenen Wegs:}\label{par:streckendesign}
-		Jedes Rennen verfügt über einen vorgegeben Weg, welcher von Start bis zum Ziel führt. Dieser vorgegebene Weg verbreitert sich um breite Randstreifen zur fertigen Strecke. Ein Verlassen der Straße muss in gewisser Weise Auswirkungen auf das Fahrzeug des Spielers haben, um das Fahren auf der Strecke zu begünstigen. Denkbar wäre, das Fahrzeug des Spielers merklich zu verlangsamen, falls dieser die Strecke verlässt. Zusätzlich sollte dem Spieler eine Warnung zum Zurückkehren auf die Strecke angezeigt werden. Weiterhin kann das Fahrzeug des Spielers automatisiert auf die Strecke zurückgesetzt werden, falls der Spieler den vorgegebenen Weg für eine gewisse Zeit X verlässt. Gleiches gilt, falls ein Spieler sein Fahrzeug wendet und die Strecke in entgegengesetzter Richtung fährt. Dabei soll das Fahrzeug jedoch nicht verlangsamt werden. Für die Implementierung wird vorrangig eine Verlangsamung des Fahrzeugs gewählt.
+		Jedes Rennen verfügt über einen vorgegeben Weg, welcher von Start bis zum Ziel führt. Dieser vorgegebene Weg verbreitert sich um breite Randstreifen zur einem Schlauchlevel. Ein Verlassen der Straße muss in gewisser Weise Auswirkungen auf das Fahrzeug des Spielers haben, um das Fahren auf der Strecke zu begünstigen. Denkbar wäre, das Fahrzeug des Spielers merklich zu verlangsamen, falls dieser die Strecke verlässt. Zusätzlich sollte dem Spieler eine Warnung zum Zurückkehren auf die Strecke angezeigt werden. Weiterhin kann das Fahrzeug des Spielers automatisiert auf die Strecke zurückgesetzt werden, falls der Spieler den vorgegebenen Weg für eine gewisse Zeit X verlässt. Gleiches gilt, falls ein Spieler sein Fahrzeug wendet und die Strecke in entgegengesetzter Richtung fährt. Dabei soll das Fahrzeug jedoch nicht verlangsamt werden. Für die Implementierung wird vorrangig eine Verlangsamung des Fahrzeugs gewählt.
 		Somit hat ein Verlassen der Strecke einen merklichen Nachteil im Zeitrennen, da die Verlangsamung viel Zeit kostet. Auf ein automatisches Zurücksetzen wird verzichtet, damit der Spieler aus seinen Fehlern lernt, da er selbstständig auf die Strecke zurückfahren muss. Durch Level-Design kann ein Verlassen des vorgegebenen Wegs großteils vermieden werden, neben der Rennstrecke befinden sich Blockierelemente und der Level beschränkt sich auf einen breiten Streifen neben der Straße.
 
 	\subsubsection*{Hindernisse auf der Strecke:}\label{par:streckendesign2}
 		Um den Schwierigkeitsgrad der Rennen zusätzlich zu erhöhen, besteht die Möglichkeit, Hindernisse in den Streckenverlauf einzubauen. Für eine Kollision mit einem solchen Hindernis muss geklärt werden, welches Verhalten das Fahrzeug zeigt. Die beiden naheliegenden Möglichkeiten für eine Kollisionsreaktion sind das vollständige Stoppen (Abprallen) und das Verlangsamen des Fahrzeugs.
 		Ein vollständiges Stoppen des Fahrzeugs würde eine Art Unterbrechung des Spielflusses bedeuten. Da dies, wie bereits erwähnt, nach Möglichkeit vermieden werden soll, scheidet diese Möglichkeit weitgehend aus. Ein Verlangsamen des Fahrzeugs kann entweder als Verlangsamung um einen Prozentsatz X (basierend auf der aktuellen Geschwindigkeit) oder mittels einer Verlangsamung der Geschwindigkeit auf einen Festen Wert umgesetzt werden.
-		Aus Gründen der Plattform kann eine detaillierte Physiksimulation nicht umgesetzt werden. Stattdessen sollen Hindernisse, welche sich auf der Strecke befinden, mit dem Fahrzeug interagieren (vgl. weggestoßen werden). Für Objekte, welche sich neben der Strecke befinden, wird trotz der Unterbrechung des Spielflusses ein vollständiges Stoppen gewählt. Somit wird der Spieler weiterhin dazu animiert, die Strecke nicht zu verlassen.
+		Aus Gründen der Plattform kann eine detaillierte Physiksimulation nicht umgesetzt werden. Stattdessen sollen Hindernisse, die sich auf der Strecke befinden, mit dem Fahrzeug interagieren (vgl. weggestoßen werden). Für Objekte, die sich neben der Strecke befinden, wird trotz der Unterbrechung des Spielflusses ein vollständiges Stoppen gewählt. Somit wird der Spieler weiterhin dazu animiert, die Strecke nicht zu verlassen.
 
 	\subsubsection*{Kaufbares für Ingame-Währung:}
-		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste Rennen zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Mehrspieler-Modus nicht verfügbar.
+		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, die auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste Rennen zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Mehrspieler-Modus nicht verfügbar.
 
 	\subsubsection*{Steuerung:}
 		Weiterhin besitzen die grundsätzliche Benutzeroberfläche, sowie die Steuerung Relevanz. Dabei soll der Fokus an dieser Stelle weniger auf dem Design der Oberfläche oder des Menüs, sondern mehr auf einer Beschreibung der vorhandenen Knöpfe und Funktionen liegen.
@@ -237,18 +237,18 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\item[Neigungssensor]{ Durch Neigung des Handys fährt das Auto entsprechend Links oder Rechts, dabei entscheidet der Grad der Neigung, wie stark die Kurve gefahren wird. Wichtig ist hier eine Kalibrierung des Sensors um den korrekten Nullpunkt zu verwenden. Ebenso sollte der Bereich, welcher das Auto geradeaus fahren lässt, eine gewisse Breite aufweisen, so sorgt leichtes Wackeln nicht zum Kurvenfahren. Die generelle Empfindlichkeit sollte für Anwender konfigurierbar sein. }
 			\item[Lenkrad auf dem Touchscreen]{ Auf dem Bildschirm wird ein Lenkrad aus der Sicht des Fahrers gezeigt, der Nutzer kann das Lenkrad drehen und Links- oder Rechtskurven bewirken. }
 			\item[Direkteingabe über den Bildschirm]{ Mit dem Finger wird der Bildschirm berührt, das Spiel berechnet dann die gewünschte Richtung und lässt das Auto an die zuletzt berührte Stelle fahren. In manchen Implementierungen werden bei dieser Art der Steuerung auch Hindernisse umgangen,\footnote{Beispielsweise in \enquote{League of Legends}.} Dies ist in Rennspielen nicht empfehlenswert, da die Schwierigkeit im Fahren an sich besteht.  }
-			\item[Digitaler Joystick]{ Ein Joystick, welcher relativ zum Auto interpretiert wird. Nach rechts ziehen lässt das Auto eine Rechtskurve fahren. Nach unten ziehen bremst und kann auch rückwärtsfahren bewirken. }
-			\item[Digitaler Joystick (nur Richtung)]{ Ein Joystick, welcher mit zwei Achsen die Fahrtrichtung direkt angibt. Die Richtung sollte relativ zur Kamera interpretiert werden, sodass ein nach rechts ziehen des Joysticks auch einem nach rechts fahren entspricht. }
+			\item[Digitaler Joystick]{ Ein Joystick, der relativ zum Auto interpretiert wird. Nach rechts ziehen lässt das Auto eine Rechtskurve fahren. Nach unten ziehen bremst und kann auch rückwärtsfahren bewirken. }
+			\item[Digitaler Joystick (nur Richtung)]{ Ein Joystick, der mit zwei Achsen die Fahrtrichtung direkt angibt. Die Richtung sollte relativ zur Kamera interpretiert werden, sodass ein nach rechts ziehen des Joysticks auch einem nach rechts fahren entspricht. }
 		\end{description}
 		Lenkung durch den Neigungssensor wird verworfen, weil dadurch die Aufgaben schwerer zu lesen sind.
 		Ein Lenkrad auf dem Bildschirm nimmt zu viel Platz auf dem Bildschirm ein.
 		Direkteingabe über den Bildschirm ist zu einfach zu steuern und wird bei höheren Geschwindigkeiten schnell untauglich.
 		Ein Joystick, welcher gleichzeitig Gas gibt und die Fahrzeugrichtung bestimmt, vereinfacht die Steuerung zu arg und vermindert das Gefühl ein Auto zu fahren.
 
-		Aus diesen Gründen wird eine Steuerung mit digitalem Joystick, welcher die Fahrtrichtung übernimmt und Pedalen für Gas und Bremse gewählt. Rückwärts fahren soll dabei nur aus dem Stillstand durch ein Lenken nach hinten und Gas geben möglich sein.
+		Aus diesen Gründen wird eine Steuerung mit digitalem Joystick, der die Fahrtrichtung übernimmt und Pedalen für Gas und Bremse gewählt. Rückwärts fahren soll dabei nur aus dem Stillstand durch ein Lenken nach hinten und Gas geben möglich sein.
 		Um die Geschwindigkeit des Fahrzeugs zu halten, muss das Gaspedal durchgehend gedrückt werden.
 		Ein Loslassen des Gaspedals lässt das Fahrzeug bis zum Stillstand rollen. Ein Betätigen des Bremspedals führt zu einer deutlich schnelleren Reduzierung der Geschwindigkeit.
-		Ein Beispiel für digitale Joysticks, welche in Mobilen-Spielen relativ üblich sind, ist in der folgenden Abbildung zu sehen.
+		Ein Beispiel für digitale Joysticks, der in Mobilen-Spielen relativ üblich sind, ist in der folgenden Abbildung zu sehen.
 
 		\figur{dpad.png}{Digitaler Joystick auch D-Pad unten links. Abbildung \cite{easports}\footnotemark}%
 		\footcitetext[\url{http://www2.ea.com/uk/fifa-11-iphone/images/f784dabc26b7b210VgnVCM2000001165140aRCRD}]{easports}
@@ -256,7 +256,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	\subsubsection*{Heads-Up Display:}\label{HUD}
 			Das Heads-Up Display beschreibt die eingeblendeten Anzeigen und Interaktionselemente während das Spiel läuft.
 			Die wichtigsten Elemente sind hier die Steuerelemente: Gas, Bremse und digitaler Joystick gefolgt von dem Menübutton und dem Neustartknopf.
-			Hinzu kommen die angezeigte Aufgabe und die beiden Antwortmöglichkeiten, eine Übersichtskarte, welche den Streckenverlauf anzeigt, und eine Zeitanzeige, welche den zeitlichen Rahmen klar macht.
+			Hinzu kommen die angezeigte Aufgabe und die beiden Antwortmöglichkeiten, eine Übersichtskarte, die den Streckenverlauf anzeigt, und eine Zeitanzeige, die den zeitlichen Rahmen klar macht.
 			Bei den verschiedenen Elementen soll farblich klar sein, mit welchen interagiert werden kann und mit welchen nicht.
 
 	\subsubsection*{Kameraperspektive:}
@@ -368,7 +368,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			Am oberem Rand des Bildschirms taucht die Frage auf und kurz später eine Weggabelung, beispielsweise ein Tor mit zwei Durchgängen. Durch so eine spielerische Nutzung von Aufgaben kann ein Spieler motiviert werden zu lernen.
 		}
 		\item[Aufgaben für Münzen]{
-			Münzen können später in normalen Rennen für witzige aber auch hilfreiche Dinge eingesetzt werden. Hilfreiche Dinge sind unter anderem ein Zeitbonus oder eine erhöhte Geschwindigkeit. Außerdem sollen auch Dinge verfügbar sein, welche dem Spieler keinen Vorteil bringen. Diese können beispielsweise optische Verbesserungen oder andere Fahrzeuge sein.
+			Münzen können später in normalen Rennen für witzige aber auch hilfreiche Dinge eingesetzt werden. Hilfreiche Dinge sind unter anderem ein Zeitbonus oder eine erhöhte Geschwindigkeit. Außerdem sollen auch Dinge verfügbar sein, die dem Spieler keinen Vorteil bringen. Diese können beispielsweise optische Verbesserungen oder andere Fahrzeuge sein.
 		}
 		\item[Teilnahmegebühr für Pokalrennen]{
 			Eine Teilnahmegebühr für Pokalrennen bringt nicht nur den Spieler zum Lernen, sondern setzt die Pokalrennen von den normalen Leveln ab und macht sie so zu etwas besonderem. Die für die Gebühr benötigten Münzen kann der Spieler durch wiederholtes Spielen der Level verdienen. Somit steigt der Lernerfolg durch Wiederholung weiter an. Durch einen besonders hervorgehobenen Leveleingang innerhalb des Menü-Levels soll der Spieler zusätzlich darauf aufmerksam gemacht werden.
