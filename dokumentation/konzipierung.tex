@@ -123,7 +123,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	\begin{description}
 		\item[Spielstart Hilfsagent]{ Beim ersten Starten wird dem Nutzer geholfen, sich in das Spiel einzufinden. Dies wird über wortlose Bilder erreicht, welche verschwinden, sobald der Nutzer die Steuerung ausprobiert hat und ein Rennen gefahren ist. Der Hilfsagent kann auch abgebrochen werden. }
 		\item[Level-Pakete wechseln]{
-			Der Spieler kann die Level-Pakete rotieren, jedes besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level für welchen eine Teilnahmegebühr anfällt (Pokalrennen).
+			Der Spieler kann die Level-Pakete rotieren, jedes besitzt zwei Level als Qualifikationsrennen (normale Rennkarten) und einen Level, für welchen eine Teilnahmegebühr anfällt (Pokalrennen).
 			Jedes Level-Pack ist in einem eigenen Stil thematisiert, wobei die Karten für die Pokalrennen außergewöhnlicher sein sollen.
 		}
 		\item[Optionen ändern]{ Über einen speziell als Optionen gekennzeichneten \enquote{Level} gelangt der Nutzer auf einen gesonderten Bildschirm wo folgende Funktionen zur Verfügung stehen:
@@ -135,7 +135,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		}
 		\item[Level wählen]{ Der Spieler fährt mit dem Auto auf einen Level, darauf erscheint ein Auswahlbildschirm für folgende zwei Optionen. Falls der Level ein Pokalrennen ist, muss der Spieler eine Teilnahmegebühr zahlen.
 			\begin{description}
-				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben welche den Spieler herausfordern sich mehr anzustrengen. }
+				\item[als Rennen gegen die Zeit starten]{ In diesem Spielmodus ist eine Zeit vorgegeben, innerhalb welcher der Spieler den Level bestehen soll. Ebenso sind zwei kleinere Zeiten vorgegeben, welche den Spieler herausfordern, sich mehr anzustrengen. }
 				\item[als Rennen gegen Computergegner starten (Optional)]{ In diesem Spielmodus fährt der Spieler gegen computergesteuerte Autos. Die Auswertung funktioniert über das Übliche Rang-Verfahren: die besten drei Spieler werden hervorgehoben und gekürt, nur der Erste gewinnt.}
 			\end{description}
 			Gestartete Spiele können jederzeit abgebrochen, pausiert und neugestartet werden.
@@ -144,8 +144,8 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		\item[Extra Aufgaben Lösen]{ Ein Icon am Rand des Bildschirms, welches ermöglicht, Münzen durch Lösen von Aufgaben zu sammeln. }
 		\item[Einkaufen]{ Wie bereits im Rahmen der Ingame-Währung erwähnt, kann der Spieler beispielsweise Fahrzeuge und Farben erwerben.
 			\begin{description}
-				\item[Gegenstand Kaufen]{ Der Spieler erhält im Austausch für Ingame-Währung den Artikel, dieser wird dann auch ausgewählt. Im Ingame-Shop existieren Gegenstände, welche verbraucht werden, zum Beispiel Zeitboni und Gegenstände die dem Spieler verfügbar bleiben, wie Autos. }
-				\item[Gegenstand Auswählen]{ Ein bereits bezahlter Gegenstand, welcher nicht verbraucht werden kann, wird aktiviert. So kann beispielsweise zwischen zwei bereits gekauften Fahrzeugen gewählt werden.}
+				\item[Gegenstand Kaufen]{ Der Spieler erhält im Austausch für Ingame-Währung den Artikel, dieser wird dann auch ausgewählt. Im Ingame-Shop existieren Gegenstände, welche verbraucht werden, zum Beispiel Zeitboni und Gegenstände, die dem Spieler verfügbar bleiben, wie Fahrzeuge. }
+				\item[Gegenstand Auswählen]{ Ein bereits bezahlter Gegenstand, welcher nicht verbraucht werden kann, wird aktiviert. So kann beispielsweise zwischen zwei bereits gekauften Fahrzeugen gewechselt werden.}
 			\end{description}
 		}
 		\item[Spiel Beenden]{ Beendet das Spiel. }
@@ -227,7 +227,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 	\subsubsection*{Hindernisse auf der Strecke:}\label{par:streckendesign2}
 		Um den Schwierigkeitsgrad der Rennen zusätzlich zu erhöhen, besteht die Möglichkeit, Hindernisse in den Streckenverlauf einzubauen. Für eine Kollision mit einem solchen Hindernis muss geklärt werden, welches Verhalten das Fahrzeug zeigt. Die beiden naheliegenden Möglichkeiten für eine Kollisionsreaktion sind das vollständige Stoppen (Abprallen) und das Verlangsamen des Fahrzeugs.
 		Ein vollständiges Stoppen des Fahrzeugs würde eine Art Unterbrechung des Spielflusses bedeuten. Da dies, wie bereits erwähnt, nach Möglichkeit vermieden werden soll, scheidet diese Möglichkeit weitgehend aus. Ein Verlangsamen des Fahrzeugs kann entweder als Verlangsamung um einen Prozentsatz X (basierend auf der aktuellen Geschwindigkeit) oder mittels einer Verlangsamung der Geschwindigkeit auf einen Festen Wert umgesetzt werden.
-		Aus Gründen der Plattform kann eine detaillierte Physiksimulation nicht umgesetzt werden. Stattdessen sollen Hindernisse welche sich auf der Strecke befinden mit dem Fahrzeug interagieren (vgl. Weggestoßen werden). Für Objekte welche sich neben der Strecke befinden wird trotz der Unterbrechung des Spielflusses ein vollständiges Stoppen gewählt. Somit wird der Spieler weiterhin dazu animiert, die Strecke nicht zu verlassen.
+		Aus Gründen der Plattform kann eine detaillierte Physiksimulation nicht umgesetzt werden. Stattdessen sollen Hindernisse, welche sich auf der Strecke befinden, mit dem Fahrzeug interagieren (vgl. weggestoßen werden). Für Objekte, welche sich neben der Strecke befinden, wird trotz der Unterbrechung des Spielflusses ein vollständiges Stoppen gewählt. Somit wird der Spieler weiterhin dazu animiert, die Strecke nicht zu verlassen.
 
 	\subsubsection*{Kaufbares für Ingame-Währung:}
 		Im Spiel sind zwei Kategorien von kaufbaren Dingen denkbar. Die erste Kategorie sind optische Upgrades. Diese beziehen sich vor allem auf die verwendbaren Fahrzeuge und Gegenstände. So kann der Spieler sein von Beginn an verfügbares Auto beispielsweise gegen einen Ball, einen Läufer, einen Rennwagen oder ähnliches austauschen. Zu beachten ist dabei, dass alle Fahrzeuge die gleiche Geschwindigkeit haben und somit kein Vorteil für den Mulitplayer erkauft werden kann. Die zweite Kategorie sind Boni, welche auf den Einzelspieler-Modus bezogen funktionieren. Dabei bekommt der Spieler die Möglichkeit, einen Zeitbonus (von beispielsweise 10 Sekunden) zu erkaufen, um das nächste Rennen zu erleichtern. Diese Möglichkeit besteht sowohl für die Qualifikations-, sowie für die Pokalrennen und ist im Mehrspieler-Modus nicht verfügbar.
@@ -245,7 +245,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Lenkung durch den Neigungssensor wurde verworfen, weil dadurch die Aufgaben schwerer zu lesen sind.
 		Ein Lenkrad auf dem Bildschirm nimmt zu viel Platz auf dem Bildschirm ein.
 		Direkteingabe über den Bildschirm ist zu einfach zu steuern und wird bei höheren Geschwindigkeiten schnell untauglich.
-		Ein Joystick welcher gleichzeitig Gas gibt und bremst vereinfacht die Steuerung zu arg und vermindert das Gefühl ein Auto zu fahren.
+		Ein Joystick, welcher gleichzeitig Gas gibt und die Fahrzeugrichtung bestimmt, vereinfacht die Steuerung zu arg und vermindert das Gefühl ein Auto zu fahren.
 
 		Aus diesen Gründen wurde eine Steuerung mit digitalem Joystick, welcher die Fahrtrichtung übernimmt und Pedalen für Gas und Bremse gewählt. Rückwärts fahren soll dabei nur aus dem Stillstand durch ein Lenken nach hinten und Gas geben möglich sein.
 		Um die Geschwindigkeit des Fahrzeugs zu halten, muss das Gaspedal durchgehend gedrückt werden.
@@ -352,8 +352,8 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			Für ihn ist besonders wichtig, jeden Level mit der besten Wertung abzuschließen. Das sollte nicht zu schwer gemacht werden, um die anderen zu inkludieren.
 		}
 	\end{description}
-	Spieler sollen für den ersten Platz durch zeigen des Pokals nach einem Sieg belohnt werden. Sie werden durch eine Anzeige der erreichten Pokale im Menu auch daran erinnert, was dafür sorgt, dass sie stolz auf Gold-Pokale sind und noch an Leveln arbeiten werden welche diesen nicht aufweisen.
-	Die Schwierigkeitsgrade der Level sollten innerhalb der Level-Pakete und im Durchschnitt der Level-Pakete aufsteigend angeordnet sein, nach dem \enquote{easy to learn, hard to master} Prinzip.\footcite[Bushnell's Law]{easy-to-learn-hard-to-master} Eine gewisse Konsistenz oder Kontinuität ist wichtig um das mentale Modell des Spielers nicht zu brechen, die Balance zwischen Konsistenz und Abwechslung ist hier zu treffen.
+	Spieler sollen für den ersten Platz durch Zeigen des Pokals nach einem Sieg belohnt werden. Sie werden durch eine Anzeige der erreichten Pokale im Menu darauf hingewiesen, in welchen Leveln noch Gold-Pokale fehlen und in welchen diese bereits erreicht sind. So werden die Spieler dazu animiert, diejenigen Level in denen ein Gold-Pokal fehlt, erneut zu spielen um diesen zu erreichen.
+	Die Schwierigkeitsgrade der Level sollten innerhalb der Level-Pakete aufsteigend angeordnet sein. Dieses Prinzip kann auch auf die Levelpakete übertragen werden und somit das \enquote{easy to learn, hard to master} Prinzip unterstützen.\footcite[Bushnell's Law]{easy-to-learn-hard-to-master} Eine gewisse Konsistenz oder Kontinuität ist wichtig um das mentale Modell des Spielers nicht zu brechen, die Balance zwischen Konsistenz und Abwechslung ist hier zu treffen.
 	Das Zusammenspiel auch einiger hier nicht erwähnten Dinge\footnote{Nicht alle Effekte die auf den Spieler wirken können vorher durchgeplant werden, einige werden auch ohne Absicht in das Spiel gelangen.} sorgt dann schließlich für den resultierenden Effekt Gamification.
 
 
