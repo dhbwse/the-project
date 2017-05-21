@@ -124,7 +124,7 @@ In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anw
 		\item{ Über zwei Pedale kann das Fahrzeug beschleunigt und abgebremst werden. Die Pedale sind dabei mit Größenverhältnis und Form an reale Fahrzeugpedale angepasst.}
 		\item{ Durch Betätigen des runden Pfeils kann das Rennen neu gestartet werden.}
 		\item{ Das Zahnrad öffnet das Optionsmenü des Spiels.}
-		\item{ Der Pause- und Play-Button pausieren das Rennen und setzen es fort.}
+		\item{ Der Pause- und Play-Button pausieren oder setzten das Spiel fort.}
 		\item{ Das Haus-Symbol bringt den Spieler zurück ins Hauptmenü.}
 		\item{ Das Haken-Symbol wird im Shop verwendet und bestätigt einen Kauf.}
 	\end{itemize}
@@ -255,7 +255,7 @@ GetComponent<NewGameAudio>().playCrashSound(volume);
 	\subsubsection{Speicherung der Spielstände\label{speicherung}}
 	Für die Speicherung der Spielstände stehen zwei Möglichkeiten zur Verfügung. Zum einen kann eine Datenbank eingebunden werden, welche alle relevanten Daten speichert, zum anderen kann eine Datei erstellt werden, welche mittels serialisierbaren Feldern Informationen über den Spielfortschritt bereitstellt. Serialisierbarkeit bedeutet, dass die Werte eines Feldes codiert und auch aus dem Code reproduziert werden können.
 	Da keine großen Datenmengen zu erwarten sind, wird eine Datei im \enquote{.bin Format} verwendet.
-	Die im Nutzerverzeichnis des Endgeräts befindliche \enquote{GameData.bin} enthält Informationen über die bereits gewonnenen Rennen, über freigeschaltete Gegenstände aus dem Shop, über die Anzahl an Münzen, die der Nutzer besitzt, sowie die aus dem Shop ausgerüsteten Gegenstände. Dadurch ist gewährleistet, dass der Nutzer das Spiel bei einem Neustart im gleichen Zustand vorfindet, wie es verlassen wurde.
+	Die im Nutzerverzeichnis des Endgeräts befindliche \enquote{GameData.bin} enthält Informationen über die bereits gewonnenen Rennen, über freigeschaltete Gegenstände aus dem Shop, über die Anzahl an Münzen, die der Nutzer besitzt, sowie die aus dem Shop ausgerüsteten Gegenstände. Dadurch ist gewährleistet, dass das Spiel über einen Neustart hinaus, den Spielstand des Spielers beibehält.
 	Alle genannten Attribute sind über sogenannte [SerializeField] Attribute definiert, was eine Speicherung im Textformat ermöglicht. Über den Aufruf \enquote{GameData.GetInstance()} kann an jeder beliebigen Stelle des Programmcodes auf die gespeicherten Werte zugegriffen werden. Somit ist eine Anwendungsweite Synchronisation gewährleistet.
 
 	\subsubsection{Performance und Dateigröße}
@@ -283,8 +283,8 @@ Wie im vorherigen Kapitel bereits erwähnt, werden Programmfunktionen in Unity g
 Bei der Implementierung des Spiels wurde keine Datenbank verwendet. Die Datenspeicherung geschieht wie in \ref{speicherung} bereits erwähnt über die Datei \enquote{GameData.bin}.
 
 \subsection{Integration in Lernplattform}
-	Die Integration in die Lernplattform von Incekara und Wolske\footcite{lernplattform} konnte nicht umgesetzt werden. Die Möglichkeiten des Spiels verschiedene Lernstandards gleichzeitig zu implementieren sind nicht in der Plattform vorgesehen und es müsste eine Schnittstelle implementiert werden.
-	Eine Möglichkeit diese Schnittstelle umzusetzen wurde ausgearbeitet aber schlussendlich nicht verwendet.
+	Die Integration in die Lernplattform von Incekara und Wolske\footcite{lernplattform} konnte nicht umgesetzt werden. Die Möglichkeiten des Spiels, verschiedene Lernstandards gleichzeitig zu implementieren, sind nicht in der Plattform vorgesehen und die Implementierung einer Schnittstelle wäre nötig.
+	Eine Möglichkeit diese Schnittstelle umzusetzen wurde ausgearbeitet, aber schlussendlich nicht verwendet.
 	\subsubsection*{Beschreibung Schnittstelle}
 		Für die Kommunikation zwischen Anwendungen auf Android ist die Verwendung von AIDL\footcite{android-interfaces} oder ähnlichem nötig.\footnote{Weitere Möglichkeiten werden auf der zitieren Seite genannt.}
 		Ein unterstütztes Lernspiel bietet zwei Schnittstellen:
@@ -296,4 +296,4 @@ Bei der Implementierung des Spiels wurde keine Datenbank verwendet. Die Datenspe
 				Startet das Spiel mit dem ausgewählten Standard.
 			}
 		\end{description}
-		Für die Lernplattform reicht es aus die Standards beim Starten für alle Spiele zu sammeln und wenn vom Spieler gewünscht diese mit dem Passendem Standard starten.
+		Ausreichend für die Lernplattform ist, die erfüllten Standards der Spiele zu sammeln und bei Anforderung eines Standards das assoziierte Spiel zu starten.
