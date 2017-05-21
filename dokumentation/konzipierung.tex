@@ -1,6 +1,6 @@
 % !TEX root = dokumentation.tex
 \section{Konzipierung}
-Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und Non-Functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel \ref{sec:impl} Implementierung das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder computergesteuerte Gegner betrachtet. Abschließend soll erarbeitet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
+Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei werden zunächst die erarbeiteten und vorgegebenen Kriterien zusammengefasst, mehrere Spielideen anhand dieser Kriterien überprüft und anschließend eine finale Spielidee entwickelt. Im weiteren Verlauf des Kapitels werden Functional und Non-Functional Requirements erörtert und in Use-Cases unterteilt. Anhand dieser Requirements wird dann im Kapitel \ref{sec:impl} Implementierung das Spiel entwickelt. Weiterhin werden in diesem Kapitel die Spielregeln verfasst und weitere Elemente, wie die Steuerung oder Computergegner betrachtet. Abschließend soll erarbeitet werden, wie die im Grundlagenteil erfassten Lernziele in Verbindung mit dem Spiel umgesetzt werden können.
 \subsection{Kriterien für die Spielidee}\label{ssec:kriterien}
 	<TODO:Fazite aus vorgehenden Kapiteln klar einarbeiten>
 	Auf Basis der in der Aufgabenstellung genannten Kriterien wird ein Kriterienkatalog entwickelt. Dieser wird mit zusätzlichen eigenen Kriterien erweitert.
@@ -103,7 +103,7 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 			\end{itemize}
 		\item{Der Spieler erhält die Möglichkeit, zusätzliche Aufgaben auf freiwilliger Basis zu lösen. Als Belohnung wird eine Ingame-Währung eingeführt, die für folgende Aktionen genutzt werden kann:}
 		\begin{itemize}
-			\item{Für ein Rennen gegen den Computer kann sich der Spieler eine bessere Startposition erkaufen.}
+			\item{Für ein Rennen gegen Computergegner kann sich der Spieler eine bessere Startposition erkaufen.}
 			\item{Für ein Zeitrennen kann sich der Spieler einen Zeitbonus erkaufen.}
 			\item{Der Spieler kann die Teilnahmegebühr für die Pokalrennen sowohl über die Ingame-Währung als auch über das Absolvieren von Aufgaben bezahlen.}
 			\item{Der Spieler kann weitere Fahrzeuge / spielbare Objekte für die Ingame-Währung kaufen. Alternativ ist über diese Währung auch ein Farbwechsel der bisher gekauften Objekte oder ein Wechsel des Spielersymbols (für den Mehrspieler-Modus) denkbar.}
@@ -187,9 +187,9 @@ Das folgende Kapitel beschäftigt sich mit der Konzipierung des Spiels. Dabei we
 		Für den Umfang des Spiels wird eine Größe von drei Rennen pro Level-Paket festgelegt. Der Abschluss eines einzelnen Qualifikationsrennens für die Freischaltung des Pokalrennens ist zwar grundsätzlich möglich, führt jedoch zu einer Minderung des Spielumfangs. Um dies zu vermeiden, besteht zumindest die Anforderung, beide Qualifikationsrennen abschließen zu müssen. Die Reihenfolge der Qualifikationsrennen spielt im Bereich der Entwicklung keine Rolle. Dieser Aspekt ist insofern zu vernachlässigen. Für den Spieler kann eine sofortige Verfügbarkeit beider Qualifikationsrennen ein gewisses \enquote{Freiheitsgefühl} auslösen. Aus diesem Grund werden mit Beginn eines Level-Pakets beide Qualifikationsrennen sofort verfügbar.
 
 	\subsubsection*{Gewinnbedingungen eines Rennens:}\label{gewinnbedinungen}
-		Zur Durchführung der Einzelspieler Rennen stehen grundsätzlich zwei Möglichkeiten zur Auswahl. Die erste Möglichkeit ist, dass der Spieler gegen computergesteuerte Rennteilnehmer antritt. Zur Realisierung dieser Alternative ist die Entwicklung einer Künstlichen Intelligenz nötig. Weiterhin werden dadurch Punkte, wie beispielsweise die Kollision mit anderen Rennteilnehmern notwendig. Um ein Rennen zu gewinnen, muss der Spieler als erster die Ziellinie überqueren.
+		Zur Durchführung der Einzelspieler Rennen stehen grundsätzlich zwei Möglichkeiten zur Auswahl. Die erste Möglichkeit ist, dass der Spieler gegen computergesteuerte Rennteilnehmer antritt. Mit realisierung dieser Alternative ist ein erhöhter Entwicklungsaufwand für die Steuerungslogig der Computergegner verbunden. Weiterhin werden dadurch Punkte, wie beispielsweise die Kollision mit anderen Rennteilnehmern notwendig. Um ein Rennen zu gewinnen, muss der Spieler als erster die Ziellinie überqueren.
 		Die zweite Möglichkeit wäre die Realisierung der Rennen über eine vorgegebene Zeit. Das so entstehende Zeitrennen muss in der vorgegeben Zeit absolviert werden. Überschüssige Zeit verfällt und kann für folgende Rennen nicht verwendet werden.
-		Unter Beachtung der erwähnten Punkte und mit Blick auf den gesetzten Zeitrahmen wird von der Entwicklung einer KI abgesehen. Somit bleibt für die Realisierung des Rennens das Zeitrennen übrig.
+		Unter Beachtung der erwähnten Punkte und mit Blick auf den gesetzten Zeitrahmen wird von der Entwicklung von Computergegnern abgesehen. Somit bleibt für die Realisierung des Rennens das Zeitrennen übrig.
 		Das richtige Beantworten von Aufgaben sollte ebenfalls in die Gewinnbedingungen einfließen, wenn keine einzige Aufgabe korrekt ist, verliert der Spieler. Die konkrete Umsetzung befindet sich in Tabelle \ref{pokal-tabelle}.
 
 	\subsubsection*{Zusatzaufgaben während eines Rennens:}\label{par:aufgaben}
