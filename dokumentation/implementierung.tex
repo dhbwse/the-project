@@ -1,4 +1,5 @@
 % !TEX root = dokumentation.tex
+\newpage
 \section{Implementierung}\label{sec:impl}
 In diesem Kapitel wird die konkrete Entwicklung des Spieles beschrieben. Dabei werden sowohl die verschiedenen Prototypen betrachtet, wichtige Design-Entscheidungen offen gelegt und die technischen Hintergründe erläutert.
 \subsection{Prototyping}
@@ -81,6 +82,7 @@ Mit dieser Entscheidungstabelle ist der Grat zwischen Spielern, die sehr gut Ren
 \subsection{Entwicklungsablauf in Unity}
 Bei der Entwicklung von Anwendungen mit Unity erhält der Anwender mehrere Möglichkeiten zur Verfügung. In diesem Kapitel sollen die Komponenten von Unity, die bei der Entwicklung des Spiels verwendet werden, beleuchtet werden.
 
+\newpage
 \subsubsection{Scene View}
 \figur{Unity-SceneView.png}{\label{ssec:sceneView}Die Unity Scene View mit Hierarchy Reiter}
 Die Unity Scene View (vgl. Abbildung \ref{ssec:sceneView}) ist der Leveleditor von Unity. In der Scene View kann der Nutzer (abhängig vom verwendeten Modus) 2D oder 3D Objekte im Level platzieren. Jegliche (optische) Gestaltung der einzelnen Level, genauso wie die Erstellung des User Interface oder das Platzieren von Kollisionszonen findet in der Scene View statt. Über den Hierarchy Reiter kann der Anwender alle im Level platzierten Objekte auswählen, um beispielsweise deren Position in der Scene View zu ändern.
@@ -136,6 +138,7 @@ In diesem Kapitel der Arbeit werden wichtige Schritte in der Entwicklung der Anw
 	\newcommand{\autoPfeil}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/4.pdf}}}
 	\newcommand{\symbolbild}{\raisebox{-.5ex}{\includegraphics[height=30pt]{img/gaspedale/5.pdf}}}
 
+\newpage
 	\begin{longtable}{cp{3.9cm}p{3.9cm}p{3.9cm}}%
 		\toprule \endhead%
 		\bottomrule \caption{Evolution der Pedale}\label{gasevo-tabelle} \endlastfoot%
@@ -235,6 +238,7 @@ if (isSlow){
 
 	\subsubsection{Erkennung einer Frontalkollision}
 	Um die Erkennung einer Frontalkollision zu ermöglichen, wird das Fahrzeug mit zwei Hilfs-Punkten ausgestattet. Diese Punkte sind jeweils mittig des Fahrzeugs positioniert, wobei einer der Punkte am vorderen Ende des Fahrzeugs und der zweite Punkt am Heck positioniert ist.
+\newpage
 	\begin{lstlisting}
 private void OnCollisionEnter(Collision collision){
 Vector3 localAverageVorn = frontColliderHelper.transform.InverseTransformPoint(collision.contacts[0].point);
