@@ -950,7 +950,7 @@
       \field{urlmonth}{01}
       \field{urlyear}{2017}
       \verb{url}
-      \verb http://irrlicht.sourceforge.net/?page_id=45
+      \verb http://irrlicht.sourceforge.net/
       \endverb
     \endentry
     \entry{android-stats}{online}{}
@@ -1015,7 +1015,7 @@
       \field{urlmonth}{01}
       \field{urlyear}{2017}
       \verb{url}
-      \verb https://unity3d.com/de
+      \verb https://unity3d.com/de/unity
       \endverb
     \endentry
   \endsortlist
